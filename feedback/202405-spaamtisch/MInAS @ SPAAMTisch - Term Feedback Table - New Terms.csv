@@ -1,0 +1,5 @@
+Date,Group,Presenter,Person,Proposed Combination,Proposed Extension,Proposed Term ID,Description
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,NA,NA,NA,I didn't find information on where to specify if the library was single-stranded or double-stranded
+2024-05-06,SPAAMTisch,"James, Meriam",Piotr Rozwalak,NA,NA,geo_interpretation,geological interpretation. geological interpretations → i.e. extracting DNA from a particular layer of the strata (e.g. it’s a sand deposit but more specifically tsunami sand)
+2024-05-06,SPAAMTisch,"James, Meriam","Maria Lopopolo, Biancamaria Bonucci",NA,NA,lab_intake_date,Generally: we should try and identify the most important milestones to record
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,NA,NA,lib_strandedness ,lib_strandedness as a boolean

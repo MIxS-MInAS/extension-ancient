@@ -1,0 +1,54 @@
+Date,Group,Presenter,Person,Combination,Combination Version,Extension/Package of Term ID,Term ID,Feedback
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,mims,samp_taxon_id,You could add the links in the legend: https://ena-docs.readthedocs.io/en/latest/faq/taxonomy.html and https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi 
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,mims,env_broad_scale,You should replace current link with http://purl.obolibrary.org/obo/ENVO_00000428  in the legend 
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,sediment,temp,"This category is confusing, I don’t know situations where temperature of sediments is measured in field practice. And also might misleading to the temperature of storage"
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,sediment,depth,units could be better standarized
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,ancient,dna_extraction_date,I think this could be optional
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,ancient,experimental_procedures,In the legend: „Provide a DOI to refer to the paper where the procedure is explained in more details” what procedures? Damage treatment?
+2024-05-06,SPAAMTisch,"James, Meriam",Tsunami  Piotr Rozwalak?,AncientSedimentMIMS,v0.1.0,ancient,lib_type,I would like to specify somewhere the name of specific region that was amplified
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,samp_name,It would be nice to have a samp_name_alias option here to provide the archaeological ID for example
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,samp_taxon_id,What do we do in case of coinfection?
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,collection_date,Would need to ask my colleague. Why is it compulsory if we already provide the sequencing date? Or do you mean the excavation date?
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,env_broad_scale,"In the legend section of this item, the link for more explanation doesn't work when one clicks on it. I also am not sure on how to find that kind of information because it would require the archaeologists to go back into their excavation files."
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,geo_loc_name,Link in legend table broken as well (404 page not found)
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,lat_lon,"Would be nice to add a link on how to find out that kind of information about a site. I ended up taking it from wikipedia. Also, how precise should it be?"
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,host-associated,host_taxid,I think this one should be mandatory too
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,ancient,dna_extraction_date,Would be nice if we could choose the format of entry for the date because mine are registered in swedish format yy/mm/dd and it didn't work well copy-pasting
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,mims,lib_layout,I think this one should be compulsory
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,AncientHost-associatedMIMS,v0.1.0,ancient,lib_type,"I find lib_type misleading, would prefer it to be named amplicon, it would be clearer on what is the question"
+2024-05-06,SPAAMTisch,"James, Meriam",Rodrigo Barquera,AncientHost-associatedMIMS,v0.1.0,mims,env_broad_scale,"I would suggest, as req lvl X, original env_broad_scale. In the case of for example, Mexico City, pre-Hispanic era classification is completely different to what it was shortly after conquest, and completely different to what it is now"
+2024-05-06,SPAAMTisch,"James, Meriam",Rodrigo Barquera,AncientHost-associatedMIMS,v0.1.0,ancient,cultural_era,"Maybe add, if available, whether location at recovery matches location of origin (yes/no/unknown), and whether there are diet studies available (yes/no/unknown)"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,ancient,storage_conditions,Storage is not specialised for preserving DNA
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,ancient,recovery_date,"ISO8601 compliant? The collection_date makes a good job of explaining this, could probably use the same description"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,mims,collection_date,Sample was collected by a previous PhD student who left the Uni
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,mims,env_broad_scale,"Descriptions and examples are very ecology-based… it also uses terms like ‘time of sampling’ and ‘where the sample was collected’, which can be tricky in an archaeological and aDNA context. What is collection when it comes to samples?"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,mims,temp,"Do not have access to the field notes, and even then I’m not sure they were so detailed"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,ancient,site_type,Only applicable to sediment cores?
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,ancient,cultural_era,I couldn’t find an applicable cultural period in chronontology
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,ancient,neg_cont_status,"TRUE/FALSE? YES/NO? Needs specific example (when I see boolean I think TRUE/FALSE, but that might differ)"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,host-associated,host_age,"Can rarely be determined reliably, and if the information is provided, more information would be needed on how this was determined, i.e., osteological methods"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,host-associated,host_body_product,Technically…
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,host-associated,host_body_site,Calculus technically comes from a tooth but the tooth itself is not sampled…
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,host-associated,host_dry_mass,"Dry mass of the host? E.g., the human that had the calculus? What about the weight of the sample?"
+2024-05-06,SPAAMTisch,"James, Meriam",Bianca Bonucci,AncientHost-associatedMIMS,v0.1.0,host-associated,samp_store_dur,What about a question if there is residual material from the analysis (boolean – T/F)
+2024-05-06,SPAAMTisch,"James, Meriam",James Fellows Yates,Host-associatedMIGSBacteria + Ancient,v0.1.0,host-associated,host_taxid,"Put example for host taxid in legend: Format ""123456"" or ""NCBI:txid123456"" is not yet specified in legend"
+2024-05-06,SPAAMTisch,"James, Meriam",Maria Lopopolo,Host-associatedMIGSBacteria + Ancient,v0.1.0,ancient,storage_conditions,"storage metadata, split into two categories? Bone vs extract/library"
+2024-05-06,SPAAMTisch,"James, Meriam","Marica Baldoni, Lena Granehäll",Host-associatedMIGSBacteria + Ancient,v0.1.0,mims,env_broad_scale,(and env_local_scale) important to give more guidances. What about a coffin or crypt? There is no soil around it! Useful because if there is soil: more contamination (Meriam: would site_type work? Not necessarily). Collection date vs recovery date → needs better description or be able to distinguish
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,Host-associatedMIGSBacteria + Ancient,v0.1.0,ancient,sample_age,"sample age, why not compulsory?  Maybe a range at least? But Q: if clearly ancient (has damage patterns etc.)"
+2024-05-06,SPAAMTisch,"James, Meriam",Zoe Pochon,Host-associatedMIGSBacteria + Ancient,v0.1.0,host-associated,host_taxid,"Host-tax ID why is that not mandatory?
+Should be made more required → E?
+Particularly for pathogens → add to the 
+Need to be made clearer the structure of e.g. ENA sample → experiment → run → analysis"
+2024-05-06,SPAAMTisch,"James, Meriam",Wengqin Yu,Host-associatedMIGSBacteria + Ancient,v0.1.0,host-associated,host_shape,"what is the host_shape (microbiome specific table → host_associated)?
+Don’t have to fill it in
+Very unclear! Same with host colour"
+2024-05-06,SPAAMTisch,"James, Meriam",Wengqin Yu,Host-associatedMIGSBacteria + Ancient,v0.1.0,host-associated,host_color,"what is the host_shape (microbiome specific table → host_associated)?
+Don’t have to fill it in
+Very unclear! Same with host colour"
+2024-05-06,SPAAMTisch,"James, Meriam",Maria Lopopolo,Host-associatedMIGSBacteria + Ancient,v0.1.0,mims,collection_date,"does that correspond to the archaeological excavation, or the drilling of the bones"
+2024-05-06,SPAAMTisch,"James, Meriam",Lena Granehäll,Host-associatedMIGSBacteria + Ancient,v0.1.0,mims,lib_screen,"captures → lib_screen, should it be mandatory? Or at least saying capture yes or not"
+2024-05-06,SPAAMTisch,"James, Meriam",Wengqin Yu,Host-associatedMIGSBacteria + Ancient,v0.1.0,host-associated,Host_body_site,"human remains, sampling the body parts → where is that indicated? Host_body_site? Env_local_scale also allows body type
+Need to make this much clearer which goes where!"
+2024-05-06,SPAAMTisch,"James, Meriam",Biancamaria Bonucci,Host-associatedMIGSBacteria + Ancient,v0.1.0,mims,env_broad_scale,"broad/local/medium scale → still very confusing  Material in which you did the sampling → sampling in aDNA would be lab? Would it be ‘air’? Sampling has specific meaning in ancient DNA (sort of more would be like burial environment)
+What about samples left in a collection for a very long time? What if the original e.g. burial environment information is lost now?
+"

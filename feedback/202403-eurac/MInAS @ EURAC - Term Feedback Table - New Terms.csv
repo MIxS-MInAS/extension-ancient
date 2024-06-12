@@ -1,0 +1,14 @@
+Date,Group,Presenter,Person,Proposed Combination,Proposed Extension,Proposed Term ID,Description
+2024-03-08,Eurac,Mohamed,Frank / Lena ,MimsHostAssociated + Ancient,ancient ,Sample_type,"tooth, calculus, bone (specify), coprolite, sediment (M)"
+2024-03-08,Eurac,Mohamed,Frank,MimsHostAssociated + Ancient,ancient ,soil_contact,whether the sample was in contact in the soil or not
+2024-03-08,Eurac,Mohamed,Lena,MimsHostAssociated + Ancient,ancient ,env_contact,already addressed in the spammtish meeting
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,dna_ext_procedures,DNA extraction procedures (DOI)
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,lib_prep_procedures,Library preparation procedures (DOI)
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,capture_prep_procedures,Capture protocol (DOI / Kit)
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,conservation_state ,"Add another term in the ancient package to be more specific about the conservation state 
+e.g., complete mummification (artificial/natural), partial mummification, skeleton? "
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,sequencing_approach,"In the legend should be specified Amplicon or Shotgun; and it has to be explained that Shotgun includes: enrichment/capture, whole genome sequencing independently if shallow or deep; should remain mandatory"
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,??,We suggest adding another term for single- or double-indexed libraries 
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,??,We suggest another term for the actual number of cycles used for indexing PCR (and not only reindexing)
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,ref_seq,Provide the reference genome to which you aligned your uploaded data; maybe optional (because you would only need it if you upload bam-files)
+2024-03-08,Eurac,Mohamed,Stefania / Christina /  Alexandra,MimsHostAssociated + Ancient,ancient ,capture_design,which capture design was used

@@ -1,0 +1,35 @@
+Date,Group,Presenter,Person,Combination,Combination Version,Extension/Package of Term ID,Term ID,Feedback
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,tax_id,"It would be important to note that a tax_id specifically for metagenomes exist (in cases of mixed organism samples, which is pretty much all ancient DNA samples)
+
+There was some confusion for ancient pathogen samples which tax_id to use for tax_id vs hostid vs ‘genome’ tax ID (as in: sample tax_id would be metagenome, host id would be human, but then ‘captured’ or ‘enriched’ tax ID would be …?). There was some confusion for ancient pathogen samples which tax_id to use for tax_id vs hostid vs ‘genome’ tax ID (as in: sample tax_id would be metagenome, host id would be human, but then ‘captured’ or ‘enriched’ tax ID would be …?)"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,isolation and growth condition,Not at all applicable to ancient DNA…
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,reference for biomaterial,"Clarity what this would refer to if first publication of material, would this be your own paper (when publishing the genome), or e.g. archaeological report? How to submit after (JFY pointed out ENA metadata can be updated after submission)"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,sample volume or weight for DNA extraction,"Needs to be better guidance for ancient samples - is this the entire bone or tooth? Just the powder (JFY post-meeting note: guidance says to see Sample Size (MIXS:0000001), but not present on list…?)"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,sample capture status,"This was very confusing for many of the participants: capture has a different terminology in aDNA - this will require very clear guidance, or even hiding on MInAS interfaces"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,genetic modification,For MInAS specific guidance should be hidden
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,known pathogenicity,"If stick with MIGS Bacteria, MInAS guidance should hide as no way of inferring this from dead organisms"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,assembly_*,Doesn’t apply to raw reads… see general feedback of switching to MIGS Bacteria to MIMS
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,site type,"Was too sediment specific, whereas it could also apply to archaeological sites."
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,sample age,"Definition was confusing with ‘or when sample was exposed to the surface’, should be removed and definition further refined
+
+Many were unhappy with using a singular date - particularly when it came to radiocarbon dates (e.g. when only calibrated dates are available), or when it comes to historical records (where only a range available, e.g. a century). Having an upper and lower-bound was suggested
+
+Some were unhappy that other standardised(!) radiocarbon terms were not available e.g. marine reservoir effect, calibration curve used. There was discussion whether this should be fixed or in a free text field"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,date of ethical approval date,Typo in the term name - drop one of the ‘dates’ (maybe just ethical approval date)
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,conditions of sample storage,"There were concerns that a single term could not cover all conditions. Further definition clarification that multiple conditions may have occurred over the lifetime of the sample (as it is a free text field anyway), or simply just ‘variable’ would be sufficient. 
+
+Clarification as to what sample storage this referred to was also requested (e.g. actual storage place, vs museum conditions, vs fresh from excavation)"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,library concentration,"Should be moved to main checklists
+Questions whether this information was useful for pathogen studies, should be optional (JFY originally specified mandatory for microbiome/metagenomic studies for contamination estimation purposes)
+Point of measurement needs to be defined better (after extraction, library build etc.), as well as allow more flexibility depending on how people measure this."
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,alternative sample IDs,"It was unclear if this included individual level IDs (e.g. skeleton vs. specific tooth). 
+Definition should be improved to clarify it can be any level of ID used in publications that includes/covers that particular sample. Suggestion to rename ‘sample’ with ‘material’."
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,context name where location was collected,"Unclear title and definition. 
+Title doesn’t make sense, suggestion to drop ‘context’
+Definition is too specific when providing a single example of ‘owning institution’ (e.g. what happens if it comes via intermediate?)
+JFY suggested re-specifying to the institution it was obtained from (i.e., ultimately set up a paper trail)"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Host-associated,host sex,Unhappy (unethical?) of mixing of biological sex and gender within the same field. Should split into two
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Host-associated,host disease status,MInAS guidance could be to prefix with ‘possible’ or ‘suspected’ any descriptions?
+,,,,,,,,
+,,,,,,,,
+NOTE:,APPLY ANCIENT/HOST-ASSOCIATED TO MIMS NOT MIGS-Ba,,,,,,,

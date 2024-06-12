@@ -1,0 +1,10 @@
+Date,Group,Presenter,Person,Proposed Combination,Proposed Extension,Proposed Term ID,Description,,
+2024-04-08,ACAD,James Fellows Yates,Yassine Souilmi,MIMS,NA,lib_screen_type,"If lib_screen true, then a new term specifying which bait set was used (maybe with SKU for commerical kit and  DOI for custom)",,lib_screen
+2024-04-08,ACAD,James Fellows Yates,Yassine Souilmi,MIxS,NA,data_preprocessed,"Indicate if the uploaded sequencing data (FASTQ) is raw, or has been preprocessed - e.g. adapter clipped or merged etc.",,
+2024-04-08,ACAD,James Fellows Yates,Yassine Souilmi,MIxS,NA,seq_cycles,Field specifically stating the number of sequence cycles (JFY: but this won't apply to all methods?),,
+2024-04-08,ACAD,James Fellows Yates,Yassine Souilmi,MIxS,NA,seq_pairment,Field specifically indicating if single or paired end or not (JFY: handled by repository itself?),,
+2024-04-08,ACAD,James Fellows Yates,Robbi Davidson,MIxS,NA,lib_screen_type,Name of the lab the processing was carried out in (if it can be defined?),,
+2024-04-08,ACAD,James Fellows Yates,Robbi Davidson,MIxS,ancient,ethic_start,Starting date of ethical permission,,
+2024-04-08,ACAD,James Fellows Yates,Robbi Davidson,MIxS,ancient,ethic_end,Ending date of ethical permission,,
+2024-04-08,ACAD,James Fellows Yates,Robbi Davidson,MIxS,ancient,ethics_scope,"Scope of work that ethical permission provided (e.g. bacteria only, DNA only, bacteria and human)",,
+2024-04-08,ACAD,James Fellows Yates,Dawn Lewis/Bastien Llamas/Yassine/Robbi,MIxS,NA,biocultural_label,Add mandatory support for: https://localcontexts.org/labels/about-the-labels/,,

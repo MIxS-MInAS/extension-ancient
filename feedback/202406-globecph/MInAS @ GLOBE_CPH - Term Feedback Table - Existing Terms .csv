@@ -1,0 +1,11 @@
+Date,Group,Presenter,Person,Combination,Combination Version,Extension/Package of Term ID,Term ID,Feedback
+2024-06-12,GLOBE,James / Antonio,Mikkel Winther Pedersen,MimsSediment+Ancient,0.1.0,mims,samp_vol_we_dna_ext,Should be mandatory (for sediment at least -> want to know if it's extracted from 0.2 or 2g) 
+2024-06-12,GLOBE,James / Antonio,Motahareh Feizabadifarahani ,MimsHostAssociated + Ancient,0.1.0,mims,lib_type,Should include 'capture' as a lib type alongside amplicon and shotgun
+2024-06-12,GLOBE,James / Antonio,Yuejiao Huang,MimsHostAssociated + Ancient,0.1.0,mims,alt_lab_id,"Maybe make mandatory (however what if there is actually a single ID used consistently throughtout the publication, maybe just 'recommended'?)"
+2024-06-12,GLOBE,James / Antonio,Motahareh Feizabadifarahani ,MimsHostAssociated + Ancient,0.1.0,mims,lib_layout,Should be mandatory!
+2024-06-12,GLOBE,James / Antonio,Motahareh Feizabadifarahani ,MimsHostAssociated + Ancient,0.1.0,mims,sample_age,"Must make it mandatory to include lab code of dating method (JFY: can maybe have a multi-section expected value/regex; ""{method free text};{dating lab code})"
+2024-06-12,GLOBE,James / Antonio,Mikkel Winther Pedersen,MimsSediment+Ancient,0.1.0,mims,indexing_polymerase,Should be made mandatory (JFY: but what if using kit with not the explicit polymerase listed?)
+2024-06-12,GLOBE,James / Antonio,Mikkel Winther Pedersen,MimsSediment+Ancient,0.1.0,mims,sop,Should be mandatory (JFY: overlap with experiemetnal_procedures?)
+2024-06-12,GLOBE,James / Antonio,Mikkel Winther Pedersen,MimsSediment+Ancient,0.1.0,mims,experimental_procedures,Should be mandatory (JFY: overlap with SOP?)
+2024-06-12,GLOBE,James / Antonio,Mikkel Winther Pedersen,MimsSediment+Ancient,0.1.0,mims,adapters,"Should be mandatory (JFY: but if all been removed, necessary? But maybe if bad job and residual?)"
+2024-06-12,GLOBE,James / Antonio,Anna White,MimsHostAssociated + Ancient,0.1.0,mims,site_type,"Doesn't this overlap with env_medium_scale term (JFY: strongly think yes, but should clarify with Pete and Anan again...)"

@@ -1,0 +1,9 @@
+Date,Group,Presenter,Person,Combination,Combination Version,Extension/Package of Term ID,Term ID,alternative Term ID,Feedback
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,host removed,none,"It would be useful to know if uploaded reads have had host-reads removed. This could also apply to modern samples where there are privacy requirements prior sharing data (this already often occurs in clinical contexts), however could also be used in aDNA where ethical or legal specifications in the use of the data (e.g. ancestors have no concerns about microbial DNA, but may not wish human DNA analysed)."
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,MIGS-Ba,library_strategy_target,library_target_probeset,"For target-enriched ‘capture’ libraries, e.g. used to fish out genome of specific organism from metagenome, it would be useful to specify what organism(s) or target(s) was used in the probeset,"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Ancient,palaeopathology status,none,"Might be nice to have a free text field to describe 
+host_disease_status appears to be too specific for clinical diagnosis (but see below)"
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Host-associated,sex scheme,none,"How the biological sex was determined (self reported, genetic etc.) "
+2023-07-19,MPI-EVA Pathogens,James,xxx,Host-associatedMIGSBacteria + Ancient,0.01,Host-associated,lifestage schema,none,"Which scheme of the life stage is defined by (e.g. archaeological schemes based on osteology), as this can change which age range each life stage corresponds to
+Alternative to host age when specific year not available
+Could be a DOI/URL reference to the publication describing the schema"
