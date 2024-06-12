@@ -1,0 +1,107 @@
+name: mixs
+description: >-
+  This file contains a YAML-formatted specification of the Minimum Information about any (x) Sequence (MIxS) standard, generated using LinkML (https://linkml.io/linkml/). This file is released by the Genomic Standards Consortium (GSC; https://www.gensc.org/) for use by anyone handling data or information about biological sequences. This file is also used as an authoritative 'source of truth' to generate downstream GSC artifacts, available here: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/project
+comments:
+  - "slot titles that are associated with more than one slot name/SCN: host sex"
+source: https://github.com/GenomicsStandardsConsortium/mixs/raw/issue-610-temp-mixs-xlsx-home/mixs/excel/mixs_v6.xlsx
+id: https://w3id.org/mixs
+version: v6.2.0
+imports:
+  - linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  MIXS: https://w3id.org/mixs/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  shex: http://www.w3.org/ns/shex#
+  schema: http://schema.org/
+default_prefix: MIXS
+default_range: string
+subsets:
+  combination_classes:
+  sequencing:
+  environment:
+  nucleic acid sequence source:
+  investigation:
+enums:
+  Strandedness:
+    permissible_values:
+      single:
+      double:
+slots:
+  ancient_data:
+    description: Data that comply with Extension Ancient
+    title: Ancient data
+    domain: MixsCompliantData
+    slot_uri: MIXS:ancient_data
+    multivalued: true
+    range: Ancient
+    inlined: true
+    inlined_as_list: true
+  strandedness:
+    annotations:
+      Expected_value: enumeration
+    description: Specify whether the constructed library is from single or double stranded DNA
+    title: strandedness of dna library
+    examples:
+      - value: single
+    keywords:
+      - method
+      - sequencing
+    range: strandedness
+    slot_uri: MIXS:9999901
+    required: true
+classes:
+  Ancient:
+    description: >-
+      A collection of terms appropriate when collecting samples and sequencing samples 
+      of data containing ancient DNA, i.e., degraded molecules not from living organisms.
+    comments:
+      - This extension that is intended to be used in very specific cases but almost always in conjunction with other MIxS checklists and extensions.
+        It does not therefore (currently) include additional common terms from checklists.
+    title: ancient
+    is_a: Extension
+    slots:
+      - strandedness
+      - collection_context_name
+      - cultural_era
+      - damage_treatment
+      - dna_extraction_date
+      - ethical_authority
+      - ethical_date
+      - ethical_id
+      - experimental_procedures
+      - lib_concentration
+      - lib_index_polymerase
+      - lib_preparation_protocol
+      - lib_reamplification_polymerase
+      - lib_type
+      - neg_cont_status
+      - num_capture_reamp_cycles
+      - num_reamp_cycles
+      - preservational_treatment
+      - prev_pubs
+      - recovery_date
+      - samp_decontam_pretreat
+      - sample_age
+      - sample_age_inference_methods
+      - sample_alt_lab_ids
+      - site_type
+      - storage_conditions
+    slot_usage:
+      strandedness:
+        required: true
+      cultural_era:
+        recommended: true
+    class_uri: MIXS:9999903
+    annotations:
+      use_cases: ancient dna samples
+settings:
+  country: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  parameters: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  region: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  room_name: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  software: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  specific_location: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  storage_condition_type: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  termLabel: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
+  unit: ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)
