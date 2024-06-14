@@ -23,14 +23,8 @@ subsets:
   nucleic acid sequence source:
   investigation:
 enums:
-  ## EXAMPLE #############
-  example:
-    permissible_values:
-      one:
-      two:
-  #######################
   DamageTreatmentEnum:
-    permissable_values:
+    permissible_values:
       none:
       partial-udg:
       full-udg:
@@ -50,31 +44,6 @@ slots:
     range: Ancient
     inlined: true
     inlined_as_list: true
-  ## TEMPLATE #########################
-  example:
-    annotations:
-      Expected_value: measurement value or measurement value range
-      Preferred_unit: meter
-    description: example entry
-    title: Example entry with all relevant LinkML slot entries
-    examples:
-      - value: example m
-    in_subset:
-      - sequencing
-    keywords:
-      - example
-    string_serialization: "{float}-{float} {unit}"
-    slot_uri: MIXS:999999999
-    multivalued: true
-    range: float ## or name of defined enum as above
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
-    structured_pattern:
-      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
-      interpolated: true
-      partial_match: true
-    required: true
-    recommended: true
-  ###########################
   collection_context_name:
     annotations:
       Expected_value: name of institution
@@ -247,7 +216,7 @@ slots:
     range: string
     required: false
     recommended: true
-  lib_preparation_protocols:
+  lib_preparation_protocol:
     description: >-
       Citation(s) for the DNA library preparation protocol
     title: library preparation protocols
@@ -341,7 +310,7 @@ slots:
       - value: "stored in formalin"
     in_subset:
       - nucleic acid sequence source
-    keyword:
+    keywords:
       - ancient
     slot_uri: MIXS:999999914
     multivalued: true
@@ -470,6 +439,12 @@ slots:
     range: string
     string_serialization: "{text}"
 classes:
+  Extension:
+    description:
+      A collection of recommended metadata terms (slots) developed by community
+      experts, describing the specific context under which a sample was collected.
+    aliases:
+      - EnvironmentalPackage
   Ancient:
     description: >-
       A collection of terms appropriate when collecting samples and sequencing samples 
