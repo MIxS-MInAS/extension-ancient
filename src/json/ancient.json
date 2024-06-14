@@ -1,0 +1,192 @@
+{
+    "$defs": {
+        "Ancient": {
+            "additionalProperties": false,
+            "description": "A collection of terms appropriate when collecting samples and sequencing samples  of data containing ancient DNA, i.e., degraded molecules not from living organisms.",
+            "properties": {
+                "collection_context_name": {
+                    "description": "Name of where sample originated and is typically stored. Typically will be 'owning institution'.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cultural_era": {
+                    "description": "The cultural era approximating the period in which the individual  lived from https://chronontology.dainst.org/ or PeriodO.  Specify when no value for 'sample_age' is present, or additionally  to it.",
+                    "type": "string"
+                },
+                "damage_treatment": {
+                    "description": "Indication of whether characteristic ancient DNA damage has been  enzymatically or chemically removed in a laboratory",
+                    "items": {
+                        "$ref": "#/$defs/DamageTreatmentEnum"
+                    },
+                    "type": "array"
+                },
+                "dna_extraction_date": {
+                    "description": "The date when the nucleic acids was extracted from the sample  material. In case no exact time is available, the date can be  right truncated i.e. all of these are valid times:  2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10;  2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "ethical_authority": {
+                    "description": "Name of the authority or institution that awarded sampling and  analysis (e.g. human remains) and/or export permission  (e.g. animal remains)",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "ethical_date": {
+                    "description": "Date of award of ethical/export permission. The date can be right truncated  i.e. all of these are valid times: 2008-01-23; 2008-01; 2008;  Except: 2008-01; 2008 all are ISO8601 compliant",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "ethical_id": {
+                    "description": "The permissions code(s) or ID(s) provided by the authority associated with  approval of the analysis of this particular sample",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "experimental_procedures": {
+                    "description": "Provide a DOI or URL to refer to the paper where the nucleic acid extraction,  library construction, and other procedures are explained in more details",
+                    "items": {
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "lib_concentration": {
+                    "description": "Concentration of library in copies per \u00b5l, as inferred by qPCR",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "lib_index_polymerase": {
+                    "description": "The of DNA polymerase enzyme used for indexing DNA libraries",
+                    "type": "string"
+                },
+                "lib_preparation_protocol": {
+                    "description": "Citation(s) for the DNA library preparation protocol",
+                    "items": {
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "lib_reamplification_polymerase": {
+                    "description": "The name of polymerase enzyme used for reamplifying DNA libraries",
+                    "type": "string"
+                },
+                "lib_type": {
+                    "$ref": "#/$defs/LibTypeEnum",
+                    "description": "The type of library created. Amplicon based or non-amplicon based.  Amplicon based, is a library that result in rather short DNA fragments  while non-amplicon-based refers to non targeted approach."
+                },
+                "neg_cont_status": {
+                    "description": "Specify whether the sample is a negative control or not.",
+                    "type": "boolean"
+                },
+                "num_capture_reamp_cycles": {
+                    "description": "Number of amplification cycles after capture enrichment",
+                    "type": "integer"
+                },
+                "num_reamp_cycles": {
+                    "description": "Number of amplification cycles after library indexing PCR",
+                    "type": "integer"
+                },
+                "preservational_treatment": {
+                    "description": "Description of any treatment applied to samples for the purpose of  maximising collection preservation that may influence downstream  DNA recovery or library construction, such as storage fluid or  reconstructive glue",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "prev_pubs": {
+                    "description": "Any publications that report data from the same body/skeleton/individual",
+                    "items": {
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "recovery_date": {
+                    "description": "Date of excavation or retrieval from burial or depositional context,  if known",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "samp_decontam_pretreat": {
+                    "description": "Method(s) employed for surface decontamination of samples of external  modern DNA; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
+                    "items": {
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "sample_age": {
+                    "description": "The approximate date that individual was living and then died, or the  sample was exposed to the  surface. Typically inferred from archaeological  material, or biological material associated with a sediment, with  radiocarbon dating and other chronometric methods. Should be midpoint of  calibrated radiocarbon age.",
+                    "type": "string"
+                },
+                "sample_age_inference_methods": {
+                    "description": "The method used to infer the sample age. Method (14C, OLS, etc.)  and associated information (lab code, etc).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "sample_alt_lab_ids": {
+                    "description": "Any alternate sample IDs used in by the research group publishing the  paper or other groups. If known.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "site_type": {
+                    "description": "The type of site the sediment cores where taken. E.g. ocean, marine,  freshwater, brackish, ice caves, caves.",
+                    "type": "string"
+                },
+                "storage_conditions": {
+                    "description": "General conditions in which the sample was stored in long-term collection storage, that may influenced DNA recovery or library construction. For  example, specify temperature, humidity, presence of microbial overgrowth  etc..",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "damage_treatment"
+            ],
+            "title": "Ancient",
+            "type": "object"
+        },
+        "DamageTreatmentEnum": {
+            "description": "",
+            "enum": [
+                "none",
+                "partial-udg",
+                "full-udg",
+                "enriched",
+                "other"
+            ],
+            "title": "DamageTreatmentEnum",
+            "type": "string"
+        },
+        "Extension": {
+            "additionalProperties": false,
+            "description": "A collection of recommended metadata terms (slots) developed by community experts, describing the specific context under which a sample was collected.",
+            "title": "Extension",
+            "type": "object"
+        },
+        "LibTypeEnum": {
+            "description": "",
+            "enum": [
+                "amplicon",
+                "shotgun"
+            ],
+            "title": "LibTypeEnum",
+            "type": "string"
+        }
+    },
+    "$id": "https://w3id.org/mixs",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "mixs",
+    "type": "object",
+    "version": "v6.2.0"
+}
