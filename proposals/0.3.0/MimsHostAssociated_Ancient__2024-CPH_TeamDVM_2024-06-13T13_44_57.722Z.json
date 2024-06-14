@@ -1,0 +1,292 @@
+{
+  "modifiedData": [
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Updated definition based on Eurac on 2024-08-03"
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "collection_date",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "collection date",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+        "modified": "The time of subsampling, either as an instance (single point in time) or interval, in which case the material was sampled with the purpose of generating sequence data. If no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant"
+      },
+      "Expected value": {
+        "original": "date and time",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{timestamp}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "2018-05-11T10:00:00+01:00; 2018-05-11",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "1",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000011",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Updated definition based on MPI-EVA Pathogens (2023-07-19) and Eurac (2024-08-03)"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sample_alt_lab_ids",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "alternative sample IDs",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Any alternate sample IDs used in by the research group publishing the paper or other groups. If known.",
+        "modified": "Any alternative sample or material IDs related to the sample not covered by samp_name and source_mat_id."
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "ABC_24",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "1",
+        "modified": "m"
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Updated definition and example fields based on feedback from MPI-EVA Pathogens on 2023-07-19"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "storage_conditions",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "conditions of sample storage",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "General conditions in which the sample was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
+        "modified": "General conditions in which the sample was stored in long-term collection storage, that may influenced DNA recovery or library construction since recovery_date. If known,  specify physical conditions, such as temperature, humidity, presence of microbial overgrowth etc. If storage conditions varied, specify if known"
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Climate-controlled",
+        "modified": "Climate-controlled / Stored in the museum from recovery_date to collection_date / Stored at -20C until dna_extraction_date "
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "1",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Updated structured comment name, item, definition and occurrence fields based on feedback from MPI-EVA Pathogens on 2023-07-19"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "collection_context_name",
+        "modified": "mat_host_name"
+      },
+      "Item (rdfs:label)": {
+        "original": "context name where location was collected",
+        "modified": "Host of the material"
+      },
+      "Definition": {
+        "original": "Name of where sample originated and is typically stored. Typically will be 'owning institution'",
+        "modified": "Name of where sample is typically curated and/or stored. Typically will be 'owning institution'"
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Natural History London",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "1",
+        "modified": "m"
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Updated definition, example and requirement level fields based on feedback from ACAD (2024-04-08), Eurac (2024-03-08), SPAAMTisch (2024-05-06)"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "cultural_era",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO. Specify when no value for 'sample_age' is present, or additionally to it.",
+        "modified": "The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible. Specify when no value for 'sample_age' is present, or additionally to it. If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/)."
+      },
+      "Expected value": {
+        "original": "Chronotology or PeriodO term; text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}|{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Copper Age [Chronotology: NW6hofAScJSE]",
+        "modified": "Copper Age [Chronotology: NW6hofAScJSE] / Not collected / Not applicable"
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": "M"
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "m",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    }
+  ],
+  "miscellaneous": {
+    "sessionInfo": "2024-CPH",
+    "additionalInfo": [
+      {
+        "name": "Deon",
+        "email": "dejager4@gmail.com"
+      },
+      {
+        "name": "Mikkel",
+        "email": "mwpedersen@sund.ku.dk"
+      },
+      {
+        "name": "Victor",
+        "email": "yan.kin.lee@sund.ku.dk"
+      }
+    ],
+    "timestamp": "2024-06-13T13_44_57.722Z"
+  }
+}

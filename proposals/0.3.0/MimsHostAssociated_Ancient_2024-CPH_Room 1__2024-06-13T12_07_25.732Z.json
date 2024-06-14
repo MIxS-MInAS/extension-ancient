@@ -1,0 +1,230 @@
+{
+  "modifiedData": [
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_common_name",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "host common name",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Common name of the host.",
+        "modified": "Common name of the host, matching NCBI Taxonomy id."
+      },
+      "Expected value": {
+        "original": "common name",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "human",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": "M"
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sample_age",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The approximate date that individual was living and then died, or the sample was exposed to the  surface. Typically inferred from archaeological material, or biological material associated with a sediment, with radiocarbon dating and other chronometric methods. Should be midpoint of calibrated radiocarbon age.",
+        "modified": "The approximate date or data range that individual was living and then died, or the sample was exposed to the  surface. Typically inferred from archaeological material, or biological material associated with a sediment, with radiocarbon dating and other chronometric methods. Should be midpoint of calibrated radiocarbon age. "
+      },
+      "Expected value": {
+        "original": "value from BP (1950)",
+        "modified": "value or range from BP (1950)"
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": "{integer}|{integer-integer}"
+      },
+      "Example": {
+        "original": "123440",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": "M"
+      },
+      "Preferred unit": {
+        "original": "cal BP",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sample_age_inference_methods",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The method used to infer the sample age. Method (14C, OLS, etc.) and associated information (lab code, etc). An enumerated list with age/depths model, corralative (relative dating), annual lamination, pollen records, diatom records, physical observation, etc.",
+        "modified": "The method used to infer the sample age. Method (14C, OLS, stratographic inference, etc.) and associated information (lab code, etc). An enumerated list with age/depths model, corralative (relative dating), annual lamination, pollen records, diatom records, physical observation, etc."
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "???",
+        "modified": ""
+      },
+      "Example": {
+        "original": "C14",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "experimental_procedures",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Provide a DOI to refer to the paper where the procedure is explained in more details",
+        "modified": "Provide a DOI to refer to the paper where all laboratory  procedures and/or field reports are explained in more detail e.g. the paper reporting the data."
+      },
+      "Expected value": {
+        "original": "PMID, DOI or URL",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    }
+  ],
+  "miscellaneous": {
+    "sessionInfo": "Room 1",
+    "additionalInfo": [
+      {
+        "name": "Kevin Daly",
+        "email": "kevin@palaeome.org"
+      }
+    ],
+    "timestamp": "2024-06-13T12_07_25.732Z"
+  }
+}

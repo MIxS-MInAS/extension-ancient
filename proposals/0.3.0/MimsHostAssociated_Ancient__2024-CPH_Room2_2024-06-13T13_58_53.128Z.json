@@ -1,0 +1,458 @@
+{
+  "modifiedData": [
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "env_broad_scale",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "broad-scale environmental context",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "The major environment type(s) where the sample was collected. Recommend subclasses of biome [ENVO:00000428]. Multiple terms can be separated by one or more pipes.",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "oceanic epipelagic zone biome [ENVO:01000033] for annotating a water sample from the photic zone in middle of the Atlantic Ocean",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "env_local_scale",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "local environmental context",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS. ",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "Environmental entities having causal influences upon the entity at time of sampling.",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "litter layer [ENVO:01000338]; Annotating a pooled sample taken from various vegetation layers in a forest consider: canopy [ENVO:00000047]|herb and fern layer [ENVO:01000337]|litter layer [ENVO:01000338]|understory [01000335]|shrub layer [ENVO:01000336].",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Made this field mandatory, and to not only include sediment cores. Make the mims env_local_scale and env_medium optional, but leave env_broad_scale mandatory. Terms for local environment and medium are confusing and/or we don't always have that info (older excavations)."
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "site_type",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The type of site the sediment cores where taken. E.g. ocean, marine, freshwater, brackish, ice caves, caves.",
+        "modified": "The type of site the sample was taken. E.g. settlement, burial, midden, marine, freshwater, brackish, (ice) caves."
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "cave",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "E",
+        "modified": "M"
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_index_polymerase",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The name of polymerase enzyme used to index DNA libraries",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Agilent PfuTurbo Cx HotStart",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Add extra row before ethical_authority which is mandatory. Something along the lines of ethical_statement,  explaining whether or not ethical approval was needed."
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ethical_authority",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "ethical authority",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name of the authority or institution that awarded sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains)",
+        "modified": "Name of the authority or institution that awarded sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains). "
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Federal Foreign Office (Germany)",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Double \"date\" has been fixed"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ethical_date",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "date of ethical approval date",
+        "modified": "date of ethical approval"
+      },
+      "Definition": {
+        "original": "Date of award of ethical/export permission. The date can be right truncated i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "date",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{timestamp}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "2018-05-11T10:00:00+01:00; 2018-05-11",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "To give the opportunity to provide documents, letters etc. Another comment/feedback refers to distinguishing between academic and social-cultural permission, we think this should be discussed with a wider group of people. We think it's important to have this incorporated, but not sure in what format."
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ethical_id",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "ethical permit/approval ID",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The permissions code or ID provided by the authority associated with approval of the analysis of this particular sample",
+        "modified": "The permissions code, ID, document or similar provided by the authority associated with approval of the analysis of this particular sample."
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": "text, PMID, DOI or URL"
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": "{PMID}|{DOI}|{URL}|{text}"
+      },
+      "Example": {
+        "original": "DE-123-JK",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Pre-lab storage: 1. Clarify storage_conditions refers to the collection.2. Make samp_store_temp part of ancient (rather than hostassociated). 3. Bone sample/powder (after sampling)Lab storageAdd two extra terms: 1. DNA extract2. library"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "storage_conditions",
+        "modified": ""
+      },
+      "Item (rdfs:label)": {
+        "original": "conditions of sample storage",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "General conditions in which the sample was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
+        "modified": "General conditions in which the material (before sampling) was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc.."
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Climate-controlled",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Occurence": {
+        "original": "",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "",
+        "modified": ""
+      }
+    }
+  ],
+  "miscellaneous": {
+    "sessionInfo": "2024-CPH",
+    "additionalInfo": [
+      {
+        "name": "Meriam van Os",
+        "email": "meriam.vanos@postgrad.otago.ac.nz"
+      },
+      {
+        "name": "Heike Zimmermann",
+        "email": "hz@geus.dk"
+      },
+      {
+        "name": "Marica Baldoni",
+        "email": "marica.baldoni@gmail.com"
+      },
+      {
+        "name": "Kristiina Tambets",
+        "email": "kristiina.tambets@ut.ee"
+      }
+    ],
+    "timestamp": "2024-06-13T13_58_53.128Z"
+  }
+}
