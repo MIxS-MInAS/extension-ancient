@@ -29,3 +29,21 @@ And run the following command, assuming root of repo:
 ```bash
 gen-json-schema src/yaml/ancient.yml > src/json/ancient.json
 ```
+
+<!--
+
+## Yaml mergeing
+
+2031 yq -s '.[0] \* .[1]' /home/james/git/mixs-minas/mixs/src/mixs/schema/mixs.yaml ancient.yml > test.yml
+2032 less test.yml
+2033 cat test.yml | grep ancient
+2034 cat test.yml | grep cultural_era
+2035 cat test.yml | grep -n cultural_era
+2036 cat test.yml | grep -n ancient
+2037 less test.yml
+2038 less -n test.yml
+2039 less --help
+2040 less -n test.yml
+2041 gen-summary test.yml
+2042 history
+-->
