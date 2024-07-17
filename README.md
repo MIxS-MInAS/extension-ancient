@@ -4,7 +4,7 @@ A MIxS extension proposal for 'ancient DNA' samples.
 
 ## Repository Structure
 
-The repo is layed out as follows:
+The repo is laid out as follows:
 
 - `feedback/`
   - `<date>-<eventid>`: contains collated tables from community feedback sessions
@@ -18,7 +18,7 @@ The repo is layed out as follows:
 
 Use the YAML (in as far as possible similar format as MIxS LinkML structure) as the source of truth.
 
-To generate the JSON version, install linkml
+To generate the JSON version, install LinkML
 
 ```bash
 pip install linkml
