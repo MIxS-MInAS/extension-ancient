@@ -4,6 +4,13 @@
             "additionalProperties": false,
             "description": "A collection of terms appropriate when collecting samples and sequencing samples  of data containing ancient DNA, i.e., degraded molecules not from living organisms.",
             "properties": {
+                "biocultural_label": {
+                    "description": "Relevant biocultural labels that apply to the sample under study, based on https://localcontexts.org/label/bc-provenance/. These help indicate how indigenous peoples and similar communities view in which contexts this data can be reused.",
+                    "items": {
+                        "$ref": "#/$defs/BioCulturalLabel"
+                    },
+                    "type": "array"
+                },
                 "collection_context_name": {
                     "description": "Name of where sample originated and is typically stored. Typically will be 'owning institution'.",
                     "items": {
@@ -12,7 +19,7 @@
                     "type": "array"
                 },
                 "cultural_era": {
-                    "description": "The cultural era approximating the period in which the individual  lived from https://chronontology.dainst.org/ or PeriodO.  Specify when no value for 'sample_age' is present, or additionally  to it.",
+                    "description": "The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible. Specify when no value for 'sample_age' is present, or additionally to it. If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/).",
                     "type": "string"
                 },
                 "damage_treatment": {
@@ -23,7 +30,7 @@
                     "type": "array"
                 },
                 "dna_extraction_date": {
-                    "description": "The date when the nucleic acids was extracted from the sample  material. In case no exact time is available, the date can be  right truncated i.e. all of these are valid times:  2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10;  2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+                    "description": "The date when the nucleic acid extraction was started from the sample material. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
                     "format": "date-time",
                     "type": "string"
                 },
@@ -40,22 +47,33 @@
                     "type": "string"
                 },
                 "ethical_id": {
-                    "description": "The permissions code(s) or ID(s) provided by the authority associated with  approval of the analysis of this particular sample",
+                    "description": "The permissions code, ID, document, or similar provided by any authority  (socal, legal, academic etc.) associated with approval of the analysis of  this particular sample.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "ethics_perm_scope": {
+                    "description": "Description of the original scope and permissions of the research on the genetic material, as was approved by the ethical authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed).",
                     "items": {
                         "type": "string"
                     },
                     "type": "array"
                 },
                 "experimental_procedures": {
-                    "description": "Provide a DOI or URL to refer to the paper where the nucleic acid extraction,  library construction, and other procedures are explained in more details",
+                    "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
                     "items": {
                         "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
                     "type": "array"
                 },
+                "host_body_preservation_state": {
+                    "description": "Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment, e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.",
+                    "type": "string"
+                },
                 "lib_concentration": {
-                    "description": "Concentration of library in copies per \u00b5l, as inferred by qPCR",
+                    "description": "Concentration of library in ng per \u00b5l, as inferred by qPCR/Qubit/etc.",
                     "items": {
                         "type": "string"
                     },
@@ -74,24 +92,45 @@
                     "type": "array"
                 },
                 "lib_reamplification_polymerase": {
-                    "description": "The name of polymerase enzyme used for reamplifying DNA libraries",
+                    "description": "The name of polymerase enzyme used for reamplifying DNA libraries post-indexing.",
                     "type": "string"
+                },
+                "lib_strandedness": {
+                    "description": "The strandedness of the original template DNA molecules used for constructing the sequencing library",
+                    "items": {
+                        "$ref": "#/$defs/LibStrand"
+                    },
+                    "type": "array"
                 },
                 "lib_type": {
                     "$ref": "#/$defs/LibTypeEnum",
-                    "description": "The type of library created. Amplicon based or non-amplicon based.  Amplicon based, is a library that result in rather short DNA fragments  while non-amplicon-based refers to non targeted approach."
+                    "description": "The type of library created, i.e., amplicon based or shotgun.  Amplicon based, is a library targets a specific region or regions of a genome (e.g. microbial genome capture based on baits of a reference genome), while shotgun refers to non targeted approach."
+                },
+                "mid_config": {
+                    "description": "Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "neg_cont_status": {
                     "description": "Specify whether the sample is a negative control or not.",
                     "type": "boolean"
                 },
-                "num_capture_reamp_cycles": {
+                "num_capture_amp_cycles": {
                     "description": "Number of amplification cycles after capture enrichment",
-                    "type": "integer"
+                    "items": {
+                        "type": "integer"
+                    },
+                    "type": "array"
                 },
                 "num_reamp_cycles": {
-                    "description": "Number of amplification cycles after library indexing PCR",
+                    "description": "Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.",
                     "type": "integer"
+                },
+                "palaeopath_status": {
+                    "description": "Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.",
+                    "type": "string"
                 },
                 "preservational_treatment": {
                     "description": "Description of any treatment applied to samples for the purpose of  maximising collection preservation that may influence downstream  DNA recovery or library construction, such as storage fluid or  reconstructive glue",
@@ -108,8 +147,15 @@
                     },
                     "type": "array"
                 },
+                "probe_set": {
+                    "description": "Description of target enrichment probe designs used (e.g. sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
                 "recovery_date": {
-                    "description": "Date of excavation or retrieval from burial or depositional context,  if known",
+                    "description": "Date of excavation or retrieval from burial or depositional context, if known. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. If excavations were done during a longer period, report its midpoint at a month or year level.",
                     "format": "date-time",
                     "type": "string"
                 },
@@ -122,37 +168,52 @@
                     "type": "array"
                 },
                 "sample_age": {
-                    "description": "The approximate date that individual was living and then died, or the  sample was exposed to the  surface. Typically inferred from archaeological  material, or biological material associated with a sediment, with  radiocarbon dating and other chronometric methods. Should be midpoint of  calibrated radiocarbon age.",
+                    "description": "The approximate date or date range that individual or organism was living and then died, or the  sample was exposed to the  surface. Typically inferred from archaeological  material, or biological material associated with a sediment, with  radiocarbon dating and other chronometric methods. Should be midpoint of  calibrated radiocarbon age.",
                     "type": "string"
                 },
                 "sample_age_inference_methods": {
-                    "description": "The method used to infer the sample age. Method (14C, OLS, etc.)  and associated information (lab code, etc).",
+                    "description": "The method used to infer the sample age. Method (14C, OLS, stratigraphic inference etc.)  and associated information (lab code, etc).",
                     "items": {
                         "type": "string"
                     },
                     "type": "array"
                 },
                 "sample_alt_lab_ids": {
-                    "description": "Any alternate sample IDs used in by the research group publishing the  paper or other groups. If known.",
+                    "description": "Any alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample.",
                     "items": {
                         "type": "string"
                     },
                     "type": "array"
                 },
-                "site_type": {
-                    "description": "The type of site the sediment cores where taken. E.g. ocean, marine,  freshwater, brackish, ice caves, caves.",
-                    "type": "string"
-                },
                 "storage_conditions": {
-                    "description": "General conditions in which the sample was stored in long-term collection storage, that may influenced DNA recovery or library construction. For  example, specify temperature, humidity, presence of microbial overgrowth  etc..",
+                    "description": "General conditions in which the material (before sampling for DNA analysis) was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
                     "type": "string"
                 }
             },
             "required": [
-                "damage_treatment"
+                "cultural_era",
+                "damage_treatment",
+                "sample_age"
             ],
             "title": "Ancient",
             "type": "object"
+        },
+        "BioCulturalLabel": {
+            "description": "",
+            "enum": [
+                "BC P",
+                "BC MC",
+                "BC CL",
+                "BC CV",
+                "BC CNV",
+                "BC R",
+                "BC CB",
+                "BC OC",
+                "BC O",
+                "BC NC"
+            ],
+            "title": "BioCulturalLabel",
+            "type": "string"
         },
         "DamageTreatmentEnum": {
             "description": "",
@@ -171,6 +232,15 @@
             "description": "A collection of recommended metadata terms (slots) developed by community experts, describing the specific context under which a sample was collected.",
             "title": "Extension",
             "type": "object"
+        },
+        "LibStrand": {
+            "description": "",
+            "enum": [
+                "single",
+                "double"
+            ],
+            "title": "LibStrand",
+            "type": "string"
         },
         "LibTypeEnum": {
             "description": "",
