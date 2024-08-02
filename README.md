@@ -16,6 +16,24 @@ The repo is laid out as follows:
 - `src/`
   - `mixs/`: contains the structured YAML and JSON files of the latest release of the extension
 
+## Update workflows
+
+1. Gather all feedback from feedback sessions (`feedback/`) and development workshops (`proposals/<upcoming_version>`) in the forms of JSONs
+2. Coordination team makes two branch and associated PRs:
+  - `<upcoming version>-termupdates`
+  - `<upcoming version>-newterms`
+3. Update existing terms and add new terms in/to the `src/mixs/schema/ancient.yaml` file on the two branches, as per the aggregated feedback under `proposals/`
+  - Important: try to make one commit for each new term, and each term update (all changes to all entries for a given term in one), this will allow us further automate release notes
+4. Coordination team cross-reviews the two PRs and merge in
+5. Generate additional JSON and TSV files based on instructions on technical notes
+  - The YAML -> JSON conversion will include LinkML schema validation, so additional correction PRs made be required at this point!
+6. Make a release with the following format
+  - Tag: vX.X.X
+  - Title: vX.X.X
+  - Generate release notes
+  - Set as latest
+7. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
+
 ## Technical notes
 
 Use the YAML (in as far as possible similar format as MIxS LinkML structure) as the source of truth.
