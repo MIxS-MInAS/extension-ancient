@@ -629,7 +629,7 @@ classes:
       - sample_alt_lab_ids
       - site_type
       - storage_conditions
-        - palaeopath_status
+      - palaeopath_status
       - biocultural_label
       - ethics_perm_scope
       - host_body_preservation_state
