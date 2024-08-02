@@ -418,6 +418,8 @@ slots:
     title: storage conditions
     examples:
       - value: "climate-controlled"
+      - value: "Stored in the museum from recovery_date to collection_date"
+      - value: "Stored at -20oC until dna_extraction_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999922
