@@ -27,7 +27,7 @@ The repo is laid out as follows:
     - Important: try to make one commit for each new term and term update, with a descriptive message as to the change.
     - For each term, all changes to (description, examples, etc.) should be in one commit and described in the commit message (this will allow us further automate release notes)
 5. Coordination team cross-reviews the two PRs and merge in
-6. Generate additional JSON and TSV files based on instructions on technical notes
+6. In a new PR, generate additional JSON and TSV files based on instructions on technical notes (containing all changes/new terms)
     - The YAML -> JSON conversion will include LinkML schema validation, so additional correction PRs made be required at this point!
 7. Make a release with the following format
     - Tag: vX.X.X
