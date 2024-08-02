@@ -547,7 +547,7 @@ slots:
       Description of target enrichment probe designs used (e.g. sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
     title: enrichment probe design description
     examples:
-      - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science" 
+      - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science"
       - value: "Commercial kit ABC001-EC from company TE-Science, purchased 2020"
     in_subset:
       - sequencing
@@ -579,7 +579,7 @@ slots:
     range: string
     string_serialization: "{text}"
     required: false
-    recommended: true    
+    recommended: true
 classes:
   Extension:
     description:
@@ -620,7 +620,6 @@ classes:
       - sample_age
       - sample_age_inference_methods
       - sample_alt_lab_ids
-      - site_type
       - storage_conditions
       - palaeopath_status
       - biocultural_label
