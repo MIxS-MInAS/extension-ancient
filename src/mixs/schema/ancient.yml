@@ -168,8 +168,8 @@ slots:
     recommended: true
   experimental_procedures:
     description: >-
-      Provide a DOI or URL to refer to the paper where the nucleic acid extraction, 
-      library construction, and other procedures are explained in more details
+      Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction, 
+      library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.
     title: experimental procedures
     examples:
       - value: doi:10.1093/nar/gkr771
@@ -368,26 +368,27 @@ slots:
       partial_match: true
   sample_age:
     annotations:
+      Expected_value: value or range starting from from BP (1950)
       Preferred_unit: in years before present (BP) or (BCE/CE)
     description: >-
-      The approximate date that individual was living and then died, or the 
+      The approximate date or date range that individual was living and then died, or the 
       sample was exposed to the  surface. Typically inferred from archaeological 
       material, or biological material associated with a sediment, with 
       radiocarbon dating and other chronometric methods. Should be midpoint of 
       calibrated radiocarbon age.
     title: sample age
     examples:
-      - value: "100000 BP"
-      - value: "1700 AD"
+      - value: "100000"
+      - value: "1700"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:9999999918
-    string_serialization: "{integer} {unit}"
-    required: false
+    string_serialization: "{integer}|{integer}-{integer}"
+    required: true
     recommended: true
   sample_age_inference_methods:
     description: >-
-      The method used to infer the sample age. Method (14C, OLS, etc.) 
+      The method used to infer the sample age. Method (14C, OLS, stratigraphic inference etc.) 
       and associated information (lab code, etc).
     title: sample age inference methods
     examples:
