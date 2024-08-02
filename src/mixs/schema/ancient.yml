@@ -474,6 +474,7 @@ slots:
     slot_uri: MIXS:999999905 #Not assigned
     multivalued: false
     range: string
+    string_serialization: "{text}"
     required: false
     recommended: true
   biocultural_label:
@@ -509,6 +510,7 @@ slots:
     slot_uri: MIXS:999999905 #Not assigned
     multivalued: true
     range: string
+    string_serialization: "{text}"
     required: false
     recommended: true
   host_body_preservation_state:
@@ -528,6 +530,7 @@ slots:
     slot_uri: MIXS:999999905 #Not assigned
     multivalued: false
     range: string
+    string_serialization: "{text}"
     required: false
     recommended: true
   lib_strandedness:
@@ -566,6 +569,7 @@ slots:
     slot_uri: MIXS:999999905 #Not assigned
     multivalued: true
     range: string
+    string_serialization: "{text}"
     required: false
     recommended: true
   mid_config:
@@ -585,6 +589,7 @@ slots:
     slot_uri: MIXS:999999905 #Not assigned
     multivalued: true
     range: string
+    string_serialization: "{text}"
     required: false
     recommended: true    
 classes:
