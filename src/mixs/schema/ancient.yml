@@ -415,10 +415,7 @@ slots:
     string_serialization: "{text}"
   storage_conditions:
     description: >-
-      General conditions in which the sample was stored in long-term collection
-      storage, that may influenced DNA recovery or library construction. For 
-      example, specify temperature, humidity, presence of microbial overgrowth 
-      etc..
+      General conditions in which the material (before sampling for DNA analysis) was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
     title: storage conditions
     examples:
       - value: "climate-controlled"
