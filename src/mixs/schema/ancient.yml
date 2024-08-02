@@ -571,7 +571,7 @@ slots:
     range: string
     string_serialization: "{text}"
     required: false
-    recommended: true
+    recommended: false
   mid_config:
     annotations:
       Expected_value: name of authority providing ethical approval
