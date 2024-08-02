@@ -10,13 +10,17 @@ The repo is laid out as follows:
   - `<date>-<eventid>`: contains collated tables from community feedback sessions
 - `proposals/`
   - `<upcoming version>`: contains consensus term update proposals for inclusion in the next version of the standard
+- `project/`:
+  - `class-model-tsvs/`: contains MIxS <= v5 style TSVs for the extension for more-human readable inspection
+- `scripts/`: contains various helper scripts for processing JSON, YAML, and feedback data where necessary
 - `src/`
-  - `yaml/`: contains the structured YAML files of the latest release of the extension
-  - `json/`: contains the structured JSON files of the latest release the extension
+  - `mixs/`: contains the structured YAML and JSON files of the latest release of the extension
 
 ## Technical notes
 
 Use the YAML (in as far as possible similar format as MIxS LinkML structure) as the source of truth.
+
+### JSON Conversion
 
 To generate the JSON version, install LinkML
 
@@ -27,23 +31,19 @@ pip install linkml
 And run the following command, assuming root of repo:
 
 ```bash
-gen-json-schema src/yaml/ancient.yml > src/json/ancient.json
+gen-json-schema src/mixs/schema/ancient.yml > src/mixs/schema/ancient.json
 ```
 
-<!--
+### MIxS TSV Style Conversion
 
-## Yaml mergeing
+To convert to the original MIxS TSV style, we can use [a script](https://github.com/GenomicsStandardsConsortium/mixs/blob/dd1a08f82637e80657f00b4551547a9b4b62c0d3/src/scripts/linkml2class_tsvs.py) developed by @TurboMam.
 
-2031 yq -s '.[0] \* .[1]' /home/james/git/mixs-minas/mixs/src/mixs/schema/mixs.yaml ancient.yml > test.yml
-2032 less test.yml
-2033 cat test.yml | grep ancient
-2034 cat test.yml | grep cultural_era
-2035 cat test.yml | grep -n cultural_era
-2036 cat test.yml | grep -n ancient
-2037 less test.yml
-2038 less -n test.yml
-2039 less --help
-2040 less -n test.yml
-2041 gen-summary test.yml
-2042 history
--->
+This script has been copied and modified very slightly to include the `python3` shebang, and is placed under `scripts` until properly packaged for the MIxS project.
+
+To use this script, you only need `python3` and no other dependencies (it seems).
+
+In the root of this directory run:
+
+```bash
+./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir src/tsv/
+```
