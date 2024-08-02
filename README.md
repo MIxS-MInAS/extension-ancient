@@ -32,7 +32,7 @@ The repo is laid out as follows:
 6. Make a release with the following format
    - Tag: vX.X.X
    - Title: vX.X.X
-   - Generate release notes based on a cleaned up `git log --oneline`
+   - Generate release notes based on a cleaned up `git log --oneline` that has the git hash and the informative commit message
    - Set as latest
 7. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 
