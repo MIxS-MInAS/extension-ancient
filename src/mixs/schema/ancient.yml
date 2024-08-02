@@ -476,7 +476,7 @@ slots:
     range: string
     string_serialization: "{text}"
     required: false
-    recommended: true
+    recommended: false
   biocultural_label:
     annotations:
       Expected_value: Relevant biocultural label from https://localcontexts.org/labels/biocultural-labels/
