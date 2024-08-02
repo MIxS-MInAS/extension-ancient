@@ -574,7 +574,7 @@ slots:
     recommended: false
   mid_config:
     annotations:
-      Expected_value: name of authority providing ethical approval
+      Expected_value: Description of the indexing configuration of the library
     description: >-
       Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.
     title: multiplex identifiers or indexing configuration of libraries
