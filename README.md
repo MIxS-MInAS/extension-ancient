@@ -22,17 +22,19 @@ The repo is laid out as follows:
 2. Coordination team makes two branch and associated PRs:
     - `<upcoming version>-termupdates`
     - `<upcoming version>-newterms`
-3. Update existing terms and add new terms in/to the `src/mixs/schema/ancient.yaml` file on the two branches, as per the aggregated feedback under `proposals/`
-    - Important: try to make one commit for each new term, and each term update (all changes to all entries for a given term in one), this will allow us further automate release notes
-4. Coordination team cross-reviews the two PRs and merge in
-5. Generate additional JSON and TSV files based on instructions on technical notes
+3. Update existing terms and add new terms in/to the `src/mixs/schema/ancient.yaml` file on the two branches
+    - Updates as per the aggregated feedback under `proposals/`, but can be evaluated or 'vetoed' for technical reasons
+    - Important: try to make one commit for each new term and term update, with a descriptive message as to the change.
+    - For each term, all changes to (description, examples, etc.) should be in one commit and described in the commit message (this will allow us further automate release notes)
+5. Coordination team cross-reviews the two PRs and merge in
+6. Generate additional JSON and TSV files based on instructions on technical notes
     - The YAML -> JSON conversion will include LinkML schema validation, so additional correction PRs made be required at this point!
-6. Make a release with the following format
+7. Make a release with the following format
     - Tag: vX.X.X
     - Title: vX.X.X
     - Generate release notes
     - Set as latest
-7. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
+8. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 
 ## Technical notes
 
