@@ -278,7 +278,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999911
     range: boolean
-  num_capture_reamp_cycles:
+  num_capture_amp_cycles:
     description: >-
       Number of amplification cycles after capture enrichment
     title: number of reamplification cycles after capture
@@ -288,9 +288,10 @@ slots:
       - sequencing
     slot_uri: MIXS:999999912
     range: integer
+    multivalued: true
   num_reamp_cycles:
     description: >-
-      Number of amplification cycles after library indexing PCR
+      Number of amplification cycles after library indexing PCR. This refers to amplifications prior capture experiments.
     title: number of reamplification cycles
     examples:
       - value: 12
@@ -455,7 +456,7 @@ classes:
       - lib_reamplification_polymerase
       - lib_type
       - neg_cont_status
-      - num_capture_reamp_cycles
+      - num_capture_amp_cycles
       - num_reamp_cycles
       - preservational_treatment
       - prev_pubs
