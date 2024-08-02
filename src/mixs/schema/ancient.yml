@@ -412,18 +412,6 @@ slots:
     multivalued: true
     range: string
     string_serialization: "{text}"
-  site_type:
-    description: >-
-      The type of site the sediment cores where taken. E.g. ocean, marine, 
-      freshwater, brackish, ice caves, caves.
-    title: site type
-    examples:
-      - value: "burial"
-    in_subset:
-      - nucleic acid sequence source
-    slot_uri: MIXS:999999921
-    range: string
-    string_serialization: "{text}"
   storage_conditions:
     description: >-
       General conditions in which the sample was stored in long-term collection
