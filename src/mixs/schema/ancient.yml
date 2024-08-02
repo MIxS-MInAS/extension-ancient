@@ -35,7 +35,7 @@ enums:
     permissible_values:
       amplicon:
       shotgun:
-  BioCultLabel:
+  BioCulturalLabel:
     permissible_values:
       "BC P":
       "BC MC":
