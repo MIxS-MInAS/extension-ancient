@@ -515,7 +515,7 @@ slots:
     recommended: true
   host_body_preservation_state:
     annotations:
-      Expected_value: Description of the preservation of the sampled organism/host
+      Expected_value: Description of the preservation of the sampled (ancient) organism/host
     description: >-
       Description of the state of the sampled organism/host as originally preserved in the burial environment, e.g. if the the sample was artificilally or naturally (fully/partially) mummified at the time of death.
     title: ancient body preservation state
