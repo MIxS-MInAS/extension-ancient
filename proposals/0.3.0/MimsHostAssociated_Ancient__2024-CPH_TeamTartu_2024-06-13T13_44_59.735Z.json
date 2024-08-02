@@ -397,7 +397,7 @@
       },
       "Definition": {
         "original": "The type of library created. Amplicon based or non-amplicon based. Amplicon based, is a library that result in rather short DNA fragments while non-amplicon-based referres to non targeted approach.",
-        "modified": "The type of library created. Amplicon based or shotgun. Amplicon based, is a library targets a spefici region of a genome, while shotgun refers to non targeted approach."
+        "modified": "The type of library created. Amplicon based or shotgun. Amplicon based, is a library targets a specific region or regions of a genome (e.g. microbial genome capture based on baits of a reference genome), while shotgun refers to non targeted approach."
       },
       "Expected value": {
         "original": "enumeration",
