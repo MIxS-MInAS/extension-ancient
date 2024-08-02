@@ -22,6 +22,7 @@ subsets:
   environment:
   nucleic acid sequence source:
   investigation:
+  ethics:
 enums:
   DamageTreatmentEnum:
     permissible_values:
@@ -34,6 +35,22 @@ enums:
     permissible_values:
       amplicon:
       shotgun:
+  BioCultLabel:
+    permissible_values:
+      "BC P":
+      "BC MC":
+      "BC CL":
+      "BC CV":
+      "BC CNV":
+      "BC R":
+      "BC CB":
+      "BC OC":
+      "BC O":
+      "BC NC":
+  LibStrand:
+    permissible_values:
+      single:
+      double:
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
@@ -438,6 +455,138 @@ slots:
     slot_uri: MIXS:999999922
     range: string
     string_serialization: "{text}"
+  palaeopath_status:
+    annotations:
+      Expected_value: description of health related observation on ancient remains
+    description: >-
+      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.
+    title: palaeopathology status.
+    examples:
+      - value: "Osteoporosis."
+      - value: "Parasites found in pelvic area."
+      - value: "Caries on right upper molar."
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - palaeopathology
+      - host health
+      - ancient
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: true
+  biocultural_label:
+    annotations:
+      Expected_value: Relevant biocultural label from https://localcontexts.org/labels/biocultural-labels/
+    description: >-
+      Relevant biocultural labels that apply to the sample under study, based on https://localcontexts.org/label/bc-provenance/. These help indicate how indigenous peoples and similar communities view in which contexts this data can be reused.
+    title: biocultural label
+    examples:
+      - value: "BC R"
+      - value: "BC MC"
+    in_subset:
+      - ethics
+    keywords:
+      - ethics
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: true
+    range: BioCultLabel #enum value
+    required: false
+    recommended: true
+  ethics_perm_scope:
+    annotations:
+      Expected_value: Description of the scope of ethical permissions for data use
+    description: >-
+      Description of the original scope and permissions of the research on the genetic material, as was approved by the ethical authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed).
+    title: ethical Permissions & Scope
+    examples:
+      - value: "Defined scope only includes the study of bacterial sequences and any human sequence is not covered under the agreement."
+    in_subset:
+      - ethics
+    keywords:
+      - ethics
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: true
+  host_body_preservation_state:
+    annotations:
+      Expected_value: Description of the preservation of the sampled organism/host
+    description: >-
+      Description of the state of the sampled organism/host as originally preserved in the burial environment, e.g. if the the sample was artificilally or naturally (fully/partially) mummified at the time of death.
+    title: ancient body preservation state
+    examples:
+      - value: "complete artificial mummification."
+      - value: "natural partial mummification."
+      - value: "fully skeletonised."
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - ancient
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: true
+  lib_strandedness:
+    annotations:
+      Expected_value: Genomic library strandedness
+    description: >-
+      The strandedness of the original template DNA molecules used for constructing the sequencing library
+    title: DNA strandedness in library creation
+    examples:
+      - value: single
+      - value: double
+    in_subset:
+      - sequencing
+    keywords:
+      - library
+      - preparation
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: true
+    range: LibStrand #enum value
+    required: false
+    recommended: true
+  probe_set:
+    annotations:
+      Expected_value: Description of probe set used for target enrichment/library selection
+    description: >-
+      Description of target enrichment probe designs used (e.g. sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
+    title: enrichment probe design description
+    examples:
+      - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science" 
+      - value: "Commercial kit ABC001-EC from company TE-Science, purchased 2020"
+    in_subset:
+      - sequencing
+    keywords:
+      - library
+      - enrichment
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: true
+  mid_config:
+    annotations:
+      Expected_value: name of authority providing ethical approval
+    description: >-
+      Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.
+    title: multiplex identifiers or indexing configuration of libraries
+    examples:
+      - value: "dual index with single internal barcode."
+      - value: "UDI index sequences."
+    in_subset:
+      - sequencing
+    keywords:
+      - library
+      - preparation
+    slot_uri: MIXS:999999905 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: true    
 classes:
   Extension:
     description:
@@ -480,6 +629,13 @@ classes:
       - sample_alt_lab_ids
       - site_type
       - storage_conditions
+        - palaeopath_status
+      - biocultural_label
+      - ethics_perm_scope
+      - host_body_preservation_state
+      - lib_strandedness
+      - probe_set
+      - mid_config
     slot_usage:
       sample_age:
         recommended: true
