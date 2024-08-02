@@ -142,7 +142,7 @@ slots:
       Date of award of ethical/export permission. The date can be right truncated 
       i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; 
       Except: 2008-01; 2008 all are ISO8601 compliant
-    title: date of ethical approval date
+    title: date of ethical approval
     examples:
       - value: "2023-12-01"
     in_subset:
