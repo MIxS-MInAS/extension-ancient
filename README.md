@@ -45,5 +45,5 @@ To use this script, you only need `python3` and no other dependencies (it seems)
 In the root of this directory run:
 
 ```bash
-./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir src/tsv/
+./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir projects/class-model-tsvs/
 ```
