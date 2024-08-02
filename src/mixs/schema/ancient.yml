@@ -492,9 +492,9 @@ slots:
       - ethics
     slot_uri: MIXS:999999905 #Not assigned
     multivalued: true
-    range: BioCultLabel #enum value
+    range: BioCulturalLabel #enum value
     required: false
-    recommended: true
+    recommended: false
   ethics_perm_scope:
     annotations:
       Expected_value: Description of the scope of ethical permissions for data use
@@ -532,10 +532,10 @@ slots:
     range: string
     string_serialization: "{text}"
     required: false
-    recommended: true
+    recommended: false
   lib_strandedness:
     annotations:
-      Expected_value: Genomic library strandedness
+      Expected_value: DNA library strandedness
     description: >-
       The strandedness of the original template DNA molecules used for constructing the sequencing library
     title: DNA strandedness in library creation
