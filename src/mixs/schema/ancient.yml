@@ -153,8 +153,9 @@ slots:
     recommended: true
   ethical_id:
     description: >-
-      The permissions code(s) or ID(s) provided by the authority associated with 
-      approval of the analysis of this particular sample
+      The permissions code, ID, document, or similar provided by any authority 
+      (socal, legal, academic etc.) associated with approval of the analysis of 
+      this particular sample.
     title: ethical permit or approval ID
     examples:
       - value: "DE-123-JK"
