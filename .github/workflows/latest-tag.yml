@@ -12,6 +12,6 @@ jobs:
       contents: write
     steps:
       - name: Check out pipeline code
-        uses: actions/checkout@4.1.7
+        uses: actions/checkout@v4.1.7
       - name: Latest tag
         uses: EndBug/latest-tag@v1.6.2
