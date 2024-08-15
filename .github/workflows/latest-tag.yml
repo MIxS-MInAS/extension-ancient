@@ -1,6 +1,7 @@
 name: latest-tag
 # Makes a 'latest' tag that points to the commit of the latest release to allow a downloadable URL
 on:
+  workflow_dispatch:
   release:
     types: [published]
 
