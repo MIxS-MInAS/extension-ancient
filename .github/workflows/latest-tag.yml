@@ -7,6 +7,8 @@ on:
 jobs:
   tag-latest:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Latest tag
         uses: EndBug/latest-tag@v1.6.2
