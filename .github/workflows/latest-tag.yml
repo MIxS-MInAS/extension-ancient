@@ -1,0 +1,13 @@
+name: latest-tag
+# Makes a 'latest' tag that points to the commit of the latest release to allow a downloadable URL
+on:
+  release:
+    types: [published]
+
+jobs:
+  tag-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Latest tag
+        uses: EndBug/latest-tag@v1.6.2
+            
