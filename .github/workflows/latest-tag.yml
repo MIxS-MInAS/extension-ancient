@@ -1,0 +1,17 @@
+name: latest-tag
+# Makes a 'latest' tag that points to the commit of the latest release to allow a downloadable URL
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  tag-latest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out pipeline code
+        uses: actions/checkout@v4.1.6
+      - name: Latest tag
+        uses: EndBug/latest-tag@v1.6.2

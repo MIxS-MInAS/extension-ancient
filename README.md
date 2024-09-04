@@ -67,3 +67,8 @@ In the root of this directory run:
 ```bash
 ./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir projects/class-model-tsvs/
 ```
+
+### Latest tag
+
+We use a GitHub action to generate a special 'latest' tag that points to the commit of the latest release.
+This allows a more 'user friendly' URL for downloading a specific file, rather than making users have to download a release tarball and extract a specific file.
