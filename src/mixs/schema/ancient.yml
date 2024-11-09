@@ -34,6 +34,7 @@ enums:
   LibTypeEnum:
     permissible_values:
       amplicon:
+      enriched:
       shotgun:
   BioCulturalLabel:
     permissible_values:
@@ -104,7 +105,7 @@ slots:
       Expected_value: enumeration
     description: >-
       Indication of whether characteristic ancient DNA damage has been 
-      enzymatically or chemically removed in a laboratory
+      altered or removed from a DNA extract in a laboratory 
     title: Damage treatment type
     examples:
       - value: none
@@ -135,7 +136,7 @@ slots:
     annotations:
       Expected_value: name of authority providing ethical approval
     description: >-
-      Name of the authority or institution that awarded sampling and 
+      Name of the authorit(ies) or institution(s) that awarded sampling and 
       analysis (e.g. human remains) and/or export permission 
       (e.g. animal remains)
     title: ethical authority
@@ -204,7 +205,7 @@ slots:
     annotations:
       Expected_value: measurement value in number of ng per µl
     description: >-
-      Concentration of library in ng per µl, as inferred by qPCR/Qubit/etc.
+      Concentration of library in ng per µl, as inferred by qPCR, digital PCR, Qubit etc.
     title: library concentration
     examples:
       - value: 2
@@ -218,7 +219,7 @@ slots:
     annotations:
       Expected_value: name of polymerase used during library indexing
     description: >-
-      The of DNA polymerase enzyme used for indexing DNA libraries
+      The DNA polymerase enzyme used for indexing DNA libraries
     title: library index polymerase
     examples:
       - value: "Agilent PfuTurbo Cx HotStart"
@@ -253,7 +254,7 @@ slots:
     annotations:
       Expected_value: name of polymerase used during library indexing
     description: >-
-      The name of polymerase enzyme used for reamplifying DNA libraries post-indexing.
+      The name of the DNA polymerase enzyme used for reamplifying DNA libraries post-indexing.
     title: library reamplification polymerase
     examples:
       - value: "KAPA HiFi HotStart Uracil+"
@@ -270,8 +271,11 @@ slots:
     recommended: true
   lib_type:
     description: >-
-      The type of library created, i.e., amplicon based or shotgun. 
-      Amplicon based, is a library targets a specific region or regions of a genome (e.g. microbial genome capture based on baits of a reference genome), while shotgun refers to non targeted approach.
+      The type of library created, i.e., amplicon, enriched, or shotgun. 
+      Amplicon based is a library that has been amplified to target a specific single region of a genome (e.g. a specific gene). 
+      An enriched library is a library that has had more than one region of a particular genome 'captured' or enriched typically via baits or probes.
+      A shotgun library has had no type of targeted enrichment for a particular gene or genome. 
+      while shotgun refers to non targeted approach.
     title: library type
     examples:
       - value: amplicon
@@ -388,8 +392,8 @@ slots:
       Expected_value: value or range starting from from BP (1950)
       Preferred_unit: in years before present (BP) or (BCE/CE)
     description: >-
-      The approximate date or date range that individual or organism was living and then died, or the 
-      sample was exposed to the  surface. Typically inferred from archaeological 
+      The approximate date or date range that individual or organism was living and then died, last 
+      sample was exposed to the surface before burial, or sediment formed. Typically inferred from archaeological 
       material, or biological material associated with a sediment, with 
       radiocarbon dating and other chronometric methods. Should be midpoint of 
       calibrated radiocarbon age.
@@ -420,7 +424,7 @@ slots:
     recommended: true
   sample_alt_lab_ids:
     description: >-
-      Any alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample.
+      One or more alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling).
     title: alternative sample IDs
     examples:
       - value: "ABC_24"
@@ -540,11 +544,11 @@ slots:
     range: LibStrand #enum value
     required: false
     recommended: true
-  probe_set:
+  enrichment_probe_set:
     annotations:
       Expected_value: Description of probe set used for target enrichment/library selection
     description: >-
-      Description of target enrichment probe designs used (e.g. sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
+      Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
     title: enrichment probe design description
     examples:
       - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science"
@@ -626,7 +630,7 @@ classes:
       - ethics_perm_scope
       - host_body_preservation_state
       - lib_strandedness
-      - probe_set
+      - enrichment_probe_set
       - mid_config
     slot_usage:
       sample_age:
