@@ -1,0 +1,6603 @@
+{
+  "modifiedRows": [
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "relationship to oxygen",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments",
+        "modified": ""
+      },
+      "Example": {
+        "original": "aerobe",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[aerobe|anaerobe|facultative|microaerophilic|microanaerobe|obligate aerobe|obligate anaerobe]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "rel_to_oxygen",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000015",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "negative control type",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The substance or equipment used as a negative control in an investigation",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration or text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[distilled water|phosphate buffer|empty collection device|empty collection tube|DNA-free PCR mix|sterile swab |sterile syringe]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "neg_cont_type",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001321",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "assembly quality",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling ≥ 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling < 90% of the expected genome or replicon sequence, or for which no genome size could be estimated",
+        "modified": ""
+      },
+      "Example": {
+        "original": "High-quality draft genome",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[Finished genome|High-quality draft genome|Medium-quality draft genome|Low-quality draft genome|Genome fragment(s)]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "assembly_qual",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000056",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "library layout",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Specify whether to expect single, paired, or other configuration of reads",
+        "modified": ""
+      },
+      "Example": {
+        "original": "paired",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[paired|single|vector|other]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_layout",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000041",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "reference database(s)",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "List of database(s) used for ORF annotation, along with version number and reference to website or publication",
+        "modified": ""
+      },
+      "Example": {
+        "original": "pVOGs;5;http://dmk-brain.ecn.uiowa.edu/pVOGs/ Grazziotin et al. 2017 doi:10.1093/nar/gkw975",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "names, versions, and references of databases",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{database};{version};{reference}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ref_db",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000062",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "multiplex identifiers",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters",
+        "modified": ""
+      },
+      "Example": {
+        "original": "GTGAATAT",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "multiplex identifier sequence",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{dna}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "mid",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000047",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "adapters",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters",
+        "modified": ""
+      },
+      "Example": {
+        "original": "AATGATACGGCGACCACCGAGATCTACACGCT;CAAGCAGAAGACGGCATACGAGAT",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "adapter A and B sequence",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{dna};{dna}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "adapters",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000048",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "geographic location (latitude and longitude)",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "modified": ""
+      },
+      "Example": {
+        "original": "50.586825 6.408977",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "decimal degrees,  limit to 8 decimal points",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {float}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lat_lon",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000009",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "depth",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "E",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The vertical distance below local surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "10 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "depth",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000018",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "altitude",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "E",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Altitude is a term used to identify heights of objects such as airplanes, space shuttles, rockets, atmospheric balloons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the earth's surface. In this context, the altitude measurement is the vertical distance between the earth's surface above sea level and the sampled position in the air",
+        "modified": ""
+      },
+      "Example": {
+        "original": "100 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "alt",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000094",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "elevation",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "E",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "100 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "elev",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000093",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "temperature",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "E",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Temperature of the sample at the time of sampling.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "25 degree Celsius",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "degree Celsius",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "temp",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000113",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "amount or size of sample collected",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "5 liter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "millliter, gram, milligram, liter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_size",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000001",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample volume or weight for DNA extraction",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "1500 milliliter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "millliter, gram, milligram, square centimeter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_vol_we_dna_ext",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000111",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "size fraction selected",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Filtering pore size used in sample preparation",
+        "modified": ""
+      },
+      "Example": {
+        "original": "0-0.22 micrometer",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "filter size value range",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float}-{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "size_frac",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000017",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "library size",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Total number of clones in the library prepared for the project",
+        "modified": ""
+      },
+      "Example": {
+        "original": "50",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "number of clones",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_size",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000039",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "library reads sequenced",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Total number of clones sequenced from the library",
+        "modified": ""
+      },
+      "Example": {
+        "original": "20",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "number of reads sequenced",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_reads_seqd",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000040",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "number of contigs",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG",
+        "modified": ""
+      },
+      "Example": {
+        "original": "40",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "number_contig",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000060",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "relevant electronic resources",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A related resource that is referenced, cited, or otherwise associated to the sequence. ",
+        "modified": ""
+      },
+      "Example": {
+        "original": "http://www.earthmicrobiome.org/",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "reference to resource",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID} | {DOI} | {URL}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "associated resource",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000091",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "reference for biomaterial",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Primary publication if isolated before genome publication; otherwise, primary genome report.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "doi:10.1016/j.syapm.2018.01.009",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID, DOI or URL",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ref_biomaterial",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000025",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "nucleic acid extraction",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample",
+        "modified": ""
+      },
+      "Example": {
+        "original": "https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID, DOI or URL",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "nucl_acid_ext",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000037",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "nucleic acid amplification",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids",
+        "modified": ""
+      },
+      "Example": {
+        "original": "https://phylogenomics.me/protocols/16s-pcr-protocol/",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID, DOI or URL",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "nucl_acid_amp",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000038",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "relevant standard operating procedures",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences",
+        "modified": ""
+      },
+      "Example": {
+        "original": "http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "reference to SOP",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sop",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000090",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample collection method",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The method employed for collecting the sample.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "swabbing",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID,DOI,url , or text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_collec_method",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001225",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "assembly software",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Tool(s) used for assembly, including version number and parameters",
+        "modified": ""
+      },
+      "Example": {
+        "original": "metaSPAdes;3.11.0;kmer set 21,33,55,77,99,121, default parameters otherwise",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "name and version of software, parameters used",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{software};{version};{parameters}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "assembly_software",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000058",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "feature prediction",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Method used to predict UViGs features such as ORFs, integration site, etc.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Prodigal;2.6.3;default parameters",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "names and versions of software(s), parameters used",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{software};{version};{parameters}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "feat_pred",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000061",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "similarity search method",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Tool used to compare ORFs with database, along with version and cutoffs used",
+        "modified": ""
+      },
+      "Example": {
+        "original": "HMMER3;3.1b2;hmmsearch, cutoff of 50 on score",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "names and versions of software(s), parameters used",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{software};{version};{parameters}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sim_search_meth",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000063",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "broad-scale environmental context",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS",
+        "modified": ""
+      },
+      "Example": {
+        "original": "oceanic epipelagic zone biome [ENVO:01000033] for annotating a water sample from the photic zone in middle of the Atlantic Ocean",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "The major environment type(s) where the sample was collected. Recommend subclasses of biome [ENVO:00000428]. Multiple terms can be separated by one or more pipes.",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "env_broad_scale",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000012",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "local environmental context",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS. ",
+        "modified": ""
+      },
+      "Example": {
+        "original": "litter layer [ENVO:01000338]; Annotating a pooled sample taken from various vegetation layers in a forest consider: canopy [ENVO:00000047]|herb and fern layer [ENVO:01000337]|litter layer [ENVO:01000338]|understory [01000335]|shrub layer [ENVO:01000336].",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "Environmental entities having causal influences upon the entity at time of sampling.",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "env_local_scale",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000013",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "environmental medium",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "soil [ENVO:00001998]; Annotating a fish swimming in the upper 100 m of the Atlantic Ocean, consider: ocean water [ENVO:00002151]. Example: Annotating a duck on a pond consider: pond water [ENVO:00002228]|air [ENVO_00002005]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "The material displaced by the entity at time of sampling. Recommend subclasses of environmental material [ENVO:00010483]. ",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "env_medium",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000014",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "experimental factor",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI",
+        "modified": ""
+      },
+      "Example": {
+        "original": "time series design [EFO:EFO_0001779]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text or EFO and/or OBI",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "experimental_factor",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000008",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample collection device",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "device name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_collec_device",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000002",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sequencing method",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "454 Genome Sequencer FLX [OBI:0000702]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "Text or OBI",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "seq_meth",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000050",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "positive control type",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.\n",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{term} or {text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "pos_cont_type",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001322",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "geographic location (country and/or sea,region)",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)",
+        "modified": ""
+      },
+      "Example": {
+        "original": "USA: Maryland, Bethesda",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "country or sea name (INSDC or GAZ): region(GAZ), specific location name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{term}: {term}, {text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "geo_loc_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000010",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample name ",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "ISDsoil1",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001107",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "project name",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name of the project within which the sequencing was organized",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Forest soil metagenome",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "project_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000092",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "source material identifiers",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "MPI012345",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "for cultures of microorganisms: identifiers for two culture collections; for other material a unique arbitrary identifer",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "source_mat_id",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000026",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample material processing",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "filtering of seawater, storing samples in ethanol",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_mat_process",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000016",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "library vector",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Cloning vector type(s) used in construction of libraries",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Bacteriophage P1",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "vector",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_vector",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000042",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "library screening strategy",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Specific enrichment or screening methods applied before and/or after creating libraries",
+        "modified": ""
+      },
+      "Example": {
+        "original": "enriched, screened, normalized",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "screening strategy name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_screen",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000043",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "annotation",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Tool used for annotation, or for cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter",
+        "modified": ""
+      },
+      "Example": {
+        "original": "prokka",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "name of tool or pipeline used, or annotation source description",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "annot",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000059",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "taxonomic classification",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes",
+        "modified": ""
+      },
+      "Example": {
+        "original": "vConTACT vContact2 (references from NCBI RefSeq v83, genus rank classification, default parameters)",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "classification method, database name, and other parameters",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "tax_class",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000064",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "taxonomy ID of DNA sample",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Gut Metagenome [NCBI:txid749906]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "Taxonomy ID ",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text} [NCBI:txid]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_taxon_id",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001320",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "assembly name",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name/version of the assembly provided by the submitter that is used in the genome browsers and in the community",
+        "modified": ""
+      },
+      "Example": {
+        "original": "HuRef, JCVI_ISG_i3_1.0",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "name and version of assembly",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text} {text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "assembly_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000057",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "collection date",
+        "modified": ""
+      },
+      "Package": {
+        "original": "mims",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+        "modified": ""
+      },
+      "Example": {
+        "original": "2018-05-11T10:00:00+01:00; 2018-05-11",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "date and time",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{timestamp}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "collection_date",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000011",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample name ",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "ISDsoil1",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001107",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "project name",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name of the project within which the sequencing was organized.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Forest soil metagenome",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "project_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000092",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "altitude",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "C",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Altitude is a term used to identify heights of objects such as airplanes, space shuttles, rockets, atmospheric balloons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the earth‚Äôs surface. In this context, the altitude measurement is the vertical distance between the earth's surface above sea level and the sampled position in the air",
+        "modified": ""
+      },
+      "Example": {
+        "original": "100 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "meter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "alt",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000094",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "depth",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "C",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The vertical distance below local surface, e.g. For sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "10 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "meter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "depth",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000018",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "elevation",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "C",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit",
+        "modified": ""
+      },
+      "Example": {
+        "original": "100 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "meter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "elev",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000093",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "ancestral data",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Information about either pedigree or other ancestral information description (e.g. parental variety in case of mutant or selection), e.g. A/3*B (meaning [(A x B) x B] x B)",
+        "modified": ""
+      },
+      "Example": {
+        "original": "A/3*B",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "free text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ances_data",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000247",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "biological status",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The level of genome modification.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "natural",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[wild|natural|semi-natural|inbred line|breeder's line|hybrid|clonal selection|mutant]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "biol_stat",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000858",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "genetic modification",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Genetic modifications of the genome of an organism, which may occur naturally by spontaneous mutation, or be introduced by some experimental means, e.g. specification of a transgene or the gene knocked-out or details of transient transfection",
+        "modified": ""
+      },
+      "Example": {
+        "original": "aox1A transgenic",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID,DOI,url or free text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "genetic_mod",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000859",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host common name",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Common name of the host.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "human",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "common name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_common_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000248",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample capture status",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Reason for the sample",
+        "modified": ""
+      },
+      "Example": {
+        "original": "farm sample",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[active surveillance in response to an outbreak|active surveillance not initiated by an outbreak|farm sample|market sample|other]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_capt_status",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000860",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample disease stage",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Stage of the disease at the time of sample collection, e.g. inoculation, penetration, infection, growth and reproduction, dissemination of pathogen.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "infection",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[dissemination|growth and reproduction|infection|inoculation|penetration|other]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_dis_stage",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000249",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host taxid",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "NCBI taxon id of the host, e.g. 9606",
+        "modified": ""
+      },
+      "Example": {
+        "original": "7955",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "NCBI taxon identifier",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{NCBI taxid}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_taxid",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000250",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host subject id",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "A unique identifier by which each subject can be referred to, de-identified. ",
+        "modified": ""
+      },
+      "Example": {
+        "original": "MPI123",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "unique identifier",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_subject_id",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000861",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host age",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Age of host at the time of sampling; relevant scale depends on species and study, e.g. Could be seconds for amoebae or centuries for trees",
+        "modified": ""
+      },
+      "Example": {
+        "original": "10 days",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "year, day, hour",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_age",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000255",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host life stage",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Description of life stage of host",
+        "modified": ""
+      },
+      "Example": {
+        "original": "adult",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "stage",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_life_stage",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000251",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host sex",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Gender or physical sex of the host.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "non-binary",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[female|hermaphrodite|non-binary|male|transgender|transgender (female to male)|transgender (male to female)\n|undeclared]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_sex",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000811",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host disease status",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "List of diseases with which the host has been diagnosed; can include multiple diagnoses. The value of the field depends on host; for humans the terms should be chosen from the DO (Human Disease Ontology) at https://www.disease-ontology.org, non-human host diseases are free text",
+        "modified": ""
+      },
+      "Example": {
+        "original": "rabies [DOID:11260]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "disease name or Disease Ontology term",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_disease_stat",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000031",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "chemical administration",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi",
+        "modified": ""
+      },
+      "Example": {
+        "original": "agar [CHEBI:2509];2018-05-11T20:00Z",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "CHEBI;timestamp",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]};{timestamp}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "chem_administration",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000751",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host body habitat",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Original body habitat where the sample was obtained from",
+        "modified": ""
+      },
+      "Example": {
+        "original": "nasopharynx",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "free text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_body_habitat",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000866",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host body site",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name of body site where the sample was obtained from, such as a specific organ or tissue (tongue, lung etc...). For foundational model of anatomy ontology (fma) (v 4.11.0) or Uber-anatomy ontology (UBERON) (v releases/2014-06-15) terms, please see http://purl.bioontology.org/ontology/FMA or http://purl.bioontology.org/ontology/UBERON",
+        "modified": ""
+      },
+      "Example": {
+        "original": "gill [UBERON:0002535]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "FMA or UBERON",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_body_site",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000867",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host body product",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Substance produced by the body, e.g. Stool, mucus, where the sample was obtained from. For foundational model of anatomy ontology (fma) or Uber-anatomy ontology (UBERON) terms, please see https://www.ebi.ac.uk/ols/ontologies/fma or https://www.ebi.ac.uk/ols/ontologies/uberon",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Portion of mucus [fma66938]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "FMA or UBERON",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_body_product",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000888",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host total mass",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Total mass of the host at collection, the unit depends on host",
+        "modified": ""
+      },
+      "Example": {
+        "original": "2500 gram",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "kilogram, gram",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_tot_mass",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000263",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host height",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The height of subject",
+        "modified": ""
+      },
+      "Example": {
+        "original": "0.1 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "centimeter, millimeter, meter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_height",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000264",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host length",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The length of subject",
+        "modified": ""
+      },
+      "Example": {
+        "original": "1 meter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "centimeter, millimeter, meter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_length",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000256",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host diet",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Type of diet depending on the host, for animals omnivore, herbivore etc., for humans high-fat, meditteranean etc.; can include multiple diet types",
+        "modified": ""
+      },
+      "Example": {
+        "original": "herbivore",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "diet type",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_diet",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000869",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host last meal",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Content of last meal and time since feeding; can include multiple values",
+        "modified": ""
+      },
+      "Example": {
+        "original": "corn feed;P2H",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "content;duration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text};{duration}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_last_meal",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000870",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host growth conditions",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Literature reference giving growth conditions of the host",
+        "modified": ""
+      },
+      "Example": {
+        "original": "https://academic.oup.com/icesjms/article/68/2/349/617247",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID,DOI,url or free text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_growth_cond",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000871",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host substrate",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The growth substrate of the host.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "rock",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "substrate name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_substrate",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000252",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host family relationship",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Familial relationships to other hosts in the same study; can include multiple relationships",
+        "modified": ""
+      },
+      "Example": {
+        "original": "offspring;Mussel25",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "relationship type;arbitrary identifier",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text};{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_family_relation",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000872",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host subspecific genetic lineage",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Information about the genetic distinctness of the host organism below the subspecies level e.g., serovar, serotype, biotype, ecotype, variety, cultivar, or any relevant genetic typing schemes like Group I plasmid. Subspecies should not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage name and the lineage rank separated by a colon, e.g., biovar:abc123.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "serovar:Newport, variety:glabrum, cultivar: Red Delicious",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "Genetic lineage below lowest rank of NCBI taxonomy, which is subspecies, e.g. serovar, biotype, ecotype, variety, cultivar.",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{rank name}:{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_subspecf_genlin",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001318",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host genotype",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Observed genotype",
+        "modified": ""
+      },
+      "Example": {
+        "original": "C57BL/6",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "genotype",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_genotype",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000365",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host phenotype",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Phenotype of human or other host. For phenotypic quality ontology (pato) (v 2018-03-27) terms, please see http://purl.bioontology.org/ontology/pato. For Human Phenotype Ontology (HP) (v 2018-06-13) please see http://purl.bioontology.org/ontology/HP",
+        "modified": ""
+      },
+      "Example": {
+        "original": "elongated [PATO:0001154]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PATO or HP",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_phenotype",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000874",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host body temperature",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Core body temperature of the host when sample was collected",
+        "modified": ""
+      },
+      "Example": {
+        "original": "15 degree Celsius",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "degree Celsius",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_body_temp",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000274",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host dry mass",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Measurement of dry mass",
+        "modified": ""
+      },
+      "Example": {
+        "original": "500 gram",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "kilogram, gram",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_dry_mass",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000257",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host blood pressure diastolic",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Resting diastolic blood pressure, measured as mm mercury",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "millimeter mercury",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "blood_press_diast",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000258",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host blood pressure systolic",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Resting systolic blood pressure, measured as mm mercury",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "millimeter mercury",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "blood_press_syst",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000259",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host color",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The color of host",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "color",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_color",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000260",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "host shape",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Morphological shape of host",
+        "modified": ""
+      },
+      "Example": {
+        "original": "round",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "shape",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_shape",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000261",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "gravidity",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Whether or not subject is gravid, and if yes date due or date post-conception, specifying which is used",
+        "modified": ""
+      },
+      "Example": {
+        "original": "yes;due date:2018-05-11",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "gravidity status;timestamp",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{boolean};{timestamp}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "gravidity",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000875",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "perturbation",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types",
+        "modified": ""
+      },
+      "Example": {
+        "original": "antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "perturbation type name;perturbation interval and duration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text};{Rn/start_time/end_time/duration}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "perturbation",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000754",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "salinity",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "25 practical salinity unit",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "practical salinity unit, percentage",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "salinity",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000183",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "oxygenation status of sample",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Oxygenation status of sample",
+        "modified": ""
+      },
+      "Example": {
+        "original": "aerobic",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[aerobic|anaerobic|other]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "oxy_stat_samp",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000753",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "temperature",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Temperature of the sample at the time of sampling",
+        "modified": ""
+      },
+      "Example": {
+        "original": "25 degree Celsius",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "degree Celsius",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "temp",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000113",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "organism count",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr)",
+        "modified": ""
+      },
+      "Example": {
+        "original": "total prokaryotes;3.5e7 cells per milliliter;qPCR",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "organism name;measurement value;enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "number of cells per cubic meter, number of cells per milliliter, number of cells per cubic centimeter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text};{float} {unit};[qPCR|ATP|MPN|other]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "organism_count",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000103",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample volume or weight for DNA extraction",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "1500 milliliter",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "millliter, gram, milligram, square centimeter",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_vol_we_dna_ext",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000111",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample storage temperature",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Temperature at which sample was stored, e.g. -80 degree Celsius",
+        "modified": ""
+      },
+      "Example": {
+        "original": "-80 degree Celsius",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "degree Celsius",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_store_temp",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000110",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample storage duration",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Duration for which the sample was stored",
+        "modified": ""
+      },
+      "Example": {
+        "original": "P1Y6M",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "duration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{duration}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_store_dur",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000116",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample storage location",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Location at which sample was stored, usually name of a specific freezer/room",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Freezer no:5",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "location name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_store_loc",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000755",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "observed host symbionts",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The taxonomic name of the organism(s) found living in mutualistic, commensalistic, or parasitic symbiosis with the specific host.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "flukeworms",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "species name or common name",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "host_symbiont",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0001298",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "miscellaneous parameter",
+        "modified": ""
+      },
+      "Package": {
+        "original": "host-associated",
+        "modified": ""
+      },
+      "Section": {
+        "original": "",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Any other measurement performed or parameter collected, that is not listed here",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Bicarbonate ion concentration;2075 micromole per kilogram",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "parameter name;measurement value",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text};{float} {unit}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "misc_param",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:0000752",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "KN: ‘owner’ is not enough, there are multiple potential responsible institutions that should be listed: curation institution, permit institution etc."
+      },
+      "Item": {
+        "original": "context name where location was collected",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name of where sample originated and is typically stored. Typically will be 'owning institution'",
+        "modified": "Names of institutions responsible for the curating and storing a given ancient sample (e.g. a skeleton). Can include 'owning institution', or 'curation institution'. This can include museum or archaeological collections, governmental cultural heritage institutions etc."
+      },
+      "Example": {
+        "original": "Natural History London",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "collection_context_name",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "KN: There are plethora of terms, and chronontology is very Europe focused [JFY: but also free text term allowed, and should give instructions how to update e.g. chronontology]",
+        "modified": "KN: There are plethora of terms, and chronontology is very Europe focused [JFY: but also free text term allowed, and should give instructions how to update e.g. chronontology]. S.Sc: this is very human-focused, which wouldn't apply to animal remains."
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO. Specify when no value for 'sample_age' is present, or additionally to it.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Copper Age [Chronotology: NW6hofAScJSE]",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "Chronotology or PeriodO term; text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{termLabel} {[termID]}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "cultural_era",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Indication of whether characteristic ancient DNA damage has been removed in a laboratory",
+        "modified": ""
+      },
+      "Example": {
+        "original": "none",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[none|partial-udg|full-udg|enriched|other]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "damage_treatment",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The date when the nucleic acids was extracted from the sample material. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+        "modified": ""
+      },
+      "Example": {
+        "original": "2015",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "date",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "year",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{timestamp}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "dna_extraction_date",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Provide a DOI to refer to the paper where the procedure is explained in more details",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID, DOI or URL",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "experimental_procedures",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "",
+        "modified": "1"
+      },
+      "Definition": {
+        "original": "The geological era in which an ancient sample existed during life or use (not cultural era).",
+        "modified": ""
+      },
+      "Example": {
+        "original": "pleistocene\nholocene",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": "text, or ontology(?)"
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "geological_era",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXSXXXXX",
+        "modified": "MIXSXXXXXXX"
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Concentration of library in copies per µl, as inferred by qPCR.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "123000000",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "integer",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "copies/µl",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_concentration",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The name of polymerase enzyme used to index DNA libraries",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Agilent PfuTurbo Cx HotStart",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_index_polymerase",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Citation(s) for the DNA library preparation protocol",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Meyer and Kircher, 2010",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_preparation_protocol",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The name of polymerase enzyme used for reamplifying DNA libraries",
+        "modified": ""
+      },
+      "Example": {
+        "original": "KAPA HiFi HotStart Uracil+",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_reamplification_polymerase",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "library type",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "M",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The type of library created. Amplicon based or non-amplicon based. Amplicon based, is a library that result in rather short DNA fragments while non-amplicon-based referres to non targeted approach.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "shotgun",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "[shotgun|amplicon]",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "lib_type",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "negative control status",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Specify whether the sample is a negative control or not.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "negative control status",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{boolean}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "neg_cont_status",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Number of amplification cycles after capture enrichment",
+        "modified": ""
+      },
+      "Example": {
+        "original": "10",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "number of amplification cycles",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "num_capture_reamp_cycles",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "number of reamplification cycles",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Number of amplification cycles after library indexing PCR",
+        "modified": ""
+      },
+      "Example": {
+        "original": "8",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "number of amplification cycles",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "num_reamp_cycles",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "S.Sc: This should be split into two - ethical_authority and permit_authority as they represent two distinctinct things (one is legal one is ethical/moral); [JFY: or rename to just permit_authority and every valid permit comes under this]"
+      },
+      "Item": {
+        "original": "ethical authority",
+        "modified": "permit authority"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Name of the authority or institution that awarded sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains)",
+        "modified": "Names of any authority or institution that granted any form of sampling or analysis (e.g. human remains) and/or export permission (e.g. animal remains). Can also include ethical authorities such as from descendent groups."
+      },
+      "Example": {
+        "original": "Federal Foreign Office (Germany)",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ethical_authority",
+        "modified": "permit_authority"
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "date of ethical approval date",
+        "modified": "date of permit approval date"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Date of award of ethical/export permission. The date can be right truncated i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
+        "modified": "Date of granting of ethical/export permission. The date can be right truncated i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant"
+      },
+      "Example": {
+        "original": "2018-05-11T10:00:00+01:00; 2018-05-11",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "date",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{timestamp}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ethical_date",
+        "modified": "permit_date"
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "ethical permit/approval ID",
+        "modified": "permit/approval ID"
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The permissions code or ID provided by the authority associated with approval of the analysis of this particular sample",
+        "modified": ""
+      },
+      "Example": {
+        "original": "DE-123-JK",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "ethical_id",
+        "modified": "permit_id"
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "preservation treatment",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "nucleic acid sequence source",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream DNA recovery or library construction, such as storage fluid or reconstructive glue",
+        "modified": ""
+      },
+      "Example": {
+        "original": "stored in formalin",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "preservational_treatment",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "previous publications",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Any publications that report data from the same body/skeleton/individual",
+        "modified": ""
+      },
+      "Example": {
+        "original": "10.1126/science.7761839",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{DOI}{URL}{PMID}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "prev_pubs",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "AC: Should be a date range, to allow for execavation seasons"
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Date of excavation or retrieval from burial or depositional context, if known",
+        "modified": ""
+      },
+      "Example": {
+        "original": "1930",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "date",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "date",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{timestamp}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "recovery_date",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "sample decontamination pretreatment",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "sequencing",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "Method(s) employed for surface decontamination of samples of external modern DNA; Treatment used on the samples. Depends on the sample type. More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "EDTA wash, 10.17504/protocols.io.bidyka7w",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "PMID, DOI or URL",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{PMID}|{DOI}|{URL}|{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "samp_decontam_pretreat",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": "Various: should be a two-field uncalibrated range in BP [JFY: how to deal with more recent than 1950?], and should be mandatory - cultural_era not a good alternative; calibrated should also be included"
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The approximate date that individual was living and then died, or the sample was exposed to the  surface. Typically inferred from archaeological material, or biological material associated with a sediment, with radiocarbon dating and other chronometric methods. Should be midpoint of calibrated radiocarbon age.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "123440",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "value from BP (1950)",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "cal BP",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{integer}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sample_age",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "m",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The method used to infer the sample age. Method (14C, OLS, etc.) and associated information (lab code, etc). An enumerated list with age/depths model, corralative (relative dating), annual lamination, pollen records, diatom records, physical observation, etc.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "C14",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "enumeration",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "???",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sample_age_inference_methods",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "alternative sample IDs",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "investigation",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": "m"
+      },
+      "Definition": {
+        "original": "Any alternate sample IDs used in by the research group publishing the paper or other groups. If known.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "ABC_24",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "sample_alt_lab_ids",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "E",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "The type of site the sediment cores where taken. E.g. ocean, marine, freshwater, brackish, ice caves, caves.",
+        "modified": ""
+      },
+      "Example": {
+        "original": "cave",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "site_type",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    },
+    {
+      "Comments": {
+        "original": "",
+        "modified": ""
+      },
+      "Item": {
+        "original": "conditions of sample storage",
+        "modified": ""
+      },
+      "Package": {
+        "original": "ancient",
+        "modified": ""
+      },
+      "Section": {
+        "original": "environment",
+        "modified": ""
+      },
+      "Requirement level": {
+        "original": "X",
+        "modified": ""
+      },
+      "Occurrence": {
+        "original": "1",
+        "modified": ""
+      },
+      "Definition": {
+        "original": "General conditions in which the sample was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
+        "modified": ""
+      },
+      "Example": {
+        "original": "Climate-controlled",
+        "modified": ""
+      },
+      "Expected value": {
+        "original": "text",
+        "modified": ""
+      },
+      "Preferred unit": {
+        "original": "",
+        "modified": ""
+      },
+      "Value syntax": {
+        "original": "{text}",
+        "modified": ""
+      },
+      "Structured comment name": {
+        "original": "storage_conditions",
+        "modified": ""
+      },
+      "MIXS ID": {
+        "original": "MIXS:XXXXXXX",
+        "modified": ""
+      }
+    }
+  ],
+  "miscellaneous": {
+    "sessionName": "MINAS-DEV-MPIEVAPOPGEN2024",
+    "sessionType": "development",
+    "additionalInfo": [
+      {
+        "name": "Stephan Schiffels/Kathrin Nägele/Eleni Seferidou/Ainash Childebeyeva/Beatriz Amorim/Guido Gnecchi Ruscone/Thiseas Lamnidis/Eleftheria Orfanou",
+        "email": "james_fellows_yates@eva.mpg.de"
+      }
+    ],
+    "timestamp": "2024-12-08T18_37_57.939Z"
+  }
+}
