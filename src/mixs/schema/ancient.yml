@@ -207,8 +207,8 @@ slots:
       Concentration of library in ng per µl, as inferred by qPCR/Qubit/etc.
     title: library concentration
     examples:
-      - value: 2
-      - value: 0.5
+      - value: "2"
+      - value: "0.5"
     in_subset:
       - sequencing
     slot_uri: MIXS:999999908
@@ -300,7 +300,7 @@ slots:
       Number of amplification cycles after capture enrichment
     title: number of reamplification cycles after capture
     examples:
-      - value: 12
+      - value: "12"
     in_subset:
       - sequencing
     slot_uri: MIXS:999999912
@@ -311,7 +311,7 @@ slots:
       Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.
     title: number of reamplification cycles
     examples:
-      - value: 12
+      - value: "12"
     in_subset:
       - sequencing
     slot_uri: MIXS:999999913
