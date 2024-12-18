@@ -288,7 +288,7 @@ slots:
       Specify whether the sample is a negative control or not.
     title: negative control status
     examples:
-      - value: true
+      - value: "true"
     keywords:
       - control
     in_subset:
