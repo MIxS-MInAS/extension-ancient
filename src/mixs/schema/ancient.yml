@@ -69,7 +69,6 @@ enums:
       amino acid racemisation:
       electron spin resonance:
       uranium thorium:
-      delta 18 oxygen:
       stratigraphic inference:
       historical records:
       other:
@@ -497,8 +496,8 @@ slots:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
       - value: "based on proxy dating from other bone samples of stratigraphic layer"
       - value: "a coin found in the burial was from the 3rd century"
-      - value: "age taken from previous publication Guellil et al. 2019"
-      - value: "Radiocarbon age ID: OxA-12345"
+      - value: "age taken from previous publication Doe et al. 2019"
+      - value: "radiocarbon age ID: OxA-12345"
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
