@@ -273,9 +273,8 @@ slots:
     description: >-
       The type of library created, i.e., amplicon, enriched, or shotgun. 
       Amplicon based is a library that has been amplified to target a specific single region of a genome (e.g. a specific gene). 
-      An enriched library is a library that has had more than one region of a particular genome 'captured' or enriched typically via baits or probes.
-      A shotgun library has had no type of targeted enrichment for a particular gene or genome. 
-      while shotgun refers to non targeted approach.
+      An enriched library is a library has had a particular genome or genome regions 'captured' or enriched typically via baits or probes.
+      A shotgun library has had no type of targeted enrichment for a particular gene or genome.
     title: library type
     examples:
       - value: amplicon
@@ -424,7 +423,7 @@ slots:
     recommended: true
   sample_alt_lab_ids:
     description: >-
-      One or more alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling).
+     An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.
     title: alternative sample IDs
     examples:
       - value: "ABC_24"
