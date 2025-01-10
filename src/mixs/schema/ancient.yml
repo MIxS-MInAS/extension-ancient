@@ -51,6 +51,27 @@ enums:
     permissible_values:
       single:
       double:
+  SampAgeUnit:
+    permissible_values:
+      BCE:
+      CE:
+      BP:
+      cal BP:
+      cal BCE:
+      cal CE:
+      ka:
+      Ma:
+  SampAgeInferMethod:
+    permissible_values:
+      radiocarbon dating:
+      optically stimulated infrared luminescence:
+      amino acid racemisation:
+      electron spin resonance:
+      uranium thorium:
+      delta 18 oxygen:
+      stratigraphic inference:
+      historical records:
+      other:
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
@@ -113,7 +134,6 @@ slots:
       - sequencing
     keywords:
       - ancient
-    string_serialization: "{float}-{float} {unit}"
     slot_uri: MIXS:999999903
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
@@ -383,41 +403,102 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  sample_age:
+  samp_age_range_youngest_limit:
     annotations:
-      Expected_value: value or range starting from from BP (1950)
-      Preferred_unit: in years before present (BP) or (BCE/CE)
+      Expected_value: age value corresponding to unit
     description: >-
-      The approximate date or date range that individual or organism was living and then died, or the 
-      sample was exposed to the  surface. Typically inferred from archaeological 
-      material, or biological material associated with a sediment, with 
-      radiocarbon dating and other chronometric methods. Should be midpoint of 
-      calibrated radiocarbon age.
-    title: sample age
+      The youngest possible age of the sample. Youngest refers to the time closest to present day.
+      If a sample has only a single age value, the value from samp_age_range_oldest_limit can be repeated.
+    title: sample age range youngest limit
     examples:
       - value: "100000"
       - value: "1700"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:9999999918
-    string_serialization: "{integer}|{integer}-{integer}"
+    slot_uri: MIXS:999999918
+    range: integer
     required: true
     recommended: true
-  sample_age_inference_methods:
+  samp_age_range_youngest_unit:
     description: >-
-      The method used to infer the sample age. Method (14C, OLS, stratigraphic inference etc.) 
-      and associated information (lab code, etc).
+      The unit of the youngest age in the sample age range.
+    title: sample age range youngest unit
+    examples:
+      - value: "cal BP"
+      - value: "CE"
+      - value: "Ma"
+    in_subset:
+      - investigation
+    slot_uri: MIXS:999999919
+    multivalued: true
+    range: SampAgeUnit
+    required: true
+    recommended: true
+  samp_age_range_oldest_limit:
+    annotations:
+      Expected_value: age value corresponding to unit
+    description: >-
+      The oldest possible age of the sample. Oldest refers to the time furthest from present day.
+      If a sample has only a single age value, the value from samp_age_range_youngest_limit can be repeated.
+    title: sample age range oldest limit
+    examples:
+      - value: "120000"
+      - value: "1900"
+    in_subset:
+      - nucleic acid sequence source
+    slot_uri: MIXS:999999920
+    range: integer
+    required: true
+    recommended: true
+  samp_age_range_oldest_unit:
+    description: >-
+      The unit of the oldest age in sample age range.
+    title: sample age range oldest unit
+    examples:
+      - value: "cal BP"
+      - value: "CE"
+      - value: "Ma"
+    in_subset:
+      - investigation
+    slot_uri: MIXS:999999921
+    multivalued: true
+    range: SampAgeUnit
+    required: true
+    recommended: true
+  samp_age_range_inference_methods:
+    description: >-
+      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as 14C, OSL, stratigraphic inference, historical records, other etc.
+      If the method is not in the list, please provide a description in samp_age_range_inference_description.
     title: sample age inference methods
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3"
     in_subset:
       - investigation
-    slot_uri: MIXS:999999919
+    slot_uri: MIXS:999999922
     multivalued: true
-    range: string
-    string_serialization: "{text}"
-    required: false
+    range: SampAgeInferMethod
+    required: true
     recommended: true
+  samp_age_range_inference_description:
+    description: >-
+      Additional general information about the inference method used to infer the sample age that can be useful for 
+      understanding how the sample age was estimated.
+      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used. 
+      It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.
+    title: sample age inference description
+    examples:
+      - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
+      - value: "based on proxy dating from other bone samples of stratigraphic layer"
+      - value: "a coin found in the burial was from the 3rd century"
+      - value: "age taken from previous publication Guellil et al. 2019"
+      - value: "Radiocarbon age ID: OxA-12345"
+    in_subset:
+      - investigation
+    slot_uri: MIXS:999999923
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
   sample_alt_lab_ids:
     description: >-
       Any alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample.
@@ -426,7 +507,7 @@ slots:
       - value: "ABC_24"
     in_subset:
       - investigation
-    slot_uri: MIXS:999999920
+    slot_uri: MIXS:999999924
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -440,7 +521,7 @@ slots:
       - value: "Stored at -20oC until dna_extraction_date"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999922
+    slot_uri: MIXS:999999925
     range: string
     string_serialization: "{text}"
   palaeopath_status:
@@ -459,7 +540,7 @@ slots:
       - palaeopathology
       - host health
       - ancient
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999926 #Not assigned
     multivalued: false
     range: string
     string_serialization: "{text}"
@@ -478,7 +559,7 @@ slots:
       - ethics
     keywords:
       - ethics
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999927 #Not assigned
     multivalued: true
     range: BioCulturalLabel #enum value
     required: false
@@ -495,7 +576,7 @@ slots:
       - ethics
     keywords:
       - ethics
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999928 #Not assigned
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -515,7 +596,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - ancient
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999929 #Not assigned
     multivalued: false
     range: string
     string_serialization: "{text}"
@@ -535,7 +616,7 @@ slots:
     keywords:
       - library
       - preparation
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999930 #Not assigned
     multivalued: true
     range: LibStrand #enum value
     required: false
@@ -554,7 +635,7 @@ slots:
     keywords:
       - library
       - enrichment
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999931 #Not assigned
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -574,7 +655,7 @@ slots:
     keywords:
       - library
       - preparation
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:999999932 #Not assigned
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -617,9 +698,13 @@ classes:
       - prev_pubs
       - recovery_date
       - samp_decontam_pretreat
-      - sample_age
-      - sample_age_inference_methods
-      - sample_alt_lab_ids
+      - samp_age_range_youngest_limit
+      - samp_age_range_youngest_unit
+      - samp_age_range_oldest_limit
+      - samp_age_range_oldest_unit
+      - samp_age_range_inference_methods
+      - samp_age_range_inference_description
+      - samp_alt_lab_ids
       - storage_conditions
       - palaeopath_status
       - biocultural_label
