@@ -82,17 +82,3 @@ The following validation steps will (eventually) be carried out on each PR
 - `gen-json`: checks that the schema can be converted to a basic JSON format
 - `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file
 
-## Viewing interface generation (DataHarmonizer)
-
-- [Install DataHarmonizer](https://github.com/cidgoh/DataHarmonizer?tab=readme-ov-file#prerequisites)
-  - Clone the repo
-  - Configure `corepack` so `yarn` works properly
-  - Run `yarn` to install dependencies
-- Make new schema entry
-  - Delete the contents of `/web/templates/`
-  - Make a directory `/web/templates/[schema name]/` for your new schema
-  - In the directory create `export.json` just containing `export default {};`
-  - Save a `schema.yaml` file in the directory, which is our schema, with an additional [`dh_interface` class](https://github.com/cidgoh/DataHarmonizer?tab=readme-ov-file#making-templates)
-  - Generate the DataHarmonizer compatible JSON with `python ../../../script/linkml.py -i schema.yaml`
-  - Modify the `/web/templates/menu.json` so all `display: false` equals `display: true`
-- Run `yarn build:web` to generate a standalone file (Stored in `/web/dist`)
