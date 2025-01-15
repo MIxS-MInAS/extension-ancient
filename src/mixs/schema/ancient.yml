@@ -89,7 +89,7 @@ slots:
     description: Name of where sample originated and is typically stored. Typically will be 'owning institution'.
     title: context name where location was collected
     examples:
-      - value: Natural History London
+      - value: Natural History Museum London
     in_subset:
       - nucleic acid sequence source
     keywords:

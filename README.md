@@ -72,3 +72,13 @@ In the root of this directory run:
 
 We use a GitHub action to generate a special 'latest' tag that points to the commit of the latest release.
 This allows a more 'user friendly' URL for downloading a specific file, rather than making users have to download a release tarball and extract a specific file.
+
+## Validation
+
+The following validation steps will (eventually) be carried out on each PR
+
+- `linkml lint <schema>.yaml`: to ensure there are no missing information about or misformatting of each term (slot)
+- `gen-csv`: checks that the schema can be converted to a basic CSV format
+- `gen-json`: checks that the schema can be converted to a basic JSON format
+- `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file
+
