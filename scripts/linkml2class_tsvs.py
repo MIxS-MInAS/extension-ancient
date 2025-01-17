@@ -1,39 +1,29 @@
 #!/usr/bin/env python3
-# Modified From: https://github.com/GenomicsStandardsConsortium/mixs/blob/dd1a08f82637e80657f00b4551547a9b4b62c0d3/src/scripts/linkml2class_tsvs.py
+# Modified From: https://github.com/GenomicsStandardsConsortium/mixs/blob/a7df14c160ebab176bbc5ac212b869371270d464/src/scripts/linkml2class_tsvs.py
 # Modification: shebang and attribution
 # By: Mark Andrew Miller (@turbomam)
 # License: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
 import csv
-import importlib.resources as pkg_resources
 import os
-import pprint
-from importlib.resources import files
+from importlib import resources
 from typing import List, Set, Dict, Union
 
 import click
 from linkml_runtime import SchemaView
-from linkml_runtime.dumpers import yaml_dumper
-from linkml_runtime.linkml_model import SlotDefinition
+from linkml_runtime.utils.introspection import package_schemaview
 
 from collections import OrderedDict
 
 
-def get_metaview():
-    # Try to access the resource using a known part of the package structure
-    package_name = "linkml_runtime.linkml_model.model.schema"
+def list_package_contents(package_name):
     try:
-        # Dynamically obtain a reference to the package containing the resource
-        resource_package = files(package_name)
-
-        # Use this reference to open 'meta.yaml'
-        with pkg_resources.as_file(resource_package.joinpath("meta.yaml")) as file_path:
-            with open(file_path, "r") as file:
-                meta_yaml_content = file.read()
-                return SchemaView(meta_yaml_content)
+        # List all resources in the specified package
+        entries = resources.contents(package_name)
+        return list(entries)
     except Exception as e:
-        print(f"Error accessing the meta.yaml file: {e}")
-        exit()
+        print(f"Error accessing package contents: {e}")
+        return []
 
 
 def collect_paths(data: Union[Dict, List], current_path: List[str], paths: Set[str]):
@@ -134,7 +124,7 @@ def process_schema_classes(
     """
     schema_view = SchemaView(schema_file)
 
-    metaview = get_metaview()
+    metaview = package_schemaview("linkml_runtime.linkml_model.meta")
 
     metaslots_helper = {}
     for metaslot in metaslots:

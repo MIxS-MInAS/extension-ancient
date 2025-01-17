@@ -104,7 +104,6 @@ slots:
       Expected_value: chronotology or PeriodO term; text
     description: >-
       The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible.
-      Specify when no value for 'sample_age' is present, or additionally to it.
       If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/).
     title: cultural era or period
     examples:
@@ -126,7 +125,7 @@ slots:
       Expected_value: enumeration
     description: >-
       Indication of whether characteristic ancient DNA damage has been 
-      altered or removed from a DNA extract in a laboratory 
+      altered or removed from a DNA extract in a laboratory
     title: Damage treatment type
     examples:
       - value: none
@@ -506,9 +505,9 @@ slots:
     range: string
     required: false
     recommended: false
-  sample_alt_lab_ids:
+  samp_alt_lab_ids:
     description: >-
-     An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.
+      An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.
     title: alternative sample IDs
     examples:
       - value: "ABC_24"
@@ -669,6 +668,14 @@ slots:
     required: false
     recommended: true
 classes:
+  MixsCompliantData:
+    description:
+      A collection of data that complies with some combination of a MIxS
+      checklist and environmental extension
+    title: MIxS compliant data
+    slots:
+      - ancient_data
+    tree_root: true
   Extension:
     description:
       A collection of recommended metadata terms (slots) developed by community
@@ -721,7 +728,9 @@ classes:
       - enrichment_probe_set
       - mid_config
     slot_usage:
-      sample_age:
+      samp_age_range_youngest_limit:
+        recommended: true
+      samp_age_range_oldest_limit:
         recommended: true
     class_uri: MIXS:9999903
     annotations:

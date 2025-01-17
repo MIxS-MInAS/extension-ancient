@@ -9,21 +9,27 @@
                     "items": {
                         "$ref": "#/$defs/BioCulturalLabel"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "collection_context_name": {
                     "description": "Name of where sample originated and is typically stored. Typically will be 'owning institution'.",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "cultural_era": {
-                    "description": "The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible. Specify when no value for 'sample_age' is present, or additionally to it. If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/).",
+                    "description": "The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible. If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/).",
                     "type": "string"
                 },
                 "damage_treatment": {
-                    "description": "Indication of whether characteristic ancient DNA damage has been  enzymatically or chemically removed in a laboratory",
+                    "description": "Indication of whether characteristic ancient DNA damage has been  altered or removed from a DNA extract in a laboratory",
                     "items": {
                         "$ref": "#/$defs/DamageTreatmentEnum"
                     },
@@ -32,33 +38,58 @@
                 "dna_extraction_date": {
                     "description": "The date when the nucleic acid extraction was started from the sample material. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
                     "format": "date-time",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
-                "ethical_authority": {
-                    "description": "Name of the authority or institution that awarded sampling and  analysis (e.g. human remains) and/or export permission  (e.g. animal remains)",
+                "enrichment_probe_set": {
+                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ethical_authority": {
+                    "description": "Name of the authorit(ies) or institution(s) that awarded sampling and  analysis (e.g. human remains) and/or export permission  (e.g. animal remains)",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "ethical_date": {
                     "description": "Date of award of ethical/export permission. The date can be right truncated  i.e. all of these are valid times: 2008-01-23; 2008-01; 2008;  Except: 2008-01; 2008 all are ISO8601 compliant",
                     "format": "date-time",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "ethical_id": {
                     "description": "The permissions code, ID, document, or similar provided by any authority  (socal, legal, academic etc.) associated with approval of the analysis of  this particular sample.",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "ethics_perm_scope": {
                     "description": "Description of the original scope and permissions of the research on the genetic material, as was approved by the ethical authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed).",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "experimental_procedures": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
@@ -66,22 +97,34 @@
                         "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "host_body_preservation_state": {
                     "description": "Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment, e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "lib_concentration": {
-                    "description": "Concentration of library in ng per \u00b5l, as inferred by qPCR/Qubit/etc.",
+                    "description": "Concentration of library in ng per \u00b5l, as inferred by qPCR, digital PCR, Qubit etc.",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "lib_index_polymerase": {
-                    "description": "The of DNA polymerase enzyme used for indexing DNA libraries",
-                    "type": "string"
+                    "description": "The DNA polymerase enzyme used for indexing DNA libraries",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "lib_preparation_protocol": {
                     "description": "Citation(s) for the DNA library preparation protocol",
@@ -89,55 +132,82 @@
                         "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "lib_reamplification_polymerase": {
-                    "description": "The name of polymerase enzyme used for reamplifying DNA libraries post-indexing.",
-                    "type": "string"
+                    "description": "The name of the DNA polymerase enzyme used for reamplifying DNA libraries post-indexing.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "lib_strandedness": {
                     "description": "The strandedness of the original template DNA molecules used for constructing the sequencing library",
                     "items": {
                         "$ref": "#/$defs/LibStrand"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "lib_type": {
                     "$ref": "#/$defs/LibTypeEnum",
-                    "description": "The type of library created, i.e., amplicon based or shotgun.  Amplicon based, is a library targets a specific region or regions of a genome (e.g. microbial genome capture based on baits of a reference genome), while shotgun refers to non targeted approach."
+                    "description": "The type of library created, i.e., amplicon, enriched, or shotgun.  Amplicon based is a library that has been amplified to target a specific single region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome or genome regions 'captured' or enriched typically via baits or probes. A shotgun library has had no type of targeted enrichment for a particular gene or genome."
                 },
                 "mid_config": {
                     "description": "Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "neg_cont_status": {
                     "description": "Specify whether the sample is a negative control or not.",
-                    "type": "boolean"
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
                 },
                 "num_capture_amp_cycles": {
                     "description": "Number of amplification cycles after capture enrichment",
                     "items": {
                         "type": "integer"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "num_reamp_cycles": {
                     "description": "Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.",
-                    "type": "integer"
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
                 },
                 "palaeopath_status": {
                     "description": "Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "preservational_treatment": {
                     "description": "Description of any treatment applied to samples for the purpose of  maximising collection preservation that may influence downstream  DNA recovery or library construction, such as storage fluid or  reconstructive glue",
                     "items": {
                         "type": "string"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "prev_pubs": {
                     "description": "Any publications that report data from the same body/skeleton/individual",
@@ -145,19 +215,64 @@
                         "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
-                    "type": "array"
-                },
-                "probe_set": {
-                    "description": "Description of target enrichment probe designs used (e.g. sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "recovery_date": {
                     "description": "Date of excavation or retrieval from burial or depositional context, if known. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. If excavations were done during a longer period, report its midpoint at a month or year level.",
                     "format": "date-time",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "samp_age_range_inference_description": {
+                    "description": "Additional general information about the inference method used to infer the sample age that can be useful for  understanding how the sample age was estimated. This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used.  It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "samp_age_range_inference_methods": {
+                    "description": "The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as 14C, OSL, stratigraphic inference, historical records, other etc. If the method is not in the list, please provide a description in samp_age_range_inference_description.",
+                    "items": {
+                        "$ref": "#/$defs/SampAgeInferMethod"
+                    },
+                    "type": "array"
+                },
+                "samp_age_range_oldest_limit": {
+                    "description": "The oldest possible age of the sample. Oldest refers to the time furthest from present day. If a sample has only a single age value, the value from samp_age_range_youngest_limit can be repeated. Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.",
+                    "type": "integer"
+                },
+                "samp_age_range_oldest_unit": {
+                    "description": "The unit of the oldest age in sample age range.",
+                    "items": {
+                        "$ref": "#/$defs/SampAgeUnit"
+                    },
+                    "type": "array"
+                },
+                "samp_age_range_youngest_limit": {
+                    "description": "The youngest possible age of the sample. Youngest refers to the time closest to present day. If a sample has only a single age value, the value from samp_age_range_oldest_limit can be repeated. Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.",
+                    "type": "integer"
+                },
+                "samp_age_range_youngest_unit": {
+                    "description": "The unit of the youngest age in the sample age range.",
+                    "items": {
+                        "$ref": "#/$defs/SampAgeUnit"
+                    },
+                    "type": "array"
+                },
+                "samp_alt_lab_ids": {
+                    "description": "An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "samp_decontam_pretreat": {
                     "description": "Method(s) employed for surface decontamination of samples of external  modern DNA; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
@@ -165,35 +280,27 @@
                         "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
-                    "type": "array"
-                },
-                "sample_age": {
-                    "description": "The approximate date or date range that individual or organism was living and then died, or the  sample was exposed to the  surface. Typically inferred from archaeological  material, or biological material associated with a sediment, with  radiocarbon dating and other chronometric methods. Should be midpoint of  calibrated radiocarbon age.",
-                    "type": "string"
-                },
-                "sample_age_inference_methods": {
-                    "description": "The method used to infer the sample age. Method (14C, OLS, stratigraphic inference etc.)  and associated information (lab code, etc).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
-                },
-                "sample_alt_lab_ids": {
-                    "description": "Any alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "storage_conditions": {
                     "description": "General conditions in which the material (before sampling for DNA analysis) was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
                 "cultural_era",
                 "damage_treatment",
-                "sample_age"
+                "samp_age_range_youngest_limit",
+                "samp_age_range_youngest_unit",
+                "samp_age_range_oldest_limit",
+                "samp_age_range_oldest_unit",
+                "samp_age_range_inference_methods"
             ],
             "title": "Ancient",
             "type": "object"
@@ -246,16 +353,79 @@
             "description": "",
             "enum": [
                 "amplicon",
+                "enriched",
                 "shotgun"
             ],
             "title": "LibTypeEnum",
+            "type": "string"
+        },
+        "MixsCompliantData": {
+            "additionalProperties": false,
+            "description": "A collection of data that complies with some combination of a MIxS checklist and environmental extension",
+            "properties": {
+                "ancient_data": {
+                    "description": "Data that comply with Extension Ancient",
+                    "items": {
+                        "$ref": "#/$defs/Ancient"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "title": "MixsCompliantData",
+            "type": "object"
+        },
+        "SampAgeInferMethod": {
+            "description": "",
+            "enum": [
+                "radiocarbon dating",
+                "optically stimulated infrared luminescence",
+                "amino acid racemisation",
+                "electron spin resonance",
+                "uranium thorium",
+                "stratigraphic inference",
+                "relative dating",
+                "historical records",
+                "other"
+            ],
+            "title": "SampAgeInferMethod",
+            "type": "string"
+        },
+        "SampAgeUnit": {
+            "description": "",
+            "enum": [
+                "BCE",
+                "CE",
+                "BP",
+                "cal BP",
+                "cal BCE",
+                "cal CE",
+                "ka",
+                "Ma"
+            ],
+            "title": "SampAgeUnit",
             "type": "string"
         }
     },
     "$id": "https://w3id.org/mixs",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
+    "description": "A collection of data that complies with some combination of a MIxS checklist and environmental extension",
     "metamodel_version": "1.7.0",
+    "properties": {
+        "ancient_data": {
+            "description": "Data that comply with Extension Ancient",
+            "items": {
+                "$ref": "#/$defs/Ancient"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        }
+    },
     "title": "mixs",
     "type": "object",
     "version": "v6.2.0"

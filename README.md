@@ -27,36 +27,29 @@ The repo is laid out as follows:
    - Important: try to make one commit for each new term and term update, with a descriptive message as to the change.
    - For each term, all changes to (description, examples, etc.) should be in one commit and described in the commit message (this will allow us further automate release notes)
 4. Coordination team cross-reviews the two PRs and merge in
-5. In a new PR, generate additional JSON and TSV files based on instructions on technical notes (containing all changes/new terms)
-   - The YAML -> JSON conversion will include LinkML schema validation, so additional correction PRs made be required at this point!
-6. Make a release with the following format
+5. Run validation (TO BE AUTOMATED)
+   - `linkml lint --config linkml-lint-config.yml src/mixs/schema/ancient.yml`: to ensure there are no _errors_ or important missing information about or misformatting of each term (slot)
+   - `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file [NOT YET IMPLEMENTED]
+6. In a new PR, generate additional JSON and TSV files based on instructions on technical notes (containing all changes/new terms)
+   - `gen-csv src/mixs/schema/ancient.yml > src/mixs/schema/ancient.csv`: checks that the schema can be converted to a basic CSV format
+   - `gen-json-schema src/mixs/schema/ancient.yml > src/mixs/schema/ancient.json` checks that the schema can be converted to a basic JSON format
+   - The YAML -> JSON conversion will include additioanl LinkML schema validation, so additional correction PRs made be required at this point!
+7. Generate the 'old style' MIxS checklist
+   - `./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir projects/class-model-tsvs/`
+8. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
    - Tag: vX.X.X
    - Title: vX.X.X
    - Generate release notes based on a cleaned up `git log --oneline` that has the git hash and the informative commit message
    - Set as latest
-7. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
+9. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 
 ## Technical notes
 
 Use the YAML (in as far as possible similar format as MIxS LinkML structure) as the source of truth.
 
-### JSON Conversion
-
-To generate the JSON version, install LinkML
-
-```bash
-pip install linkml
-```
-
-And run the following command, assuming root of repo:
-
-```bash
-gen-json-schema src/mixs/schema/ancient.yml > src/mixs/schema/ancient.json
-```
-
 ### MIxS TSV Style Conversion
 
-To convert to the original MIxS TSV style, we can use [a script](https://github.com/GenomicsStandardsConsortium/mixs/blob/dd1a08f82637e80657f00b4551547a9b4b62c0d3/src/scripts/linkml2class_tsvs.py) developed by @TurboMam.
+To convert to the original MIxS TSV style, we can use [a script](https://github.com/GenomicsStandardsConsortium/mixs/blob/a7df14c160ebab176bbc5ac212b869371270d464/src/scripts/linkml2class_tsvs.py) developed by @TurboMam.
 
 This script has been copied and modified very slightly to include the `python3` shebang, and is placed under `scripts` until properly packaged for the MIxS project.
 
@@ -72,13 +65,3 @@ In the root of this directory run:
 
 We use a GitHub action to generate a special 'latest' tag that points to the commit of the latest release.
 This allows a more 'user friendly' URL for downloading a specific file, rather than making users have to download a release tarball and extract a specific file.
-
-## Validation
-
-The following validation steps will (eventually) be carried out on each PR
-
-- `linkml lint <schema>.yaml`: to ensure there are no missing information about or misformatting of each term (slot)
-- `gen-csv`: checks that the schema can be converted to a basic CSV format
-- `gen-json`: checks that the schema can be converted to a basic JSON format
-- `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file
-

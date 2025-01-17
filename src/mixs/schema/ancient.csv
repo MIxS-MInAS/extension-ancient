@@ -1,0 +1,5 @@
+id,mappings,description
+Ancient,,"A collection of terms appropriate when collecting samples and sequencing samples  of data containing ancient DNA, i.e., degraded molecules not from living organisms."
+Extension,,"A collection of recommended metadata terms (slots) developed by community experts, describing the specific context under which a sample was collected."
+MixsCompliantData,,A collection of data that complies with some combination of a MIxS checklist and environmental extension
+
