@@ -627,15 +627,15 @@ slots:
     range: LibStrand #enum value
     required: false
     recommended: true
-  enrichment_probe_set:
+  genomic_capture_probe_desc:
     annotations:
-      Expected_value: Description of probe set used for target enrichment/library selection
+      Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
       Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
     title: enrichment probe design description
     examples:
       - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science"
-      - value: "Commercial kit ABC001-EC from company TE-Science, purchased 2020"
+      - value: "Commercial RNA baits kit ABC001-EC from company TE-Science, purchased 2020"
     in_subset:
       - sequencing
     keywords:
@@ -645,6 +645,29 @@ slots:
     multivalued: true
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
+  genomic_capture_probe_taxid:
+    annotations:
+      Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
+    description: >-
+      NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.
+    title: genomic capture probe taxonomic IDs
+    examples:
+      - value: 9606
+      - value: 632
+      - value: 9789
+    in_subset:
+      - sequencing
+    keywords:
+      - sequencing
+      - library
+      - enrichment
+      - capture
+    slot_uri: MIXS:999999932 #Not assigned
+    multivalued: true
+    range: integer
+    string_serialization:
     required: false
     recommended: false
   mid_config:
@@ -661,7 +684,7 @@ slots:
     keywords:
       - library
       - preparation
-    slot_uri: MIXS:999999932 #Not assigned
+    slot_uri: MIXS:999999933 #Not assigned
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -725,7 +748,8 @@ classes:
       - ethics_perm_scope
       - host_body_preservation_state
       - lib_strandedness
-      - enrichment_probe_set
+      - genomic_capture_probe_taxid
+      - genomic_capture_probe_desc
       - mid_config
     slot_usage:
       samp_age_range_youngest_limit:

@@ -43,16 +43,6 @@
                         "null"
                     ]
                 },
-                "enrichment_probe_set": {
-                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "ethical_authority": {
                     "description": "Name of the authorit(ies) or institution(s) that awarded sampling and  analysis (e.g. human remains) and/or export permission  (e.g. animal remains)",
                     "items": {
@@ -94,8 +84,28 @@
                 "experimental_procedures": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
                     "items": {
-                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "pattern": "^{PMID}|{DOI}|{URL}$",
                         "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "genomic_capture_probe_desc": {
+                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "genomic_capture_probe_taxid": {
+                    "description": "NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.",
+                    "items": {
+                        "type": "integer"
                     },
                     "type": [
                         "array",
@@ -129,7 +139,7 @@
                 "lib_preparation_protocol": {
                     "description": "Citation(s) for the DNA library preparation protocol",
                     "items": {
-                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "pattern": "^{PMID}|{DOI}|{URL}$",
                         "type": "string"
                     },
                     "type": [
@@ -212,7 +222,7 @@
                 "prev_pubs": {
                     "description": "Any publications that report data from the same body/skeleton/individual",
                     "items": {
-                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "pattern": "^{PMID}|{DOI}|{URL}$",
                         "type": "string"
                     },
                     "type": [
@@ -277,7 +287,7 @@
                 "samp_decontam_pretreat": {
                     "description": "Method(s) employed for surface decontamination of samples of external  modern DNA; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
                     "items": {
-                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
+                        "pattern": "^{PMID}|{DOI}|{URL}$",
                         "type": "string"
                     },
                     "type": [
