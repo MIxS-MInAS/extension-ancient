@@ -635,7 +635,7 @@ slots:
     title: enrichment probe design description
     examples:
       - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science"
-      - value: "Commercial kit ABC001-EC from company TE-Science, purchased 2020"
+      - value: "Commercial RNA baits kit ABC001-EC from company TE-Science, purchased 2020"
     in_subset:
       - sequencing
     keywords:
@@ -649,10 +649,10 @@ slots:
     recommended: false
   genomic_capture_probe_taxid:
     annotations:
-      Expected_value: Taxonomic ID corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
+      Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
     description: >-
-      NCBI taxon ID of all organisms included in the baits of a whole organelle, or whole genome-level capture panel. There should be an entry for each species for which sequences were included in the design. If whole genera were targeted, you can use a genus level taxonomic ID or that of any relevant higher taxonomic unit.
-    title: genomic capture probe taxonomic ID
+      NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.
+    title: genomic capture probe taxonomic IDs
     examples:
       - value: 9606
       - value: 632
