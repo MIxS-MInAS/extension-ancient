@@ -664,7 +664,7 @@ slots:
       - library
       - enrichment
       - capture
-    slot_uri: MIXS:999999933 #Not assigned
+    slot_uri: MIXS:999999932 #Not assigned
     multivalued: true
     range: integer
     string_serialization:
