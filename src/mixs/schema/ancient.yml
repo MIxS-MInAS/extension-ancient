@@ -752,10 +752,121 @@ classes:
       - genomic_capture_probe_desc
       - mid_config
     slot_usage:
-      samp_age_range_youngest_limit:
-        recommended: true
+      collection_context_name:
+        rank: 1
+        slot_group: environment
+      samp_alt_lab_ids:
+        rank: 2
+        slot_group: sample body
+      ethical_authority:
+        rank: 3
+        slot_group: sample body
+      ethical_id:
+        rank: 4
+        slot_group: sample body
+      ethical_date:
+        rank: 5
+        slot_group: sample body
+      ethics_perm_scope:
+        rank: 6
+        slot_group: sample body
+      biocultural_label:
+        rank: 7
+        slot_group: sample body
       samp_age_range_oldest_limit:
+        rank: 8
+        slot_group: sample body
         recommended: true
+      samp_age_range_oldest_unit:
+        rank: 9
+        slot_group: sample body
+        recommended: true
+      samp_age_range_youngest_limit:
+        rank: 10
+        slot_group: sample body
+        recommended: true
+      samp_age_range_youngest_unit:
+        rank: 11
+        slot_group: sample body
+        recommended: true
+      samp_age_range_inference_methods:
+        rank: 12
+        slot_group: sample body
+      samp_age_range_inference_description:
+        rank: 13
+        slot_group: sample body
+      cultural_era:
+        rank: 14
+        slot_group: sample body
+      recovery_date:
+        rank: 15
+        slot_group: sample body
+      storage_conditions:
+        rank: 16
+        slot_group: sample body
+      preservational_treatment:
+        rank: 17
+        slot_group: sample body
+      palaeopath_status:
+        rank: 18
+        slot_group: sample body
+      prev_pubs:
+        rank: 19
+        slot_group: sample body
+      host_body_preservation_state:
+        rank: 20
+        slot_group: sample body
+      neg_cont_status:
+        rank: 21
+        slot_group: nucleic acid source
+      samp_decontam_pretreat:
+        rank: 22
+        slot_group: nucleic acid source
+      dna_extraction_date:
+        rank: 23
+        slot_group: nucleic acid source
+      damage_treatment:
+        rank: 24
+        slot_group: sequencing
+        recommended: true
+      lib_strandedness:
+        rank: 25
+        slot_group: sequencing
+        recommended: true
+      mid_config:
+        rank: 26
+        slot_group: sequencing
+      lib_type:
+        rank: 27
+        slot_group: sequencing
+        recommended: true
+      lib_concentration:
+        rank: 28
+        slot_group: sequencing
+      lib_index_polymerase:
+        rank: 29
+        slot_group: sequencing
+      genomic_capture_probe_taxid:
+        rank: 30
+        slot_group: sequencing
+      genomic_capture_probe_desc:
+        rank: 31
+        slot_group: sequencing
+      num_capture_amp_cycles:
+        rank: 32
+        slot_group: sequencing
+      num_reamp_cycles:
+        rank: 33
+        slot_group: sequencing
+      lib_reamplification_polymerase:
+        rank: 34
+        slot_group: sequencing
+      experimental_procedures:
+        rank: 35
+        slot_group: sequencing
+      lib_preparation_protocol:
+        rank: 36
+        slot_group: sequencing
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
