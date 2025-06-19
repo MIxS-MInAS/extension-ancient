@@ -15,7 +15,7 @@
                     ]
                 },
                 "collection_context_name": {
-                    "description": "Name of where sample originated and is typically stored. Typically will be 'owning institution'.",
+                    "description": "Name of location where sample is typically stored or archived. Typically will be 'owning institution'.",
                     "items": {
                         "type": "string"
                     },
@@ -84,7 +84,7 @@
                 "experimental_procedures": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
                     "type": [
@@ -139,7 +139,7 @@
                 "lib_preparation_protocol": {
                     "description": "Citation(s) for the DNA library preparation protocol",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
                     "type": [
@@ -222,7 +222,7 @@
                 "prev_pubs": {
                     "description": "Any publications that report data from the same body/skeleton/individual",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
                     "type": [
@@ -287,7 +287,7 @@
                 "samp_decontam_pretreat": {
                     "description": "Method(s) employed for surface decontamination of samples of external  modern DNA; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^^PMID:\\d+$|^doi:10.\\d{2,9}/.*$|^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$$",
                         "type": "string"
                     },
                     "type": [
