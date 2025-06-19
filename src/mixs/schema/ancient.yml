@@ -86,7 +86,7 @@ slots:
   collection_context_name:
     annotations:
       Expected_value: name of institution
-    description: Name of where sample originated and is typically stored or archived. Typically will be 'owning institution'.
+    description: Name of location where sample is typically stored or archived. Typically will be 'owning institution'.
     title: location where sample typically is archived
     examples:
       - value: Natural History Museum London
