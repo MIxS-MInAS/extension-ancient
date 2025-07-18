@@ -127,7 +127,27 @@ slots:
     slot_uri: MIXS:999999902
     multivalued: false
     required: false
-    recommended: true
+    recommended: false
+  geological_epoch:
+    annotations:
+      Expected_value: ontology term; text
+    description: >-
+      The geological epoch approximating to the period in which the specimen or sample existed in. Where possible use terms from ontologies.
+    title: geological epoch
+    examples:
+      - value: "Pleistocene"
+      - value: "Upper Cretaceous"
+      - value: "Pliocene"
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - ancient
+      - age
+    string_serialization: "{termLabel} [{termID}]|{text}"
+    slot_uri: MIXS:999999902
+    multivalued: false
+    required: false
+    recommended: false
   damage_treatment:
     annotations:
       Expected_value: enumeration
@@ -163,7 +183,7 @@ slots:
     annotations:
       Expected_value: Name of authority providing permission or ethical approval.
     description: >-
-      Name of the authorit(ies) or institution(s) that granted sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains), as well any form of ethical approval (whether from institutional research ethics boards such as REB or IRBs, or indigenous or native community associations), if available. 
+      Name of the authorit(ies) or institution(s) that granted sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains), as well any form of ethical approval (whether from institutional research ethics boards such as REB or IRBs, or indigenous or native community associations), if available.
     title: permit authority
     examples:
       - value: "University of Copenhagen"
@@ -701,6 +721,239 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
+  site_name:
+    annotations:
+      Expected_value: Name of site of location where sample was collected
+    description: >-
+      Designated name of the archaeological, ecological (or similar) site or location where the sample was originally collected.
+      Can be a non-geographical name, such as a field-specific name or code, such as the official name of an excavation or a colloquial name that is used in academic literature.
+      Typically names that would not be found on official maps.
+      Can also include different transliterations or languages used in the literature.
+    title: Name of site or location where sample was originally collected
+    examples:
+      - value: "Valley of the Kings"
+      - value: "Krakow Spadzista B"
+      - value: "Coopers Cave"
+      - value: "Cutler Fossil Site"
+      - value: "Kap København Formation"
+    in_subset:
+      - environment
+    keywords:
+      - environment
+      - sample
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
+  data_filt_applied:
+    annotations:
+      Expected_value: Whether associated data was filtered
+    description: >-
+      Specify whether associated data was filtered prior to upload, such as host DNA removal.
+    title: Data filtering applied
+    examples:
+      - value: "no"
+      - value: "yes"
+    in_subset:
+      - sequencing
+    keywords:
+      - data analysis
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: boolean
+    required: false
+    recommended: true
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+  xxx:
+    annotations:
+      Expected_value: xxx
+    description: >-
+      xxx
+    title: xxx
+    examples:
+      - value: "xxx"
+      - value: "xxx"
+      - value: "xxx"
+    in_subset:
+      - xxx
+    keywords:
+      - xxx
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
 classes:
   MixsCompliantData:
     description:
