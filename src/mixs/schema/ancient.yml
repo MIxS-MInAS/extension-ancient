@@ -497,6 +497,7 @@ slots:
       understanding how the sample age was estimated.
       This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used. 
       It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.
+      Include any relevant additional citations to the dating method here.
     title: sample age inference description
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
@@ -510,7 +511,7 @@ slots:
     multivalued: false
     range: string
     required: false
-    recommended: false
+    recommended: true
   samp_alt_lab_ids:
     description: >-
       An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.
