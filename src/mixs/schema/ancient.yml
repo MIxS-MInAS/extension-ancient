@@ -711,7 +711,7 @@ slots:
     annotations:
       Expected_value: Name of site of location where sample was collected
     description: >-
-      Designated name of the archaeological, ecological (or similar) site or location where the sample was originally collected.
+      Designated name of the archaeological, ecological (or similar) site, ancient settlement, or location where the sample was originally collected.
       Can be a non-geographical name, such as a field-specific name or code, such as the official name of an excavation or a colloquial name that is used in academic literature.
       Typically names that would not be found on official maps.
       Can also include different transliterations or languages used in the literature.
@@ -769,25 +769,28 @@ slots:
     range: string
     required: false
     recommended: true
-  xxx:
+  desc_read_state:
     annotations:
-      Expected_value: xxx
+      Expected_value: description of any modifications to data away from original raw files
     description: >-
-      xxx
-    title: xxx
+      Description of the reads of the sequenced library.
+      Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
+      This should include details such as adapter-, barcode-, quality- trimming, or any filtering such as read length or off-target reads.
+    title: description of read state
     examples:
-      - value: "xxx"
-      - value: "xxx"
-      - value: "xxx"
+      - value: "Adapter trimmed, quality filtered, and host reads removed through mapping for ethical reasons."
+      - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln."
+      - value: "Inline barcodes removed, and reads quality filtered with fastp (v1.0.0)."
     in_subset:
-      - xxx
+      - sequencing
     keywords:
-      - xxx
+      - data analysis
+      - data
     slot_uri: MIXS:999999933 #Not assigned
     multivalued: false
     range: string
     required: false
-    recommended: false
+    recommended: true
   xxx:
     annotations:
       Expected_value: xxx
