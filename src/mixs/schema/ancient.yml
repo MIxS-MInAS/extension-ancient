@@ -556,11 +556,12 @@ slots:
     annotations:
       Expected_value: Relevant biocultural label from https://localcontexts.org/labels/biocultural-labels/
     description: >-
-      Relevant biocultural labels that apply to the sample under study, based on https://localcontexts.org/label/bc-provenance/. These help indicate how indigenous peoples and similar communities view in which contexts this data can be reused.
+      Relevant biocultural labels defined by the local contexts project (https://localcontexts.org/label/bc-provenance/) that describe in what ways this data can be reused, as permitted by any associated native or indigenous peoples or communities.
     title: biocultural label
     examples:
       - value: "BC R"
       - value: "BC MC"
+      - value: "BC MC;BC CV"
     in_subset:
       - ethics
     keywords:
