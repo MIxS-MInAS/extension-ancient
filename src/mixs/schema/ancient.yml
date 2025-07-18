@@ -277,25 +277,6 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  lib_reamplification_polymerase:
-    annotations:
-      Expected_value: name of polymerase used during library indexing
-    description: >-
-      The name of the nucleic acid polymerase enzyme used for reamplifying nucleic acid libraries post-indexing.
-    title: library reamplification polymerase
-    examples:
-      - value: "KAPA HiFi HotStart Uracil+"
-    in_subset:
-      - sequencing
-    keywords:
-      - polymerase
-      - library
-      - preparation
-    string_serialization: "{text}"
-    slot_uri: MIXS:999999909
-    range: string
-    required: false
-    recommended: true
   lib_type:
     description: >-
       The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
@@ -959,14 +940,11 @@ classes:
       num_reamp_cycles:
         rank: 33
         slot_group: sequencing
-      lib_reamplification_polymerase:
+      experimental_procedures:
         rank: 34
         slot_group: sequencing
-      experimental_procedures:
-        rank: 35
-        slot_group: sequencing
       lib_preparation_protocol:
-        rank: 36
+        rank: 35
         slot_group: sequencing
     class_uri: MIXS:9999903
     annotations:
