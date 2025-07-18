@@ -450,10 +450,10 @@ slots:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The oldest possible age of the sample.
+      The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit.
       Oldest refers to the time furthest from present day.
-      If a sample has only a single age value, the value from samp_age_range_youngest_limit can be repeated.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
+      Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
     title: sample age range oldest limit
     examples:
       - value: "120000"
