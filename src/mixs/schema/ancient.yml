@@ -756,14 +756,14 @@ slots:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
-      Description of the reads of the sequenced library.
+      Description of the state of the reads in the sequencing data file.
       Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
-      This should include details such as adapter-, barcode-, quality- trimming, or any filtering such as read length or off-target reads.
+      This should include details such as adapter-, barcode-, and/or quality- trimming, or any filtering such as for read length or of off-target reads.
     title: description of read state
     examples:
       - value: "Adapter trimmed, quality filtered, and host reads removed through mapping for ethical reasons."
-      - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln."
-      - value: "Inline barcodes removed, and reads quality filtered with fastp (v1.0.0)."
+      - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln (v0.7.19)."
+      - value: "Demultiplexed with bcl2fastq, inline barcodes removed, and reads quality filtered with fastp (v1.0.0)."
     in_subset:
       - sequencing
     keywords:
