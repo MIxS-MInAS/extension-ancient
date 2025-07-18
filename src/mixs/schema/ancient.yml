@@ -485,7 +485,7 @@ slots:
     recommended: true
   samp_age_range_inference_methods:
     description: >-
-      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as C14, OSL, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
+      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
       If the method is not in the list, please provide a description in samp_age_range_inference_description.
     title: sample age inference methods
     examples:
