@@ -26,11 +26,16 @@ subsets:
 enums:
   DamageTreatmentEnum:
     permissible_values:
-      none:
-      partial-udg:
-      full-udg:
-      enriched:
+      no-removal:
+        description: Molecular damage-derived misincorporations have not been removed using laboratory techniques.
+      partial-removal:
+        description: Molecular damage-derived misincorporations have been partially removed using laboratory techniques such as with an early stopped uracil-DNA glycosylase (UDG) or USER treatment, leaving a small number of nucleotides with damage at ends of molecules.
+      complete-removal:
+        description: Molecular damage-derived misincorporations have been entirely removed using laboratory techniques such as with complete uracil-DNA glycosylase (UDG) or USER treatment, leaving no nucleotides with damage at ends of molecules.
+      damage-selection:
+        description: Library preparation-derived technique that retain only molecules containing damage, and have discarded those without damage.
       other:
+        description: Other type of damage treatment that are further described in other method description terms.
   LibTypeEnum:
     permissible_values:
       amplicon:
@@ -69,8 +74,10 @@ enums:
       amino acid racemisation:
       electron spin resonance:
       uranium thorium:
-      stratigraphic inference:
-      relative dating:
+      contextual dating:
+        description: A non-absolute date inferred from the specific context of an archaeological or palaeontological sample (e.g. stratigraphic layers, coins).
+      associated absolute dating:
+        description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial).
       historical records:
       other:
 slots:
@@ -83,13 +90,15 @@ slots:
     range: Ancient
     inlined: true
     inlined_as_list: true
-  collection_context_name:
+  source_mat_curat_insti:
     annotations:
-      Expected_value: name of institution
-    description: Name of location where sample is typically stored or archived. Typically will be 'owning institution'.
-    title: location where sample typically is archived
+      Expected_value: name of typical storage or archiving institution
+    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for DNA extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
+    title: Institution storing or archiving the source material
     examples:
       - value: Natural History Museum London
+      - value: Denkmalpflege Baden-Württemberg, University of Tübingen
+      - value: Herbarium, Royal Botanic Gardens, Kew
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -103,8 +112,7 @@ slots:
     annotations:
       Expected_value: chronotology or PeriodO term; text
     description: >-
-      The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible.
-      If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/).
+      The cultural era approximating to the period in which the archaeological remains existed in. Where possible use terms from ontologies such as Chronontology (https://chronontology.dainst.org/) or PeriodO (https://perio.do/en/).
     title: cultural era or period
     examples:
       - value: "Copper Age [Chronotology: NW6hofAScJSE]"
@@ -118,7 +126,7 @@ slots:
     string_serialization: "{termLabel} [{termID}]|{text}"
     slot_uri: MIXS:999999902
     multivalued: false
-    required: true
+    required: false
     recommended: true
   damage_treatment:
     annotations:
@@ -129,7 +137,7 @@ slots:
     title: Damage treatment type
     examples:
       - value: none
-      - value: partial-udg
+      - value: partial-removal
     in_subset:
       - sequencing
     keywords:
@@ -409,10 +417,12 @@ slots:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The youngest possible age of the sample.
+      The youngest possible age of the sample in years, with the specific year unit defined in samp_age_range_youngest_unit.
       Youngest refers to the time closest to present day.
-      If a sample has only a single age value, the value from samp_age_range_oldest_limit can be repeated.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
+      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
+      Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates).
+      If the sample age is unknown, give a broad range in a reasonable timeframe and justify in samp_age_range_inference_description.
     title: sample age range youngest limit
     examples:
       - value: "100000"
@@ -442,10 +452,12 @@ slots:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The oldest possible age of the sample.
+      The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit.
       Oldest refers to the time furthest from present day.
-      If a sample has only a single age value, the value from samp_age_range_youngest_limit can be repeated.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
+      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
+      Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
+      If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in samp_age_range_inference_description.
     title: sample age range oldest limit
     examples:
       - value: "120000"
@@ -473,24 +485,27 @@ slots:
     recommended: true
   samp_age_range_inference_methods:
     description: >-
-      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as 14C, OSL, stratigraphic inference, historical records, other etc.
+      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
       If the method is not in the list, please provide a description in samp_age_range_inference_description.
     title: sample age inference methods
     examples:
-      - value: "radiocarbon dating, calibrated with OxCal v4.3"
+      - value: "radiocarbon dating"
+      - value: "optically stimulated infrared luminescence"
+      - value: "contextual dating"
+      - value: "historical records"
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
     multivalued: true
     range: SampAgeInferMethod
-    required: true
+    required: false
     recommended: true
   samp_age_range_inference_description:
     description: >-
-      Additional general information about the inference method used to infer the sample age that can be useful for 
-      understanding how the sample age was estimated.
-      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used. 
+      Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated.
+      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used.
       It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.
+      Include any relevant additional citations to the dating method here.
     title: sample age inference description
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
@@ -504,13 +519,15 @@ slots:
     multivalued: false
     range: string
     required: false
-    recommended: false
+    recommended: true
   samp_alt_lab_ids:
     description: >-
-      An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.
+      An alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.
     title: alternative sample IDs
     examples:
       - value: "ABC_24"
+      - value: "Grave 6"
+      - value: "Museum ID: NHM_AR_123, Drilling ID: DRL_001, Extraction ID: ABC_24"
     in_subset:
       - investigation
     slot_uri: MIXS:999999924
@@ -556,11 +573,12 @@ slots:
     annotations:
       Expected_value: Relevant biocultural label from https://localcontexts.org/labels/biocultural-labels/
     description: >-
-      Relevant biocultural labels that apply to the sample under study, based on https://localcontexts.org/label/bc-provenance/. These help indicate how indigenous peoples and similar communities view in which contexts this data can be reused.
+      Relevant biocultural labels defined by the local contexts project (https://localcontexts.org/label/bc-provenance/) that describe in what ways this data can be reused, as permitted by any associated native or indigenous peoples or communities.
     title: biocultural label
     examples:
       - value: "BC R"
       - value: "BC MC"
+      - value: "BC MC;BC CV"
     in_subset:
       - ethics
     keywords:
@@ -715,7 +733,7 @@ classes:
     title: ancient
     is_a: Extension
     slots:
-      - collection_context_name
+      - source_mat_curat_insti
       - cultural_era
       - damage_treatment
       - dna_extraction_date
@@ -752,7 +770,7 @@ classes:
       - genomic_capture_probe_desc
       - mid_config
     slot_usage:
-      collection_context_name:
+      source_mat_curat_insti:
         rank: 1
         slot_group: environment
       samp_alt_lab_ids:
