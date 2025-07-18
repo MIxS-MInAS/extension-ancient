@@ -105,8 +105,7 @@ slots:
     annotations:
       Expected_value: chronotology or PeriodO term; text
     description: >-
-      The cultural era approximating the period in which the individual lived from https://chronontology.dainst.org/ or PeriodO if possible.
-      If not available, follow INSDC standard for reporting missing data (https://www.insdc.org/submitting-standards/missing-value-reporting/).
+      The cultural era approximating to the period in which the archaeological remains existed in. Where possible use terms from ontologies such as Chronontology (https://chronontology.dainst.org/) or PeriodO (https://perio.do/en/).
     title: cultural era or period
     examples:
       - value: "Copper Age [Chronotology: NW6hofAScJSE]"
@@ -120,7 +119,7 @@ slots:
     string_serialization: "{termLabel} [{termID}]|{text}"
     slot_uri: MIXS:999999902
     multivalued: false
-    required: true
+    required: false
     recommended: true
   damage_treatment:
     annotations:
