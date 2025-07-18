@@ -242,14 +242,16 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  lib_index_polymerase:
+  lib_polymerase:
     annotations:
-      Expected_value: name of polymerase used during library indexing
+      Expected_value: name of polymerase used during library construction
     description: >-
-      The nucleic polymerase enzyme used for indexing nucleic libraries
-    title: library index polymerase
+      The polymerase enzyme used for building nucleic acid libraries.
+    title: library polymerase
     examples:
       - value: "Agilent PfuTurbo Cx HotStart"
+      - value: "KAPA HiFi HotStart"
+      - value: "AmpliTaq Gold DNA Polymerase"
     in_subset:
       - sequencing
     keywords:
