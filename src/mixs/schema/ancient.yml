@@ -422,6 +422,7 @@ slots:
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
       If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
       Specify a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
+      If the sample age is unknown, give a broad range in a reasonable timeframe.
     title: sample age range youngest limit
     examples:
       - value: "100000"
@@ -456,6 +457,7 @@ slots:
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
       If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
       Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
+      If the sample age is unknown, give a broad range in a reasonable timeframe.
     title: sample age range oldest limit
     examples:
       - value: "120000"
