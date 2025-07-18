@@ -159,14 +159,12 @@ slots:
     range: datetime ## or name of defined enum as above
     required: false
     recommended: true
-  ethical_authority:
+  permit_authority:
     annotations:
-      Expected_value: name of authority providing ethical approval
+      Expected_value: Name of authority providing permission or ethical approval.
     description: >-
-      Name of the authorit(ies) or institution(s) that awarded sampling and 
-      analysis (e.g. human remains) and/or export permission 
-      (e.g. animal remains)
-    title: ethical authority
+      Name of the authorit(ies) or institution(s) that granted sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains), as well any form of ethical approval (whether from institutional research ethics boards such as REB or IRBs, or indigenous or native community associations), if available. 
+    title: permit authority
     examples:
       - value: "University of Copenhagen"
       - value: "Federal Foreign Office (Germany)"
@@ -180,12 +178,10 @@ slots:
     range: string
     required: false
     recommended: true
-  ethical_date:
+  permit_date:
     description: >-
-      Date of award of ethical/export permission. The date can be right truncated 
-      i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; 
-      Except: 2008-01; 2008 all are ISO8601 compliant
-    title: date of ethical approval
+      Date on which a permit was granted. The date can be right truncated i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.
+    title: date of permit approval
     examples:
       - value: "2023-12-01"
     in_subset:
@@ -194,12 +190,10 @@ slots:
     range: datetime
     required: false
     recommended: true
-  ethical_id:
+  permit_id:
     description: >-
-      The permissions code, ID, document, or similar provided by any authority 
-      (socal, legal, academic etc.) associated with approval of the analysis of 
-      this particular sample.
-    title: ethical permit or approval ID
+      A permit ID, code, or any form of identify provided by any authority (ethical, local, legal, academic etc.) associated with the approval of the analysis of this particular sample, if available.
+    title: permit or approval ID
     examples:
       - value: "DE-123-JK"
     in_subset:
@@ -298,13 +292,12 @@ slots:
     recommended: true
   lib_type:
     description: >-
-      The type of library created, i.e., amplicon, enriched, or shotgun. 
-      Amplicon based is a library that has been amplified to target a specific single region of a genome (e.g. a specific gene). 
-      An enriched library is a library has had a particular genome or genome regions 'captured' or enriched typically via baits or probes.
-      A shotgun library has had no type of targeted enrichment for a particular gene or genome.
+      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any DNA molecule contained in a genomic library.
     title: library type
     examples:
+      - value: shotgun
       - value: amplicon
+      - value: enriched
     in_subset:
       - sequencing
     keywords:
@@ -313,6 +306,7 @@ slots:
     slot_uri: MIXS:999999910
     range: LibTypeEnum
     required: false
+    recommended: true
   neg_cont_status:
     description: >-
       Specify whether the sample is a negative control or not.
@@ -552,7 +546,7 @@ slots:
       Expected_value: description of health related observation on ancient remains
     description: >-
       Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.
-    title: palaeopathology status.
+    title: palaeopathology status
     examples:
       - value: "Osteoporosis."
       - value: "Parasites found in pelvic area."
@@ -588,12 +582,12 @@ slots:
     range: BioCulturalLabel #enum value
     required: false
     recommended: false
-  ethics_perm_scope:
+  permit_scope:
     annotations:
-      Expected_value: Description of the scope of ethical permissions for data use
+      Expected_value: Description of the scope of ethical permissions for data use.
     description: >-
-      Description of the original scope and permissions of the research on the genetic material, as was approved by the ethical authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed).
-    title: ethical Permissions & Scope
+      Description of the original scope and permissions of the research on the genetic material, as was approved by a legal, ethical, or relevant authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed). Note this description is only informative, and will not necessarily automatically apply restrictions to associated data to other researchers.
+    title: permit scope
     examples:
       - value: "Defined scope only includes the study of bacterial sequences and any human sequence is not covered under the agreement."
     in_subset:
@@ -608,10 +602,9 @@ slots:
     recommended: true
   host_body_preservation_state:
     annotations:
-      Expected_value: Description of the preservation of the sampled (ancient) organism/host
+      Expected_value: Description of the preservation of the sampled (ancient) organism/host.
     description: >-
-      Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment, e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.
-    title: ancient body preservation state
+      Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment or in the context museomics (eg. taxidermied or pinned), e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.
     examples:
       - value: "complete artificial mummification."
       - value: "natural partial mummification."
@@ -737,9 +730,9 @@ classes:
       - cultural_era
       - damage_treatment
       - dna_extraction_date
-      - ethical_authority
-      - ethical_date
-      - ethical_id
+      - permit_authority
+      - permit_date
+      - permit_id
       - experimental_procedures
       - lib_concentration
       - lib_index_polymerase
@@ -776,13 +769,13 @@ classes:
       samp_alt_lab_ids:
         rank: 2
         slot_group: sample body
-      ethical_authority:
+      permit_authority:
         rank: 3
         slot_group: sample body
-      ethical_id:
+      permit_id:
         rank: 4
         slot_group: sample body
-      ethical_date:
+      permit_date:
         rank: 5
         slot_group: sample body
       ethics_perm_scope:
