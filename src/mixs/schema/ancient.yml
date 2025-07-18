@@ -74,8 +74,10 @@ enums:
       amino acid racemisation:
       electron spin resonance:
       uranium thorium:
-      stratigraphic inference:
-      relative dating:
+      contextual dating:
+        description: A non-absolute date inferred from the specific context of an archaeological or palaeontological sample (e.g. stratigraphic layers, coins)
+      associated absolute dating:
+        description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial)
       historical records:
       other:
 slots:
@@ -479,23 +481,25 @@ slots:
     recommended: true
   samp_age_range_inference_methods:
     description: >-
-      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as 14C, OSL, stratigraphic inference, historical records, other etc.
+      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as C14, OSL, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
       If the method is not in the list, please provide a description in samp_age_range_inference_description.
     title: sample age inference methods
     examples:
-      - value: "radiocarbon dating, calibrated with OxCal v4.3"
+      - value: "radiocarbon dating"
+      - value: "optically stimulated infrared luminescence"
+      - value: "contextual dating"
+      - value: "historical records"
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
     multivalued: true
     range: SampAgeInferMethod
-    required: true
+    required: false
     recommended: true
   samp_age_range_inference_description:
     description: >-
-      Additional general information about the inference method used to infer the sample age that can be useful for 
-      understanding how the sample age was estimated.
-      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used. 
+      Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated.
+      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used.
       It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.
       Include any relevant additional citations to the dating method here.
     title: sample age inference description
