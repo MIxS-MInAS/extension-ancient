@@ -801,16 +801,15 @@ classes:
     slots:
       - source_mat_curat_insti
       - cultural_era
+      - geological_epoch
       - damage_treatment
       - nuc_acid_extraction_date
       - permit_authority
       - permit_date
       - permit_id
       - experimental_procedures
-      - lib_concentration
-      - lib_index_polymerase
+      - lib_polymerase
       - lib_preparation_protocol
-      - lib_reamplification_polymerase
       - lib_type
       - neg_cont_status
       - num_capture_amp_cycles
@@ -835,118 +834,134 @@ classes:
       - genomic_capture_probe_taxid
       - genomic_capture_probe_desc
       - mid_config
+      - site_name
+      - data_filt_applied
+      - library_name
+      - desc_read_state
     slot_usage:
-      source_mat_curat_insti:
+      site_name:
         rank: 1
         slot_group: environment
-      samp_alt_lab_ids:
+      source_mat_curat_insti:
         rank: 2
-        slot_group: sample body
-      permit_authority:
+        slot_group: environment
+      samp_alt_lab_ids:
         rank: 3
         slot_group: sample body
-      permit_id:
+      permit_authority:
         rank: 4
         slot_group: sample body
-      permit_date:
-        rank: 5
-        slot_group: sample body
-      ethics_perm_scope:
+      permit_id:
         rank: 6
         slot_group: sample body
-      biocultural_label:
+      permit_date:
         rank: 7
         slot_group: sample body
-      samp_age_range_oldest_limit:
+      ethics_perm_scope:
         rank: 8
         slot_group: sample body
-        recommended: true
-      samp_age_range_oldest_unit:
+      biocultural_label:
         rank: 9
         slot_group: sample body
-        recommended: true
-      samp_age_range_youngest_limit:
+      samp_age_range_oldest_limit:
         rank: 10
         slot_group: sample body
         recommended: true
-      samp_age_range_youngest_unit:
+      samp_age_range_oldest_unit:
         rank: 11
         slot_group: sample body
         recommended: true
-      samp_age_range_inference_methods:
+      samp_age_range_youngest_limit:
         rank: 12
         slot_group: sample body
-      samp_age_range_inference_description:
+        recommended: true
+      samp_age_range_youngest_unit:
         rank: 13
         slot_group: sample body
-      cultural_era:
+        recommended: true
+      samp_age_range_inference_methods:
         rank: 14
         slot_group: sample body
-      recovery_date:
+      samp_age_range_inference_description:
+        rank: 14
+        slot_group: sample body
+      cultural_era:
         rank: 15
         slot_group: sample body
-      storage_conditions:
+      geological_epoch:
         rank: 16
         slot_group: sample body
-      preservational_treatment:
+      recovery_date:
         rank: 17
         slot_group: sample body
-      palaeopath_status:
+      storage_conditions:
         rank: 18
         slot_group: sample body
-      prev_pubs:
+      preservational_treatment:
         rank: 19
         slot_group: sample body
-      host_body_preservation_state:
+      palaeopath_status:
         rank: 20
         slot_group: sample body
-      neg_cont_status:
+      prev_pubs:
         rank: 21
-        slot_group: nucleic acid source
-      samp_decontam_pretreat:
+        slot_group: sample body
+      host_body_preservation_state:
         rank: 22
-        slot_group: nucleic acid source
-      nuc_acid_extraction_date:
+        slot_group: sample body
+      neg_cont_status:
         rank: 23
         slot_group: nucleic acid source
-      damage_treatment:
+      samp_decontam_pretreat:
         rank: 24
+        slot_group: nucleic acid source
+      nuc_acid_extraction_date:
+        rank: 25
+        slot_group: nucleic acid source
+      damage_treatment:
+        rank: 26
         slot_group: sequencing
         recommended: true
       lib_strandedness:
-        rank: 25
-        slot_group: sequencing
-        recommended: true
-      mid_config:
-        rank: 26
-        slot_group: sequencing
-      lib_type:
         rank: 27
         slot_group: sequencing
         recommended: true
-      lib_concentration:
+      mid_config:
         rank: 28
         slot_group: sequencing
-      lib_index_polymerase:
+      library_name:
         rank: 29
         slot_group: sequencing
-      genomic_capture_probe_taxid:
+      lib_type:
         rank: 30
         slot_group: sequencing
-      genomic_capture_probe_desc:
+        recommended: true
+      lib_polymerase:
         rank: 31
         slot_group: sequencing
-      num_capture_amp_cycles:
+      genomic_capture_probe_taxid:
         rank: 32
         slot_group: sequencing
-      num_reamp_cycles:
+      genomic_capture_probe_desc:
         rank: 33
         slot_group: sequencing
-      experimental_procedures:
+      num_capture_amp_cycles:
         rank: 34
         slot_group: sequencing
-      lib_preparation_protocol:
+      num_reamp_cycles:
         rank: 35
+        slot_group: sequencing
+      experimental_procedures:
+        rank: 36
+        slot_group: sequencing
+      lib_preparation_protocol:
+        rank: 37
+        slot_group: sequencing
+      data_filt_applied:
+        rank: 38
+        slot_group: sequencing
+      desc_read_state:
+        rank: 39
         slot_group: sequencing
     class_uri: MIXS:9999903
     annotations:
