@@ -93,7 +93,7 @@ slots:
   source_mat_curat_insti:
     annotations:
       Expected_value: name of typical storage or archiving institution
-    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for DNA extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
+    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
     title: Institution storing or archiving the source material
     examples:
       - value: Natural History Museum London
@@ -127,7 +127,27 @@ slots:
     slot_uri: MIXS:999999902
     multivalued: false
     required: false
-    recommended: true
+    recommended: false
+  geological_epoch:
+    annotations:
+      Expected_value: ontology term; text
+    description: >-
+      The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies.
+    title: geological epoch
+    examples:
+      - value: "Pleistocene"
+      - value: "Upper Cretaceous"
+      - value: "Pliocene"
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - ancient
+      - age
+    string_serialization: "{termLabel} [{termID}]|{text}"
+    slot_uri: MIXS:999999902
+    multivalued: false
+    required: false
+    recommended: false
   damage_treatment:
     annotations:
       Expected_value: enumeration
@@ -146,7 +166,7 @@ slots:
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
-  dna_extraction_date:
+  nuc_acid_extraction_date:
     description: >-
       The date when the nucleic acid extraction was started from the sample material.
       In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant
@@ -163,7 +183,7 @@ slots:
     annotations:
       Expected_value: Name of authority providing permission or ethical approval.
     description: >-
-      Name of the authorit(ies) or institution(s) that granted sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains), as well any form of ethical approval (whether from institutional research ethics boards such as REB or IRBs, or indigenous or native community associations), if available. 
+      Name of the authorit(ies) or institution(s) that granted sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains), as well any form of ethical approval (whether from institutional research ethics boards such as REB or IRBs, or indigenous or native community associations), if available.
     title: permit authority
     examples:
       - value: "University of Copenhagen"
@@ -222,28 +242,16 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  lib_concentration:
+  lib_polymerase:
     annotations:
-      Expected_value: measurement value in number of ng per µl
+      Expected_value: name of polymerase used during library construction
     description: >-
-      Concentration of library in ng per µl, as inferred by qPCR, digital PCR, Qubit etc.
-    title: library concentration
-    examples:
-      - value: "2"
-      - value: "0.5"
-    in_subset:
-      - sequencing
-    slot_uri: MIXS:999999908
-    string_serialization: "{float}"
-    multivalued: true
-  lib_index_polymerase:
-    annotations:
-      Expected_value: name of polymerase used during library indexing
-    description: >-
-      The DNA polymerase enzyme used for indexing DNA libraries
-    title: library index polymerase
+      The polymerase enzyme used for building nucleic acid libraries.
+    title: library polymerase
     examples:
       - value: "Agilent PfuTurbo Cx HotStart"
+      - value: "KAPA HiFi HotStart"
+      - value: "AmpliTaq Gold DNA Polymerase"
     in_subset:
       - sequencing
     keywords:
@@ -257,7 +265,7 @@ slots:
     recommended: true
   lib_preparation_protocol:
     description: >-
-      Citation(s) for the DNA library preparation protocol
+      Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
     examples:
       - value: doi:10.1093/nar/gkr771
@@ -271,28 +279,9 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  lib_reamplification_polymerase:
-    annotations:
-      Expected_value: name of polymerase used during library indexing
-    description: >-
-      The name of the DNA polymerase enzyme used for reamplifying DNA libraries post-indexing.
-    title: library reamplification polymerase
-    examples:
-      - value: "KAPA HiFi HotStart Uracil+"
-    in_subset:
-      - sequencing
-    keywords:
-      - polymerase
-      - library
-      - preparation
-    string_serialization: "{text}"
-    slot_uri: MIXS:999999909
-    range: string
-    required: false
-    recommended: true
   lib_type:
     description: >-
-      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any DNA molecule contained in a genomic library.
+      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
     title: library type
     examples:
       - value: shotgun
@@ -344,7 +333,7 @@ slots:
     description: >-
       Description of any treatment applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
-      DNA recovery or library construction, such as storage fluid or 
+      nucleic acid recovery or library construction, such as storage fluid or 
       reconstructive glue
     title: preservational treatment
     examples:
@@ -392,7 +381,7 @@ slots:
   samp_decontam_pretreat:
     description: >-
       Method(s) employed for surface decontamination of samples of external 
-      modern DNA; Treatment used on the samples. Depends on the sample type. 
+      modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
       More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.
     title: sample decontamination pretreatment
     examples:
@@ -530,12 +519,12 @@ slots:
     string_serialization: "{text}"
   storage_conditions:
     description: >-
-      General conditions in which the material (before sampling for DNA analysis) was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
+      General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
     title: storage conditions
     examples:
       - value: "climate-controlled"
       - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until dna_extraction_date"
+      - value: "Stored at -20oC until nuc_acid_extraction_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -621,10 +610,10 @@ slots:
     recommended: false
   lib_strandedness:
     annotations:
-      Expected_value: DNA library strandedness
+      Expected_value: nucleic acid library strandedness
     description: >-
-      The strandedness of the original template DNA molecules used for constructing the sequencing library
-    title: DNA strandedness in library creation
+      The strandedness of the original template nucleic acid molecules used for constructing the sequencing library
+    title: nucleic acid strandedness in library creation
     examples:
       - value: single
       - value: double
@@ -701,6 +690,90 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
+  site_name:
+    annotations:
+      Expected_value: Name of site or location where sample was originated
+    description: >-
+      Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected.
+      Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature.
+      Typically names that would not be found on official maps.
+      Can also include different transliterations or languages used in the literature.
+    title: Name of site or location where sample originated
+    examples:
+      - value: "Valley of the Kings"
+      - value: "Krakow Spadzista B"
+      - value: "Coopers Cave"
+      - value: "Cutler Fossil Site"
+      - value: "Kap København Formation"
+    in_subset:
+      - environment
+    keywords:
+      - environment
+      - sample
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
+  data_filt_applied:
+    annotations:
+      Expected_value: Whether associated data was filtered
+    description: >-
+      Specify whether associated data was filtered prior to upload, such as host reads removal.
+    title: Data filtering applied
+    examples:
+      - value: "no"
+      - value: "yes"
+    in_subset:
+      - sequencing
+    keywords:
+      - data analysis
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: boolean
+    required: false
+    recommended: true
+  library_name:
+    annotations:
+      Expected_value: name of sequencing library
+    description: >-
+      Any ID or name used for referring to a nucleic acid sequencing library associated with the sample.
+    title: library name
+    examples:
+      - value: "JK1234"
+      - value: "JFC001.A0101"
+      - value: "A003-1-SG1"
+    in_subset:
+      - sequencing
+    keywords:
+      - sequencing
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: true
+  desc_read_state:
+    annotations:
+      Expected_value: description of any modifications to data away from original raw files
+    description: >-
+      Description of the state of the reads in the sequencing data file.
+      Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
+      This should include details such as adapter-, barcode-, and/or quality- trimming, or any filtering such as for read length or of off-target reads.
+    title: description of read state
+    examples:
+      - value: "Adapter trimmed, quality filtered, and host reads removed through mapping for ethical reasons."
+      - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln (v0.7.19)."
+      - value: "Demultiplexed with bcl2fastq, inline barcodes removed, and reads quality filtered with fastp (v1.0.0)."
+    in_subset:
+      - sequencing
+    keywords:
+      - data analysis
+      - data
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: true
 classes:
   MixsCompliantData:
     description:
@@ -719,7 +792,7 @@ classes:
   Ancient:
     description: >-
       A collection of terms appropriate when collecting samples and sequencing samples 
-      of data containing ancient DNA, i.e., degraded molecules not from living organisms.
+      of data containing ancient nucleic acids, i.e., degraded molecules not from living organisms.
     comments:
       - This extension that is intended to be used in very specific cases but almost always in conjunction with other MIxS checklists and extensions.
         It does not therefore (currently) include additional common terms from checklists.
@@ -728,16 +801,15 @@ classes:
     slots:
       - source_mat_curat_insti
       - cultural_era
+      - geological_epoch
       - damage_treatment
-      - dna_extraction_date
+      - nuc_acid_extraction_date
       - permit_authority
       - permit_date
       - permit_id
       - experimental_procedures
-      - lib_concentration
-      - lib_index_polymerase
+      - lib_polymerase
       - lib_preparation_protocol
-      - lib_reamplification_polymerase
       - lib_type
       - neg_cont_status
       - num_capture_amp_cycles
@@ -762,121 +834,134 @@ classes:
       - genomic_capture_probe_taxid
       - genomic_capture_probe_desc
       - mid_config
+      - site_name
+      - data_filt_applied
+      - library_name
+      - desc_read_state
     slot_usage:
-      source_mat_curat_insti:
+      site_name:
         rank: 1
         slot_group: environment
-      samp_alt_lab_ids:
+      source_mat_curat_insti:
         rank: 2
-        slot_group: sample body
-      permit_authority:
+        slot_group: environment
+      samp_alt_lab_ids:
         rank: 3
         slot_group: sample body
-      permit_id:
+      permit_authority:
         rank: 4
         slot_group: sample body
-      permit_date:
-        rank: 5
-        slot_group: sample body
-      ethics_perm_scope:
+      permit_id:
         rank: 6
         slot_group: sample body
-      biocultural_label:
+      permit_date:
         rank: 7
         slot_group: sample body
-      samp_age_range_oldest_limit:
+      ethics_perm_scope:
         rank: 8
         slot_group: sample body
-        recommended: true
-      samp_age_range_oldest_unit:
+      biocultural_label:
         rank: 9
         slot_group: sample body
-        recommended: true
-      samp_age_range_youngest_limit:
+      samp_age_range_oldest_limit:
         rank: 10
         slot_group: sample body
         recommended: true
-      samp_age_range_youngest_unit:
+      samp_age_range_oldest_unit:
         rank: 11
         slot_group: sample body
         recommended: true
-      samp_age_range_inference_methods:
+      samp_age_range_youngest_limit:
         rank: 12
         slot_group: sample body
-      samp_age_range_inference_description:
+        recommended: true
+      samp_age_range_youngest_unit:
         rank: 13
         slot_group: sample body
-      cultural_era:
+        recommended: true
+      samp_age_range_inference_methods:
         rank: 14
         slot_group: sample body
-      recovery_date:
+      samp_age_range_inference_description:
+        rank: 14
+        slot_group: sample body
+      cultural_era:
         rank: 15
         slot_group: sample body
-      storage_conditions:
+      geological_epoch:
         rank: 16
         slot_group: sample body
-      preservational_treatment:
+      recovery_date:
         rank: 17
         slot_group: sample body
-      palaeopath_status:
+      storage_conditions:
         rank: 18
         slot_group: sample body
-      prev_pubs:
+      preservational_treatment:
         rank: 19
         slot_group: sample body
-      host_body_preservation_state:
+      palaeopath_status:
         rank: 20
         slot_group: sample body
-      neg_cont_status:
+      prev_pubs:
         rank: 21
-        slot_group: nucleic acid source
-      samp_decontam_pretreat:
+        slot_group: sample body
+      host_body_preservation_state:
         rank: 22
-        slot_group: nucleic acid source
-      dna_extraction_date:
+        slot_group: sample body
+      neg_cont_status:
         rank: 23
         slot_group: nucleic acid source
-      damage_treatment:
+      samp_decontam_pretreat:
         rank: 24
+        slot_group: nucleic acid source
+      nuc_acid_extraction_date:
+        rank: 25
+        slot_group: nucleic acid source
+      damage_treatment:
+        rank: 26
         slot_group: sequencing
         recommended: true
       lib_strandedness:
-        rank: 25
-        slot_group: sequencing
-        recommended: true
-      mid_config:
-        rank: 26
-        slot_group: sequencing
-      lib_type:
         rank: 27
         slot_group: sequencing
         recommended: true
-      lib_concentration:
+      mid_config:
         rank: 28
         slot_group: sequencing
-      lib_index_polymerase:
+      library_name:
         rank: 29
         slot_group: sequencing
-      genomic_capture_probe_taxid:
+      lib_type:
         rank: 30
         slot_group: sequencing
-      genomic_capture_probe_desc:
+        recommended: true
+      lib_polymerase:
         rank: 31
         slot_group: sequencing
-      num_capture_amp_cycles:
+      genomic_capture_probe_taxid:
         rank: 32
         slot_group: sequencing
-      num_reamp_cycles:
+      genomic_capture_probe_desc:
         rank: 33
         slot_group: sequencing
-      lib_reamplification_polymerase:
+      num_capture_amp_cycles:
         rank: 34
         slot_group: sequencing
-      experimental_procedures:
+      num_reamp_cycles:
         rank: 35
         slot_group: sequencing
-      lib_preparation_protocol:
+      experimental_procedures:
         rank: 36
+        slot_group: sequencing
+      lib_preparation_protocol:
+        rank: 37
+        slot_group: sequencing
+      data_filt_applied:
+        rank: 38
+        slot_group: sequencing
+      desc_read_state:
+        rank: 39
         slot_group: sequencing
     class_uri: MIXS:9999903
     annotations:
