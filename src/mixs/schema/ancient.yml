@@ -759,11 +759,11 @@ slots:
     examples:
       - value: "JK1234"
       - value: "JFC001.A0101"
-      - value: "xxx"
+      - value: "A003-1-SG1"
     in_subset:
-      - xxx
+      - sequencing
     keywords:
-      - xxx
+      - sequencing
     slot_uri: MIXS:999999933 #Not assigned
     multivalued: true
     range: string
