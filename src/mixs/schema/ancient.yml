@@ -568,7 +568,7 @@ slots:
     annotations:
       Expected_value: Description of the scope of ethical permissions for data use.
     description: >-
-      Description of the original scope and permissions of the research on the genetic material, as was approved by a legal or ethical authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed). It should be noted that all uploaded data will be public and thus should be covered by the scope of the permits and approvals.
+      Description of the original scope and permissions of the research on the genetic material, as was approved by a legal, ethical, or relevant authority (e.g. bacteria only, DNA only, bacteria and human, no host read analysis allowed). Note this description is only informative, and will not necessarily automatically apply restrictions to associated data to other researchers.
     title: permit scope
     examples:
       - value: "Defined scope only includes the study of bacterial sequences and any human sequence is not covered under the agreement."
