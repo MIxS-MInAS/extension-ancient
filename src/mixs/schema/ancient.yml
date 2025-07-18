@@ -712,9 +712,9 @@ classes:
       - cultural_era
       - damage_treatment
       - dna_extraction_date
-      - ethical_authority
-      - ethical_date
-      - ethical_id
+      - permit_authority
+      - permit_date
+      - permit_id
       - experimental_procedures
       - lib_concentration
       - lib_index_polymerase
@@ -751,13 +751,13 @@ classes:
       samp_alt_lab_ids:
         rank: 2
         slot_group: sample body
-      ethical_authority:
+      permit_authority:
         rank: 3
         slot_group: sample body
-      ethical_id:
+      permit_id:
         rank: 4
         slot_group: sample body
-      ethical_date:
+      permit_date:
         rank: 5
         slot_group: sample body
       ethics_perm_scope:
