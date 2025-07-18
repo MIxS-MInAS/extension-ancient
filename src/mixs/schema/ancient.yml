@@ -27,11 +27,11 @@ enums:
   DamageTreatmentEnum:
     permissible_values:
       no-removal:
-        description: Library preparation-derived C to T misincorporations have not been removed using laboratory techniques.
+        description: Molecular damage-derived misincorporations have not been removed using laboratory techniques.
       partial-removal:
-        description: Library preparation-derived C to T misincorporations have been partially removed using laboratory techniques such as with an early stopped uracil-DNA glycosylase (UDG) or USER treatment, leaving a small number of nucleotides with damage at ends of molecules.
+        description: Molecular damage-derived misincorporations have been partially removed using laboratory techniques such as with an early stopped uracil-DNA glycosylase (UDG) or USER treatment, leaving a small number of nucleotides with damage at ends of molecules.
       complete-removal:
-        description: Library preparation-derived C to T misincorporations have been entirely removed using laboratory techniques such as with complete uracil-DNA glycosylase (UDG) or USER treatment, leaving no nucleotides with damage at ends of molecules.
+        description: Molecular damage-derived misincorporations have been entirely removed using laboratory techniques such as with complete uracil-DNA glycosylase (UDG) or USER treatment, leaving no nucleotides with damage at ends of molecules.
       damage-selection:
         description: Library preparation-derived technique that retain only molecules containing damage, and have discarded those without damage.
       other:
@@ -75,9 +75,9 @@ enums:
       electron spin resonance:
       uranium thorium:
       contextual dating:
-        description: A non-absolute date inferred from the specific context of an archaeological or palaeontological sample (e.g. stratigraphic layers, coins)
+        description: A non-absolute date inferred from the specific context of an archaeological or palaeontological sample (e.g. stratigraphic layers, coins).
       associated absolute dating:
-        description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial)
+        description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial).
       historical records:
       other:
 slots:
@@ -93,12 +93,12 @@ slots:
   source_mat_curat_insti:
     annotations:
       Expected_value: name of typical storage or archiving institution
-    description: Name of the institutions, archives, or repositories that typically store or archive the material used during sampling for DNA extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
+    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for DNA extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
     title: Institution storing or archiving the source material
     examples:
       - value: Natural History Museum London
       - value: Denkmalpflege Baden-Württemberg, University of Tübingen
-      - value: Herbarium, Royal Botanic Gardens Kew
+      - value: Herbarium, Royal Botanic Gardens, Kew
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -421,8 +421,8 @@ slots:
       Youngest refers to the time closest to present day.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
       If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
-      Specify a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe.
+      Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates).
+      If the sample age is unknown, give a broad range in a reasonable timeframe and justify in samp_age_range_inference_description.
     title: sample age range youngest limit
     examples:
       - value: "100000"
@@ -457,7 +457,7 @@ slots:
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
       If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
       Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe.
+      If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in samp_age_range_inference_description.
     title: sample age range oldest limit
     examples:
       - value: "120000"
