@@ -83,13 +83,15 @@ slots:
     range: Ancient
     inlined: true
     inlined_as_list: true
-  collection_context_name:
+  source_mat_curat_insti:
     annotations:
-      Expected_value: name of institution
-    description: Name of location where sample is typically stored or archived. Typically will be 'owning institution'.
-    title: location where sample typically is archived
+      Expected_value: name of typical storage or archiving institution
+    description: Name of the institutions, archives, or repositories that typically store or archive the material used during sampling for DNA extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
+    title: Institution storing or archiving the source material
     examples:
       - value: Natural History Museum London
+      - value: Denkmalpflege Baden-Württemberg, University of Tübingen
+      - value: Herbarium, Royal Botanic Gardens Kew
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -716,7 +718,7 @@ classes:
     title: ancient
     is_a: Extension
     slots:
-      - collection_context_name
+      - source_mat_curat_insti
       - cultural_era
       - damage_treatment
       - dna_extraction_date
@@ -753,7 +755,7 @@ classes:
       - genomic_capture_probe_desc
       - mid_config
     slot_usage:
-      collection_context_name:
+      source_mat_curat_insti:
         rank: 1
         slot_group: environment
       samp_alt_lab_ids:
