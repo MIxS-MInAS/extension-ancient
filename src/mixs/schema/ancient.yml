@@ -93,7 +93,7 @@ slots:
   source_mat_curat_insti:
     annotations:
       Expected_value: name of typical storage or archiving institution
-    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for DNA extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
+    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
     title: Institution storing or archiving the source material
     examples:
       - value: Natural History Museum London
@@ -166,7 +166,7 @@ slots:
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
-  dna_extraction_date:
+  nuc_acid_extraction_date:
     description: >-
       The date when the nucleic acid extraction was started from the sample material.
       In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant
@@ -246,7 +246,7 @@ slots:
     annotations:
       Expected_value: name of polymerase used during library indexing
     description: >-
-      The DNA polymerase enzyme used for indexing DNA libraries
+      The nucleic polymerase enzyme used for indexing nucleic libraries
     title: library index polymerase
     examples:
       - value: "Agilent PfuTurbo Cx HotStart"
@@ -263,7 +263,7 @@ slots:
     recommended: true
   lib_preparation_protocol:
     description: >-
-      Citation(s) for the DNA library preparation protocol
+      Citation(s) for the nucleic acid library preparation protocol
     title: library preparation protocols
     examples:
       - value: doi:10.1093/nar/gkr771
@@ -281,7 +281,7 @@ slots:
     annotations:
       Expected_value: name of polymerase used during library indexing
     description: >-
-      The name of the DNA polymerase enzyme used for reamplifying DNA libraries post-indexing.
+      The name of the nucleic acid polymerase enzyme used for reamplifying nucleic acid libraries post-indexing.
     title: library reamplification polymerase
     examples:
       - value: "KAPA HiFi HotStart Uracil+"
@@ -298,7 +298,7 @@ slots:
     recommended: true
   lib_type:
     description: >-
-      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any DNA molecule contained in a genomic library.
+      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
     title: library type
     examples:
       - value: shotgun
@@ -350,7 +350,7 @@ slots:
     description: >-
       Description of any treatment applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
-      DNA recovery or library construction, such as storage fluid or 
+      nucleic acid recovery or library construction, such as storage fluid or 
       reconstructive glue
     title: preservational treatment
     examples:
@@ -398,7 +398,7 @@ slots:
   samp_decontam_pretreat:
     description: >-
       Method(s) employed for surface decontamination of samples of external 
-      modern DNA; Treatment used on the samples. Depends on the sample type. 
+      modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
       More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.
     title: sample decontamination pretreatment
     examples:
@@ -536,12 +536,12 @@ slots:
     string_serialization: "{text}"
   storage_conditions:
     description: >-
-      General conditions in which the material (before sampling for DNA analysis) was stored in long-term collection storage, that may influenced DNA recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
+      General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
     title: storage conditions
     examples:
       - value: "climate-controlled"
       - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until dna_extraction_date"
+      - value: "Stored at -20oC until nuc_acid_extraction_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -627,10 +627,10 @@ slots:
     recommended: false
   lib_strandedness:
     annotations:
-      Expected_value: DNA library strandedness
+      Expected_value: nucleic acid library strandedness
     description: >-
-      The strandedness of the original template DNA molecules used for constructing the sequencing library
-    title: DNA strandedness in library creation
+          The strandedness of the original template nucleic acid molecules used for constructing the sequencing library
+    title: nucleic acid strandedness in library creation
     examples:
       - value: single
       - value: double
@@ -736,7 +736,7 @@ slots:
     annotations:
       Expected_value: Whether associated data was filtered
     description: >-
-      Specify whether associated data was filtered prior to upload, such as host DNA removal.
+      Specify whether associated data was filtered prior to upload, such as host reads removal.
     title: Data filtering applied
     examples:
       - value: "no"
@@ -750,25 +750,25 @@ slots:
     range: boolean
     required: false
     recommended: true
-  xxx:
+  library_name:
     annotations:
-      Expected_value: xxx
+      Expected_value: name of sequencing library
     description: >-
-      xxx
-    title: xxx
+      Any ID or name used for referring to a nucleic acid sequencing library associated with the sample.
+    title: library name
     examples:
-      - value: "xxx"
-      - value: "xxx"
+      - value: "JK1234"
+      - value: "JFC001.A0101"
       - value: "xxx"
     in_subset:
       - xxx
     keywords:
       - xxx
     slot_uri: MIXS:999999933 #Not assigned
-    multivalued: false
+    multivalued: true
     range: string
     required: false
-    recommended: false
+    recommended: true
   xxx:
     annotations:
       Expected_value: xxx
@@ -958,7 +958,7 @@ classes:
   Ancient:
     description: >-
       A collection of terms appropriate when collecting samples and sequencing samples 
-      of data containing ancient DNA, i.e., degraded molecules not from living organisms.
+      of data containing ancient nucleic acids, i.e., degraded molecules not from living organisms.
     comments:
       - This extension that is intended to be used in very specific cases but almost always in conjunction with other MIxS checklists and extensions.
         It does not therefore (currently) include additional common terms from checklists.
@@ -968,7 +968,7 @@ classes:
       - source_mat_curat_insti
       - cultural_era
       - damage_treatment
-      - dna_extraction_date
+      - nuc_acid_extraction_date
       - permit_authority
       - permit_date
       - permit_id
@@ -1072,7 +1072,7 @@ classes:
       samp_decontam_pretreat:
         rank: 22
         slot_group: nucleic acid source
-      dna_extraction_date:
+      nuc_acid_extraction_date:
         rank: 23
         slot_group: nucleic acid source
       damage_treatment:
