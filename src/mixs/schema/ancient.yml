@@ -242,20 +242,6 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  lib_concentration:
-    annotations:
-      Expected_value: measurement value in number of ng per µl
-    description: >-
-      Concentration of library in ng per µl, as inferred by qPCR, digital PCR, Qubit etc.
-    title: library concentration
-    examples:
-      - value: "2"
-      - value: "0.5"
-    in_subset:
-      - sequencing
-    slot_uri: MIXS:999999908
-    string_serialization: "{float}"
-    multivalued: true
   lib_index_polymerase:
     annotations:
       Expected_value: name of polymerase used during library indexing
