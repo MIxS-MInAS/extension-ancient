@@ -420,6 +420,7 @@ slots:
       The youngest possible age of the sample in years, with the specific year unit defined in samp_age_range_youngest_unit.
       Youngest refers to the time closest to present day.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
+      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
       Specify a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
     title: sample age range youngest limit
     examples:
@@ -453,6 +454,7 @@ slots:
       The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit.
       Oldest refers to the time furthest from present day.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
+      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
       Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
     title: sample age range oldest limit
     examples:
