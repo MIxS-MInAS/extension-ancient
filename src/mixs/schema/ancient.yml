@@ -828,7 +828,7 @@ classes:
       - storage_conditions
       - palaeopath_status
       - biocultural_label
-      - ethics_perm_scope
+      - permit_scope
       - host_body_preservation_state
       - lib_strandedness
       - genomic_capture_probe_taxid
@@ -857,7 +857,7 @@ classes:
       permit_date:
         rank: 7
         slot_group: sample body
-      ethics_perm_scope:
+      permit_scope:
         rank: 8
         slot_group: sample body
       biocultural_label:
