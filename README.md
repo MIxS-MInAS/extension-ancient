@@ -1,6 +1,6 @@
 # extension-ancient
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16135943.svg)](https://doi.org/10.5281/zenodo.16135943)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16135942.svg)](https://doi.org/10.5281/zenodo.16135942)
 
 A MIxS extension proposal for 'ancient DNA' samples.
 
