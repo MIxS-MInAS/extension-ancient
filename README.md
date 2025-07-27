@@ -39,7 +39,7 @@ The repo is laid out as follows:
 7. Generate the 'old style' MIxS checklist
    - `./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir projects/class-model-tsvs/`
 8. Update the `CITATION.cff` file with the new version number and authors, and update the `version` field to match the new version number
-   - The `title` should be descriptive of the extension, e.g. "Minimum Information about any Ancient Sequence: Ancient Extension Schema"
+   - The `title` should be descriptive of the extension, e.g. "Minimum Information about any Ancient Sequence: Ancient Extension Schema (MInAS)"
    - The `version` should be updated to match the new version number, e.g. "1.8.0"
 9. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
    - Tag: vX.X.X
