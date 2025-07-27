@@ -654,9 +654,9 @@ slots:
       NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.
     title: genomic capture probe taxonomic IDs
     examples:
-      - value: 9606
-      - value: 632
-      - value: 9789
+      - value: "9606"
+      - value: "632"
+      - value: "9789"
     in_subset:
       - sequencing
     keywords:
