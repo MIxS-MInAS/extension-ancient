@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "Minimum Information about any Ancient Sequence (MInAS): Ancient Extension metadata schema (draft)"
-version: 0.7.0
+version: 0.7.1
 license: "CC0-1.0"
 type: dataset
 abstract: "(Draft) MIxS compatible metadata schema terms for ancient DNA sample, library and sequence data."
