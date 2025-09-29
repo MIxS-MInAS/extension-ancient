@@ -181,11 +181,17 @@
                 "past_env_broad": {
                     "description": "Report information about the general ancient broad environmental system that the sample or specimen existed or lived within, as it was at the time of deposition or burial (e.g. in the desert or a forest). This should not describe the environment as it is today (e.g. farmland), but specifically the state as it was in the past (i.e. the palaeo- or (pre)historical ecosystem). Compared to `env_broad_scale` which is taken from direct observation, the information about the past environment will normally be derived from inference from archaeological, palaeontological, geological, or other scientific methods. We recommend using subclasses of EnvO s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field for present day equivalents: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS\"",
                     "pattern": "^([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+) \\[{termID}\\]$",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "past_env_local": {
                     "description": "Report information about the smaller-scale environmental system of the local vicinity of the sample or specimen at the time of deposition or burial (e.g. in hillside, burial mound, or midden). This should not describe the environment as it is today (e.g. carpark), but specifically the entity or entities surrounding the sample that may have significant causal influences as it was in the past. Compared to `env_local_scale` which is taken from direct observation, the information about the past environment will normally be derived from inference from archaeological, palaeontological, geological, or other scientific methods. We recommend using EnvO terms which are of smaller than your entry for past_env_broad. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field for present day equivalents: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS\"",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "permit_authority": {
                     "description": "Name of the authorit(ies) or institution(s) that granted sampling and analysis (e.g. human remains) and/or export permission (e.g. animal remains), as well any form of ethical approval (whether from institutional research ethics boards such as REB or IRBs, or indigenous or native community associations), if available.",
@@ -343,8 +349,6 @@
                 }
             },
             "required": [
-                "past_env_broad",
-                "past_env_local",
                 "damage_treatment",
                 "samp_age_range_youngest_limit",
                 "samp_age_range_youngest_unit",
