@@ -38,15 +38,19 @@ The repo is laid out as follows:
    - The YAML -> JSON conversion will include additioanl LinkML schema validation, so additional correction PRs made be required at this point!
 7. Generate the 'old style' MIxS checklist
    - `./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir project/class-model-tsvs/`
-8. Update the `CITATION.cff` file with the new version number and authors, and update the `version` field to match the new version number
+8. Open PR with highly informative PR title (this will be used for auto-changelog)
+
+## Release workflow
+
+1. Update the `CITATION.cff` file with the new version number and authors, and update the `version` field to match the new version number
    - The `title` should be descriptive of the extension, e.g. "Minimum Information about any Ancient Sequence: Ancient Extension Schema (MInAS)"
    - The `version` should be updated to match the new version number, e.g. "1.8.0"
-9. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
+2. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
    - Tag: vX.X.X
    - Title: vX.X.X
    - Generate release notes based on a cleaned up `git log --oneline` that has the git hash and the informative commit message
    - Set as latest
-10. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
+3. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 
 ## Technical notes
 
