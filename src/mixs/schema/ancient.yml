@@ -518,7 +518,8 @@ slots:
     keywords:
       - context
       - environmental
-    slot_uri: "MIXS:0000012"
+      - ancient
+    slot_uri: "MIXS:0099999"
     range: string
     required: true
     pattern: "^([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+) \\[[a-zA-Z]{2,}:[a-zA-Z0-9]\\d+\\]$"
@@ -544,8 +545,9 @@ slots:
     keywords:
       - context
       - environmental
+      - ancient
     string_serialization: "{termLabel} [{termID}]"
-    slot_uri: "MIXS:0000013"
+    slot_uri: "MIXS:0000999"
     required: true
   samp_alt_lab_ids:
     description: >-
