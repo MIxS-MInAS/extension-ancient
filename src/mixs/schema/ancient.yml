@@ -503,36 +503,36 @@ slots:
     range: string
     required: false
     recommended: true
-    past_env_broad:
+  past_env_broad:
     description: "Report information about past broad environmental system the sample or specimen came from. The system(s) identified should provide the general environmental context of where the sample was burried (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS"
     title: broad-scale past environmental context
     examples:
-    - value: "dessert biome [ENVO:01000247]"
+       - value: "dessert biome [ENVO:01000247]"
     in_subset:
-    - environment
+        - environment
     keywords:
-    - context
-    - environmental
+        - context
+        - environmental
     slot_uri: "MIXS:0000012"
     range: string
     required: true
     pattern: "^([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+) \\[[a-zA-Z]{2,}:[a-zA-Z0-9]\\d+\\]$"
     structured_pattern:
-      syntax: ^{termLabel} \[{termID}\]$
-      interpolated: true
-      partial_match: true
+    syntax: ^{termLabel} \[{termID}\]$
+    interpolated: true
+    partial_match: true
   past_env_local:
     annotations:
       Expected_value: Report information about smaller environmental entities having causal influences upon the sample or speciment at/during the time of burial
     description: "Report the entity or entities which are in the sample or specimen s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller than your entry for past_env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS"
     title: local past environmental context
     examples:
-    - value: "hillside [ENVO:01000333]"
+      - value: "hillside [ENVO:01000333]"
     in_subset:
-    - environment
+      - environment
     keywords:
-    - context
-    - environmental
+      - context
+      - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: "MIXS:0000013"
     required: true
@@ -883,7 +883,7 @@ classes:
       past_env_broad:
         rank: 3
         slot_group: environment
-        past_env_local:
+      past_env_local:
         rank: 4
         slot_group: environment
       samp_alt_lab_ids:
