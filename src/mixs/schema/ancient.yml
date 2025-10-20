@@ -90,7 +90,7 @@ slots:
     range: Ancient
     inlined: true
     inlined_as_list: true
-  source_mat_curat_insti:
+  source_curat_instit:
     annotations:
       Expected_value: name of typical storage or archiving institution
     description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
@@ -166,7 +166,7 @@ slots:
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
-  nuc_acid_extraction_date:
+  na_extraction_date:
     description: >-
       The date when the nucleic acid extraction was started from the sample material.
       In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant
@@ -225,7 +225,7 @@ slots:
     range: string
     required: false
     recommended: true
-  experimental_procedures:
+  experimental_sop:
     description: >-
       Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction, 
       library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.
@@ -263,7 +263,7 @@ slots:
     range: string
     required: false
     recommended: true
-  lib_preparation_protocol:
+  lib_preparation_sop:
     description: >-
       Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
@@ -308,7 +308,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999911
     range: boolean
-  num_capture_amp_cycles:
+  num_capture_cycles:
     description: >-
       Number of amplification cycles after capture enrichment
     title: number of reamplification cycles after capture
@@ -329,7 +329,7 @@ slots:
       - sequencing
     slot_uri: MIXS:999999913
     range: integer
-  preservational_treatment:
+  preserv_treatment:
     description: >-
       Description of any treatment applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
@@ -378,7 +378,7 @@ slots:
     range: datetime
     required: false
     recommended: true
-  samp_decontam_pretreat:
+  samp_decont_pretreat:
     description: >-
       Method(s) employed for surface decontamination of samples of external 
       modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
@@ -396,16 +396,16 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  samp_age_range_youngest_limit:
+  age_range_max_limit:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The youngest possible age of the sample in years, with the specific year unit defined in samp_age_range_youngest_unit.
+      The youngest possible age of the sample in years, with the specific year unit defined in age_range_max_unit.
       Youngest refers to the time closest to present day.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
-      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
+      If a sample has only a single age value use this value in both age_range_min_limit and age_range_max_limit.
       Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe and justify in samp_age_range_inference_description.
+      If the sample age is unknown, give a broad range in a reasonable timeframe and justify in age_range_infer_desc.
     title: sample age range youngest limit
     examples:
       - value: "100000"
@@ -416,7 +416,7 @@ slots:
     range: integer
     required: true
     recommended: true
-  samp_age_range_youngest_unit:
+  age_range_max_unit:
     description: >-
       The unit of the youngest age in the sample age range.
     title: sample age range youngest unit
@@ -431,16 +431,16 @@ slots:
     range: SampAgeUnit
     required: true
     recommended: true
-  samp_age_range_oldest_limit:
+  age_range_min_limit:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit.
+      The oldest possible age of the sample in years, with the specific year unit defined in age_range_min_unit.
       Oldest refers to the time furthest from present day.
       Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
-      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
+      If a sample has only a single age value use this value in both age_range_min_limit and age_range_max_limit.
       Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in samp_age_range_inference_description.
+      If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in age_range_infer_desc.
     title: sample age range oldest limit
     examples:
       - value: "120000"
@@ -451,7 +451,7 @@ slots:
     range: integer
     required: true
     recommended: true
-  samp_age_range_oldest_unit:
+  age_range_min_unit:
     description: >-
       The unit of the oldest age in sample age range.
     title: sample age range oldest unit
@@ -466,10 +466,10 @@ slots:
     range: SampAgeUnit
     required: true
     recommended: true
-  samp_age_range_inference_methods:
+  age_range_infer_meth:
     description: >-
       The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
-      If the method is not in the list, please provide a description in samp_age_range_inference_description.
+      If the method is not in the list, please provide a description in age_range_infer_desc.
     title: sample age inference methods
     examples:
       - value: "radiocarbon dating"
@@ -483,7 +483,7 @@ slots:
     range: SampAgeInferMethod
     required: false
     recommended: true
-  samp_age_range_inference_description:
+  age_range_infer_desc:
     description: >-
       Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated.
       This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used.
@@ -572,7 +572,7 @@ slots:
     examples:
       - value: "climate-controlled"
       - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until nuc_acid_extraction_date"
+      - value: "Stored at -20oC until na_extraction_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -637,7 +637,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
-  host_body_preservation_state:
+  host_preservation:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host.
     description: >-
@@ -675,7 +675,7 @@ slots:
     range: LibStrand #enum value
     required: false
     recommended: true
-  genomic_capture_probe_desc:
+  capture_probe_desc:
     annotations:
       Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
@@ -695,7 +695,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  genomic_capture_probe_taxid:
+  capture_probe_taxid:
     annotations:
       Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
     description: >-
@@ -847,42 +847,42 @@ classes:
     title: ancient
     is_a: Extension
     slots:
-      - source_mat_curat_insti
+      - source_curat_instit
       - past_env_broad
       - past_env_local
       - cultural_era
       - geological_epoch
       - damage_treatment
-      - nuc_acid_extraction_date
+      - na_extraction_date
       - permit_authority
       - permit_date
       - permit_id
-      - experimental_procedures
+      - experimental_sop
       - lib_polymerase
-      - lib_preparation_protocol
+      - lib_preparation_sop
       - lib_type
       - neg_cont_status
-      - num_capture_amp_cycles
+      - num_capture_cycles
       - num_reamp_cycles
-      - preservational_treatment
+      - preserv_treatment
       - prev_pubs
       - recovery_date
-      - samp_decontam_pretreat
-      - samp_age_range_youngest_limit
-      - samp_age_range_youngest_unit
-      - samp_age_range_oldest_limit
-      - samp_age_range_oldest_unit
-      - samp_age_range_inference_methods
-      - samp_age_range_inference_description
+      - samp_decont_pretreat
+      - age_range_max_limit
+      - age_range_max_unit
+      - age_range_min_limit
+      - age_range_min_unit
+      - age_range_infer_meth
+      - age_range_infer_desc
       - samp_alt_lab_ids
       - storage_conditions
       - palaeopath_status
       - biocultural_label
       - permit_scope
-      - host_body_preservation_state
+      - host_preservation
       - lib_strandedness
-      - genomic_capture_probe_taxid
-      - genomic_capture_probe_desc
+      - capture_probe_taxid
+      - capture_probe_desc
       - mid_config
       - site_name
       - data_filt_applied
@@ -892,7 +892,7 @@ classes:
       site_name:
         rank: 1
         slot_group: environment
-      source_mat_curat_insti:
+      source_curat_instit:
         rank: 2
         slot_group: environment
       past_env_broad:
@@ -919,26 +919,26 @@ classes:
       biocultural_label:
         rank: 10
         slot_group: sample body
-      samp_age_range_oldest_limit:
+      age_range_min_limit:
         rank: 11
         slot_group: sample body
         recommended: true
-      samp_age_range_oldest_unit:
+      age_range_min_unit:
         rank: 12
         slot_group: sample body
         recommended: true
-      samp_age_range_youngest_limit:
+      age_range_max_limit:
         rank: 13
         slot_group: sample body
         recommended: true
-      samp_age_range_youngest_unit:
+      age_range_max_unit:
         rank: 14
         slot_group: sample body
         recommended: true
-      samp_age_range_inference_methods:
+      age_range_infer_meth:
         rank: 15
         slot_group: sample body
-      samp_age_range_inference_description:
+      age_range_infer_desc:
         rank: 16
         slot_group: sample body
       cultural_era:
@@ -953,7 +953,7 @@ classes:
       storage_conditions:
         rank: 20
         slot_group: sample body
-      preservational_treatment:
+      preserv_treatment:
         rank: 21
         slot_group: sample body
       palaeopath_status:
@@ -962,16 +962,16 @@ classes:
       prev_pubs:
         rank: 23
         slot_group: sample body
-      host_body_preservation_state:
+      host_preservation:
         rank: 24
         slot_group: sample body
       neg_cont_status:
         rank: 25
         slot_group: nucleic acid source
-      samp_decontam_pretreat:
+      samp_decont_pretreat:
         rank: 26
         slot_group: nucleic acid source
-      nuc_acid_extraction_date:
+      na_extraction_date:
         rank: 27
         slot_group: nucleic acid source
       damage_treatment:
@@ -995,22 +995,22 @@ classes:
       lib_polymerase:
         rank: 33
         slot_group: sequencing
-      genomic_capture_probe_taxid:
+      capture_probe_taxid:
         rank: 34
         slot_group: sequencing
-      genomic_capture_probe_desc:
+      capture_probe_desc:
         rank: 35
         slot_group: sequencing
-      num_capture_amp_cycles:
+      num_capture_cycles:
         rank: 36
         slot_group: sequencing
       num_reamp_cycles:
         rank: 37
         slot_group: sequencing
-      experimental_procedures:
+      experimental_sop:
         rank: 38
         slot_group: sequencing
-      lib_preparation_protocol:
+      lib_preparation_sop:
         rank: 39
         slot_group: sequencing
       data_filt_applied:
