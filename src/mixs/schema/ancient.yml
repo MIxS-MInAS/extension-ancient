@@ -14,6 +14,7 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
+  chrono: http://rs.tdwg.org/chrono/iri/
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -57,7 +58,7 @@ enums:
     permissible_values:
       single:
       double:
-  SampAgeUnit:
+  ChronoAgeSys:
     permissible_values:
       BCE:
       CE:
@@ -67,7 +68,7 @@ enums:
       cal CE:
       ka:
       Ma:
-  SampAgeInferMethod:
+  ChronoAgeProtocol:
     permissible_values:
       radiocarbon dating:
       optically stimulated infrared luminescence:
@@ -396,81 +397,76 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  samp_age_range_youngest_limit:
+  latest_chrono_age:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The youngest possible age of the sample in years, with the specific year unit defined in samp_age_range_youngest_unit.
-      Youngest refers to the time closest to present day.
-      Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
-      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
-      Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe and justify in samp_age_range_inference_description.
-    title: sample age range youngest limit
+      The minimum/latest/youngest possible age of a specimen as determined by a dating method.
+    title: Latest Chronometric Age
     examples:
       - value: "100000"
       - value: "1700"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
+    exact_mappings: chrono:latestChronometricAge
     range: integer
     required: true
     recommended: true
-  samp_age_range_youngest_unit:
+  latest_chrono_sys:
     description: >-
-      The unit of the youngest age in the sample age range.
-    title: sample age range youngest unit
+      The reference system associated with the chrono:latest_chrono_age.
+    title: Latest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
+      - value: "kya"
     in_subset:
       - investigation
     slot_uri: MIXS:999999919
+    broad_mappings: chrono:latestChronometricAgeReferenceSystem
     multivalued: true
-    range: SampAgeUnit
+    range: ChronoAgeSys
     required: true
     recommended: true
-  samp_age_range_oldest_limit:
+  earliest_chrono_age:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit.
-      Oldest refers to the time furthest from present day.
-      Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
-      If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit.
-      Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in samp_age_range_inference_description.
-    title: sample age range oldest limit
+      The maximum/earliest/oldest possible age of a specimen as determined by a dating method.
+    title: Earliest Chronometric Age
     examples:
       - value: "120000"
       - value: "1900"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
+    exact_mappings: chrono:earliestChronometricAge
     range: integer
     required: true
     recommended: true
-  samp_age_range_oldest_unit:
+  earliest_chrono_sys:
     description: >-
-      The unit of the oldest age in sample age range.
-    title: sample age range oldest unit
+      The reference system associated with the chrono:earliest_chrono_age.
+    title: Earliest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
+      - value: "kya"
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
+    broad_mappings: chrono:earliestChronometricAgeReferenceSystem
     multivalued: true
-    range: SampAgeUnit
+    range: ChronoAgeSys
     required: true
     recommended: true
-  samp_age_range_inference_methods:
+  chrono_age_protocol:
     description: >-
-      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
-      If the method is not in the list, please provide a description in samp_age_range_inference_description.
-    title: sample age inference methods
+      A description of or reference to the methods used to determine the chrono:ChronometricAge.
+    title: Chronometric Age Protocol
     examples:
       - value: "radiocarbon dating"
       - value: "optically stimulated infrared luminescence"
@@ -479,17 +475,15 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
+    broad_mappings: chrono:chronometricAgeProtocol
     multivalued: true
-    range: SampAgeInferMethod
+    range: ChronoAgeProtocol
     required: false
     recommended: true
-  samp_age_range_inference_description:
+  chrono_age_remarks:
     description: >-
-      Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated.
-      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used.
-      It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.
-      Include any relevant additional citations to the dating method here.
-    title: sample age inference description
+      Notes or comments about the chrono:ChronometricAge.
+    title: Chronometric Age Remarks
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
       - value: "based on proxy dating from other bone samples of stratigraphic layer"
@@ -499,6 +493,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
+    exact_mappings: chrono:chronometricAgeRemarks
     multivalued: false
     range: string
     required: false
@@ -868,12 +863,12 @@ classes:
       - prev_pubs
       - recovery_date
       - samp_decontam_pretreat
-      - samp_age_range_youngest_limit
-      - samp_age_range_youngest_unit
-      - samp_age_range_oldest_limit
-      - samp_age_range_oldest_unit
-      - samp_age_range_inference_methods
-      - samp_age_range_inference_description
+      - latest_chrono_age
+      - latest_chrono_sys
+      - earliest_chrono_age
+      - earliest_chrono_sys
+      - chrono_age_protocol
+      - chrono_age_remarks
       - samp_alt_lab_ids
       - storage_conditions
       - palaeopath_status
@@ -919,26 +914,26 @@ classes:
       biocultural_label:
         rank: 10
         slot_group: sample body
-      samp_age_range_oldest_limit:
+      earliest_chrono_age:
         rank: 11
         slot_group: sample body
         recommended: true
-      samp_age_range_oldest_unit:
+      earliest_chrono_sys:
         rank: 12
         slot_group: sample body
         recommended: true
-      samp_age_range_youngest_limit:
+      latest_chrono_age:
         rank: 13
         slot_group: sample body
         recommended: true
-      samp_age_range_youngest_unit:
+      latest_chrono_sys:
         rank: 14
         slot_group: sample body
         recommended: true
-      samp_age_range_inference_methods:
+      chrono_age_protocol:
         rank: 15
         slot_group: sample body
-      samp_age_range_inference_description:
+      chrono_age_remarks:
         rank: 16
         slot_group: sample body
       cultural_era:
