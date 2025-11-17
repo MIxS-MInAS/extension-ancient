@@ -14,6 +14,23 @@
                         "null"
                     ]
                 },
+                "chrono_age_protocol": {
+                    "description": "A description of or reference to the methods used to determine the chrono:ChronometricAge.",
+                    "items": {
+                        "$ref": "#/$defs/ChronoAgeProtocol"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "chrono_age_remarks": {
+                    "description": "Notes or comments about the chrono:ChronometricAge.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "cultural_era": {
                     "description": "The cultural era approximating to the period in which the archaeological remains existed in. Where possible use terms from ontologies such as Chronontology (https://chronontology.dainst.org/) or PeriodO (https://perio.do/en/).",
                     "type": [
@@ -41,6 +58,17 @@
                         "string",
                         "null"
                     ]
+                },
+                "earliest_chrono_age": {
+                    "description": "The maximum/earliest/oldest possible age of a specimen as determined by a dating method.",
+                    "type": "integer"
+                },
+                "earliest_chrono_sys": {
+                    "description": "The reference system associated with the chrono:earliest_chrono_age.",
+                    "items": {
+                        "$ref": "#/$defs/ChronoAgeSys"
+                    },
+                    "type": "array"
                 },
                 "experimental_procedures": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
@@ -86,6 +114,17 @@
                         "string",
                         "null"
                     ]
+                },
+                "latest_chrono_age": {
+                    "description": "The minimum/latest/youngest possible age of a specimen as determined by a dating method.",
+                    "type": "integer"
+                },
+                "latest_chrono_sys": {
+                    "description": "The reference system associated with the chrono:latest_chrono_age.",
+                    "items": {
+                        "$ref": "#/$defs/ChronoAgeSys"
+                    },
+                    "type": "array"
                 },
                 "lib_polymerase": {
                     "description": "The polymerase enzyme used for building nucleic acid libraries.",
@@ -260,45 +299,6 @@
                         "null"
                     ]
                 },
-                "samp_age_range_inference_description": {
-                    "description": "Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated. This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used. It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts. Include any relevant additional citations to the dating method here.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "samp_age_range_inference_methods": {
-                    "description": "The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.). If the method is not in the list, please provide a description in samp_age_range_inference_description.",
-                    "items": {
-                        "$ref": "#/$defs/SampAgeInferMethod"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "samp_age_range_oldest_limit": {
-                    "description": "The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit. Oldest refers to the time furthest from present day. Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age. If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit. Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates). If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in samp_age_range_inference_description.",
-                    "type": "integer"
-                },
-                "samp_age_range_oldest_unit": {
-                    "description": "The unit of the oldest age in sample age range.",
-                    "items": {
-                        "$ref": "#/$defs/SampAgeUnit"
-                    },
-                    "type": "array"
-                },
-                "samp_age_range_youngest_limit": {
-                    "description": "The youngest possible age of the sample in years, with the specific year unit defined in samp_age_range_youngest_unit. Youngest refers to the time closest to present day. Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age. If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit. Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates). If the sample age is unknown, give a broad range in a reasonable timeframe and justify in samp_age_range_inference_description.",
-                    "type": "integer"
-                },
-                "samp_age_range_youngest_unit": {
-                    "description": "The unit of the youngest age in the sample age range.",
-                    "items": {
-                        "$ref": "#/$defs/SampAgeUnit"
-                    },
-                    "type": "array"
-                },
                 "samp_alt_lab_ids": {
                     "description": "An alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.",
                     "items": {
@@ -350,10 +350,10 @@
             },
             "required": [
                 "damage_treatment",
-                "samp_age_range_youngest_limit",
-                "samp_age_range_youngest_unit",
-                "samp_age_range_oldest_limit",
-                "samp_age_range_oldest_unit"
+                "latest_chrono_age",
+                "latest_chrono_sys",
+                "earliest_chrono_age",
+                "earliest_chrono_sys"
             ],
             "title": "Ancient",
             "type": "object"
@@ -373,6 +373,37 @@
                 "BC NC"
             ],
             "title": "BioCulturalLabel",
+            "type": "string"
+        },
+        "ChronoAgeProtocol": {
+            "description": "",
+            "enum": [
+                "radiocarbon dating",
+                "optically stimulated infrared luminescence",
+                "amino acid racemisation",
+                "electron spin resonance",
+                "uranium thorium",
+                "contextual dating",
+                "associated absolute dating",
+                "historical records",
+                "other"
+            ],
+            "title": "ChronoAgeProtocol",
+            "type": "string"
+        },
+        "ChronoAgeSys": {
+            "description": "",
+            "enum": [
+                "BCE",
+                "CE",
+                "BP",
+                "cal BP",
+                "cal BCE",
+                "cal CE",
+                "ka",
+                "Ma"
+            ],
+            "title": "ChronoAgeSys",
             "type": "string"
         },
         "DamageTreatmentEnum": {
@@ -429,37 +460,6 @@
             },
             "title": "MixsCompliantData",
             "type": "object"
-        },
-        "SampAgeInferMethod": {
-            "description": "",
-            "enum": [
-                "radiocarbon dating",
-                "optically stimulated infrared luminescence",
-                "amino acid racemisation",
-                "electron spin resonance",
-                "uranium thorium",
-                "contextual dating",
-                "associated absolute dating",
-                "historical records",
-                "other"
-            ],
-            "title": "SampAgeInferMethod",
-            "type": "string"
-        },
-        "SampAgeUnit": {
-            "description": "",
-            "enum": [
-                "BCE",
-                "CE",
-                "BP",
-                "cal BP",
-                "cal BCE",
-                "cal CE",
-                "ka",
-                "Ma"
-            ],
-            "title": "SampAgeUnit",
-            "type": "string"
         }
     },
     "$id": "https://w3id.org/mixs",
