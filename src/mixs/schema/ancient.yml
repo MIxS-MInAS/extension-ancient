@@ -14,7 +14,7 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
-  chrono: http://rs.tdwg.org/chrono/iri/
+  chrono: http://rs.tdwg.org/chrono/terms/
 default_prefix: MIXS
 default_range: string
 subsets:
