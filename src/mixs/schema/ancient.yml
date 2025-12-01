@@ -363,7 +363,7 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  recovery_date:
+  context_retrieval_date:
     annotations:
       Preferred_unit: year
     description: >-
@@ -861,7 +861,7 @@ classes:
       - num_reamp_cycles
       - preservational_treatment
       - prev_pubs
-      - recovery_date
+      - context_retrieval_date
       - samp_decontam_pretreat
       - latest_chrono_age
       - latest_chrono_sys
@@ -942,7 +942,7 @@ classes:
       geological_epoch:
         rank: 18
         slot_group: sample body
-      recovery_date:
+      context_retrieval_date:
         rank: 19
         slot_group: sample body
       storage_conditions:
