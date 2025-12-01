@@ -246,7 +246,7 @@ slots:
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
-  na_extraction_date:
+  nucl_acid_extr_date:
     description: >-
       The date when the nucleic acid extraction was started from the sample material.
       In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant
@@ -409,7 +409,7 @@ slots:
       - sequencing
     slot_uri: MIXS:999999913
     range: integer
-  preserv_treatment:
+  samp_preserv_treatm:
     description: >-
       Description of any treatment applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
@@ -646,7 +646,7 @@ slots:
     examples:
       - value: "climate-controlled"
       - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until na_extraction_date"
+      - value: "Stored at -20oC until nucl_acid_ext_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -711,7 +711,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
-  host_preservation:
+  host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host.
     description: >-
@@ -927,7 +927,7 @@ classes:
       - cultural_era
       - geological_epoch
       - damage_treatment
-      - na_extraction_date
+      - nucl_acid_extr_date
       - permit_authority
       - permit_date
       - permit_id
@@ -938,7 +938,7 @@ classes:
       - neg_cont_status
       - num_capture_cycles
       - num_reamp_cycles
-      - preserv_treatment
+      - samp_preserv_treatm
       - prev_pubs
       - recovery_date
       - samp_decontam_pretreat
@@ -953,7 +953,7 @@ classes:
       - palaeopath_status
       - biocultural_label
       - permit_scope
-      - host_preservation
+      - host_preserv_state
       - lib_strandedness
       - capture_probe_taxid
       - capture_probe_desc
