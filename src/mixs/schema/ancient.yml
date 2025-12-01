@@ -170,7 +170,7 @@ slots:
     range: Ancient
     inlined: true
     inlined_as_list: true
-  source_mat_curat_insti:
+  source_curat_instit:
     annotations:
       Expected_value: name of typical storage or archiving institution
     description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
@@ -246,7 +246,7 @@ slots:
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
-  nuc_acid_extraction_date:
+  nucl_acid_extr_date:
     description: >-
       The date when the nucleic acid extraction was started from the sample material.
       In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant
@@ -305,7 +305,7 @@ slots:
     range: string
     required: false
     recommended: true
-  experimental_procedures:
+  experimental_sop:
     description: >-
       Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction, 
       library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.
@@ -343,7 +343,7 @@ slots:
     range: string
     required: false
     recommended: true
-  lib_preparation_protocol:
+  lib_preparation_sop:
     description: >-
       Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
@@ -388,7 +388,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999911
     range: boolean
-  num_capture_amp_cycles:
+  num_capture_cycles:
     description: >-
       Number of amplification cycles after capture enrichment
     title: number of reamplification cycles after capture
@@ -409,7 +409,7 @@ slots:
       - sequencing
     slot_uri: MIXS:999999913
     range: integer
-  preservational_treatment:
+  samp_preserv_treatm:
     description: >-
       Description of any treatment applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
@@ -458,7 +458,7 @@ slots:
     range: datetime
     required: false
     recommended: true
-  samp_decontam_pretreat:
+  samp_decont_pretreat:
     description: >-
       Method(s) employed for surface decontamination of samples of external 
       modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
@@ -646,7 +646,7 @@ slots:
     examples:
       - value: "climate-controlled"
       - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until nuc_acid_extraction_date"
+      - value: "Stored at -20oC until nucl_acid_ext_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -711,7 +711,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
-  host_body_preservation_state:
+  host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host.
     description: >-
@@ -749,7 +749,7 @@ slots:
     range: LibStrandEnum #enum value
     required: false
     recommended: true
-  genomic_capture_probe_desc:
+  capture_probe_desc:
     annotations:
       Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
@@ -769,7 +769,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  genomic_capture_probe_taxid:
+  capture_probe_taxid:
     annotations:
       Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
     description: >-
@@ -921,24 +921,24 @@ classes:
     title: ancient
     is_a: Extension
     slots:
-      - source_mat_curat_insti
+      - source_curat_instit
       - past_env_broad
       - past_env_local
       - cultural_era
       - geological_epoch
       - damage_treatment
-      - nuc_acid_extraction_date
+      - nucl_acid_extr_date
       - permit_authority
       - permit_date
       - permit_id
-      - experimental_procedures
+      - experimental_sop
       - lib_polymerase
-      - lib_preparation_protocol
+      - lib_preparation_sop
       - lib_type
       - neg_cont_status
-      - num_capture_amp_cycles
+      - num_capture_cycles
       - num_reamp_cycles
-      - preservational_treatment
+      - samp_preserv_treatm
       - prev_pubs
       - recovery_date
       - samp_decontam_pretreat
@@ -953,10 +953,10 @@ classes:
       - palaeopath_status
       - biocultural_label
       - permit_scope
-      - host_body_preservation_state
+      - host_preserv_state
       - lib_strandedness
-      - genomic_capture_probe_taxid
-      - genomic_capture_probe_desc
+      - capture_probe_taxid
+      - capture_probe_desc
       - mid_config
       - site_name
       - data_filt_applied
@@ -966,7 +966,7 @@ classes:
       site_name:
         rank: 1
         slot_group: environment
-      source_mat_curat_insti:
+      source_curat_instit:
         rank: 2
         slot_group: environment
       past_env_broad:
@@ -1027,7 +1027,7 @@ classes:
       storage_conditions:
         rank: 20
         slot_group: sample body
-      preservational_treatment:
+      preserv_treatment:
         rank: 21
         slot_group: sample body
       palaeopath_status:
@@ -1036,16 +1036,16 @@ classes:
       prev_pubs:
         rank: 23
         slot_group: sample body
-      host_body_preservation_state:
+      host_preservation:
         rank: 24
         slot_group: sample body
       neg_cont_status:
         rank: 25
         slot_group: nucleic acid source
-      samp_decontam_pretreat:
+      samp_decont_pretreat:
         rank: 26
         slot_group: nucleic acid source
-      nuc_acid_extraction_date:
+      na_extraction_date:
         rank: 27
         slot_group: nucleic acid source
       damage_treatment:
@@ -1069,22 +1069,22 @@ classes:
       lib_polymerase:
         rank: 33
         slot_group: sequencing
-      genomic_capture_probe_taxid:
+      capture_probe_taxid:
         rank: 34
         slot_group: sequencing
-      genomic_capture_probe_desc:
+      capture_probe_desc:
         rank: 35
         slot_group: sequencing
-      num_capture_amp_cycles:
+      num_capture_cycles:
         rank: 36
         slot_group: sequencing
       num_reamp_cycles:
         rank: 37
         slot_group: sequencing
-      experimental_procedures:
+      experimental_sop:
         rank: 38
         slot_group: sequencing
-      lib_preparation_protocol:
+      lib_preparation_sop:
         rank: 39
         slot_group: sequencing
       data_filt_applied:
