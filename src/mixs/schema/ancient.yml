@@ -82,6 +82,7 @@ enums:
       historical records:
       other:
   GeolEpochEnum:
+    description: Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)
     permissible_values:
       Holocene:
         description: A time period from 0.0117 million years ago to the present.
