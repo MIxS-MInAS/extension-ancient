@@ -222,7 +222,7 @@ slots:
     keywords:
       - ancient
       - age
-    string_serialization: "{termLabel} [{termID}]|{text}"
+    range: GeolEpochEnum
     slot_uri: MIXS:999999902
     multivalued: false
     required: false
