@@ -155,7 +155,7 @@ enums:
         description: A time period from 497.0 to 486.85 million years ago.
       Miaolingian:
         description: A time period from 506.5 to 497.0 million years ago.
-      Epoch 2:
+      Cambrian Epoch 2:
         description: A time period from 521.0 to 506.5 million years ago.
       Terreneuvian:
         description: A time period from 538.8 to 521.0 million years ago
