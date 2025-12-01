@@ -14,6 +14,7 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
+  chrono: http://rs.tdwg.org/chrono/terms/
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -41,7 +42,7 @@ enums:
       amplicon:
       enriched:
       shotgun:
-  BioCulturalLabel:
+  BioCulturalLabelEnum:
     permissible_values:
       "BC P":
       "BC MC":
@@ -53,11 +54,11 @@ enums:
       "BC OC":
       "BC O":
       "BC NC":
-  LibStrand:
+  LibStrandEnum:
     permissible_values:
       single:
       double:
-  SampAgeUnit:
+  ChronoAgeSysEnum:
     permissible_values:
       BCE:
       CE:
@@ -67,7 +68,7 @@ enums:
       cal CE:
       ka:
       Ma:
-  SampAgeInferMethod:
+  ChronoAgeProtocolEnum:
     permissible_values:
       radiocarbon dating:
       optically stimulated infrared luminescence:
@@ -80,6 +81,85 @@ enums:
         description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial).
       historical records:
       other:
+  GeolEpochEnum:
+    description: Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)
+    permissible_values:
+      Holocene:
+        description: A time period from 0.0117 million years ago to the present.
+      Pleistocene:
+        description: A time period from 2.58 to 0.0117 million years ago.
+      Pliocene:
+        description: A time period from 5.333 to 2.58 million years ago.
+      Miocene:
+        description: A time period from 23.04 to 5.333 million years ago.
+      Oligocene:
+        description: A time period from 33.9 to 23.04 million years ago.
+      Eocene:
+        description: A time period from 56.00 to 33.9 million years ago.
+      Paleocene:
+        description: A time period from 66.00 to 56.00 million years ago.
+      Late Cretaceous:
+        description: A time period from 100.5 to 66.00 million years ago.
+      Early Cretaceous:
+        description: A time period from 143.1 to 100.5 million years ago.
+      Late Jurassic:
+        description: A time period from 161.5 to 143.1 million years ago.
+      Middle Jurassic:
+        description: A time period from 174.7 to 161.5 million years ago.
+      Early Jurassic:
+        description: A time period from 201.4 to 174.7 million years ago.
+      Late Triassic:
+        description: A time period from 237 to 201.4 million years ago.
+      Middle Triassic:
+        description: A time period from 246.7 to 237 million years ago.
+      Early Triassic:
+        description: A time period from 251.902 to 246.7 million years ago.
+      Lopingian:
+        description: A time period from 259.51 to 251.902 million years ago.
+      Guadalupian:
+        description: A time period from 274.4 to 259.51 million years ago.
+      Cisuralian:
+        description: A time period from 298.9 to 274.4 million years ago.
+      Late Pennsylvanian:
+        description: A time period from 307.0 to 298.9 million years ago.
+      Middle Pennsylvanian:
+        description: A time period from 315.2 to 307.0 million years ago.
+      Early Pennsylvanian:
+        description: A time period from 323.4 to 315.2 million years ago.
+      Late Mississippian:
+        description: A time period from 330.3 to 323.4 million years ago.
+      Middle Mississippian:
+        description: A time period from 346.7 to 330.3 million years ago.
+      Early Mississippian:
+        description: A time period from 358.86 to 346.7 million years ago.
+      Late Devonian:
+        description: A time period from 382.31 to 358.86 million years ago.
+      Middle Devonian:
+        description: A time period from 393.47 to 382.31 million years ago.
+      Early Devonian:
+        description: A time period from 419.62 to 393.47 million years ago.
+      Pridoli:
+        description: A time period from 422.7 to 419.62 million years ago.
+      Ludlow:
+        description: A time period from 426.7 to 422.7 million years ago.
+      Wenlock:
+        description: A time period from 432.9 to 426.7 million years ago.
+      Llandovery:
+        description: A time period from 443.1 to 432.9 million years ago.
+      Late Ordovician:
+        description: A time period from 458.2 to 443.1 million years ago.
+      Middle Ordovician:
+        description: A time period from 471.3 to 458.2 million years ago.
+      Early Ordovician:
+        description: A time period from 486.85 to 471.3 million years ago.
+      Furongian:
+        description: A time period from 497.0 to 486.85 million years ago.
+      Miaolingian:
+        description: A time period from 506.5 to 497.0 million years ago.
+      Cambrian Epoch 2:
+        description: A time period from 521.0 to 506.5 million years ago.
+      Terreneuvian:
+        description: A time period from 538.8 to 521.0 million years ago
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
@@ -143,7 +223,7 @@ slots:
     keywords:
       - ancient
       - age
-    string_serialization: "{termLabel} [{termID}]|{text}"
+    range: GeolEpochEnum
     slot_uri: MIXS:999999902
     multivalued: false
     required: false
@@ -396,81 +476,76 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  age_range_max_limit:
+  latest_chrono_age:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The youngest possible age of the sample in years, with the specific year unit defined in age_range_max_unit.
-      Youngest refers to the time closest to present day.
-      Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
-      If a sample has only a single age value use this value in both age_range_min_limit and age_range_max_limit.
-      Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe and justify in age_range_infer_desc.
-    title: sample age range youngest limit
+      The minimum/latest/youngest possible age of a specimen as determined by a dating method.
+    title: Latest Chronometric Age
     examples:
       - value: "100000"
       - value: "1700"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
+    exact_mappings: chrono:latestChronometricAge
     range: integer
     required: true
     recommended: true
-  age_range_max_unit:
+  latest_chrono_sys:
     description: >-
-      The unit of the youngest age in the sample age range.
-    title: sample age range youngest unit
+      The reference system associated with the chrono:latest_chrono_age.
+    title: Latest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
+      - value: "kya"
     in_subset:
       - investigation
     slot_uri: MIXS:999999919
+    broad_mappings: chrono:latestChronometricAgeReferenceSystem
     multivalued: true
-    range: SampAgeUnit
+    range: ChronoAgeSysEnum
     required: true
     recommended: true
-  age_range_min_limit:
+  earliest_chrono_age:
     annotations:
       Expected_value: age value corresponding to unit
     description: >-
-      The oldest possible age of the sample in years, with the specific year unit defined in age_range_min_unit.
-      Oldest refers to the time furthest from present day.
-      Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age.
-      If a sample has only a single age value use this value in both age_range_min_limit and age_range_max_limit.
-      Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates).
-      If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in age_range_infer_desc.
-    title: sample age range oldest limit
+      The maximum/earliest/oldest possible age of a specimen as determined by a dating method.
+    title: Earliest Chronometric Age
     examples:
       - value: "120000"
       - value: "1900"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
+    exact_mappings: chrono:earliestChronometricAge
     range: integer
     required: true
     recommended: true
-  age_range_min_unit:
+  earliest_chrono_sys:
     description: >-
-      The unit of the oldest age in sample age range.
-    title: sample age range oldest unit
+      The reference system associated with the chrono:earliest_chrono_age.
+    title: Earliest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
+      - value: "kya"
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
+    broad_mappings: chrono:earliestChronometricAgeReferenceSystem
     multivalued: true
-    range: SampAgeUnit
+    range: ChronoAgeSysEnum
     required: true
     recommended: true
-  age_range_infer_meth:
+  chrono_age_protocol:
     description: >-
-      The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.).
-      If the method is not in the list, please provide a description in age_range_infer_desc.
-    title: sample age inference methods
+      A description of or reference to the methods used to determine the chrono:ChronometricAge.
+    title: Chronometric Age Protocol
     examples:
       - value: "radiocarbon dating"
       - value: "optically stimulated infrared luminescence"
@@ -479,17 +554,15 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
+    broad_mappings: chrono:chronometricAgeProtocol
     multivalued: true
-    range: SampAgeInferMethod
+    range: ChronoAgeProtocolEnum
     required: false
     recommended: true
-  age_range_infer_desc:
+  chrono_age_remarks:
     description: >-
-      Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated.
-      This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used.
-      It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts.
-      Include any relevant additional citations to the dating method here.
-    title: sample age inference description
+      Notes or comments about the chrono:ChronometricAge.
+    title: Chronometric Age Remarks
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
       - value: "based on proxy dating from other bone samples of stratigraphic layer"
@@ -499,6 +572,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
+    exact_mappings: chrono:chronometricAgeRemarks
     multivalued: false
     range: string
     required: false
@@ -616,7 +690,7 @@ slots:
       - ethics
     slot_uri: MIXS:999999927 #Not assigned
     multivalued: true
-    range: BioCulturalLabel #enum value
+    range: BioCulturalLabelEnum #enum value
     required: false
     recommended: false
   permit_scope:
@@ -672,7 +746,7 @@ slots:
       - preparation
     slot_uri: MIXS:999999930 #Not assigned
     multivalued: true
-    range: LibStrand #enum value
+    range: LibStrandEnum #enum value
     required: false
     recommended: true
   capture_probe_desc:
@@ -867,13 +941,13 @@ classes:
       - preserv_treatment
       - prev_pubs
       - recovery_date
-      - samp_decont_pretreat
-      - age_range_max_limit
-      - age_range_max_unit
-      - age_range_min_limit
-      - age_range_min_unit
-      - age_range_infer_meth
-      - age_range_infer_desc
+      - samp_decontam_pretreat
+      - latest_chrono_age
+      - latest_chrono_sys
+      - earliest_chrono_age
+      - earliest_chrono_sys
+      - chrono_age_protocol
+      - chrono_age_remarks
       - samp_alt_lab_ids
       - storage_conditions
       - palaeopath_status
@@ -919,26 +993,26 @@ classes:
       biocultural_label:
         rank: 10
         slot_group: sample body
-      age_range_min_limit:
+      earliest_chrono_age:
         rank: 11
         slot_group: sample body
         recommended: true
-      age_range_min_unit:
+      earliest_chrono_sys:
         rank: 12
         slot_group: sample body
         recommended: true
-      age_range_max_limit:
+      latest_chrono_age:
         rank: 13
         slot_group: sample body
         recommended: true
-      age_range_max_unit:
+      latest_chrono_sys:
         rank: 14
         slot_group: sample body
         recommended: true
-      age_range_infer_meth:
+      chrono_age_protocol:
         rank: 15
         slot_group: sample body
-      age_range_infer_desc:
+      chrono_age_remarks:
         rank: 16
         slot_group: sample body
       cultural_era:
