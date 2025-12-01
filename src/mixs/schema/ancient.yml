@@ -81,6 +81,85 @@ enums:
         description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial).
       historical records:
       other:
+  GeolEpochEnum:
+    description: Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)
+    permissible_values:
+      Holocene:
+        description: A time period from 0.0117 million years ago to the present.
+      Pleistocene:
+        description: A time period from 2.58 to 0.0117 million years ago.
+      Pliocene:
+        description: A time period from 5.333 to 2.58 million years ago.
+      Miocene:
+        description: A time period from 23.04 to 5.333 million years ago.
+      Oligocene:
+        description: A time period from 33.9 to 23.04 million years ago.
+      Eocene:
+        description: A time period from 56.00 to 33.9 million years ago.
+      Paleocene:
+        description: A time period from 66.00 to 56.00 million years ago.
+      Late Cretaceous:
+        description: A time period from 100.5 to 66.00 million years ago.
+      Early Cretaceous:
+        description: A time period from 143.1 to 100.5 million years ago.
+      Late Jurassic:
+        description: A time period from 161.5 to 143.1 million years ago.
+      Middle Jurassic:
+        description: A time period from 174.7 to 161.5 million years ago.
+      Early Jurassic:
+        description: A time period from 201.4 to 174.7 million years ago.
+      Late Triassic:
+        description: A time period from 237 to 201.4 million years ago.
+      Middle Triassic:
+        description: A time period from 246.7 to 237 million years ago.
+      Early Triassic:
+        description: A time period from 251.902 to 246.7 million years ago.
+      Lopingian:
+        description: A time period from 259.51 to 251.902 million years ago.
+      Guadalupian:
+        description: A time period from 274.4 to 259.51 million years ago.
+      Cisuralian:
+        description: A time period from 298.9 to 274.4 million years ago.
+      Late Pennsylvanian:
+        description: A time period from 307.0 to 298.9 million years ago.
+      Middle Pennsylvanian:
+        description: A time period from 315.2 to 307.0 million years ago.
+      Early Pennsylvanian:
+        description: A time period from 323.4 to 315.2 million years ago.
+      Late Mississippian:
+        description: A time period from 330.3 to 323.4 million years ago.
+      Middle Mississippian:
+        description: A time period from 346.7 to 330.3 million years ago.
+      Early Mississippian:
+        description: A time period from 358.86 to 346.7 million years ago.
+      Late Devonian:
+        description: A time period from 382.31 to 358.86 million years ago.
+      Middle Devonian:
+        description: A time period from 393.47 to 382.31 million years ago.
+      Early Devonian:
+        description: A time period from 419.62 to 393.47 million years ago.
+      Pridoli:
+        description: A time period from 422.7 to 419.62 million years ago.
+      Ludlow:
+        description: A time period from 426.7 to 422.7 million years ago.
+      Wenlock:
+        description: A time period from 432.9 to 426.7 million years ago.
+      Llandovery:
+        description: A time period from 443.1 to 432.9 million years ago.
+      Late Ordovician:
+        description: A time period from 458.2 to 443.1 million years ago.
+      Middle Ordovician:
+        description: A time period from 471.3 to 458.2 million years ago.
+      Early Ordovician:
+        description: A time period from 486.85 to 471.3 million years ago.
+      Furongian:
+        description: A time period from 497.0 to 486.85 million years ago.
+      Miaolingian:
+        description: A time period from 506.5 to 497.0 million years ago.
+      Cambrian Epoch 2:
+        description: A time period from 521.0 to 506.5 million years ago.
+      Terreneuvian:
+        description: A time period from 538.8 to 521.0 million years ago
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
@@ -144,7 +223,7 @@ slots:
     keywords:
       - ancient
       - age
-    string_serialization: "{termLabel} [{termID}]|{text}"
+    range: GeolEpochEnum
     slot_uri: MIXS:999999902
     multivalued: false
     required: false
