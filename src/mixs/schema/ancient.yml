@@ -42,7 +42,7 @@ enums:
       amplicon:
       enriched:
       shotgun:
-  BioCulturalLabel:
+  BioCulturalLabelEnum:
     permissible_values:
       "BC P":
       "BC MC":
@@ -54,11 +54,11 @@ enums:
       "BC OC":
       "BC O":
       "BC NC":
-  LibStrand:
+  LibStrandEnum:
     permissible_values:
       single:
       double:
-  ChronoAgeSys:
+  ChronoAgeSysEnum:
     permissible_values:
       BCE:
       CE:
@@ -68,7 +68,7 @@ enums:
       cal CE:
       ka:
       Ma:
-  ChronoAgeProtocol:
+  ChronoAgeProtocolEnum:
     permissible_values:
       radiocarbon dating:
       optically stimulated infrared luminescence:
@@ -427,7 +427,7 @@ slots:
     slot_uri: MIXS:999999919
     broad_mappings: chrono:latestChronometricAgeReferenceSystem
     multivalued: true
-    range: ChronoAgeSys
+    range: ChronoAgeSysEnum
     required: true
     recommended: true
   earliest_chrono_age:
@@ -460,7 +460,7 @@ slots:
     slot_uri: MIXS:999999921
     broad_mappings: chrono:earliestChronometricAgeReferenceSystem
     multivalued: true
-    range: ChronoAgeSys
+    range: ChronoAgeSysEnum
     required: true
     recommended: true
   chrono_age_protocol:
@@ -477,7 +477,7 @@ slots:
     slot_uri: MIXS:999999922
     broad_mappings: chrono:chronometricAgeProtocol
     multivalued: true
-    range: ChronoAgeProtocol
+    range: ChronoAgeProtocolEnum
     required: false
     recommended: true
   chrono_age_remarks:
@@ -611,7 +611,7 @@ slots:
       - ethics
     slot_uri: MIXS:999999927 #Not assigned
     multivalued: true
-    range: BioCulturalLabel #enum value
+    range: BioCulturalLabelEnum #enum value
     required: false
     recommended: false
   permit_scope:
@@ -667,7 +667,7 @@ slots:
       - preparation
     slot_uri: MIXS:999999930 #Not assigned
     multivalued: true
-    range: LibStrand #enum value
+    range: LibStrandEnum #enum value
     required: false
     recommended: true
   genomic_capture_probe_desc:
