@@ -170,24 +170,6 @@ slots:
     range: Ancient
     inlined: true
     inlined_as_list: true
-  source_curat_instit:
-    annotations:
-      Expected_value: name of typical storage or archiving institution
-    description: Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.
-    title: Institution storing or archiving the source material
-    examples:
-      - value: Natural History Museum London
-      - value: Denkmalpflege Baden-Württemberg, University of Tübingen
-      - value: Herbarium, Royal Botanic Gardens, Kew
-    in_subset:
-      - nucleic acid sequence source
-    keywords:
-      - storage
-    slot_uri: MIXS:999999901
-    multivalued: true
-    range: string
-    required: false
-    recommended: true
   cultural_era:
     annotations:
       Expected_value: chronotology or PeriodO term; text
@@ -921,7 +903,6 @@ classes:
     title: ancient
     is_a: Extension
     slots:
-      - source_curat_instit
       - past_env_broad
       - past_env_local
       - cultural_era
@@ -966,132 +947,129 @@ classes:
       site_name:
         rank: 1
         slot_group: environment
-      source_curat_instit:
+      past_env_broad:
         rank: 2
         slot_group: environment
-      past_env_broad:
+      past_env_local:
         rank: 3
         slot_group: environment
-      past_env_local:
-        rank: 4
-        slot_group: environment
       samp_alt_lab_ids:
-        rank: 5
+        rank: 4
         slot_group: sample body
       permit_authority:
-        rank: 6
+        rank: 5
         slot_group: sample body
       permit_id:
-        rank: 7
+        rank: 6
         slot_group: sample body
       permit_date:
-        rank: 8
+        rank: 7
         slot_group: sample body
       permit_scope:
-        rank: 9
+        rank: 8
         slot_group: sample body
       biocultural_label:
-        rank: 10
+        rank: 9
         slot_group: sample body
       earliest_chrono_age:
-        rank: 11
+        rank: 10
         slot_group: sample body
         recommended: true
       earliest_chrono_sys:
-        rank: 12
+        rank: 11
         slot_group: sample body
         recommended: true
       latest_chrono_age:
-        rank: 13
+        rank: 12
         slot_group: sample body
         recommended: true
       latest_chrono_sys:
-        rank: 14
+        rank: 13
         slot_group: sample body
         recommended: true
       chrono_age_protocol:
-        rank: 15
+        rank: 14
         slot_group: sample body
       chrono_age_remarks:
-        rank: 16
+        rank: 15
         slot_group: sample body
       cultural_era:
-        rank: 17
+        rank: 16
         slot_group: sample body
       geological_epoch:
-        rank: 18
+        rank: 17
         slot_group: sample body
       recovery_date:
-        rank: 19
+        rank: 18
         slot_group: sample body
       storage_conditions:
-        rank: 20
+        rank: 19
         slot_group: sample body
       samp_preserv_treatm:
-        rank: 21
+        rank: 20
         slot_group: sample body
       palaeopath_status:
-        rank: 22
+        rank: 21
         slot_group: sample body
       prev_pubs:
-        rank: 23
+        rank: 22
         slot_group: sample body
       host_preserv_state:
-        rank: 24
+        rank: 23
         slot_group: sample body
       neg_cont_status:
-        rank: 25
+        rank: 24
         slot_group: nucleic acid source
       samp_decont_pretreat:
-        rank: 26
+        rank: 25
         slot_group: nucleic acid source
       nucl_acid_extr_date:
-        rank: 27
+        rank: 26
         slot_group: nucleic acid source
       damage_treatment:
-        rank: 28
+        rank: 27
         slot_group: sequencing
         recommended: true
       lib_strandedness:
-        rank: 29
+        rank: 28
         slot_group: sequencing
         recommended: true
       mid_config:
-        rank: 30
+        rank: 29
         slot_group: sequencing
       library_name:
-        rank: 31
+        rank: 30
         slot_group: sequencing
       lib_type:
-        rank: 32
+        rank: 31
         slot_group: sequencing
         recommended: true
       lib_polymerase:
-        rank: 33
+        rank: 32
         slot_group: sequencing
       capture_probe_taxid:
-        rank: 34
+        rank: 33
         slot_group: sequencing
       capture_probe_desc:
-        rank: 35
+        rank: 34
         slot_group: sequencing
       num_capture_cycles:
-        rank: 36
+        rank: 35
         slot_group: sequencing
       num_reamp_cycles:
-        rank: 37
+        rank: 36
         slot_group: sequencing
       experimental_sop:
-        rank: 38
+        rank: 37
         slot_group: sequencing
       lib_preparation_sop:
-        rank: 39
+        rank: 38
         slot_group: sequencing
       data_filt_applied:
-        rank: 40
+        rank: 39
         slot_group: sequencing
       desc_read_state:
-        rank: 41
+        rank: 40
         slot_group: sequencing
     class_uri: MIXS:9999903
     annotations:
