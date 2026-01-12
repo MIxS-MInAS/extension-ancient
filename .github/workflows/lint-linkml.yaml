@@ -3,7 +3,7 @@ name: LinkML Linting GitHub Action
 on:
   pull_request:
     paths:
-      - "/src/mixs/schema/ancient.yml"
+      - "src/mixs/schema/ancient.yml"
   workflow_dispatch:  # This allows manual triggering
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
           echo "" >> linting-results.md
           
           # Run the linter and capture output (continue even if linter finds issues)
-          poetry run linkml lint --ignore-warnings -f markdown src/mixs/schema/mixs.yaml > linting-results.md || true
+          poetry run linkml lint --ignore-warnings -f markdown src/mixs/schema/ancient.yml > linting-results.md || true
           
           # Show results in the action log for immediate visibility
           echo "=== Linting Results ==="
