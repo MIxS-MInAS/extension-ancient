@@ -38,7 +38,7 @@ jobs:
           echo "" >> linting-results.md
           
           # Run the linter and capture output (continue even if linter finds issues)
-          poetry run linkml lint --ignore-warnings -f markdown src/mixs/schema/ancient.yml > linting-results.md || true
+          linkml lint --ignore-warnings -f markdown src/mixs/schema/ancient.yml > linting-results.md || true
           
           # Show results in the action log for immediate visibility
           echo "=== Linting Results ==="
