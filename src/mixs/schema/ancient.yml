@@ -36,7 +36,7 @@ enums:
       damage-selection:
         description: Library preparation-derived technique that retain only molecules containing damage, and have discarded those without damage.
       other:
-        description: Other type of damage treatment that are further described in other method description terms.
+        description: Other type of damage treatment that are further described in other method description terms. If damage has been removed, but whether full or partial is unknown - use this option and describe known information in `experimental_sop` and related free text descriptive terms.
   LibTypeEnum:
     permissible_values:
       amplicon:
@@ -81,6 +81,85 @@ enums:
         description: Dates inferred from the absolute dates of associated materials within the same specific context of the sample (e.g. C14 dating of a animal bone artefact in the same context of a human burial).
       historical records:
       other:
+  GeolEpochEnum:
+    description: Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)
+    permissible_values:
+      Holocene:
+        description: A time period from 0.0117 million years ago to the present.
+      Pleistocene:
+        description: A time period from 2.58 to 0.0117 million years ago.
+      Pliocene:
+        description: A time period from 5.333 to 2.58 million years ago.
+      Miocene:
+        description: A time period from 23.04 to 5.333 million years ago.
+      Oligocene:
+        description: A time period from 33.9 to 23.04 million years ago.
+      Eocene:
+        description: A time period from 56.00 to 33.9 million years ago.
+      Paleocene:
+        description: A time period from 66.00 to 56.00 million years ago.
+      Late Cretaceous:
+        description: A time period from 100.5 to 66.00 million years ago.
+      Early Cretaceous:
+        description: A time period from 143.1 to 100.5 million years ago.
+      Late Jurassic:
+        description: A time period from 161.5 to 143.1 million years ago.
+      Middle Jurassic:
+        description: A time period from 174.7 to 161.5 million years ago.
+      Early Jurassic:
+        description: A time period from 201.4 to 174.7 million years ago.
+      Late Triassic:
+        description: A time period from 237 to 201.4 million years ago.
+      Middle Triassic:
+        description: A time period from 246.7 to 237 million years ago.
+      Early Triassic:
+        description: A time period from 251.902 to 246.7 million years ago.
+      Lopingian:
+        description: A time period from 259.51 to 251.902 million years ago.
+      Guadalupian:
+        description: A time period from 274.4 to 259.51 million years ago.
+      Cisuralian:
+        description: A time period from 298.9 to 274.4 million years ago.
+      Late Pennsylvanian:
+        description: A time period from 307.0 to 298.9 million years ago.
+      Middle Pennsylvanian:
+        description: A time period from 315.2 to 307.0 million years ago.
+      Early Pennsylvanian:
+        description: A time period from 323.4 to 315.2 million years ago.
+      Late Mississippian:
+        description: A time period from 330.3 to 323.4 million years ago.
+      Middle Mississippian:
+        description: A time period from 346.7 to 330.3 million years ago.
+      Early Mississippian:
+        description: A time period from 358.86 to 346.7 million years ago.
+      Late Devonian:
+        description: A time period from 382.31 to 358.86 million years ago.
+      Middle Devonian:
+        description: A time period from 393.47 to 382.31 million years ago.
+      Early Devonian:
+        description: A time period from 419.62 to 393.47 million years ago.
+      Pridoli:
+        description: A time period from 422.7 to 419.62 million years ago.
+      Ludlow:
+        description: A time period from 426.7 to 422.7 million years ago.
+      Wenlock:
+        description: A time period from 432.9 to 426.7 million years ago.
+      Llandovery:
+        description: A time period from 443.1 to 432.9 million years ago.
+      Late Ordovician:
+        description: A time period from 458.2 to 443.1 million years ago.
+      Middle Ordovician:
+        description: A time period from 471.3 to 458.2 million years ago.
+      Early Ordovician:
+        description: A time period from 486.85 to 471.3 million years ago.
+      Furongian:
+        description: A time period from 497.0 to 486.85 million years ago.
+      Miaolingian:
+        description: A time period from 506.5 to 497.0 million years ago.
+      Cambrian Epoch 2:
+        description: A time period from 521.0 to 506.5 million years ago.
+      Terreneuvian:
+        description: A time period from 538.8 to 521.0 million years ago
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
@@ -126,7 +205,7 @@ slots:
     keywords:
       - ancient
       - age
-    string_serialization: "{termLabel} [{termID}]|{text}"
+    range: GeolEpochEnum
     slot_uri: MIXS:999999902
     multivalued: false
     required: false
@@ -149,7 +228,7 @@ slots:
     multivalued: true
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
-  nuc_acid_extraction_date:
+  nucl_acid_extr_date:
     description: >-
       The date when the nucleic acid extraction was started from the sample material.
       In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant
@@ -208,7 +287,7 @@ slots:
     range: string
     required: false
     recommended: true
-  experimental_procedures:
+  experimental_sop:
     description: >-
       Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction, 
       library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.
@@ -246,7 +325,7 @@ slots:
     range: string
     required: false
     recommended: true
-  lib_preparation_protocol:
+  lib_preparation_sop:
     description: >-
       Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
@@ -291,7 +370,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999911
     range: boolean
-  num_capture_amp_cycles:
+  num_capture_cycles:
     description: >-
       Number of amplification cycles after capture enrichment
     title: number of reamplification cycles after capture
@@ -312,7 +391,7 @@ slots:
       - sequencing
     slot_uri: MIXS:999999913
     range: integer
-  preservational_treatment:
+  samp_preserv_treatm:
     description: >-
       Description of any treatment applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
@@ -361,7 +440,7 @@ slots:
     range: datetime
     required: false
     recommended: true
-  samp_decontam_pretreat:
+  samp_decont_pretreat:
     description: >-
       Method(s) employed for surface decontamination of samples of external 
       modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
@@ -549,7 +628,7 @@ slots:
     examples:
       - value: "climate-controlled"
       - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until nuc_acid_extraction_date"
+      - value: "Stored at -20oC until nucl_acid_ext_date"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -614,7 +693,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
-  host_body_preservation_state:
+  host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host.
     description: >-
@@ -652,7 +731,7 @@ slots:
     range: LibStrandEnum #enum value
     required: false
     recommended: true
-  genomic_capture_probe_desc:
+  capture_probe_desc:
     annotations:
       Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
@@ -672,7 +751,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  genomic_capture_probe_taxid:
+  capture_probe_taxid:
     annotations:
       Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
     description: >-
@@ -829,21 +908,21 @@ classes:
       - cultural_era
       - geological_epoch
       - damage_treatment
-      - nuc_acid_extraction_date
+      - nucl_acid_extr_date
       - permit_authority
       - permit_date
       - permit_id
-      - experimental_procedures
+      - experimental_sop
       - lib_polymerase
-      - lib_preparation_protocol
+      - lib_preparation_sop
       - lib_type
       - neg_cont_status
-      - num_capture_amp_cycles
+      - num_capture_cycles
       - num_reamp_cycles
-      - preservational_treatment
+      - samp_preserv_treatm
       - prev_pubs
       - recovery_date
-      - samp_decontam_pretreat
+      - samp_decont_pretreat
       - latest_chrono_age
       - latest_chrono_sys
       - earliest_chrono_age
@@ -855,10 +934,10 @@ classes:
       - palaeopath_status
       - biocultural_label
       - permit_scope
-      - host_body_preservation_state
+      - host_preserv_state
       - lib_strandedness
-      - genomic_capture_probe_taxid
-      - genomic_capture_probe_desc
+      - capture_probe_taxid
+      - capture_probe_desc
       - mid_config
       - site_name
       - data_filt_applied
