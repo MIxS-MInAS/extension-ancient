@@ -1014,16 +1014,16 @@ classes:
       prev_pubs:
         rank: 22
         slot_group: sample body
-      host_body_preservation_state:
+      host_preserv_state
         rank: 23
         slot_group: sample body
       neg_cont_status:
         rank: 24
         slot_group: nucleic acid source
-      samp_decontam_pretreat:
+      samp_decont_pretreat:
         rank: 25
         slot_group: nucleic acid source
-      nuc_acid_extraction_date:
+      nucl_acid_extr_date:
         rank: 26
         slot_group: nucleic acid source
       damage_treatment:
@@ -1050,19 +1050,19 @@ classes:
       genomic_capture_probe_taxid:
         rank: 33
         slot_group: sequencing
-      genomic_capture_probe_desc:
+      capture_probe_desc:
         rank: 34
         slot_group: sequencing
-      num_capture_amp_cycles:
+      num_capture_cycles:
         rank: 35
         slot_group: sequencing
       num_reamp_cycles:
         rank: 36
         slot_group: sequencing
-      experimental_procedures:
+      experimental_sop:
         rank: 37
         slot_group: sequencing
-      lib_preparation_protocol:
+      lib_preparation_sop:
         rank: 38
         slot_group: sequencing
       data_filt_applied:
