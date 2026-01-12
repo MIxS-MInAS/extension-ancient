@@ -36,7 +36,7 @@ enums:
       damage-selection:
         description: Library preparation-derived technique that retain only molecules containing damage, and have discarded those without damage.
       other:
-        description: Other type of damage treatment that are further described in other method description terms. If damage removed, but whether full or partial is unknown - use this option and describe known information in `experimental_sop` and related terms.
+        description: Other type of damage treatment that are further described in other method description terms. If damage has been removed, but whether full or partial is unknown - use this option and describe known information in `experimental_sop` and related free text descriptive terms.
   LibTypeEnum:
     permissible_values:
       amplicon:
