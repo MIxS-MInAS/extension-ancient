@@ -31,7 +31,7 @@ The repo is laid out as follows:
 4. Coordination team cross-reviews the two PRs and merge in
 5. Run validation (TO BE AUTOMATED)
    - `linkml lint --config linkml-lint-config.yml src/mixs/schema/ancient.yml`: to ensure there are no _errors_ or important missing information about or misformatting of each term (slot)
-   - `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file [NOT YET IMPLEMENTED]
+   - [NOT YET IMPLEMENTED] `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file
 6. In a new PR, generate additional JSON and TSV files based on instructions on technical notes (containing all changes/new terms)
    - `gen-csv src/mixs/schema/ancient.yml > src/mixs/schema/ancient.csv`: checks that the schema can be converted to a basic CSV format
    - `gen-json-schema src/mixs/schema/ancient.yml > src/mixs/schema/ancient.json` checks that the schema can be converted to a basic JSON format
