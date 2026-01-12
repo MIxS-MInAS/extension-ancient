@@ -1005,7 +1005,7 @@ classes:
       storage_conditions:
         rank: 19
         slot_group: sample body
-      preservational_treatment:
+      samp_preserv_treatm:
         rank: 20
         slot_group: sample body
       palaeopath_status:
@@ -1014,7 +1014,7 @@ classes:
       prev_pubs:
         rank: 22
         slot_group: sample body
-      host_preserv_state
+      host_preserv_state:
         rank: 23
         slot_group: sample body
       neg_cont_status:
@@ -1047,7 +1047,7 @@ classes:
       lib_polymerase:
         rank: 32
         slot_group: sequencing
-      genomic_capture_probe_taxid:
+      capture_probe_taxid:
         rank: 33
         slot_group: sequencing
       capture_probe_desc:
