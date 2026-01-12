@@ -393,10 +393,10 @@ slots:
     range: integer
   samp_preserv_treatm:
     description: >-
-      Description of any treatment applied to samples for the purpose of 
+      Description of any treatment, methods, or actions applied to samples for the purpose of 
       maximising collection preservation that may influence downstream 
-      nucleic acid recovery or library construction, such as storage fluid or 
-      reconstructive glue
+      nucleic acid recovery or library construction, such as reconstructive glue, demestid beetles for flesh removal etc.
+      Specific preservation chemicals such as formalin, ethanol, can also be specified by the MIxS term samp_preserv (MIXS:0000463).
     title: preservational treatment
     examples:
       - value: "stored in formalin"
