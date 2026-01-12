@@ -7,7 +7,27 @@
                 "biocultural_label": {
                     "description": "Relevant biocultural labels defined by the local contexts project (https://localcontexts.org/label/bc-provenance/) that describe in what ways this data can be reused, as permitted by any associated native or indigenous peoples or communities.",
                     "items": {
-                        "$ref": "#/$defs/BioCulturalLabel"
+                        "$ref": "#/$defs/BioCulturalLabelEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "capture_probe_desc": {
+                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "capture_probe_taxid": {
+                    "description": "NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.",
+                    "items": {
+                        "type": "integer"
                     },
                     "type": [
                         "array",
@@ -17,7 +37,7 @@
                 "chrono_age_protocol": {
                     "description": "A description of or reference to the methods used to determine the chrono:ChronometricAge.",
                     "items": {
-                        "$ref": "#/$defs/ChronoAgeProtocol"
+                        "$ref": "#/$defs/ChronoAgeProtocolEnum"
                     },
                     "type": [
                         "array",
@@ -66,11 +86,11 @@
                 "earliest_chrono_sys": {
                     "description": "The reference system associated with the chrono:earliest_chrono_age.",
                     "items": {
-                        "$ref": "#/$defs/ChronoAgeSys"
+                        "$ref": "#/$defs/ChronoAgeSysEnum"
                     },
                     "type": "array"
                 },
-                "experimental_procedures": {
+                "experimental_sop": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
                     "items": {
                         "pattern": "^{PMID}|{DOI}|{URL}$",
@@ -81,34 +101,11 @@
                         "null"
                     ]
                 },
-                "genomic_capture_probe_desc": {
-                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "genomic_capture_probe_taxid": {
-                    "description": "NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.",
-                    "items": {
-                        "type": "integer"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "geological_epoch": {
-                    "description": "The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "$ref": "#/$defs/GeolEpochEnum",
+                    "description": "The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies."
                 },
-                "host_body_preservation_state": {
+                "host_preserv_state": {
                     "description": "Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment or in the context museomics (eg. taxidermied or pinned), e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.",
                     "type": [
                         "string",
@@ -122,7 +119,7 @@
                 "latest_chrono_sys": {
                     "description": "The reference system associated with the chrono:latest_chrono_age.",
                     "items": {
-                        "$ref": "#/$defs/ChronoAgeSys"
+                        "$ref": "#/$defs/ChronoAgeSysEnum"
                     },
                     "type": "array"
                 },
@@ -133,7 +130,7 @@
                         "null"
                     ]
                 },
-                "lib_preparation_protocol": {
+                "lib_preparation_sop": {
                     "description": "Citation(s) for the nucleic acid library preparation protocol.",
                     "items": {
                         "pattern": "^{PMID}|{DOI}|{URL}$",
@@ -147,7 +144,7 @@
                 "lib_strandedness": {
                     "description": "The strandedness of the original template nucleic acid molecules used for constructing the sequencing library",
                     "items": {
-                        "$ref": "#/$defs/LibStrand"
+                        "$ref": "#/$defs/LibStrandEnum"
                     },
                     "type": [
                         "array",
@@ -185,7 +182,7 @@
                         "null"
                     ]
                 },
-                "nuc_acid_extraction_date": {
+                "nucl_acid_extr_date": {
                     "description": "The date when the nucleic acid extraction was started from the sample material. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
                     "format": "date-time",
                     "type": [
@@ -193,7 +190,7 @@
                         "null"
                     ]
                 },
-                "num_capture_amp_cycles": {
+                "num_capture_cycles": {
                     "description": "Number of amplification cycles after capture enrichment",
                     "items": {
                         "type": "integer"
@@ -270,16 +267,6 @@
                         "null"
                     ]
                 },
-                "preservational_treatment": {
-                    "description": "Description of any treatment applied to samples for the purpose of  maximising collection preservation that may influence downstream  nucleic acid recovery or library construction, such as storage fluid or  reconstructive glue",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "prev_pubs": {
                     "description": "Any publications that report data from the same body/skeleton/individual",
                     "items": {
@@ -309,10 +296,20 @@
                         "null"
                     ]
                 },
-                "samp_decontam_pretreat": {
+                "samp_decont_pretreat": {
                     "description": "Method(s) employed for surface decontamination of samples of external  modern nucleic acids; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
                     "items": {
                         "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "samp_preserv_treatm": {
+                    "description": "Description of any treatment applied to samples for the purpose of  maximising collection preservation that may influence downstream  nucleic acid recovery or library construction, such as storage fluid or  reconstructive glue",
+                    "items": {
                         "type": "string"
                     },
                     "type": [
@@ -330,7 +327,7 @@
                         "null"
                     ]
                 },
-                "source_mat_curat_insti": {
+                "source_curat_instit": {
                     "description": "Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.",
                     "items": {
                         "type": "string"
@@ -358,7 +355,7 @@
             "title": "Ancient",
             "type": "object"
         },
-        "BioCulturalLabel": {
+        "BioCulturalLabelEnum": {
             "description": "",
             "enum": [
                 "BC P",
@@ -372,10 +369,10 @@
                 "BC O",
                 "BC NC"
             ],
-            "title": "BioCulturalLabel",
+            "title": "BioCulturalLabelEnum",
             "type": "string"
         },
-        "ChronoAgeProtocol": {
+        "ChronoAgeProtocolEnum": {
             "description": "",
             "enum": [
                 "radiocarbon dating",
@@ -388,10 +385,10 @@
                 "historical records",
                 "other"
             ],
-            "title": "ChronoAgeProtocol",
+            "title": "ChronoAgeProtocolEnum",
             "type": "string"
         },
-        "ChronoAgeSys": {
+        "ChronoAgeSysEnum": {
             "description": "",
             "enum": [
                 "BCE",
@@ -403,7 +400,7 @@
                 "ka",
                 "Ma"
             ],
-            "title": "ChronoAgeSys",
+            "title": "ChronoAgeSysEnum",
             "type": "string"
         },
         "DamageTreatmentEnum": {
@@ -424,13 +421,58 @@
             "title": "Extension",
             "type": "object"
         },
-        "LibStrand": {
+        "GeolEpochEnum": {
+            "description": "Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)",
+            "enum": [
+                "Holocene",
+                "Pleistocene",
+                "Pliocene",
+                "Miocene",
+                "Oligocene",
+                "Eocene",
+                "Paleocene",
+                "Late Cretaceous",
+                "Early Cretaceous",
+                "Late Jurassic",
+                "Middle Jurassic",
+                "Early Jurassic",
+                "Late Triassic",
+                "Middle Triassic",
+                "Early Triassic",
+                "Lopingian",
+                "Guadalupian",
+                "Cisuralian",
+                "Late Pennsylvanian",
+                "Middle Pennsylvanian",
+                "Early Pennsylvanian",
+                "Late Mississippian",
+                "Middle Mississippian",
+                "Early Mississippian",
+                "Late Devonian",
+                "Middle Devonian",
+                "Early Devonian",
+                "Pridoli",
+                "Ludlow",
+                "Wenlock",
+                "Llandovery",
+                "Late Ordovician",
+                "Middle Ordovician",
+                "Early Ordovician",
+                "Furongian",
+                "Miaolingian",
+                "Cambrian Epoch 2",
+                "Terreneuvian"
+            ],
+            "title": "GeolEpochEnum",
+            "type": "string"
+        },
+        "LibStrandEnum": {
             "description": "",
             "enum": [
                 "single",
                 "double"
             ],
-            "title": "LibStrand",
+            "title": "LibStrandEnum",
             "type": "string"
         },
         "LibTypeEnum": {
