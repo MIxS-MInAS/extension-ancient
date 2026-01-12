@@ -232,8 +232,8 @@ slots:
     annotations:
       Expected_value: enumeration
     description: >-
-      Indication of whether characteristic ancient DNA damage has been 
-      altered or removed from a DNA extract in a laboratory
+      Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory.
+      If damage has been removed, but whether full or partial is unknown - specify 'other', and describe known information in `experimental_sop` and related free text descriptive terms.
     title: Damage treatment type
     examples:
       - value: none
