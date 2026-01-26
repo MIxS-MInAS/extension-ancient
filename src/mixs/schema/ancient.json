@@ -308,7 +308,7 @@
                     ]
                 },
                 "samp_preserv_treatm": {
-                    "description": "Description of any treatment, methods, or actions applied to samples for the purpose of  maximising collection preservation that may influence downstream  nucleic acid recovery or library construction, such as reconstructive glue, demestid beetles for flesh removal etc. Specific preservation chemicals such as formalin, ethanol, can also be specified by the MIxS term samp_preserv (MIXS:0000463).",
+                    "description": "Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue",
                     "items": {
                         "type": "string"
                     },
@@ -346,7 +346,7 @@
             "type": "object"
         },
         "BioCulturalLabelEnum": {
-            "description": "",
+            "description": "Options defining community expectations about the appropriate use of the sequencing data, as specified by the LocalContexts project (https://localcontexts.org/labels/biocultural-labels/).",
             "enum": [
                 "BC P",
                 "BC MC",
@@ -363,7 +363,7 @@
             "type": "string"
         },
         "ChronoAgeProtocolEnum": {
-            "description": "",
+            "description": "Options for methods to determine the age at time of death of an organism or the date of sample deposition.",
             "enum": [
                 "radiocarbon dating",
                 "optically stimulated infrared luminescence",
@@ -379,7 +379,7 @@
             "type": "string"
         },
         "ChronoAgeSysEnum": {
-            "description": "",
+            "description": "Options for specifying the chonometric age reference or timescale of a date.",
             "enum": [
                 "BCE",
                 "CE",
@@ -394,7 +394,7 @@
             "type": "string"
         },
         "DamageTreatmentEnum": {
-            "description": "",
+            "description": "Options for types of molecular damage removal during library construction of ancient DNA libraries.",
             "enum": [
                 "no-removal",
                 "partial-removal",
@@ -412,7 +412,7 @@
             "type": "object"
         },
         "GeolEpochEnum": {
-            "description": "Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)",
+            "description": "Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/).",
             "enum": [
                 "Holocene",
                 "Pleistocene",
@@ -457,7 +457,7 @@
             "type": "string"
         },
         "LibStrandEnum": {
-            "description": "",
+            "description": "Options for the strandedness of the input 'template' DNA molecules used for DNA library construction.",
             "enum": [
                 "single",
                 "double"
@@ -466,7 +466,7 @@
             "type": "string"
         },
         "LibTypeEnum": {
-            "description": "",
+            "description": "Options for types of DNA that have been targeted for DNA library construction.",
             "enum": [
                 "amplicon",
                 "enriched",
