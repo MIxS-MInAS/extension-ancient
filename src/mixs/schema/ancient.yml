@@ -56,7 +56,7 @@ enums:
       Options for types of DNA that have been targeted for DNA library construction.
     permissible_values:
       amplicon:
-        description: A library that has been targeted a single specific region of a genome (e.g. a specific gene) through targeted amplification.
+        description: A library that has been enriched for a single specific region of a genome (e.g. a specific gene) through targeted amplification.
       enriched:
         description: A library that has been enriched for DNA from typically large portions to the entirety of a genome, through array or in-solution 'capture' with genome array baits/probes.
       shotgun:
@@ -87,7 +87,7 @@ enums:
         description: Biocultural Non-Commercial Label.
   LibStrandEnum:
     description: >-
-      Options for the strandedness of the template DNA molecules used for DNA library construction.
+      Options for the strandedness of the input 'template' DNA molecules used for DNA library construction.
     permissible_values:
       single:
         description: Library constructed from single-stranded DNA molecules.
@@ -98,24 +98,24 @@ enums:
       Options for specifying the chonometric age reference or timescale of a date.
     permissible_values:
       BCE:
-        description: Before Common Era.
+        description: Before Common Era (before year 0 in the Christian calendar), equivalent to BC (before Christ).
       CE:
-        description: Common Era.
+        description: Common Era (after year 0 in the Christian calendar), equivalent to AD (anno Domini, after Christ).
       BP:
-        description: Before Present (~1950).
+        description: Before Present (~1950), known as 'Standard Year'.
       cal BP:
-        description: Calibrated Before Present (~1950).
+        description: Calibrated Before Present (~1950), known as 'Standard Year'.
       cal BCE:
-        description: Calibrated Before Common Era (~1950).
+        description: Calibrated Before Common Era (year 0 in the Christian calendar), equivalent to BC (before Christ).
       cal CE:
-        description: Calibrated Common Era (~1950).
+        description: Calibrated Common Era (~1950), equivalent to AD (anno Domini, after Christ).
       ka:
         description: kiloannum; thousands of years ago.
       Ma:
         description: megaannum; millions of years ago.
   ChronoAgeProtocolEnum:
     description: >-
-      Options for methods to determine the age or date of sample at time of death or deposition.
+      Options for methods to determine the age at time of death of an organism or the date of sample deposition.
     permissible_values:
       radiocarbon dating:
       optically stimulated infrared luminescence:
