@@ -60,7 +60,7 @@ enums:
       enriched:
         description: A library that has been enriched for DNA from typically large portions to the entirety of a genome, through array or in-solution 'capture' with genome array baits/probes.
       shotgun:
-        description: A library that has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
+        description: An unselected and/or unenriched library that has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
   BioCulturalLabelEnum:
     description: >-
       Options defining community expectations about the appropriate use of the sequencing data, as specified by the LocalContexts project (https://localcontexts.org/labels/biocultural-labels/).
