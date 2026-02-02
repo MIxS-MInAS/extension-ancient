@@ -19,13 +19,27 @@ default_prefix: MIXS
 default_range: string
 subsets:
   combination_classes:
+    description: >-
+      MIxS combination classes that group related slots for specific sample types or contexts.
   sequencing:
+    description: >-
+      MIxS terms related to the sequencing stage of nucleic acid sequencing data generation.
   environment:
+    description: >-
+      MIxS terms related to the environmental context of the sample or specimen.
   nucleic acid sequence source:
+    description: >-
+      MIxS terms related to the source of nucleic acids for sequencing, such as extraction or library preparation.
   investigation:
+    description: >-
+      MIxS terms related to the overall investigation, study, or project associated with the sample or specimen.
   ethics:
+    description: >-
+      MIxS terms related to ethical considerations, permissions, and approvals associated with a sample or specimen.
 enums:
   DamageTreatmentEnum:
+    description: >-
+      Options for types of molecular damage removal during library construction of ancient DNA libraries.
     permissible_values:
       no-removal:
         description: Molecular damage-derived misincorporations have not been removed using laboratory techniques.
@@ -38,37 +52,70 @@ enums:
       other:
         description: Other type of damage treatment that are further described in other method description terms. If damage has been removed, but whether full or partial is unknown - use this option and describe known information in `experimental_sop` and related free text descriptive terms.
   LibTypeEnum:
+    description: >-
+      Options for types of DNA that have been targeted for DNA library construction.
     permissible_values:
       amplicon:
+        description: A library that has been enriched for a single specific region of a genome (e.g. a specific gene) through targeted amplification.
       enriched:
+        description: A library that has been enriched for DNA from typically large portions to the entirety of a genome, through array or in-solution 'capture' with genome array baits/probes.
       shotgun:
+        description: An unselected library that has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
   BioCulturalLabelEnum:
+    description: >-
+      Options defining community expectations about the appropriate use of the sequencing data, as specified by the LocalContexts project (https://localcontexts.org/labels/biocultural-labels/).
     permissible_values:
       "BC P":
+        description: Biocultural Provenance Label.
       "BC MC":
+        description: Biocultural Multiple Communities Label.
       "BC CL":
+        description: Biocultural Clan Label.
       "BC CV":
+        description: Biocultural Consent Verified Label.
       "BC CNV":
+        description: Biocultural Consent Non-Verified Label.
       "BC R":
+        description: Biocultural Research Use Label.
       "BC CB":
+        description: Biocultural Open to Collaboration Label.
       "BC OC":
+        description: Biocultural Open to Commercialisation Label.
       "BC O":
+        description: Biocultural Outreach Label.
       "BC NC":
+        description: Biocultural Non-Commercial Label.
   LibStrandEnum:
+    description: >-
+      Options for the strandedness of the input 'template' DNA molecules used for DNA library construction.
     permissible_values:
       single:
+        description: Library constructed from single-stranded DNA molecules.
       double:
+        description: Library constructed from double-stranded DNA molecules.
   ChronoAgeSysEnum:
+    description: >-
+      Options for specifying the chonometric age reference or timescale of a date.
     permissible_values:
       BCE:
+        description: Before Common Era (before year 0 in the Christian calendar), equivalent to BC (before Christ).
       CE:
+        description: Common Era (after year 0 in the Christian calendar), equivalent to AD (anno Domini, after Christ).
       BP:
+        description: Before Present (~1950), known as 'Standard Year'.
       cal BP:
+        description: Calibrated Before Present (~1950), known as 'Standard Year'.
       cal BCE:
+        description: Calibrated Before Common Era (year 0 in the Christian calendar), equivalent to BC (before Christ).
       cal CE:
+        description: Calibrated Common Era (~1950), equivalent to AD (anno Domini, after Christ).
       ka:
+        description: kiloannum; thousands of years ago.
       Ma:
+        description: megaannum; millions of years ago.
   ChronoAgeProtocolEnum:
+    description: >-
+      Options for methods to determine the age at time of death of an organism or the date of sample deposition.
     permissible_values:
       radiocarbon dating:
       optically stimulated infrared luminescence:
@@ -82,7 +129,7 @@ enums:
       historical records:
       other:
   GeolEpochEnum:
-    description: Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/)
+    description: Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/).
     permissible_values:
       Holocene:
         description: A time period from 0.0117 million years ago to the present.
