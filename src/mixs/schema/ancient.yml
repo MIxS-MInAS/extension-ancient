@@ -440,10 +440,7 @@ slots:
     range: integer
   samp_preserv_treatm:
     description: >-
-      Description of any treatment applied to samples for the purpose of 
-      maximising collection preservation that may influence downstream 
-      nucleic acid recovery or library construction, such as storage fluid or 
-      reconstructive glue
+      Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue
     title: preservational treatment
     examples:
       - value: "stored in formalin"
