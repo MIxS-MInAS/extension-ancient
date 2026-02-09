@@ -445,10 +445,15 @@ slots:
     range: integer
   samp_preserv_treatm:
     description: >-
-      Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue
+      Description of any treatment applied directly to samples for the specific purpose of 
+      maximising longevity of sample preservation in archives and/or collections by curators 
+      that may influence downstream nucleic acid recovery or library construction, such as storage fluid or 
+      reconstructive glue.
     title: preservational treatment
     examples:
       - value: "stored in formalin"
+      - value: "reconstructive glue applied"
+      - value: "alcohol preserved"
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -494,8 +499,9 @@ slots:
     recommended: true
   samp_decont_pretreat:
     description: >-
-      Method(s) employed for surface decontamination of samples of external 
-      modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
+      Protocols employed for sample surface decontamination of external 
+      modern nucleic acids; Treatment used on the samples immediately prior to nucleic acid extraction.
+      Dependant on the sample type. 
       More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.
     title: sample decontamination pretreatment
     examples:
@@ -677,12 +683,16 @@ slots:
     string_serialization: "{text}"
   storage_conditions:
     description: >-
-      General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
+      General surrounding environmental conditions where the material
+      was stored in long-term collection storage prior sampling for nucleic acid analysis 
+      that may influence nucleic acid recovery or library construction.
+      For example, specify temperature, humidity, presence of microbial overgrowth etc..
     title: storage conditions
     examples:
       - value: "climate-controlled"
-      - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until nucl_acid_ext_date"
+      - value: "Mould growth in storage box observed"
+      - value: "Stored at -20oC until 2025-05-15"
+      - value: "Stored in the museum from 1924 to 2021"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
@@ -749,9 +759,11 @@ slots:
     recommended: true
   host_preserv_state:
     annotations:
-      Expected_value: Description of the preservation of the sampled (ancient) organism/host.
+      Expected_value: Description of the preservation of the sampled (ancient) organism/host at time/immediately after death.
     description: >-
-      Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment or in the context museomics (eg. taxidermied or pinned), e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.
+      Description of the state of the sampled (ancient) organism/host as originally 
+      preserved in the burial environment at the time of or immediately following death.
+      This can be both natural or artificial, such as mummification or burning for funerary purposes.
     examples:
       - value: "complete artificial mummification."
       - value: "natural partial mummification."
