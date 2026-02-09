@@ -289,7 +289,7 @@ slots:
     slot_uri: MIXS:9999999904
     range: datetime ## or name of defined enum as above
     required: false
-    recommended: true
+    recommended: false
   permit_authority:
     annotations:
       Expected_value: Name of authority providing permission or ethical approval.
