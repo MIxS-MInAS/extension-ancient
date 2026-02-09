@@ -698,6 +698,8 @@ slots:
     slot_uri: MIXS:999999925
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
   palaeopath_status:
     annotations:
       Expected_value: description of health related observation on ancient remains
