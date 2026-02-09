@@ -348,16 +348,16 @@
         "BioCulturalLabelEnum": {
             "description": "Options defining community expectations about the appropriate use of the sequencing data, as specified by the LocalContexts project (https://localcontexts.org/labels/biocultural-labels/).",
             "enum": [
-                "BC P",
-                "BC MC",
-                "BC CL",
-                "BC CV",
-                "BC CNV",
-                "BC R",
-                "BC CB",
-                "BC OC",
-                "BC O",
-                "BC NC"
+                "Biocultural Provenance Label (BC P):",
+                "Biocultural Multiple Communities Label (BC MC)",
+                "Biocultural Clan Label (BC CL)",
+                "Biocultural Consent Verified Label (BC CV)",
+                "Biocultural Consent Non-Verified Label (BC CNV)",
+                "Biocultural Research Use Label (BC R)",
+                "Biocultural Open to Collaboration Label (BC CB)",
+                "Biocultural Open to Commercialisation Label (BC OC)",
+                "Biocultural Outreach Label (BC O)",
+                "Biocultural Non-Commercial Label (BC NC)"
             ],
             "title": "BioCulturalLabelEnum",
             "type": "string"
