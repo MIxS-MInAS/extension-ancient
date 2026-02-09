@@ -507,6 +507,7 @@ slots:
       Expected_value: age value corresponding to unit
     description: >-
       The minimum/latest/youngest possible age of a specimen as determined by a dating method.
+      Multiple dates can be reported, but the unit (chronometric reference system - 'latest_chrono_sys') must be the same, e.g. all dates must be cal BP, or all dates must be BCE.
     title: Latest Chronometric Age
     examples:
       - value: "100000"
@@ -515,6 +516,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
     exact_mappings: chrono:latestChronometricAge
+    multivalued: true
     range: integer
     required: true
     recommended: true
@@ -531,7 +533,7 @@ slots:
       - investigation
     slot_uri: MIXS:999999919
     broad_mappings: chrono:latestChronometricAgeReferenceSystem
-    multivalued: true
+    multivalued: false
     range: ChronoAgeSysEnum
     required: true
     recommended: true
@@ -540,6 +542,7 @@ slots:
       Expected_value: age value corresponding to unit
     description: >-
       The maximum/earliest/oldest possible age of a specimen as determined by a dating method.
+      Multiple dates can be reported, but the unit (chronometric reference system - 'earliest_chrono_sys') must be the same, e.g. all dates must be cal BP, or all dates must be BCE.
     title: Earliest Chronometric Age
     examples:
       - value: "120000"
@@ -548,6 +551,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
     exact_mappings: chrono:earliestChronometricAge
+    multivalued: true
     range: integer
     required: true
     recommended: true
@@ -564,7 +568,7 @@ slots:
       - investigation
     slot_uri: MIXS:999999921
     broad_mappings: chrono:earliestChronometricAgeReferenceSystem
-    multivalued: true
+    multivalued: false
     range: ChronoAgeSysEnum
     required: true
     recommended: true
