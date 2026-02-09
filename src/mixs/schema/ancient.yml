@@ -65,26 +65,26 @@ enums:
     description: >-
       Options defining community expectations about the appropriate use of the sequencing data, as specified by the LocalContexts project (https://localcontexts.org/labels/biocultural-labels/).
     permissible_values:
-      "BC P":
-        description: Biocultural Provenance Label.
-      "BC MC":
-        description: Biocultural Multiple Communities Label.
-      "BC CL":
-        description: Biocultural Clan Label.
-      "BC CV":
-        description: Biocultural Consent Verified Label.
-      "BC CNV":
-        description: Biocultural Consent Non-Verified Label.
-      "BC R":
-        description: Biocultural Research Use Label.
-      "BC CB":
-        description: Biocultural Open to Collaboration Label.
-      "BC OC":
-        description: Biocultural Open to Commercialisation Label.
-      "BC O":
-        description: Biocultural Outreach Label.
-      "BC NC":
-        description: Biocultural Non-Commercial Label.
+      "Biocultural Provenance Label (BC P):":
+        description: Biocultural Provenance Label (BC P) - This Label is being used to affirm an inherent interest Indigenous people have in the scientific collections and data about communities, peoples, and the biodiversity found within traditional lands, waters and territories (Full text https://localcontexts.org/label/bc-provenance/).
+      "Biocultural Multiple Communities Label (BC MC)":
+        description: Biocultural Multiple Communities Label (BC MC) - This Label is being used to affirm that responsibility and ownership over this information, collection, data, and digital sequence information (DSI) is spread across several distinct communities (Full text https://localcontexts.org/label/bc-multiple-communities/).
+      "Biocultural Clan Label (BC CL)":
+        description: Biocultural Clan Label (BC CL) - This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this data has specific conditions for use and sharing because of clan membership and/or relationships (Full text https://localcontexts.org/label/bc-clan/).
+      "Biocultural Consent Verified Label (BC CV)":
+        description: Biocultural Consent Verified Label (BC CV) - This Label is being used to verify that an associated community has consent conditions in place for the use of this information, collections, data, and digital sequence information. (Full text https://localcontexts.org/label/bc-consent-verified/).
+      "Biocultural Consent Non-Verified Label (BC CNV)":
+        description: Biocultural Consent Non-Verified Label (BC CNV) - This Label is being used because there are concerns about the accuracy of the consent and/or representations made for this data. This material was not created through informed consent or community protocols for research and engagement. (Full text https://localcontexts.org/label/bc-consent-non-verified/).
+      "Biocultural Research Use Label (BC R)":
+        description: Biocultural Research Use Label (BC R) - This Label is being used by an associated community to allow this information, collection, data, and digital sequence information (DSI) to be used for unspecified research purposes. This Label does not provide permission for commercialization activities. (Full text https://localcontexts.org/label/bc-research-use/).
+      "Biocultural Open to Collaboration Label (BC CB)":
+        description: Biocultural Open to Collaboration Label - This Label is being used to make clear an associated community is open to future engagement, collaboration, and partnership around research and outreach opportunities. (Full text https://localcontexts.org/label/bc-open-to-collaboration/).
+      "Biocultural Open to Commercialisation Label (BC OC)":
+        description: Biocultural Open to Commercialisation Label - This Label is being used to indicate that an associated community is open to commercialization opportunities that might derive from any information, collections, data, and digital sequence information (DSI) to which this Label is connected. (Full text https://localcontexts.org/label/bc-open-to-commercialization/)
+      "Biocultural Outreach Label (BC O)":
+        description: Biocultural Outreach Label (BC O) The Label is letting any users know that this data can be used for educational outreach activities. - (Full text https://localcontexts.org/label/bc-outreach/).
+      "Biocultural Non-Commercial Label (BC NC)":
+        description: Biocultural Non-Commercial Label (BC NC) - This Label is being used to indicate that these biocultural materials and/or data have been designated as being available for non-commercial use. (Full text https://localcontexts.org/label/bc-non-commercial/).
   LibStrandEnum:
     description: >-
       Options for the strandedness of the input 'template' DNA molecules used for DNA library construction.
@@ -721,7 +721,7 @@ slots:
     multivalued: true
     range: BioCulturalLabelEnum #enum value
     required: false
-    recommended: false
+    recommended: true
   permit_scope:
     annotations:
       Expected_value: Description of the scope of ethical permissions for data use.
