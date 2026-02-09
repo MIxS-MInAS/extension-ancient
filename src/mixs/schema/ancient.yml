@@ -123,7 +123,7 @@ enums:
       electron spin resonance:
       uranium thorium:
       age-depth modelling:
-        description: Age-depth models are constructed based on limited numbers of dated depths (typically in sediment cores) to estimate the calendar ages. Different modules are used based on assumptions about the sequence of deposit formation at each dated depth.
+        description: Age-depth models are constructed based on limited numbers of dated depths (typically in sediment cores) to estimate the calendar ages. Different models are used based on assumptions about the sequence of deposit formation at each dated depth.
       contextual dating:
         description: A non-absolute date inferred from the specific context of an archaeological or palaeontological sample (e.g. stratigraphic layers, coins).
       associated absolute dating:
