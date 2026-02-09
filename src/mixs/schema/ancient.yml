@@ -411,12 +411,15 @@ slots:
     title: negative control status
     examples:
       - value: "true"
+      - value: "false"
     keywords:
       - control
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999911
     range: boolean
+    required: true
+    recommended: true
   num_capture_cycles:
     description: >-
       Number of amplification cycles after capture enrichment
