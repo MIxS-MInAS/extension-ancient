@@ -78,9 +78,9 @@ enums:
       "Biocultural Research Use Label (BC R)":
         description: Biocultural Research Use Label (BC R) - This Label is being used by an associated community to allow this information, collection, data, and digital sequence information (DSI) to be used for unspecified research purposes. This Label does not provide permission for commercialization activities. (Full text https://localcontexts.org/label/bc-research-use/).
       "Biocultural Open to Collaboration Label (BC CB)":
-        description: Biocultural Open to Collaboration Label - This Label is being used to make clear an associated community is open to future engagement, collaboration, and partnership around research and outreach opportunities. (Full text https://localcontexts.org/label/bc-open-to-collaboration/).
+        description: Biocultural Open to Collaboration Label (BC CB) - This Label is being used to make clear an associated community is open to future engagement, collaboration, and partnership around research and outreach opportunities. (Full text https://localcontexts.org/label/bc-open-to-collaboration/).
       "Biocultural Open to Commercialisation Label (BC OC)":
-        description: Biocultural Open to Commercialisation Label - This Label is being used to indicate that an associated community is open to commercialization opportunities that might derive from any information, collections, data, and digital sequence information (DSI) to which this Label is connected. (Full text https://localcontexts.org/label/bc-open-to-commercialization/)
+        description: Biocultural Open to Commercialisation Label (BC OC) - This Label is being used to indicate that an associated community is open to commercialization opportunities that might derive from any information, collections, data, and digital sequence information (DSI) to which this Label is connected. (Full text https://localcontexts.org/label/bc-open-to-commercialization/)
       "Biocultural Outreach Label (BC O)":
         description: Biocultural Outreach Label (BC O) The Label is letting any users know that this data can be used for educational outreach activities. - (Full text https://localcontexts.org/label/bc-outreach/).
       "Biocultural Non-Commercial Label (BC NC)":
