@@ -440,7 +440,7 @@ slots:
     range: integer
   samp_preserv_treatm:
     description: >-
-      Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue
+      Description of any preservational treatment applied to source materials prior to sampling for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue.
     title: preservational treatment
     examples:
       - value: "stored in formalin"
@@ -452,6 +452,8 @@ slots:
     multivalued: true
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
   prev_pubs:
     description: >-
       Any publications that report data from the same body/skeleton/individual
@@ -963,7 +965,7 @@ classes:
       - neg_cont_status
       - num_capture_cycles
       - num_reamp_cycles
-      - samp_preserv_treatm
+      - erv_treatm
       - prev_pubs
       - context_retrieval_date
       - samp_decont_pretreat
@@ -1049,7 +1051,7 @@ classes:
       storage_conditions:
         rank: 19
         slot_group: sample body
-      samp_preserv_treatm:
+      erv_treatm:
         rank: 20
         slot_group: sample body
       palaeopath_status:
