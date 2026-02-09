@@ -154,10 +154,7 @@
                     "items": {
                         "$ref": "#/$defs/LibStrandEnum"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "lib_type": {
                     "$ref": "#/$defs/LibTypeEnum",
@@ -340,7 +337,8 @@
                 "latest_chrono_age",
                 "latest_chrono_sys",
                 "earliest_chrono_age",
-                "earliest_chrono_sys"
+                "earliest_chrono_sys",
+                "lib_strandedness"
             ],
             "title": "Ancient",
             "type": "object"
