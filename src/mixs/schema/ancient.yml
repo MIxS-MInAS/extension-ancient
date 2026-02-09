@@ -274,7 +274,7 @@ slots:
     keywords:
       - ancient
     slot_uri: MIXS:999999903
-    multivalued: true
+    multivalued: false
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
   nucl_acid_extr_date:
