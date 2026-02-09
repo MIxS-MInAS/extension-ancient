@@ -965,7 +965,7 @@ classes:
       - neg_cont_status
       - num_capture_cycles
       - num_reamp_cycles
-      - erv_treatm
+      - samp_preserv_treatm
       - prev_pubs
       - context_retrieval_date
       - samp_decont_pretreat
@@ -1051,7 +1051,7 @@ classes:
       storage_conditions:
         rank: 19
         slot_group: sample body
-      erv_treatm:
+      samp_preserv_treatm:
         rank: 20
         slot_group: sample body
       palaeopath_status:
