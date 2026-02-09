@@ -753,7 +753,7 @@ slots:
     description: >-
       Description of the state of the sampled (ancient) organism/host as originally 
       preserved in the burial environment at the time of or immediately following death.
-      This can be both natural or artificial, such as mummification for funerary purposes.
+      This can be both natural or artificial, such as mummification or burning for funerary purposes.
     examples:
       - value: "complete artificial mummification."
       - value: "natural partial mummification."
