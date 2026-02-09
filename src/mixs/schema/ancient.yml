@@ -596,17 +596,19 @@ slots:
   chrono_age_remarks:
     description: >-
       Notes or comments about the chrono:ChronometricAge.
+      For more detail use `Chronometric Age Protocol` to point to original publication describing method.
+      Useful to specify confidence and/or accuracy of reported date.
     title: Chronometric Age Remarks
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
       - value: "based on proxy dating from other bone samples of stratigraphic layer"
-      - value: "a coin found in the burial was from the 3rd century"
+      - value: "a coin found in the burial was from the 3rd century was found in the mouth of the skeleton"
       - value: "age taken from previous publication Doe et al. 2019"
       - value: "radiocarbon age ID: OxA-12345"
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
-    exact_mappings: chrono:chronometricAgeRemarks
+    close_mappings: chrono:chronometricAgeRemarks
     multivalued: false
     range: string
     required: false

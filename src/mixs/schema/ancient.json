@@ -45,7 +45,7 @@
                     ]
                 },
                 "chrono_age_remarks": {
-                    "description": "Notes or comments about the chrono:ChronometricAge.",
+                    "description": "Notes or comments about the chrono:ChronometricAge. For more detail use `Chronometric Age Protocol` to point to original publication describing method. Useful to specify confidence and/or accuracy of reported date.",
                     "type": [
                         "string",
                         "null"
