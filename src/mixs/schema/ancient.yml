@@ -305,7 +305,7 @@ slots:
     slot_uri: MIXS:999999905
     multivalued: true
     range: string
-    required: false
+    required: true
     recommended: true
   permit_date:
     description: >-
