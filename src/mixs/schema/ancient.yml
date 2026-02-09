@@ -776,7 +776,7 @@ slots:
     slot_uri: MIXS:999999930 #Not assigned
     multivalued: true
     range: LibStrandEnum #enum value
-    required: false
+    required: true
     recommended: true
   capture_probe_desc:
     annotations:
