@@ -241,7 +241,7 @@ slots:
     annotations:
       Expected_value: ontology term; text
     description: >-
-      The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies.
+      The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies. This term is for geological timescales. For more precise or anthropogenic defined periods, use `Cultural Era`
     title: geological epoch
     examples:
       - value: "Pleistocene"
@@ -514,6 +514,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
+    multivalued: true
     exact_mappings: chrono:latestChronometricAge
     range: integer
     required: true
