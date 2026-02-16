@@ -1165,6 +1165,9 @@ classes:
       desc_read_state:
         rank: 40
         slot_group: sequencing
+      batch_ids:
+        rank: 41
+        slot_group: sequencing
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
