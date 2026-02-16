@@ -88,15 +88,15 @@
                     ]
                 },
                 "earliest_chrono_age": {
-                    "description": "The maximum/earliest/oldest possible age of a specimen as determined by a dating method.",
-                    "type": "integer"
-                },
-                "earliest_chrono_sys": {
-                    "description": "The reference system associated with the chrono:earliest_chrono_age.",
+                    "description": "The maximum/earliest/oldest possible age of a specimen as determined by a dating method. If multiple dating measurements available, use the most earliest/oldest date to provide widest range of age possibilities. The specific age unit should be specified by the term: earliest_chrono_sys. More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term: chrono_age_remarks.",
                     "items": {
-                        "$ref": "#/$defs/ChronoAgeSysEnum"
+                        "type": "integer"
                     },
                     "type": "array"
+                },
+                "earliest_chrono_sys": {
+                    "$ref": "#/$defs/ChronoAgeSysEnum",
+                    "description": "The reference system associated with the chrono:earliest_chrono_age."
                 },
                 "experimental_sop": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
@@ -121,15 +121,12 @@
                     ]
                 },
                 "latest_chrono_age": {
-                    "description": "The minimum/latest/youngest possible age of a specimen as determined by a dating method.",
+                    "description": "The minimum/latest/youngest possible age of a specimen as determined by a dating method. If multiple dating measurements available, use the most latest/youngest date to provide widest range of age possibilities. The specific age unit should be specified by the term: latest_chrono_sys. More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term: chrono_age_remarks.",
                     "type": "integer"
                 },
                 "latest_chrono_sys": {
-                    "description": "The reference system associated with the chrono:latest_chrono_age.",
-                    "items": {
-                        "$ref": "#/$defs/ChronoAgeSysEnum"
-                    },
-                    "type": "array"
+                    "$ref": "#/$defs/ChronoAgeSysEnum",
+                    "description": "The reference system associated with the chrono:latest_chrono_age."
                 },
                 "lib_polymerase": {
                     "description": "The polymerase enzyme used for building nucleic acid libraries.",
