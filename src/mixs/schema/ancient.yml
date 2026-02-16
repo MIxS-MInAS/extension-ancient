@@ -462,6 +462,8 @@ slots:
     multivalued: true
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
   prev_pubs:
     description: >-
       Any publications that report data from the same body/skeleton/individual
