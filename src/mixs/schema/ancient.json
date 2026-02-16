@@ -45,14 +45,14 @@
                     ]
                 },
                 "chrono_age_remarks": {
-                    "description": "Notes or comments about the chrono:ChronometricAge.",
+                    "description": "Notes or comments about the chrono:ChronometricAge. For more detail use `Chronometric Age Protocol` to point to original publication describing method. Useful to specify confidence and/or accuracy of reported date.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "context_retrieval_date": {
-                    "description": "Date of excavation or retrieval from burial or depositional context, if known. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. If excavations were done during a longer period, report its midpoint at a month or year level.",
+                    "description": "Date of excavation or retrieval from burial or depositional context, if known. If excavations were done during a  longer period, report its midpoint at a month or year level. In case no exact time is available, the date can be  right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23;  2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. ",
                     "format": "date-time",
                     "type": [
                         "string",
@@ -154,10 +154,7 @@
                     "items": {
                         "$ref": "#/$defs/LibStrandEnum"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "lib_type": {
                     "$ref": "#/$defs/LibTypeEnum",
@@ -340,7 +337,8 @@
                 "latest_chrono_age",
                 "latest_chrono_sys",
                 "earliest_chrono_age",
-                "earliest_chrono_sys"
+                "earliest_chrono_sys",
+                "lib_strandedness"
             ],
             "title": "Ancient",
             "type": "object"
@@ -370,6 +368,7 @@
                 "amino acid racemisation",
                 "electron spin resonance",
                 "uranium thorium",
+                "age-depth modelling",
                 "contextual dating",
                 "associated absolute dating",
                 "historical records",
