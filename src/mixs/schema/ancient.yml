@@ -487,7 +487,7 @@ slots:
       Date of excavation or retrieval from burial or depositional context, if known. If excavations were done during a 
       longer period, report its midpoint at a month or year level. In case no exact time is available, the date can be 
       right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 
-      2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. 
+      2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.
     title: date of retrieval from depositional context
     examples:
       - value: "2023"
@@ -949,6 +949,33 @@ slots:
     range: string
     required: false
     recommended: true
+  column_sample_depth:
+    annotations:
+      Expected_value: depth of the sample in the column of a stratigraphy or sediment core
+    description: >-
+      Distance relative to the top or beginning of the sediment core or stratigraphic sequence (defined by the term 'depth') from which the sample was taken.
+      This is not necessarily the same with the depth from floor level or MSL, which should be defined using the term: depth.
+      Can also be a range if depth of sample not precisely measured.
+    title: sample depth in column
+    examples:
+      - value: "34 cm"
+      - value: "23-56 cm"
+      - value: "100 in"
+    in_subset:
+      - environment
+    keywords:
+      - environment
+      - core
+      - sediment
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
 classes:
   MixsCompliantData:
     description:
@@ -1142,6 +1169,9 @@ classes:
       desc_read_state:
         rank: 40
         slot_group: sequencing
+      column_sample_depth:
+        rank: 41
+        slot_group: environment
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
