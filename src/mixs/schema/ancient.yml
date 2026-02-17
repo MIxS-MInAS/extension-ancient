@@ -871,7 +871,7 @@ slots:
     description: >-
       Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected.
       Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature.
-      Typically names that would not be found on official maps.
+      Typically names that would not be found on official maps. If the site name is unclear please use the name of the closest location or region as best as possible.
       Can also include different transliterations or languages used in the literature.
     title: Name of site or location where sample originated
     examples:
@@ -880,6 +880,7 @@ slots:
       - value: "Coopers Cave"
       - value: "Cutler Fossil Site"
       - value: "Kap København Formation"
+      - value: "Northern Italy, Lombardy, exact location unknown"
     in_subset:
       - environment
     keywords:
@@ -889,6 +890,7 @@ slots:
     multivalued: true
     range: string
     required: false
+    recommended: true
     recommended: false
   site_longitude:
     description: >-
@@ -1042,6 +1044,7 @@ classes:
       - mid_config
       - site_name
       - site_longitude
+      - site_latitude
       - data_filt_applied
       - library_name
       - desc_read_state
