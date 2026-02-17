@@ -531,7 +531,8 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
     multivalued: true
-    exact_mappings: chrono:latestChronometricAge
+    exact_mappings: 
+      - chrono:latestChronometricAge
     range: integer
     required: true
     recommended: true
@@ -547,7 +548,8 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999919
-    broad_mappings: chrono:latestChronometricAgeReferenceSystem
+    broad_mappings: 
+      - chrono:latestChronometricAgeReferenceSystem
     multivalued: true
     range: ChronoAgeSysEnum
     required: true
@@ -564,7 +566,8 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
-    exact_mappings: chrono:earliestChronometricAge
+    exact_mappings: 
+      - chrono:earliestChronometricAge
     range: integer
     required: true
     recommended: true
@@ -580,7 +583,8 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
-    broad_mappings: chrono:earliestChronometricAgeReferenceSystem
+    broad_mappings: 
+      - chrono:earliestChronometricAgeReferenceSystem
     multivalued: true
     range: ChronoAgeSysEnum
     required: true
@@ -597,7 +601,8 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
-    broad_mappings: chrono:chronometricAgeProtocol
+    broad_mappings: 
+      - chrono:chronometricAgeProtocol
     multivalued: true
     range: ChronoAgeProtocolEnum
     required: false
@@ -617,7 +622,8 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
-    close_mappings: chrono:chronometricAgeRemarks
+    close_mappings: 
+      - chrono:chronometricAgeRemarks
     multivalued: false
     range: string
     required: false
