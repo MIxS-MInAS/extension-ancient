@@ -1293,7 +1293,7 @@ classes:
         slot_group: Sequencing
         rank: 40
       num_reamp_cycles:
-        slot_group: equencing
+        slot_group: Sequencing
         rank: 41
       num_capture_cycles:
         slot_group: Sequencing
