@@ -523,6 +523,10 @@ slots:
       Expected_value: age value corresponding to unit
     description: >-
       The minimum/latest/youngest possible age of a specimen as determined by a dating method.
+      If multiple dating measurements available, use the most latest/youngest date to provide
+      widest range of age possibilities.
+      The specific age unit should be specified by the term latest_chrono_sys.
+      More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
     title: Latest Chronometric Age
     examples:
       - value: "100000"
@@ -530,27 +534,27 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
-    multivalued: true
-    exact_mappings:
+    exact_mappings: 
       - chrono:latestChronometricAge
+    multivalued: false
     range: integer
     required: true
     recommended: true
   latest_chrono_sys:
     description: >-
-      The reference system associated with the chrono:latest_chrono_age.
+      The reference system associated with the latest_chrono_age.
     title: Latest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
-      - value: "kya"
+      - value: "ka"
     in_subset:
       - investigation
     slot_uri: MIXS:999999919
     broad_mappings:
       - chrono:latestChronometricAgeReferenceSystem
-    multivalued: true
+    multivalued: false
     range: ChronoAgeSysEnum
     required: true
     recommended: true
@@ -559,6 +563,10 @@ slots:
       Expected_value: age value corresponding to unit
     description: >-
       The maximum/earliest/oldest possible age of a specimen as determined by a dating method.
+      If multiple dating measurements available, use the most earliest/oldest date to provide
+      widest range of age possibilities.
+      The specific age unit should be specified by the term earliest_chrono_sys.
+      More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
     title: Earliest Chronometric Age
     examples:
       - value: "120000"
@@ -566,32 +574,33 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
-    exact_mappings:
+    exact_mappings: 
       - chrono:earliestChronometricAge
+    multivalued: false
     range: integer
     required: true
     recommended: true
   earliest_chrono_sys:
     description: >-
-      The reference system associated with the chrono:earliest_chrono_age.
+      The reference system associated with the earliest_chrono_age.
     title: Earliest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
-      - value: "kya"
+      - value: "ka"
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
-    broad_mappings:
+    broad_mappings: 
       - chrono:earliestChronometricAgeReferenceSystem
-    multivalued: true
+    multivalued: false
     range: ChronoAgeSysEnum
     required: true
     recommended: true
   chrono_age_protocol:
     description: >-
-      A description of or reference to the methods used to determine the chrono:ChronometricAge.
+      A description of or reference to the methods used to determine the earliest_chrono_age and latest_chrono_age.
     title: Chronometric Age Protocol
     examples:
       - value: "radiocarbon dating"
@@ -609,8 +618,8 @@ slots:
     recommended: true
   chrono_age_remarks:
     description: >-
-      Notes or comments about the chrono:ChronometricAge.
-      For more detail use `Chronometric Age Protocol` to point to original publication describing method.
+      Notes or comments about the  earliest_chrono_age and latest_chrono_age.
+      For more detail use Chronometric Age Protocol to point to original publication describing method.
       Useful to specify confidence and/or accuracy of reported date.
     title: Chronometric Age Remarks
     examples:
