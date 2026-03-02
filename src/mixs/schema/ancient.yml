@@ -534,7 +534,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
-    exact_mappings: 
+    exact_mappings:
       - chrono:latestChronometricAge
     multivalued: false
     range: integer
@@ -574,7 +574,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
-    exact_mappings: 
+    exact_mappings:
       - chrono:earliestChronometricAge
     multivalued: false
     range: integer
@@ -592,7 +592,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
-    broad_mappings: 
+    broad_mappings:
       - chrono:earliestChronometricAgeReferenceSystem
     multivalued: false
     range: ChronoAgeSysEnum
@@ -1125,52 +1125,52 @@ classes:
     title: ancient
     is_a: Extension
     slots:
-      - past_env_broad
-      - past_env_local
-      - cultural_era
-      - geological_epoch
-      - damage_treatment
-      - nucl_acid_extr_date
-      - permit_authority
-      - permit_date
-      - permit_id
-      - experimental_sop
-      - lib_polymerase
-      - lib_preparation_sop
-      - lib_type
-      - neg_cont_status
-      - num_capture_cycles
-      - num_reamp_cycles
-      - samp_preserv_treatm
-      - prev_pubs
-      - context_retrieval_date
-      - samp_decont_pretreat
-      - latest_chrono_age
-      - latest_chrono_sys
-      - earliest_chrono_age
-      - earliest_chrono_sys
-      - chrono_age_protocol
-      - chrono_age_remarks
-      - samp_alt_lab_ids
-      - storage_conditions
-      - palaeopath_status
-      - biocultural_label
-      - permit_scope
-      - host_preserv_state
-      - lib_strandedness
-      - capture_probe_taxid
-      - capture_probe_desc
-      - mid_config
       - orig_site_name
       - orig_site_loc
       - orig_site_lat
       - orig_site_lon
-      - data_filt_applied
-      - library_name
-      - desc_read_state
-      - batch_ids
+      - past_env_broad
+      - past_env_local
+      - permit_id
+      - permit_authority
+      - permit_date
+      - permit_scope
+      - biocultural_label
+      - samp_alt_lab_ids
+      - context_retrieval_date
       - stratig_context
       - column_sample_depth
+      - storage_conditions
+      - samp_preserv_treatm
+      - host_preserv_state
+      - cultural_era
+      - geological_epoch
+      - earliest_chrono_age
+      - earliest_chrono_sys
+      - latest_chrono_age
+      - latest_chrono_sys
+      - chrono_age_protocol
+      - chrono_age_remarks
+      - palaeopath_status
+      - batch_ids
+      - neg_cont_status
+      - samp_decont_pretreat
+      - damage_treatment
+      - nucl_acid_extr_date
+      - experimental_sop
+      - mid_config
+      - library_name
+      - lib_polymerase
+      - lib_strandedness
+      - lib_preparation_sop
+      - lib_type
+      - num_capture_cycles
+      - num_reamp_cycles
+      - capture_probe_taxid
+      - capture_probe_desc
+      - desc_read_state
+      - data_filt_applied
+      - prev_pubs
     slot_usage:
       orig_site_name:
         rank: 1
