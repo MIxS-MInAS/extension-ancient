@@ -973,6 +973,32 @@ slots:
     range: string
     required: false
     recommended: false
+  stratig_context:
+    annotations:
+      Expected_value: Stratigraphic context that the sample was retrieved from
+    description: >-
+      Associated stratigraphic context(s) that the sample was retrieved from, usually from an archaeological or palaeontological excavation. Description(s) or identifier(s) of stratigraphic units or layer names within and/or relative to the site (e.g., stratigraphic unit ID, archaeological feature ID, layer name or a description, grid location).
+    title: stratigraphic context
+    examples:
+      - value: "Layer 5"
+      - value: "Layer UE"
+      - value: "Horizon IIc, Quadrant 77"
+      - value: "HF_23447_77_410_IIc"
+      - value: "KrSp C2/2011/B5"
+      - value: "US10"
+      - value: "YSL"
+      - value: "Subunit 1"
+      - value: "Black Mousterian (BM)"
+    in_subset:
+      - environment
+    keywords:
+      - identifiers
+      - excavation
+    slot_uri: MIXS:999999934 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
 classes:
   MixsCompliantData:
     description:
@@ -1039,6 +1065,7 @@ classes:
       - library_name
       - desc_read_state
       - batch_ids
+      - stratig_context
     slot_usage:
       site_name:
         rank: 1
@@ -1170,6 +1197,9 @@ classes:
       batch_ids:
         rank: 41
         slot_group: sequencing
+      stratig_context:
+        rank: 42
+        slot_group: environment
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
