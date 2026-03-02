@@ -1009,7 +1009,7 @@ slots:
     title: sample depth in column
     examples:
       - value: "34 cm"
-      - value: "23-56 cm"
+      - value: "23 - 56 cm"
       - value: "100 in"
     in_subset:
       - environment
