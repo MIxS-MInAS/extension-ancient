@@ -871,7 +871,7 @@ slots:
     description: >-
       Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected.
       Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature.
-      Typically names that would not be found on official maps.
+      Typically names that would not be found on official maps. If the site name is unclear please use the name of the closest location or region as best as possible.
       Can also include different transliterations or languages used in the literature.
     title: Name of site or location where sample originated
     examples:
@@ -880,6 +880,7 @@ slots:
       - value: "Coopers Cave"
       - value: "Cutler Fossil Site"
       - value: "Kap København Formation"
+      - value: "Northern Italy, Lombardy, exact location unknown"
     in_subset:
       - environment
     keywords:
@@ -889,7 +890,7 @@ slots:
     multivalued: true
     range: string
     required: false
-    recommended: false
+    recommended: true
   data_filt_applied:
     annotations:
       Expected_value: Whether associated data was filtered
@@ -949,6 +950,29 @@ slots:
     range: string
     required: false
     recommended: true
+  batch_ids:
+    annotations:
+      Expected_value: list any batch_ids the sample, nucleic acids, or library was associated with during processing and sequencing
+    description: >-
+      Identifiers for any form of batch or 'group' that the samples is associated with, examples including: individual/skeleton ID, sediment core IDs, extract batch, library batch, sequencing run etc.. 
+      These IDs should always act as 'umbrella' IDs that allow association with entries processed together, to allow for downstream analyses of batch effects.
+      Ideally, the information should indicate or specify what type of batch the ID is describing.
+    title: batch identifiers
+    examples:
+      - value: "EXTB1;LIBB2;SeqRun1"
+      - value: "Extraction batch: 1"
+      - value: "20260501-A2 (extraction);20202607-B2 (library)"
+      - value: "ExtrMG;LibMG;SeqMG"
+      - value: "Core: North-East Greenland 73G"
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - identifiers
+    slot_uri: MIXS:999999939 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
   stratig_context:
     annotations:
       Expected_value: Stratigraphic context that the sample was retrieved from
@@ -1041,6 +1065,8 @@ classes:
       - data_filt_applied
       - library_name
       - desc_read_state
+      - batch_ids
+      - stratig_context
     slot_usage:
       site_name:
         rank: 1
@@ -1169,8 +1195,11 @@ classes:
       desc_read_state:
         rank: 40
         slot_group: sequencing
-      stratig_context:
+      batch_ids:
         rank: 41
+        slot_group: sequencing
+      stratig_context:
+        rank: 42
         slot_group: environment
     class_uri: MIXS:9999903
     annotations:
