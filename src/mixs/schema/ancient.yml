@@ -1166,7 +1166,7 @@ classes:
       orig_site_name:
         rank: 1
         slot_group: environment
-      orig_site_loc
+      orig_site_loc:
         rank: 2
         slot_group: environment
       orig_site_lat:
