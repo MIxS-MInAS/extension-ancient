@@ -122,6 +122,8 @@ enums:
       amino acid racemisation:
       electron spin resonance:
       uranium thorium:
+      age-depth modelling:
+        description: Age-depth models are constructed based on limited numbers of dated depths (typically in sediment cores) to estimate the calendar ages. Different models are used based on assumptions about the sequence of deposit formation at each dated depth.
       contextual dating:
         description: A non-absolute date inferred from the specific context of an archaeological or palaeontological sample (e.g. stratigraphic layers, coins).
       associated absolute dating:
@@ -241,7 +243,7 @@ slots:
     annotations:
       Expected_value: ontology term; text
     description: >-
-      The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies.
+      The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies. NOTE: This term is for geological timescales. For more precise or anthropogenic defined periods, use `Cultural Era`.
     title: geological epoch
     examples:
       - value: "Pleistocene"
@@ -261,8 +263,8 @@ slots:
     annotations:
       Expected_value: enumeration
     description: >-
-      Indication of whether characteristic ancient DNA damage has been 
-      altered or removed from a DNA extract in a laboratory
+      Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory.
+      If damage has been removed, but whether it was fully or partially removed is unknown (e.g. with UDG treatment) - specify 'other', and describe known information in `experimental_sop` and related free text descriptive terms.
     title: Damage treatment type
     examples:
       - value: none
@@ -272,7 +274,7 @@ slots:
     keywords:
       - ancient
     slot_uri: MIXS:999999903
-    multivalued: true
+    multivalued: false
     range: DamageTreatmentEnum ## or name of defined enum as above
     required: true
   nucl_acid_extr_date:
@@ -287,7 +289,7 @@ slots:
     slot_uri: MIXS:9999999904
     range: datetime ## or name of defined enum as above
     required: false
-    recommended: true
+    recommended: false
   permit_authority:
     annotations:
       Expected_value: Name of authority providing permission or ethical approval.
@@ -411,12 +413,15 @@ slots:
     title: negative control status
     examples:
       - value: "true"
+      - value: "false"
     keywords:
       - control
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999911
     range: boolean
+    required: true
+    recommended: true
   num_capture_cycles:
     description: >-
       Number of amplification cycles after capture enrichment
@@ -440,10 +445,15 @@ slots:
     range: integer
   samp_preserv_treatm:
     description: >-
-      Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue
+      Description of any treatment applied directly to samples for the specific purpose of 
+      maximising longevity of sample preservation in archives and/or collections by curators 
+      that may influence downstream nucleic acid recovery or library construction, such as storage fluid or 
+      reconstructive glue.
     title: preservational treatment
     examples:
       - value: "stored in formalin"
+      - value: "reconstructive glue applied"
+      - value: "alcohol preserved"
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -452,6 +462,8 @@ slots:
     multivalued: true
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
   prev_pubs:
     description: >-
       Any publications that report data from the same body/skeleton/individual
@@ -472,12 +484,15 @@ slots:
     annotations:
       Preferred_unit: year
     description: >-
-      Date of excavation or retrieval from burial or depositional context, if known.
-      In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.
-      If excavations were done during a longer period, report its midpoint at a month or year level.
+      Date of excavation or retrieval from burial or depositional context, if known. If excavations were done during a 
+      longer period, report its midpoint at a month or year level. In case no exact time is available, the date can be 
+      right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 
+      2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.
     title: date of retrieval from depositional context
     examples:
       - value: "2023"
+      - value: "1972-11"
+      - value: "2001-09-25"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:9999999916
@@ -486,8 +501,9 @@ slots:
     recommended: true
   samp_decont_pretreat:
     description: >-
-      Method(s) employed for surface decontamination of samples of external 
-      modern nucleic acids; Treatment used on the samples. Depends on the sample type. 
+      Protocols employed for sample surface decontamination of external 
+      modern nucleic acids; Treatment used on the samples immediately prior to nucleic acid extraction.
+      Dependant on the sample type. 
       More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.
     title: sample decontamination pretreatment
     examples:
@@ -509,8 +525,8 @@ slots:
       The minimum/latest/youngest possible age of a specimen as determined by a dating method.
       If multiple dating measurements available, use the most latest/youngest date to provide
       widest range of age possibilities.
-      The specific age unit should be specified by the term: latest_chrono_sys.
-      More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term: chrono_age_remarks.
+      The specific age unit should be specified by the term latest_chrono_sys.
+      More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
     title: Latest Chronometric Age
     examples:
       - value: "100000"
@@ -518,24 +534,26 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
-    exact_mappings: chrono:latestChronometricAge
+    exact_mappings: 
+      - chrono:latestChronometricAge
     multivalued: false
     range: integer
     required: true
     recommended: true
   latest_chrono_sys:
     description: >-
-      The reference system associated with the chrono:latest_chrono_age.
+      The reference system associated with the latest_chrono_age.
     title: Latest Chronometric Age Reference System
     examples:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
-      - value: "kya"
+      - value: "ka"
     in_subset:
       - investigation
     slot_uri: MIXS:999999919
-    broad_mappings: chrono:latestChronometricAgeReferenceSystem
+    broad_mappings:
+      - chrono:latestChronometricAgeReferenceSystem
     multivalued: false
     range: ChronoAgeSysEnum
     required: true
@@ -547,8 +565,8 @@ slots:
       The maximum/earliest/oldest possible age of a specimen as determined by a dating method.
       If multiple dating measurements available, use the most earliest/oldest date to provide
       widest range of age possibilities.
-      The specific age unit should be specified by the term: earliest_chrono_sys.
-      More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term: chrono_age_remarks.
+      The specific age unit should be specified by the term earliest_chrono_sys.
+      More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
     title: Earliest Chronometric Age
     examples:
       - value: "120000"
@@ -556,14 +574,15 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
-    exact_mappings: chrono:earliestChronometricAge
-    multivalued: true
+    exact_mappings: 
+      - chrono:earliestChronometricAge
+    multivalued: false
     range: integer
     required: true
     recommended: true
   earliest_chrono_sys:
     description: >-
-      The reference system associated with the chrono:earliest_chrono_age.
+      The reference system associated with the earliest_chrono_age.
     title: Earliest Chronometric Age Reference System
     examples:
       - value: "cal BP"
@@ -573,14 +592,15 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
-    broad_mappings: chrono:earliestChronometricAgeReferenceSystem
+    broad_mappings: 
+      - chrono:earliestChronometricAgeReferenceSystem
     multivalued: false
     range: ChronoAgeSysEnum
     required: true
     recommended: true
   chrono_age_protocol:
     description: >-
-      A description of or reference to the methods used to determine the chrono:ChronometricAge.
+      A description of or reference to the methods used to determine the earliest_chrono_age and latest_chrono_age.
     title: Chronometric Age Protocol
     examples:
       - value: "radiocarbon dating"
@@ -590,25 +610,29 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
-    broad_mappings: chrono:chronometricAgeProtocol
+    broad_mappings:
+      - chrono:chronometricAgeProtocol
     multivalued: true
     range: ChronoAgeProtocolEnum
     required: false
     recommended: true
   chrono_age_remarks:
     description: >-
-      Notes or comments about the chrono:ChronometricAge.
+      Notes or comments about the  earliest_chrono_age and latest_chrono_age.
+      For more detail use Chronometric Age Protocol to point to original publication describing method.
+      Useful to specify confidence and/or accuracy of reported date.
     title: Chronometric Age Remarks
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
       - value: "based on proxy dating from other bone samples of stratigraphic layer"
-      - value: "a coin found in the burial was from the 3rd century"
+      - value: "a coin found in the burial was from the 3rd century was found in the mouth of the skeleton"
       - value: "age taken from previous publication Doe et al. 2019"
       - value: "radiocarbon age ID: OxA-12345"
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
-    exact_mappings: chrono:chronometricAgeRemarks
+    close_mappings:
+      - chrono:chronometricAgeRemarks
     multivalued: false
     range: string
     required: false
@@ -677,17 +701,23 @@ slots:
     string_serialization: "{text}"
   storage_conditions:
     description: >-
-      General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..
+      General surrounding environmental conditions where the material
+      was stored in long-term collection storage prior sampling for nucleic acid analysis 
+      that may influence nucleic acid recovery or library construction.
+      For example, specify temperature, humidity, presence of microbial overgrowth etc..
     title: storage conditions
     examples:
       - value: "climate-controlled"
-      - value: "Stored in the museum from recovery_date to collection_date"
-      - value: "Stored at -20oC until nucl_acid_ext_date"
+      - value: "Mould growth in storage box observed"
+      - value: "Stored at -20oC until 2025-05-15"
+      - value: "Stored in the museum from 1924 to 2021"
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999925
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
   palaeopath_status:
     annotations:
       Expected_value: description of health related observation on ancient remains
@@ -749,9 +779,11 @@ slots:
     recommended: true
   host_preserv_state:
     annotations:
-      Expected_value: Description of the preservation of the sampled (ancient) organism/host.
+      Expected_value: Description of the preservation of the sampled (ancient) organism/host at time/immediately after death.
     description: >-
-      Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment or in the context museomics (eg. taxidermied or pinned), e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.
+      Description of the state of the sampled (ancient) organism/host as originally 
+      preserved in the burial environment at the time of or immediately following death.
+      This can be both natural or artificial, such as mummification or burning for funerary purposes.
     examples:
       - value: "complete artificial mummification."
       - value: "natural partial mummification."
@@ -783,7 +815,7 @@ slots:
     slot_uri: MIXS:999999930 #Not assigned
     multivalued: true
     range: LibStrandEnum #enum value
-    required: false
+    required: true
     recommended: true
   capture_probe_desc:
     annotations:
@@ -848,13 +880,13 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
-  site_name:
+  orig_site_name:
     annotations:
       Expected_value: Name of site or location where sample was originated
     description: >-
       Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected.
       Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature.
-      Typically names that would not be found on official maps.
+      Typically names that would not be found on official maps. If the site name is unclear please use the name of the closest location or region as best as possible.
       Can also include different transliterations or languages used in the literature.
     title: Name of site or location where sample originated
     examples:
@@ -863,6 +895,7 @@ slots:
       - value: "Coopers Cave"
       - value: "Cutler Fossil Site"
       - value: "Kap København Formation"
+      - value: "Northern Italy, Lombardy, exact location unknown"
     in_subset:
       - environment
     keywords:
@@ -872,7 +905,66 @@ slots:
     multivalued: true
     range: string
     required: false
+    recommended: true
+  orig_site_loc:
+    annotations:
+      Expected_value: Name of original geographic origin of the sample
+    description: >-
+      The original geographical origin of the sample, when sampled outside its original natural environment (e.g. sampled in a museum collection), as defined by the country or sea name followed by specific region name. 
+      Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ).
+    title: original site location
+    examples:
+      - value: "South Africa: Western Cape"
+      - value: "Germany: Baden-Württemberg, Geißenklösterle Cave"
+      - value: "Northern Italy: Lombardy"
+    in_subset:
+      - environment
+    keywords:
+      - location
+      - site
+    slot_uri: MIXS:999999944 #Not assigned
+    multivalued: false
+    range: string
+    required: false
     recommended: false
+    structured_pattern:
+      syntax: "^{country}: {region}, {specific_location}$"
+  orig_site_lon:
+    description: >-
+      The longitude coordinate of the original geographical origin of the sample, e.g. the original place the sample was buried, deposited, or formed.
+      In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as geo_loc_name, and lat_lon. 
+      For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to orig_site_loc, not the collection itself, as recorded in site_name).
+      The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
+    title: original geographic location (longitude)
+    examples:
+      - value: "6.408977"
+      - value: "-12.12"
+    slot_uri: MIXS:999999934 #Not assigned
+    multivalued: false
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: "^{lon}$"
+      interpolated: true
+      partial_match: true
+  orig_site_lat:
+    description: >-
+      The latitude coordinate of the original geographical origin of the sample, e.g. the original place the sample was buried, deposited, or formed.
+      In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as geo_loc_name, and lat_lon. 
+      For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to  orig_site_loc, not the collection itself as recorded in site_name).
+      The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
+    title: original geographic location (latitude)
+    examples:
+      - value: "50.586825"
+      - value: "-0.123"
+    slot_uri: MIXS:999999935 #Not assigned
+    multivalued: false
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: "^{lat}$"
+      interpolated: true
+      partial_match: true
   data_filt_applied:
     annotations:
       Expected_value: Whether associated data was filtered
@@ -932,6 +1024,82 @@ slots:
     range: string
     required: false
     recommended: true
+  batch_ids:
+    annotations:
+      Expected_value: list any batch_ids the sample, nucleic acids, or library was associated with during processing and sequencing
+    description: >-
+      Identifiers for any form of batch or 'group' that the samples is associated with, examples including: individual/skeleton ID, sediment core IDs, extract batch, library batch, sequencing run etc.. 
+      These IDs should always act as 'umbrella' IDs that allow association with entries processed together, to allow for downstream analyses of batch effects.
+      Ideally, the information should indicate or specify what type of batch the ID is describing.
+    title: batch identifiers
+    examples:
+      - value: "EXTB1;LIBB2;SeqRun1"
+      - value: "Extraction batch: 1"
+      - value: "20260501-A2 (extraction);20202607-B2 (library)"
+      - value: "ExtrMG;LibMG;SeqMG"
+      - value: "Core: North-East Greenland 73G"
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - identifiers
+    slot_uri: MIXS:999999939 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
+  stratig_context:
+    annotations:
+      Expected_value: Stratigraphic context that the sample was retrieved from
+    description: >-
+      Associated stratigraphic context(s) that the sample was retrieved from, usually from an archaeological or palaeontological excavation. Description(s) or identifier(s) of stratigraphic units or layer names within and/or relative to the site (e.g., stratigraphic unit ID, archaeological feature ID, layer name or a description, grid location).
+    title: stratigraphic context
+    examples:
+      - value: "Layer 5"
+      - value: "Layer UE"
+      - value: "Horizon IIc, Quadrant 77"
+      - value: "HF_23447_77_410_IIc"
+      - value: "KrSp C2/2011/B5"
+      - value: "US10"
+      - value: "YSL"
+      - value: "Subunit 1"
+      - value: "Black Mousterian (BM)"
+    in_subset:
+      - environment
+    keywords:
+      - identifiers
+      - excavation
+    slot_uri: MIXS:999999934 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
+  column_sample_depth:
+    annotations:
+      Expected_value: depth of the sample in the column of a stratigraphy or sediment core
+    description: >-
+      Distance relative to the top or beginning of the sediment core or stratigraphic sequence (defined by the term 'depth') from which the sample was taken.
+      This is not necessarily the same as the depth from floor level or Mean Sea Level (MSL) (which should be defined using the term: depth), as a core could start part way below the surface.
+      Can also be a range if the depth of the sample is not precisely measured.
+    title: sample depth in column
+    examples:
+      - value: "34 cm"
+      - value: "23 - 56 cm"
+      - value: "100 in"
+    in_subset:
+      - environment
+    keywords:
+      - environment
+      - core
+      - sediment
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
 classes:
   MixsCompliantData:
     description:
@@ -993,138 +1161,162 @@ classes:
       - capture_probe_taxid
       - capture_probe_desc
       - mid_config
-      - site_name
+      - orig_site_name
+      - orig_site_loc
+      - orig_site_lat
+      - orig_site_lon
       - data_filt_applied
       - library_name
       - desc_read_state
+      - batch_ids
+      - stratig_context
+      - column_sample_depth
     slot_usage:
-      site_name:
+      orig_site_name:
         rank: 1
         slot_group: environment
-      past_env_broad:
+      orig_site_loc:
         rank: 2
         slot_group: environment
-      past_env_local:
+      orig_site_lat:
         rank: 3
         slot_group: environment
-      samp_alt_lab_ids:
+      orig_site_lon:
         rank: 4
-        slot_group: sample body
-      permit_authority:
+        slot_group: environment
+      past_env_broad:
         rank: 5
-        slot_group: sample body
-      permit_id:
+        slot_group: environment
+      past_env_local:
         rank: 6
-        slot_group: sample body
-      permit_date:
+        slot_group: environment
+      samp_alt_lab_ids:
         rank: 7
         slot_group: sample body
-      permit_scope:
+      permit_authority:
         rank: 8
         slot_group: sample body
-      biocultural_label:
+      permit_id:
         rank: 9
         slot_group: sample body
-      earliest_chrono_age:
+      permit_date:
         rank: 10
         slot_group: sample body
-        recommended: true
-      earliest_chrono_sys:
+      permit_scope:
         rank: 11
         slot_group: sample body
-        recommended: true
-      latest_chrono_age:
+      biocultural_label:
         rank: 12
         slot_group: sample body
-        recommended: true
-      latest_chrono_sys:
+      earliest_chrono_age:
         rank: 13
         slot_group: sample body
         recommended: true
-      chrono_age_protocol:
+      earliest_chrono_sys:
         rank: 14
         slot_group: sample body
-      chrono_age_remarks:
+        recommended: true
+      latest_chrono_age:
         rank: 15
         slot_group: sample body
-      cultural_era:
+        recommended: true
+      latest_chrono_sys:
         rank: 16
         slot_group: sample body
-      geological_epoch:
+        recommended: true
+      chrono_age_protocol:
         rank: 17
         slot_group: sample body
-      context_retrieval_date:
+      chrono_age_remarks:
         rank: 18
         slot_group: sample body
-      storage_conditions:
+      cultural_era:
         rank: 19
         slot_group: sample body
-      samp_preserv_treatm:
+      geological_epoch:
         rank: 20
         slot_group: sample body
-      palaeopath_status:
+      context_retrieval_date:
         rank: 21
         slot_group: sample body
-      prev_pubs:
+      storage_conditions:
         rank: 22
         slot_group: sample body
-      host_preserv_state:
+      samp_preserv_treatm:
         rank: 23
         slot_group: sample body
-      neg_cont_status:
+      palaeopath_status:
         rank: 24
+        slot_group: sample body
+      prev_pubs:
+        rank: 25
+        slot_group: sample body
+      host_preserv_state:
+        rank: 26
+        slot_group: sample body
+      neg_cont_status:
+        rank: 27
         slot_group: nucleic acid source
       samp_decont_pretreat:
-        rank: 25
+        rank: 28
         slot_group: nucleic acid source
       nucl_acid_extr_date:
-        rank: 26
+        rank: 29
         slot_group: nucleic acid source
       damage_treatment:
-        rank: 27
+        rank: 30
         slot_group: sequencing
         recommended: true
       lib_strandedness:
-        rank: 28
-        slot_group: sequencing
-        recommended: true
-      mid_config:
-        rank: 29
-        slot_group: sequencing
-      library_name:
-        rank: 30
-        slot_group: sequencing
-      lib_type:
         rank: 31
         slot_group: sequencing
         recommended: true
-      lib_polymerase:
+      mid_config:
         rank: 32
         slot_group: sequencing
-      capture_probe_taxid:
+      library_name:
         rank: 33
         slot_group: sequencing
-      capture_probe_desc:
+      lib_type:
+        rank: 33
+        slot_group: sequencing
+        recommended: true
+      lib_polymerase:
         rank: 34
         slot_group: sequencing
-      num_capture_cycles:
+      capture_probe_taxid:
         rank: 35
         slot_group: sequencing
-      num_reamp_cycles:
+      capture_probe_desc:
         rank: 36
         slot_group: sequencing
-      experimental_sop:
+      num_capture_cycles:
         rank: 37
         slot_group: sequencing
-      lib_preparation_sop:
+      num_reamp_cycles:
         rank: 38
         slot_group: sequencing
-      data_filt_applied:
+      experimental_sop:
         rank: 39
         slot_group: sequencing
-      desc_read_state:
+      lib_preparation_sop:
         rank: 40
         slot_group: sequencing
+      data_filt_applied:
+        rank: 41
+        slot_group: sequencing
+      desc_read_state:
+        rank: 42
+        slot_group: sequencing
+      batch_ids:
+        rank: 43
+        slot_group: sequencing
+      stratig_context:
+        rank: 44
+        slot_group: environment
+      column_sample_depth:
+        rank: 45
+        slot_group: environment
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
