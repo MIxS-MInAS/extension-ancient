@@ -999,6 +999,33 @@ slots:
     range: string
     required: false
     recommended: false
+  column_sample_depth:
+    annotations:
+      Expected_value: depth of the sample in the column of a stratigraphy or sediment core
+    description: >-
+      Distance relative to the top or beginning of the sediment core or stratigraphic sequence (defined by the term 'depth') from which the sample was taken.
+      This is not necessarily the same as the depth from floor level or Mean Sea Level (MSL) (which should be defined using the term: depth), as a core could start part way below the surface.
+      Can also be a range if the depth of the sample is not precisely measured.
+    title: sample depth in column
+    examples:
+      - value: "34 cm"
+      - value: "23 - 56 cm"
+      - value: "100 in"
+    in_subset:
+      - environment
+    keywords:
+      - environment
+      - core
+      - sediment
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
 classes:
   MixsCompliantData:
     description:
@@ -1066,6 +1093,7 @@ classes:
       - desc_read_state
       - batch_ids
       - stratig_context
+      - column_sample_depth
     slot_usage:
       site_name:
         rank: 1
@@ -1199,6 +1227,9 @@ classes:
         slot_group: sequencing
       stratig_context:
         rank: 42
+        slot_group: environment
+      column_sample_depth:
+        rank: 43
         slot_group: environment
     class_uri: MIXS:9999903
     annotations:
