@@ -998,7 +998,7 @@ slots:
     multivalued: true
     range: string
     required: false
-    recommended: true
+    recommended: false
 classes:
   MixsCompliantData:
     description:
