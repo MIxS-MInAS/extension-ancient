@@ -906,8 +906,7 @@ slots:
     title: original geographic location (longitude)
     examples:
       - value: "6.408977"
-      - value: "-12.12" 
-      
+      - value: "-12.12"
     slot_uri: MIXS:999999934 #Not assigned
     multivalued: false
     required: false
@@ -925,7 +924,7 @@ slots:
     title: original geographic location (latitude)
     examples:
       - value: "50.586825"
-      - value: "-0.123" 
+      - value: "-0.123"
     slot_uri: MIXS:999999935 #Not assigned
     multivalued: false
     required: false
@@ -1131,16 +1130,14 @@ classes:
       - capture_probe_desc
       - mid_config
       - site_name
-     - orig_site_lat
-     - orig_site_lon
+      - orig_site_lat
+      - orig_site_lon
       - data_filt_applied
       - library_name
       - desc_read_state
       - batch_ids
       - stratig_context
       - column_sample_depth
-      - orig_site_lat
-      - orig_site_lon
     slot_usage:
       site_name:
         rank: 1
@@ -1284,13 +1281,6 @@ classes:
       column_sample_depth:
         rank: 43
         slot_group: environment
-      orig_site_lat:
-        rank: 44
-        slot_group: environment
-      orig_site_lon:
-        rank: 45
-        slot_group: environment
-
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
