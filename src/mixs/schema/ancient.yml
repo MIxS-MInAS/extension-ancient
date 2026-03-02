@@ -569,7 +569,7 @@ slots:
       - value: "cal BP"
       - value: "CE"
       - value: "Ma"
-      - value: "kya"
+      - value: "ka"
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
