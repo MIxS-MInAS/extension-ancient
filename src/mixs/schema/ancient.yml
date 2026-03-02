@@ -957,7 +957,7 @@ slots:
       The original geographical origin of the sample, when sampled outside it's original natural environment, as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ).
     title: site location
     examples:
-      - value: "South Africa: Wastern Cape, Nelson Bay Cave"
+      - value: "South Africa: Western Cape"
       - value: "Germany: Baden-Württemberg, Geißenklösterle Cave"
       - value: "Northern Italy: Lombardy"
     in_subset:
