@@ -871,7 +871,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: true
-  site_name:
+  orig_site_name:
     annotations:
       Expected_value: Name of site or location where sample was originated
     description: >-
@@ -897,11 +897,34 @@ slots:
     range: string
     required: false
     recommended: true
+  orig_site_loc:
+    annotations:
+      Expected_value: Name of original geographic origin of the sample
+    description: >-
+      The original geographical origin of the sample, when sampled outside its original natural environment (e.g. sampled in a museum collection), as defined by the country or sea name followed by specific region name. 
+      Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ).
+    title: original site location
+    examples:
+      - value: "South Africa: Western Cape"
+      - value: "Germany: Baden-Württemberg, Geißenklösterle Cave"
+      - value: "Northern Italy: Lombardy"
+    in_subset:
+      - environment
+    keywords:
+      - location
+      - site
+    slot_uri: MIXS:999999944 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: "^{country}: {region}, {specific_location}$"
   orig_site_lon:
     description: >-
       The longitude coordinate of the original geographical origin of the sample, e.g. the original place the sample was buried, deposited, or formed.
-      In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as site_name, and lat_lon. 
-      For samples kept in collections, the site_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to orig_site_loc, not the collection itself, as recorded in site_name).
+      In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as geo_loc_name, and lat_lon. 
+      For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to orig_site_loc, not the collection itself, as recorded in site_name).
       The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
     title: original geographic location (longitude)
     examples:
@@ -918,8 +941,8 @@ slots:
   orig_site_lat:
     description: >-
       The latitude coordinate of the original geographical origin of the sample, e.g. the original place the sample was buried, deposited, or formed.
-      In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as site_name, and lat_lon. 
-      For samples kept in collections, the site_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to  orig_site_loc, not the collection itself as recorded in site_name).
+      In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as geo_loc_name, and lat_lon. 
+      For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to  orig_site_loc, not the collection itself as recorded in site_name).
       The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
     title: original geographic location (latitude)
     examples:
@@ -1129,7 +1152,8 @@ classes:
       - capture_probe_taxid
       - capture_probe_desc
       - mid_config
-      - site_name
+      - orig_site_name
+      - orig_site_loc
       - orig_site_lat
       - orig_site_lon
       - data_filt_applied
@@ -1139,147 +1163,150 @@ classes:
       - stratig_context
       - column_sample_depth
     slot_usage:
-      site_name:
+      orig_site_name:
         rank: 1
         slot_group: environment
-      orig_site_lat:
+      orig_site_loc:
         rank: 2
         slot_group: environment
-      orig_site_lon:
+      orig_site_lat:
         rank: 3
         slot_group: environment
-      past_env_broad:
+      orig_site_lon:
         rank: 4
         slot_group: environment
-      past_env_local:
+      past_env_broad:
         rank: 5
         slot_group: environment
-      samp_alt_lab_ids:
+      past_env_local:
         rank: 6
-        slot_group: sample body
-      permit_authority:
+        slot_group: environment
+      samp_alt_lab_ids:
         rank: 7
         slot_group: sample body
-      permit_id:
+      permit_authority:
         rank: 8
         slot_group: sample body
-      permit_date:
+      permit_id:
         rank: 9
         slot_group: sample body
-      permit_scope:
+      permit_date:
         rank: 10
         slot_group: sample body
-      biocultural_label:
+      permit_scope:
         rank: 11
         slot_group: sample body
-      earliest_chrono_age:
+      biocultural_label:
         rank: 12
         slot_group: sample body
-        recommended: true
-      earliest_chrono_sys:
+      earliest_chrono_age:
         rank: 13
         slot_group: sample body
         recommended: true
-      latest_chrono_age:
+      earliest_chrono_sys:
         rank: 14
         slot_group: sample body
         recommended: true
-      latest_chrono_sys:
+      latest_chrono_age:
         rank: 15
         slot_group: sample body
         recommended: true
-      chrono_age_protocol:
+      latest_chrono_sys:
         rank: 16
         slot_group: sample body
-      chrono_age_remarks:
+        recommended: true
+      chrono_age_protocol:
         rank: 17
         slot_group: sample body
-      cultural_era:
+      chrono_age_remarks:
         rank: 18
         slot_group: sample body
-      geological_epoch:
+      cultural_era:
         rank: 19
         slot_group: sample body
-      context_retrieval_date:
+      geological_epoch:
         rank: 20
         slot_group: sample body
-      storage_conditions:
+      context_retrieval_date:
         rank: 21
         slot_group: sample body
-      samp_preserv_treatm:
+      storage_conditions:
         rank: 22
         slot_group: sample body
-      palaeopath_status:
+      samp_preserv_treatm:
         rank: 23
         slot_group: sample body
-      prev_pubs:
+      palaeopath_status:
         rank: 24
         slot_group: sample body
-      host_preserv_state:
+      prev_pubs:
         rank: 25
         slot_group: sample body
-      neg_cont_status:
+      host_preserv_state:
         rank: 26
-        slot_group: nucleic acid source
-      samp_decont_pretreat:
+        slot_group: sample body
+      neg_cont_status:
         rank: 27
         slot_group: nucleic acid source
-      nucl_acid_extr_date:
+      samp_decont_pretreat:
         rank: 28
         slot_group: nucleic acid source
-      damage_treatment:
+      nucl_acid_extr_date:
         rank: 29
-        slot_group: sequencing
-        recommended: true
-      lib_strandedness:
+        slot_group: nucleic acid source
+      damage_treatment:
         rank: 30
         slot_group: sequencing
         recommended: true
-      mid_config:
+      lib_strandedness:
         rank: 31
         slot_group: sequencing
-      library_name:
+        recommended: true
+      mid_config:
         rank: 32
         slot_group: sequencing
+      library_name:
+        rank: 33
+        slot_group: sequencing
       lib_type:
-        rank: 32
+        rank: 33
         slot_group: sequencing
         recommended: true
       lib_polymerase:
-        rank: 33
-        slot_group: sequencing
-      capture_probe_taxid:
         rank: 34
         slot_group: sequencing
-      capture_probe_desc:
+      capture_probe_taxid:
         rank: 35
         slot_group: sequencing
-      num_capture_cycles:
+      capture_probe_desc:
         rank: 36
         slot_group: sequencing
-      num_reamp_cycles:
+      num_capture_cycles:
         rank: 37
         slot_group: sequencing
-      experimental_sop:
+      num_reamp_cycles:
         rank: 38
         slot_group: sequencing
-      lib_preparation_sop:
+      experimental_sop:
         rank: 39
         slot_group: sequencing
-      data_filt_applied:
+      lib_preparation_sop:
         rank: 40
         slot_group: sequencing
-      desc_read_state:
+      data_filt_applied:
         rank: 41
+        slot_group: sequencing
+      desc_read_state:
+        rank: 42
         slot_group: sequencing
       batch_ids:
-        rank: 41
+        rank: 43
         slot_group: sequencing
       stratig_context:
-        rank: 42
+        rank: 44
         slot_group: environment
       column_sample_depth:
-        rank: 43
+        rank: 45
         slot_group: environment
     class_uri: MIXS:9999903
     annotations:
