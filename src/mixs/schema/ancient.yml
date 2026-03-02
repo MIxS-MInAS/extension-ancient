@@ -950,7 +950,7 @@ slots:
     range: string
     required: false
     recommended: true
-  site_location:
+  orig_site_loc:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
