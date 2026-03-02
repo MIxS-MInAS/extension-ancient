@@ -977,7 +977,7 @@ slots:
     annotations:
       Expected_value: Stratigraphic context that the sample was retrieved from
     description: >-
-      Associated stratigraphic contexts that the sample was retrieved from, usually from an archaeological or palaeontological excavation.
+      Associated stratigraphic context that the sample was retrieved from, usually from an archaeological or palaeontological excavation. Description(s) or identifier(s) of stratigraphic units or layer names within and/or relative to the site (e.g., stratigraphic unit ID, archaeological feature ID, layer name or a description, grid location, of the stratigraphic context).
       Description(s) or identifier(s) of stratigraphic units or layer names within and/or relative to the site.
     title: stratigraphic context
     examples:
