@@ -531,7 +531,7 @@ slots:
       - nucleic acid sequence source
     slot_uri: MIXS:999999918
     multivalued: true
-    exact_mappings: 
+    exact_mappings:
       - chrono:latestChronometricAge
     range: integer
     required: true
@@ -548,7 +548,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999919
-    broad_mappings: 
+    broad_mappings:
       - chrono:latestChronometricAgeReferenceSystem
     multivalued: true
     range: ChronoAgeSysEnum
@@ -566,7 +566,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999920
-    exact_mappings: 
+    exact_mappings:
       - chrono:earliestChronometricAge
     range: integer
     required: true
@@ -583,7 +583,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999921
-    broad_mappings: 
+    broad_mappings:
       - chrono:earliestChronometricAgeReferenceSystem
     multivalued: true
     range: ChronoAgeSysEnum
@@ -601,7 +601,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999922
-    broad_mappings: 
+    broad_mappings:
       - chrono:chronometricAgeProtocol
     multivalued: true
     range: ChronoAgeProtocolEnum
@@ -622,7 +622,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999923
-    close_mappings: 
+    close_mappings:
       - chrono:chronometricAgeRemarks
     multivalued: false
     range: string
@@ -897,8 +897,7 @@ slots:
     range: string
     required: false
     recommended: true
-    recommended: false
-  site_longitude:
+  orig_site_long:
     description: >-
       The longitude of original geographical origin of the sample, when sampled outside it's original natural environment.
       The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
@@ -913,14 +912,14 @@ slots:
       syntax: "^{lon}$"
       interpolated: true
       partial_match: true
-  site_latitude:
+  orig_site_lat:
     description: >-
       The latitude of the original geographical origin of the sample, when sampled outside it's original natural environment.
       The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
     title: original geographic location (latitude)
     examples:
       - value: "50.586825"
-    slot_uri: MIXS:999999934 #Not assigned
+    slot_uri: MIXS:999999935 #Not assigned
     multivalued: false
     required: false
     recommended: false
@@ -987,6 +986,82 @@ slots:
     range: string
     required: false
     recommended: true
+  batch_ids:
+    annotations:
+      Expected_value: list any batch_ids the sample, nucleic acids, or library was associated with during processing and sequencing
+    description: >-
+      Identifiers for any form of batch or 'group' that the samples is associated with, examples including: individual/skeleton ID, sediment core IDs, extract batch, library batch, sequencing run etc.. 
+      These IDs should always act as 'umbrella' IDs that allow association with entries processed together, to allow for downstream analyses of batch effects.
+      Ideally, the information should indicate or specify what type of batch the ID is describing.
+    title: batch identifiers
+    examples:
+      - value: "EXTB1;LIBB2;SeqRun1"
+      - value: "Extraction batch: 1"
+      - value: "20260501-A2 (extraction);20202607-B2 (library)"
+      - value: "ExtrMG;LibMG;SeqMG"
+      - value: "Core: North-East Greenland 73G"
+    in_subset:
+      - nucleic acid sequence source
+    keywords:
+      - identifiers
+    slot_uri: MIXS:999999939 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
+  stratig_context:
+    annotations:
+      Expected_value: Stratigraphic context that the sample was retrieved from
+    description: >-
+      Associated stratigraphic context(s) that the sample was retrieved from, usually from an archaeological or palaeontological excavation. Description(s) or identifier(s) of stratigraphic units or layer names within and/or relative to the site (e.g., stratigraphic unit ID, archaeological feature ID, layer name or a description, grid location).
+    title: stratigraphic context
+    examples:
+      - value: "Layer 5"
+      - value: "Layer UE"
+      - value: "Horizon IIc, Quadrant 77"
+      - value: "HF_23447_77_410_IIc"
+      - value: "KrSp C2/2011/B5"
+      - value: "US10"
+      - value: "YSL"
+      - value: "Subunit 1"
+      - value: "Black Mousterian (BM)"
+    in_subset:
+      - environment
+    keywords:
+      - identifiers
+      - excavation
+    slot_uri: MIXS:999999934 #Not assigned
+    multivalued: true
+    range: string
+    required: false
+    recommended: false
+  column_sample_depth:
+    annotations:
+      Expected_value: depth of the sample in the column of a stratigraphy or sediment core
+    description: >-
+      Distance relative to the top or beginning of the sediment core or stratigraphic sequence (defined by the term 'depth') from which the sample was taken.
+      This is not necessarily the same as the depth from floor level or Mean Sea Level (MSL) (which should be defined using the term: depth), as a core could start part way below the surface.
+      Can also be a range if the depth of the sample is not precisely measured.
+    title: sample depth in column
+    examples:
+      - value: "34 cm"
+      - value: "23 - 56 cm"
+      - value: "100 in"
+    in_subset:
+      - environment
+    keywords:
+      - environment
+      - core
+      - sediment
+    slot_uri: MIXS:999999933 #Not assigned
+    multivalued: false
+    range: string
+    required: false
+    recommended: false
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
 classes:
   MixsCompliantData:
     description:
@@ -1054,6 +1129,11 @@ classes:
       - data_filt_applied
       - library_name
       - desc_read_state
+      - batch_ids
+      - stratig_context
+      - column_sample_depth
+      - orig_site_lat
+      - orig_site_long
     slot_usage:
       site_name:
         rank: 1
@@ -1188,6 +1268,22 @@ classes:
       desc_read_state:
         rank: 41
         slot_group: sequencing
+      batch_ids:
+        rank: 41
+        slot_group: sequencing
+      stratig_context:
+        rank: 42
+        slot_group: environment
+      column_sample_depth:
+        rank: 43
+        slot_group: environment
+      orig_site_lat:
+        rank: 44
+        slot_group: environment
+      orig_site_long:
+        rank: 45
+        slot_group: environment
+
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples

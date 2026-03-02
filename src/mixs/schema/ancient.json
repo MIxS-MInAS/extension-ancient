@@ -52,7 +52,7 @@
                     ]
                 },
                 "context_retrieval_date": {
-                    "description": "Date of excavation or retrieval from burial or depositional context, if known. If excavations were done during a  longer period, report its midpoint at a month or year level. In case no exact time is available, the date can be  right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23;  2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. ",
+                    "description": "Date of excavation or retrieval from burial or depositional context, if known. If excavations were done during a  longer period, report its midpoint at a month or year level. In case no exact time is available, the date can be  right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23;  2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.",
                     "format": "date-time",
                     "type": [
                         "string",
@@ -67,11 +67,8 @@
                     ]
                 },
                 "damage_treatment": {
-                    "description": "Indication of whether characteristic ancient DNA damage has been  altered or removed from a DNA extract in a laboratory",
-                    "items": {
-                        "$ref": "#/$defs/DamageTreatmentEnum"
-                    },
-                    "type": "array"
+                    "$ref": "#/$defs/DamageTreatmentEnum",
+                    "description": "Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory. If damage has been removed, but whether it was fully or partially removed is unknown (e.g. with UDG treatment) - specify 'other', and describe known information in `experimental_sop` and related free text descriptive terms."
                 },
                 "data_filt_applied": {
                     "description": "Specify whether associated data was filtered prior to upload, such as host reads removal.",
@@ -111,10 +108,10 @@
                 },
                 "geological_epoch": {
                     "$ref": "#/$defs/GeolEpochEnum",
-                    "description": "The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies."
+                    "description": "The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies. NOTE: This term is for geological timescales. For more precise or anthropogenic defined periods, use `Cultural Era`."
                 },
                 "host_preserv_state": {
-                    "description": "Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment or in the context museomics (eg. taxidermied or pinned), e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.",
+                    "description": "Description of the state of the sampled (ancient) organism/host as originally  preserved in the burial environment at the time of or immediately following death. This can be both natural or artificial, such as mummification or burning for funerary purposes.",
                     "type": [
                         "string",
                         "null"
@@ -122,7 +119,10 @@
                 },
                 "latest_chrono_age": {
                     "description": "The minimum/latest/youngest possible age of a specimen as determined by a dating method.",
-                    "type": "integer"
+                    "items": {
+                        "type": "integer"
+                    },
+                    "type": "array"
                 },
                 "latest_chrono_sys": {
                     "description": "The reference system associated with the chrono:latest_chrono_age.",
@@ -182,10 +182,7 @@
                 },
                 "neg_cont_status": {
                     "description": "Specify whether the sample is a negative control or not.",
-                    "type": [
-                        "boolean",
-                        "null"
-                    ]
+                    "type": "boolean"
                 },
                 "nucl_acid_extr_date": {
                     "description": "The date when the nucleic acid extraction was started from the sample material. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
@@ -294,7 +291,7 @@
                     ]
                 },
                 "samp_decont_pretreat": {
-                    "description": "Method(s) employed for surface decontamination of samples of external  modern nucleic acids; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
+                    "description": "Protocols employed for sample surface decontamination of external  modern nucleic acids; Treatment used on the samples immediately prior to nucleic acid extraction. Dependant on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
                     "items": {
                         "pattern": "^{PMID}|{DOI}|{URL}$",
                         "type": "string"
@@ -305,7 +302,7 @@
                     ]
                 },
                 "samp_preserv_treatm": {
-                    "description": "Description of any treatment applied to samples for the purpose of maximising collection preservation that may influence downstream nucleic acid recovery or library construction, such as storage fluid or reconstructive glue",
+                    "description": "Description of any treatment applied directly to samples for the specific purpose of  maximising longevity of sample preservation in archives and/or collections by curators  that may influence downstream nucleic acid recovery or library construction, such as storage fluid or  reconstructive glue.",
                     "items": {
                         "type": "string"
                     },
@@ -325,7 +322,7 @@
                     ]
                 },
                 "storage_conditions": {
-                    "description": "General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
+                    "description": "General surrounding environmental conditions where the material was stored in long-term collection storage prior sampling for nucleic acid analysis  that may influence nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
                     "type": [
                         "string",
                         "null"
@@ -334,6 +331,7 @@
             },
             "required": [
                 "damage_treatment",
+                "neg_cont_status",
                 "latest_chrono_age",
                 "latest_chrono_sys",
                 "earliest_chrono_age",
