@@ -1131,8 +1131,8 @@ classes:
       - capture_probe_desc
       - mid_config
       - site_name
-      - site_longitude
-      - site_latitude
+     - orig_site_lat
+     - orig_site_lon
       - data_filt_applied
       - library_name
       - desc_read_state
