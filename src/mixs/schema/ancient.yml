@@ -897,7 +897,7 @@ slots:
     range: string
     required: false
     recommended: true
-  orig_site_long:
+  orig_site_lon:
     description: >-
       The longitude of original geographical origin of the sample, when sampled outside it's original natural environment.
       The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
@@ -1133,15 +1133,15 @@ classes:
       - stratig_context
       - column_sample_depth
       - orig_site_lat
-      - orig_site_long
+      - orig_site_lon
     slot_usage:
       site_name:
         rank: 1
         slot_group: environment
-      site_longitude:
+      orig_site_lat:
         rank: 2
         slot_group: environment
-      site_latitude:
+      orig_site_lon:
         rank: 3
         slot_group: environment
       past_env_broad:
@@ -1280,7 +1280,7 @@ classes:
       orig_site_lat:
         rank: 44
         slot_group: environment
-      orig_site_long:
+      orig_site_lon:
         rank: 45
         slot_group: environment
 
