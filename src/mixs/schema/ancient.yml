@@ -1037,6 +1037,7 @@ classes:
       - data_filt_applied
       - library_name
       - desc_read_state
+      - batch_ids
     slot_usage:
       site_name:
         rank: 1
