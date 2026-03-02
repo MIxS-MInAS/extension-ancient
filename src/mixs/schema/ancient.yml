@@ -955,7 +955,7 @@ slots:
     description: >-
       Identifiers for any form of batch or 'group' that the samples is associated with, examples including: individual/skeleton ID, sediment core IDs, extract batch, library batch, sequencing run etc.. 
       These IDs should always act as 'umbrella' IDs that allow association with entries processed together, to allow for downstream analyses of batch effects.
-      Ideally, the information should inidicate or specify what type of batch the ID is describing.
+      Ideally, the information should indicate or specify what type of batch the ID is describing.
     title: batch identifiers
     examples:
       - value: "EXTB1;LIBB2;SeqRun1"
