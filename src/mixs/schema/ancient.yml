@@ -906,6 +906,8 @@ slots:
     title: original geographic location (longitude)
     examples:
       - value: "6.408977"
+      - value: "-12.12" 
+      
     slot_uri: MIXS:999999934 #Not assigned
     multivalued: false
     required: false
@@ -923,6 +925,7 @@ slots:
     title: original geographic location (latitude)
     examples:
       - value: "50.586825"
+      - value: "-0.123" 
     slot_uri: MIXS:999999935 #Not assigned
     multivalued: false
     required: false
