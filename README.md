@@ -39,6 +39,8 @@ The repo is laid out as follows:
 7. Generate the 'old style' MIxS checklist
    - `./scripts/linkml2class_tsvs.py --schema-file src/mixs/schema/ancient.yml --output-dir project/class-model-tsvs/`
 8. Open PR with highly informative PR title (this will be used for auto-changelog)
+    - New terms should be of structure: `New term: `<name of term>``
+    - Term changes/updates should be of structure `Update `<name of term>` to <description of term`
 
 ## Release workflow
 
@@ -48,7 +50,9 @@ The repo is laid out as follows:
 2. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
    - Tag: vX.X.X
    - Title: vX.X.X
-   - Generate release notes based on a cleaned up `git log --oneline` that has the git hash and the informative commit message
+   - Generate release notes
+       - New style: use 'Generate release notes' and clean up PR titles
+       - Old style: base on a cleaned up `git log --oneline` that has the git hash and the informative commit message
    - Set as latest
 3. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 
