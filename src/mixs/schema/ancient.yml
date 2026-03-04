@@ -467,6 +467,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999912 #Not assigned
+    multivalued: true
     range: datetime
     required: false
     recommended: true
