@@ -615,6 +615,7 @@ slots:
     keywords:
       - ancient
       - age
+    range: string
     string_serialization: "{termLabel} [{termID}]|{text}"
     slot_uri: MIXS:999999920 #Not assigned
     multivalued: false
@@ -656,7 +657,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999922 #Not assigned
-    exact_mappings:
+    broad_mappings:
       - chrono:earliestChronometricAge
     multivalued: false
     range: integer
@@ -696,7 +697,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999924 #Not assigned
-    exact_mappings:
+    broad_mappings:
       - chrono:latestChronometricAge
     multivalued: false
     range: integer
