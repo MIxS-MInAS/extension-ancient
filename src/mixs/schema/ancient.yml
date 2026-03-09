@@ -275,6 +275,8 @@ slots:
       For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to  orig_site_loc, not the collection itself as recorded in site_name).
       The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
     title: original geographic location (latitude)
+    in_subset:
+      - environment
     examples:
       - value: "50.586825"
       - value: "-0.123"
@@ -296,6 +298,8 @@ slots:
     examples:
       - value: "6.408977"
       - value: "-12.12"
+    in_subset:
+      - environment
     slot_uri: MIXS:999999904 #Not assigned
     multivalued: false
     required: false
@@ -467,6 +471,7 @@ slots:
     in_subset:
       - investigation
     slot_uri: MIXS:999999912 #Not assigned
+    multivalued: true
     range: datetime
     required: false
     recommended: true
@@ -521,6 +526,8 @@ slots:
     multivalued: true
     range: string
     string_serialization: "{text}"
+    required: false
+    recommended: false
   prev_pubs:
     description: >-
       Any publications that report data from the same body/skeleton/individual
@@ -537,9 +544,12 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
+    required: false
+    recommended: false
   host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host at time/immediately after death.
+    title: preservation state of sampled organism/host at/immediately after death
     description: >-
       Description of the state of the sampled (ancient) organism/host as originally 
       preserved in the burial environment at the time of or immediately following death.
@@ -613,6 +623,7 @@ slots:
     keywords:
       - ancient
       - age
+    range: string
     string_serialization: "{termLabel} [{termID}]|{text}"
     slot_uri: MIXS:999999920 #Not assigned
     multivalued: false
@@ -654,7 +665,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999922 #Not assigned
-    exact_mappings:
+    broad_mappings:
       - chrono:earliestChronometricAge
     multivalued: false
     range: integer
@@ -694,7 +705,7 @@ slots:
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999924 #Not assigned
-    exact_mappings:
+    broad_mappings:
       - chrono:latestChronometricAge
     multivalued: false
     range: integer
@@ -853,6 +864,7 @@ slots:
     slot_uri: MIXS:999999932 #Not assigned
     multivalued: false
     range: DamageTreatmentEnum ## or name of defined enum as above
+    recommended: true
     required: true
   nucl_acid_extr_date:
     description: >-
@@ -884,6 +896,8 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
+    required: false
+    recommended: false
   mid_config:
     annotations:
       Expected_value: Description of the indexing configuration of the library
@@ -996,6 +1010,8 @@ slots:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
+    required: false
+    recommended: false
   num_reamp_cycles:
     description: >-
       Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.
@@ -1017,6 +1033,8 @@ slots:
     slot_uri: MIXS:999999942 #Not assigned
     range: integer
     multivalued: true
+    required: false
+    recommended: false
   capture_probe_taxid:
     annotations:
       Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
