@@ -356,7 +356,7 @@ slots:
     slot_uri: MIXS:999999906 #Not assigned
     required: false
     recommended: true
-  stratig_context:
+  stratigraph_context:
     annotations:
       Expected_value: Stratigraphic context that the sample was retrieved from
     description: >-
@@ -1149,7 +1149,7 @@ classes:
       - orig_site_lon
       - past_env_broad
       - past_env_local
-      - stratig_context
+      - stratigraph_context
       - column_sample_depth
       - context_retrieval_date
       - permit_id
@@ -1211,7 +1211,7 @@ classes:
       context_retrieval_date:
         slot_group: Environment
         rank: 7
-      stratig_context:
+      stratigraph_context:
         slot_group: Environment
         rank: 8
       column_sample_depth:
