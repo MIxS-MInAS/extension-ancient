@@ -31,7 +31,7 @@ The repo is laid out as follows:
 4. Coordination team cross-reviews the two PRs and merge in
 5. Run validation (TO BE AUTOMATED)
    - `linkml lint --config linkml-lint-config.yml src/mixs/schema/ancient.yml`: to ensure there are no _errors_ or important missing information about or misformatting of each term (slot)
-   - `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file [NOT YET IMPLEMENTED]
+   - [NOT YET IMPLEMENTED] `linkml validate -s <schema>.yaml --target-class Ancient <test_data>.csv`: checks that the schema can be used against an actual metadata test file
 6. In a new PR, generate additional JSON and TSV files based on instructions on technical notes (containing all changes/new terms)
    - `gen-csv src/mixs/schema/ancient.yml > src/mixs/schema/ancient.csv`: checks that the schema can be converted to a basic CSV format
    - `gen-json-schema src/mixs/schema/ancient.yml > src/mixs/schema/ancient.json` checks that the schema can be converted to a basic JSON format
@@ -42,6 +42,8 @@ The repo is laid out as follows:
    - `linkml generate doc src/mixs/schema/ancient.yml -d docs/ --template-directory src/docs-template/`
    - If you have mkdocs installed, you can test locally with `mkdocs serve`
 9. Open PR with highly informative PR title (this will be used for auto-changelog)
+    - New terms should be of structure: `New term: `<name of term>``
+    - Term changes/updates should be of structure `Update `<name of term>` to <description of term`
 
 ## Release workflow
 
@@ -51,7 +53,9 @@ The repo is laid out as follows:
 2. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
    - Tag: vX.X.X
    - Title: vX.X.X
-   - Generate release notes based on a cleaned up `git log --oneline` that has the git hash and the informative commit message
+   - Generate release notes
+       - New style: use 'Generate release notes' and clean up PR titles
+       - Old style: base on a cleaned up `git log --oneline` that has the git hash and the informative commit message
    - Set as latest
 3. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 

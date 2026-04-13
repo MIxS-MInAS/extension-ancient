@@ -4,13 +4,76 @@
             "additionalProperties": false,
             "description": "A collection of terms appropriate when collecting samples and sequencing samples  of data containing ancient nucleic acids, i.e., degraded molecules not from living organisms.",
             "properties": {
-                "biocultural_label": {
-                    "description": "Relevant biocultural labels defined by the local contexts project (https://localcontexts.org/label/bc-provenance/) that describe in what ways this data can be reused, as permitted by any associated native or indigenous peoples or communities.",
+                "batch_ids": {
+                    "description": "Identifiers for any form of batch or 'group' that the samples is associated with, examples including: individual/skeleton ID, sediment core IDs, extract batch, library batch, sequencing run etc..  These IDs should always act as 'umbrella' IDs that allow association with entries processed together, to allow for downstream analyses of batch effects. Ideally, the information should indicate or specify what type of batch the ID is describing.",
                     "items": {
-                        "$ref": "#/$defs/BioCulturalLabel"
+                        "type": "string"
                     },
                     "type": [
                         "array",
+                        "null"
+                    ]
+                },
+                "biocultural_label": {
+                    "description": "Relevant biocultural labels defined by the local contexts project (https://localcontexts.org/label/bc-provenance/) that describe in what ways this data can be reused, as permitted by any associated native or indigenous peoples or communities.",
+                    "items": {
+                        "$ref": "#/$defs/BioCulturalLabelEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "capture_probe_desc": {
+                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "capture_probe_taxid": {
+                    "description": "NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "chrono_age_protocol": {
+                    "description": "A description of or reference to the methods used to determine the earliest_chrono_age and latest_chrono_age.",
+                    "items": {
+                        "$ref": "#/$defs/ChronoAgeProtocolEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "chrono_age_remarks": {
+                    "description": "Notes or comments about the  earliest_chrono_age and latest_chrono_age. For more detail use Chronometric Age Protocol to point to original publication describing method. Useful to specify confidence and/or accuracy of reported date.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "column_sample_depth": {
+                    "description": "Distance relative to the top or beginning of the sediment core or stratigraphic sequence (defined by the term 'depth') from which the sample was taken. This is not necessarily the same as the depth from floor level or Mean Sea Level (MSL) (which should be defined using the term: depth), as a core could start part way below the surface. Can also be a range if the depth of the sample is not precisely measured.",
+                    "pattern": "^[-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?)? *.*$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "context_retrieval_date": {
+                    "description": "Date of excavation or retrieval from burial or depositional context, if known. If excavations were done during a  longer period, report its midpoint at a month or year level. In case no exact time is available, the date can be  right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23;  2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
@@ -22,11 +85,8 @@
                     ]
                 },
                 "damage_treatment": {
-                    "description": "Indication of whether characteristic ancient DNA damage has been  altered or removed from a DNA extract in a laboratory",
-                    "items": {
-                        "$ref": "#/$defs/DamageTreatmentEnum"
-                    },
-                    "type": "array"
+                    "$ref": "#/$defs/DamageTreatmentEnum",
+                    "description": "Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory. If damage has been removed, but whether it was fully or partially removed is unknown (e.g. with UDG treatment) - specify 'other', and describe known information in `experimental_sop` and related free text descriptive terms."
                 },
                 "data_filt_applied": {
                     "description": "Specify whether associated data was filtered prior to upload, such as host reads removal.",
@@ -42,31 +102,19 @@
                         "null"
                     ]
                 },
-                "experimental_procedures": {
+                "earliest_chrono_age": {
+                    "description": "The maximum/earliest/oldest possible age of a specimen as determined by a dating method. If multiple dating measurements available, use the most earliest/oldest date to provide widest range of age possibilities. The specific age unit should be specified by the term earliest_chrono_sys. More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.",
+                    "type": "integer"
+                },
+                "earliest_chrono_sys": {
+                    "$ref": "#/$defs/ChronoAgeSysEnum",
+                    "description": "The reference system associated with the earliest_chrono_age."
+                },
+                "experimental_sop": {
                     "description": "Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data.",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^PMID:\\d+|doi:10.\\d{2,9}/.*|https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
                         "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "genomic_capture_probe_desc": {
-                    "description": "Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "genomic_capture_probe_taxid": {
-                    "description": "NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.",
-                    "items": {
-                        "type": "integer"
                     },
                     "type": [
                         "array",
@@ -74,18 +122,23 @@
                     ]
                 },
                 "geological_epoch": {
-                    "description": "The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies.",
+                    "$ref": "#/$defs/GeolEpochEnum",
+                    "description": "The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies. NOTE: This term is for geological timescales. For more precise or anthropogenic defined periods, use `Cultural Era`."
+                },
+                "host_preserv_state": {
+                    "description": "Description of the state of the sampled (ancient) organism/host as originally  preserved in the burial environment at the time of or immediately following death. This can be both natural or artificial, such as mummification or burning for funerary purposes.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
-                "host_body_preservation_state": {
-                    "description": "Description of the state of the sampled (ancient) organism/host as originally preserved in the burial environment or in the context museomics (eg. taxidermied or pinned), e.g. if the the sample was artificially or naturally (fully/partially) mummified at the time of death.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                "latest_chrono_age": {
+                    "description": "The minimum/latest/youngest possible age of a specimen as determined by a dating method. If multiple dating measurements available, use the most latest/youngest date to provide widest range of age possibilities. The specific age unit should be specified by the term latest_chrono_sys. More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.",
+                    "type": "integer"
+                },
+                "latest_chrono_sys": {
+                    "$ref": "#/$defs/ChronoAgeSysEnum",
+                    "description": "The reference system associated with the latest_chrono_age."
                 },
                 "lib_polymerase": {
                     "description": "The polymerase enzyme used for building nucleic acid libraries.",
@@ -94,10 +147,10 @@
                         "null"
                     ]
                 },
-                "lib_preparation_protocol": {
+                "lib_preparation_sop": {
                     "description": "Citation(s) for the nucleic acid library preparation protocol.",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^PMID:\\d+|doi:10.\\d{2,9}/.*|https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
                         "type": "string"
                     },
                     "type": [
@@ -108,12 +161,9 @@
                 "lib_strandedness": {
                     "description": "The strandedness of the original template nucleic acid molecules used for constructing the sequencing library",
                     "items": {
-                        "$ref": "#/$defs/LibStrand"
+                        "$ref": "#/$defs/LibStrandEnum"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "lib_type": {
                     "$ref": "#/$defs/LibTypeEnum",
@@ -141,12 +191,9 @@
                 },
                 "neg_cont_status": {
                     "description": "Specify whether the sample is a negative control or not.",
-                    "type": [
-                        "boolean",
-                        "null"
-                    ]
+                    "type": "boolean"
                 },
-                "nuc_acid_extraction_date": {
+                "nucl_acid_extr_date": {
                     "description": "The date when the nucleic acid extraction was started from the sample material. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant",
                     "format": "date-time",
                     "type": [
@@ -154,7 +201,7 @@
                         "null"
                     ]
                 },
-                "num_capture_amp_cycles": {
+                "num_capture_cycles": {
                     "description": "Number of amplification cycles after capture enrichment",
                     "items": {
                         "type": "integer"
@@ -171,6 +218,40 @@
                         "null"
                     ]
                 },
+                "orig_site_lat": {
+                    "description": "The latitude coordinate of the original geographical origin of the sample, e.g. the original place the sample was buried, deposited, or formed. In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as geo_loc_name, and lat_lon.  For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to  orig_site_loc, not the collection itself as recorded in site_name). The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.",
+                    "pattern": "^(-?((?:[0-8]?[0-9](?:\\.\\d{0,8})?)|90))$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "orig_site_loc": {
+                    "description": "The original geographical origin of the sample, when sampled outside its original natural environment (e.g. sampled in a museum collection), as defined by the country or sea name followed by specific region name.  Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ).",
+                    "pattern": "^([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+): ([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+), ([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "orig_site_lon": {
+                    "description": "The longitude coordinate of the original geographical origin of the sample, e.g. the original place the sample was buried, deposited, or formed. In cases where the sample was directly sampled in the burial environment for the purposes of scientific investigation, this will be the same as geo_loc_name, and lat_lon.  For samples kept in collections, the geo_loc_name and lat_lon terms are used to refer to the collection where the sample is stored, but this term is used for the original geographic location the sample existed in prior to archiving in a collection (i.e., should correspond to orig_site_loc, not the collection itself, as recorded in site_name). The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.",
+                    "pattern": "^-?[0-9]+(?:\\.[0-9]{0,8})?$|^-?(1[0-7]{1,2})$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "orig_site_name": {
+                    "description": "Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected. Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature. Typically names that would not be found on official maps. If the site name is unclear please use the name of the closest location or region as best as possible. Can also include different transliterations or languages used in the literature.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "palaeopath_status": {
                     "description": "Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.",
                     "type": [
@@ -180,7 +261,7 @@
                 },
                 "past_env_broad": {
                     "description": "Report information about the general ancient broad environmental system that the sample or specimen existed or lived within, as it was at the time of deposition or burial (e.g. in the desert or a forest). This should not describe the environment as it is today (e.g. farmland), but specifically the state as it was in the past (i.e. the palaeo- or (pre)historical ecosystem). Compared to `env_broad_scale` which is taken from direct observation, the information about the past environment will normally be derived from inference from archaeological, palaeontological, geological, or other scientific methods. We recommend using subclasses of EnvO s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field for present day equivalents: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS\"",
-                    "pattern": "^([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+) \\[{termID}\\]$",
+                    "pattern": "^([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+) \\[[a-zA-Z][a-zA-Z0-9._]*:[a-zA-Z0-9]+\\]$",
                     "type": [
                         "string",
                         "null"
@@ -205,9 +286,12 @@
                 },
                 "permit_date": {
                     "description": "Date on which a permit was granted. The date can be right truncated i.e. all of these are valid times: 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant.",
-                    "format": "date-time",
+                    "items": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
@@ -231,73 +315,16 @@
                         "null"
                     ]
                 },
-                "preservational_treatment": {
-                    "description": "Description of any treatment applied to samples for the purpose of  maximising collection preservation that may influence downstream  nucleic acid recovery or library construction, such as storage fluid or  reconstructive glue",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "prev_pubs": {
                     "description": "Any publications that report data from the same body/skeleton/individual",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^PMID:\\d+|doi:10.\\d{2,9}/.*|https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
                         "type": "string"
                     },
                     "type": [
                         "array",
                         "null"
                     ]
-                },
-                "recovery_date": {
-                    "description": "Date of excavation or retrieval from burial or depositional context, if known. In case no exact time is available, the date can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. If excavations were done during a longer period, report its midpoint at a month or year level.",
-                    "format": "date-time",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "samp_age_range_inference_description": {
-                    "description": "Additional general information about the inference method used to infer the sample age that can be useful for understanding how the sample age was estimated. This can be things such as whether radiocarbon age estimated on AMS or conventional radiocarbon dating, or which calibration confidence interval was used. It can also be used to describe what artefacts were used to age the stratigraphic layer of historical contexts. Include any relevant additional citations to the dating method here.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "samp_age_range_inference_methods": {
-                    "description": "The method used to infer the sample age. This corresponds to a fixed list of most commonly used dating methods, such as radiocarbon dating, optically stimulated infrared luminescence, associated absolute dating (e.g. directly dated bone in same context), contextual dating (e.g. stratigraphic inference, or coin), historical records, other etc.). If the method is not in the list, please provide a description in samp_age_range_inference_description.",
-                    "items": {
-                        "$ref": "#/$defs/SampAgeInferMethod"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "samp_age_range_oldest_limit": {
-                    "description": "The oldest possible age of the sample in years, with the specific year unit defined in samp_age_range_oldest_unit. Oldest refers to the time furthest from present day. Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age. If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit. Use a date that is as specific to the sample as possible (e.g., prefer direct dates over rough relative estimates). If the sample age is unknown, give a broad range in a reasonable timeframe, and justify in samp_age_range_inference_description.",
-                    "type": "integer"
-                },
-                "samp_age_range_oldest_unit": {
-                    "description": "The unit of the oldest age in sample age range.",
-                    "items": {
-                        "$ref": "#/$defs/SampAgeUnit"
-                    },
-                    "type": "array"
-                },
-                "samp_age_range_youngest_limit": {
-                    "description": "The youngest possible age of the sample in years, with the specific year unit defined in samp_age_range_youngest_unit. Youngest refers to the time closest to present day. Sample age refers to a period of time in the past, such as when an organism was living and then died, not the biological age. If a sample has only a single age value use this value in both samp_age_range_oldest_limit and samp_age_range_youngest_limit. Specify a date that is as specific to the sample as possible (e.g. prefer direct dates over rough relative estimates). If the sample age is unknown, give a broad range in a reasonable timeframe and justify in samp_age_range_inference_description.",
-                    "type": "integer"
-                },
-                "samp_age_range_youngest_unit": {
-                    "description": "The unit of the youngest age in the sample age range.",
-                    "items": {
-                        "$ref": "#/$defs/SampAgeUnit"
-                    },
-                    "type": "array"
                 },
                 "samp_alt_lab_ids": {
                     "description": "An alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts.",
@@ -309,10 +336,10 @@
                         "null"
                     ]
                 },
-                "samp_decontam_pretreat": {
-                    "description": "Method(s) employed for surface decontamination of samples of external  modern nucleic acids; Treatment used on the samples. Depends on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
+                "samp_decont_pretreat": {
+                    "description": "Protocols employed for sample surface decontamination of external  modern nucleic acids; Treatment used on the samples immediately prior to nucleic acid extraction. Dependant on the sample type.  More relevant for bones than environmental samples. E.g. buffers, EDTA, etc.",
                     "items": {
-                        "pattern": "^{PMID}|{DOI}|{URL}$",
+                        "pattern": "^PMID:\\d+|doi:10.\\d{2,9}/.*|https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
                         "type": "string"
                     },
                     "type": [
@@ -320,18 +347,8 @@
                         "null"
                     ]
                 },
-                "site_name": {
-                    "description": "Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected. Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature. Typically names that would not be found on official maps. Can also include different transliterations or languages used in the literature.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "source_mat_curat_insti": {
-                    "description": "Name of the institutions, archives, or repositories that typically store or archive the specimen or object that was sampled for nucleic acid extraction. Typically will be the 'owning institution'. Multiple responsible or relevant institutions can be specified, for the purpose of requesting access to the original source material.",
+                "samp_preserv_treatm": {
+                    "description": "Description of any treatment applied directly to samples for the specific purpose of  maximising longevity of sample preservation in archives and/or collections by curators  that may influence downstream nucleic acid recovery or library construction, such as storage fluid or  reconstructive glue.",
                     "items": {
                         "type": "string"
                     },
@@ -341,42 +358,86 @@
                     ]
                 },
                 "storage_conditions": {
-                    "description": "General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
+                    "description": "General surrounding environmental conditions where the material was stored in long-term collection storage prior sampling for nucleic acid analysis  that may influence nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc..",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "stratig_context": {
+                    "description": "Associated stratigraphic context(s) that the sample was retrieved from, usually from an archaeological or palaeontological excavation. Description(s) or identifier(s) of stratigraphic units or layer names within and/or relative to the site (e.g., stratigraphic unit ID, archaeological feature ID, layer name or a description, grid location).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
             },
             "required": [
+                "earliest_chrono_age",
+                "earliest_chrono_sys",
+                "latest_chrono_age",
+                "latest_chrono_sys",
+                "neg_cont_status",
                 "damage_treatment",
-                "samp_age_range_youngest_limit",
-                "samp_age_range_youngest_unit",
-                "samp_age_range_oldest_limit",
-                "samp_age_range_oldest_unit"
+                "lib_strandedness"
             ],
             "title": "Ancient",
             "type": "object"
         },
-        "BioCulturalLabel": {
-            "description": "",
+        "BioCulturalLabelEnum": {
+            "description": "Options defining community expectations about the appropriate use of the sequencing data, as specified by the LocalContexts project (https://localcontexts.org/labels/biocultural-labels/).",
             "enum": [
-                "BC P",
-                "BC MC",
-                "BC CL",
-                "BC CV",
-                "BC CNV",
-                "BC R",
-                "BC CB",
-                "BC OC",
-                "BC O",
-                "BC NC"
+                "Biocultural Provenance Label (BC P):",
+                "Biocultural Multiple Communities Label (BC MC)",
+                "Biocultural Clan Label (BC CL)",
+                "Biocultural Consent Verified Label (BC CV)",
+                "Biocultural Consent Non-Verified Label (BC CNV)",
+                "Biocultural Research Use Label (BC R)",
+                "Biocultural Open to Collaboration Label (BC CB)",
+                "Biocultural Open to Commercialisation Label (BC OC)",
+                "Biocultural Outreach Label (BC O)",
+                "Biocultural Non-Commercial Label (BC NC)"
             ],
-            "title": "BioCulturalLabel",
+            "title": "BioCulturalLabelEnum",
+            "type": "string"
+        },
+        "ChronoAgeProtocolEnum": {
+            "description": "Options for methods to determine the age at time of death of an organism or the date of sample deposition.",
+            "enum": [
+                "radiocarbon dating",
+                "optically stimulated infrared luminescence",
+                "amino acid racemisation",
+                "electron spin resonance",
+                "uranium thorium",
+                "age-depth modelling",
+                "contextual dating",
+                "associated absolute dating",
+                "historical records",
+                "other"
+            ],
+            "title": "ChronoAgeProtocolEnum",
+            "type": "string"
+        },
+        "ChronoAgeSysEnum": {
+            "description": "Options for specifying the chonometric age reference or timescale of a date.",
+            "enum": [
+                "BCE",
+                "CE",
+                "BP",
+                "cal BP",
+                "cal BCE",
+                "cal CE",
+                "ka",
+                "Ma"
+            ],
+            "title": "ChronoAgeSysEnum",
             "type": "string"
         },
         "DamageTreatmentEnum": {
-            "description": "",
+            "description": "Options for types of molecular damage removal during library construction of ancient DNA libraries.",
             "enum": [
                 "no-removal",
                 "partial-removal",
@@ -393,17 +454,62 @@
             "title": "Extension",
             "type": "object"
         },
-        "LibStrand": {
-            "description": "",
+        "GeolEpochEnum": {
+            "description": "Chronometric epochs defined by the International Chronostratigraphic Chart (v2024-12) of the International Commission on Stratigraphy (https://stratigraphy.org/chart/).",
+            "enum": [
+                "Holocene",
+                "Pleistocene",
+                "Pliocene",
+                "Miocene",
+                "Oligocene",
+                "Eocene",
+                "Paleocene",
+                "Late Cretaceous",
+                "Early Cretaceous",
+                "Late Jurassic",
+                "Middle Jurassic",
+                "Early Jurassic",
+                "Late Triassic",
+                "Middle Triassic",
+                "Early Triassic",
+                "Lopingian",
+                "Guadalupian",
+                "Cisuralian",
+                "Late Pennsylvanian",
+                "Middle Pennsylvanian",
+                "Early Pennsylvanian",
+                "Late Mississippian",
+                "Middle Mississippian",
+                "Early Mississippian",
+                "Late Devonian",
+                "Middle Devonian",
+                "Early Devonian",
+                "Pridoli",
+                "Ludlow",
+                "Wenlock",
+                "Llandovery",
+                "Late Ordovician",
+                "Middle Ordovician",
+                "Early Ordovician",
+                "Furongian",
+                "Miaolingian",
+                "Cambrian Epoch 2",
+                "Terreneuvian"
+            ],
+            "title": "GeolEpochEnum",
+            "type": "string"
+        },
+        "LibStrandEnum": {
+            "description": "Options for the strandedness of the input 'template' DNA molecules used for DNA library construction.",
             "enum": [
                 "single",
                 "double"
             ],
-            "title": "LibStrand",
+            "title": "LibStrandEnum",
             "type": "string"
         },
         "LibTypeEnum": {
-            "description": "",
+            "description": "Options for types of DNA that have been targeted for DNA library construction.",
             "enum": [
                 "amplicon",
                 "enriched",
@@ -429,37 +535,6 @@
             },
             "title": "MixsCompliantData",
             "type": "object"
-        },
-        "SampAgeInferMethod": {
-            "description": "",
-            "enum": [
-                "radiocarbon dating",
-                "optically stimulated infrared luminescence",
-                "amino acid racemisation",
-                "electron spin resonance",
-                "uranium thorium",
-                "contextual dating",
-                "associated absolute dating",
-                "historical records",
-                "other"
-            ],
-            "title": "SampAgeInferMethod",
-            "type": "string"
-        },
-        "SampAgeUnit": {
-            "description": "",
-            "enum": [
-                "BCE",
-                "CE",
-                "BP",
-                "cal BP",
-                "cal BCE",
-                "cal CE",
-                "ka",
-                "Ma"
-            ],
-            "title": "SampAgeUnit",
-            "type": "string"
         }
     },
     "$id": "https://w3id.org/mixs",
