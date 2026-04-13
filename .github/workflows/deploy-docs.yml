@@ -29,6 +29,7 @@ jobs:
                   environment-file: environment.yaml
                   activate-environment: mixs-minas-extension-ancient
                   miniforge-version: latest
+                  auto-activate: true
 
             # Run the LinkML linting command
             - name: Run LinkML Linting
