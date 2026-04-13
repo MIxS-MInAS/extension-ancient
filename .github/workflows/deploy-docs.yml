@@ -22,7 +22,7 @@ jobs:
                   python-version: "3.10"
 
             - name: Install conda
-              uses: conda-incubator/setup-miniconda@v2
+              uses: conda-incubator/setup-miniconda@v3
               with:
                   auto-update-conda: true
                   python-version: "3.10"
@@ -32,6 +32,7 @@ jobs:
 
             # Run the LinkML linting command
             - name: Run LinkML Linting
+              shell: bash -el {0}
               run: |
                   touch docs/.nojekyll
                   linkml generate doc src/mixs/schema/ancient.yml -d docs/ --template-directory src/docs-template/ -v
