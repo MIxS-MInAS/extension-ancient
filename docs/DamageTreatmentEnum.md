@@ -2,10 +2,14 @@
 
 
 
+
+_Options for types of molecular damage removal during library construction of ancient DNA libraries._
+
+
+
 URI: [MIXS:DamageTreatmentEnum](https://w3id.org/mixs/DamageTreatmentEnum)
 
 ## Permissible Values
-
 | Value | Meaning | Description |
 | --- | --- | --- |
 | no-removal | None | Molecular damage-derived misincorporations have not been removed using labora... |
@@ -21,14 +25,18 @@ URI: [MIXS:DamageTreatmentEnum](https://w3id.org/mixs/DamageTreatmentEnum)
 
 | Name | Description |
 | ---  | --- |
-| [damage_treatment](damage_treatment.md) | Indication of whether characteristic ancient DNA damage has been  altered or ... |
+| [damage_treatment](damage_treatment.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
 
 
 
@@ -49,6 +57,8 @@ URI: [MIXS:DamageTreatmentEnum](https://w3id.org/mixs/DamageTreatmentEnum)
 <details>
 ```yaml
 name: DamageTreatmentEnum
+description: Options for types of molecular damage removal during library construction
+  of ancient DNA libraries.
 from_schema: https://w3id.org/mixs
 rank: 1000
 permissible_values:
@@ -74,7 +84,9 @@ permissible_values:
   other:
     text: other
     description: Other type of damage treatment that are further described in other
-      method description terms.
+      method description terms. If damage has been removed, but whether full or partial
+      is unknown - use this option and describe known information in `experimental_sop`
+      and related free text descriptive terms.
 
 ```
 </details>

@@ -1,11 +1,20 @@
 # Subset: Ethics 
 
+
+_MIxS terms related to ethical considerations, permissions, and approvals associated with a sample or specimen._
+
+
+
 URI: [Ethics](Ethics.md)
 
 
 
-## Identifier and Mapping Information
 
+
+
+
+
+## Identifier and Mapping Information
 
 
 
@@ -33,32 +42,6 @@ URI: [Ethics](Ethics.md)
 
 
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         
 
@@ -68,6 +51,38 @@ URI: [Ethics](Ethics.md)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 

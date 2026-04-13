@@ -5,7 +5,7 @@ _Description of the state of the reads in the sequencing data file. Describe any
 
 
 
-URI: [MIXS:999999933](https://w3id.org/mixs/999999933)
+URI: [MIXS:999999945](https://w3id.org/mixs/999999945)
 
 
 
@@ -81,7 +81,7 @@ rank: 1000
 keywords:
 - data analysis
 - data
-slot_uri: MIXS:999999933
+slot_uri: MIXS:999999945
 alias: desc_read_state
 domain_of:
 - Ancient

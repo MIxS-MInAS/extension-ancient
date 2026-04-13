@@ -38,6 +38,12 @@ URI: [MIXS:MixsCompliantData](https://w3id.org/mixs/MixsCompliantData)
 
 <!-- no inheritance hierarchy -->
 
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Tree Root | Yes |
+
 
 ## Slots
 
@@ -61,8 +67,12 @@ URI: [MIXS:MixsCompliantData](https://w3id.org/mixs/MixsCompliantData)
 
 
 
-## Identifier and Mapping Information
 
+
+
+
+
+## Identifier and Mapping Information
 
 
 

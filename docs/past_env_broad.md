@@ -5,7 +5,7 @@ _Report information about the general ancient broad environmental system that th
 
 
 
-URI: [MIXS:0099999](https://w3id.org/mixs/0099999)
+URI: [MIXS:999999905](https://w3id.org/mixs/999999905)
 
 
 
@@ -75,7 +75,7 @@ keywords:
 - context
 - environmental
 - ancient
-slot_uri: MIXS:0099999
+slot_uri: MIXS:999999905
 alias: past_env_broad
 domain_of:
 - Ancient

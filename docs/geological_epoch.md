@@ -1,11 +1,11 @@
 # Term: geological epoch (geological_epoch) 
 
 
-_The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies._
+_The geological epoch approximating to the period within which the specimen or sample existed. Where possible use terms from ontologies. NOTE: This term is for geological timescales. For more precise or anthropogenic defined periods, use `Cultural Era`._
 
 
 
-URI: [MIXS:999999902](https://w3id.org/mixs/999999902)
+URI: [MIXS:999999921](https://w3id.org/mixs/999999921)
 
 
 
@@ -28,7 +28,7 @@ URI: [MIXS:999999902](https://w3id.org/mixs/999999902)
 
 ## Properties
 
-* Range: [String](String.md)
+* Range: [GeolEpochEnum](GeolEpochEnum.md)
 * Cardinality: 0..1
 
 
@@ -61,8 +61,10 @@ annotations:
   Expected_value:
     tag: Expected_value
     value: ontology term; text
-description: The geological epoch approximating to the period within which the specimen
-  or sample existed. Where possible use terms from ontologies.
+description: 'The geological epoch approximating to the period within which the specimen
+  or sample existed. Where possible use terms from ontologies. NOTE: This term is
+  for geological timescales. For more precise or anthropogenic defined periods, use
+  `Cultural Era`.'
 title: geological epoch
 examples:
 - value: Pleistocene
@@ -75,12 +77,11 @@ rank: 1000
 keywords:
 - ancient
 - age
-string_serialization: '{termLabel} [{termID}]|{text}'
-slot_uri: MIXS:999999902
+slot_uri: MIXS:999999921
 alias: geological_epoch
 domain_of:
 - Ancient
-range: string
+range: GeolEpochEnum
 required: false
 recommended: false
 multivalued: false

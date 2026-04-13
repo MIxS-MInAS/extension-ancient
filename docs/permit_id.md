@@ -5,7 +5,7 @@ _A permit ID, code, or any form of identify provided by any authority (ethical, 
 
 
 
-URI: [MIXS:999999906](https://w3id.org/mixs/999999906)
+URI: [MIXS:999999910](https://w3id.org/mixs/999999910)
 
 
 
@@ -63,7 +63,7 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - ethics
-slot_uri: MIXS:999999906
+slot_uri: MIXS:999999910
 alias: permit_id
 domain_of:
 - Ancient

@@ -5,7 +5,7 @@ _Date on which a permit was granted. The date can be right truncated i.e. all of
 
 
 
-URI: [MIXS:9999999906](https://w3id.org/mixs/9999999906)
+URI: [MIXS:999999912](https://w3id.org/mixs/999999912)
 
 
 
@@ -29,7 +29,7 @@ URI: [MIXS:9999999906](https://w3id.org/mixs/9999999906)
 ## Properties
 
 * Range: [Datetime](Datetime.md)
-* Cardinality: 0..1 _recommended_
+* Cardinality: * _recommended_
 
 
 
@@ -61,13 +61,14 @@ in_subset:
 - investigation
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:9999999906
+slot_uri: MIXS:999999912
 alias: permit_date
 domain_of:
 - Ancient
 range: datetime
 required: false
 recommended: true
+multivalued: true
 
 ```
 </details>

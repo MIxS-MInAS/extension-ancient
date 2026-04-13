@@ -5,7 +5,7 @@ _Relevant biocultural labels defined by the local contexts project (https://loca
 
 
 
-URI: [MIXS:999999927](https://w3id.org/mixs/999999927)
+URI: [MIXS:999999914](https://w3id.org/mixs/999999914)
 
 
 
@@ -28,8 +28,8 @@ URI: [MIXS:999999927](https://w3id.org/mixs/999999927)
 
 ## Properties
 
-* Range: [BioCulturalLabel](BioCulturalLabel.md)
-* Cardinality: *
+* Range: [BioCulturalLabelEnum](BioCulturalLabelEnum.md)
+* Cardinality: * _recommended_
 
 
 
@@ -75,13 +75,13 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - ethics
-slot_uri: MIXS:999999927
+slot_uri: MIXS:999999914
 alias: biocultural_label
 domain_of:
 - Ancient
-range: BioCulturalLabel
+range: BioCulturalLabelEnum
 required: false
-recommended: false
+recommended: true
 multivalued: true
 
 ```

@@ -5,7 +5,7 @@ _An alternative sample or material IDs related to the sample not already covered
 
 
 
-URI: [MIXS:999999924](https://w3id.org/mixs/999999924)
+URI: [MIXS:999999915](https://w3id.org/mixs/999999915)
 
 
 
@@ -67,11 +67,13 @@ in_subset:
 from_schema: https://w3id.org/mixs
 rank: 1000
 string_serialization: '{text}'
-slot_uri: MIXS:999999924
+slot_uri: MIXS:999999915
 alias: samp_alt_lab_ids
 domain_of:
 - Ancient
 range: string
+required: false
+recommended: false
 multivalued: true
 
 ```

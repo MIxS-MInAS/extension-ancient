@@ -5,7 +5,7 @@ _Any publications that report data from the same body/skeleton/individual_
 
 
 
-URI: [MIXS:999999915](https://w3id.org/mixs/999999915)
+URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 
 
@@ -63,11 +63,13 @@ in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999915
+slot_uri: MIXS:999999916
 alias: prev_pubs
 domain_of:
 - Ancient
 range: string
+required: false
+recommended: false
 multivalued: true
 pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$$
 structured_pattern:

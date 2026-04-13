@@ -5,7 +5,7 @@ _Report information about the smaller-scale environmental system of the local vi
 
 
 
-URI: [MIXS:0000999](https://w3id.org/mixs/0000999)
+URI: [MIXS:999999906](https://w3id.org/mixs/999999906)
 
 
 
@@ -84,7 +84,7 @@ keywords:
 - environmental
 - ancient
 string_serialization: '{termLabel} [{termID}]'
-slot_uri: MIXS:0000999
+slot_uri: MIXS:999999906
 alias: past_env_local
 domain_of:
 - Ancient

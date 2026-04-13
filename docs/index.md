@@ -23,26 +23,39 @@ Name: mixs
 | Slot | Description |
 | --- | --- |
 | [ancient_data](ancient_data.md) | Data that comply with Extension Ancient |
+| [batch_ids](batch_ids.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
 | [biocultural_label](biocultural_label.md) | Relevant biocultural labels defined by the local contexts project (https://lo... |
+| [capture_probe_desc](capture_probe_desc.md) | Description of target enrichment probe designs used (e |
+| [capture_probe_taxid](capture_probe_taxid.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
+| [chrono_age_protocol](chrono_age_protocol.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [chrono_age_remarks](chrono_age_remarks.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
+| [column_sample_depth](column_sample_depth.md) | Distance relative to the top or beginning of the sediment core or stratigraph... |
+| [context_retrieval_date](context_retrieval_date.md) | Date of excavation or retrieval from burial or depositional context, if known |
 | [cultural_era](cultural_era.md) | The cultural era approximating to the period in which the archaeological rema... |
-| [damage_treatment](damage_treatment.md) | Indication of whether characteristic ancient DNA damage has been  altered or ... |
+| [damage_treatment](damage_treatment.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
 | [data_filt_applied](data_filt_applied.md) | Specify whether associated data was filtered prior to upload, such as host re... |
 | [desc_read_state](desc_read_state.md) | Description of the state of the reads in the sequencing data file |
-| [experimental_procedures](experimental_procedures.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
-| [genomic_capture_probe_desc](genomic_capture_probe_desc.md) | Description of target enrichment probe designs used (e |
-| [genomic_capture_probe_taxid](genomic_capture_probe_taxid.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
+| [earliest_chrono_age](earliest_chrono_age.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... |
+| [earliest_chrono_sys](earliest_chrono_sys.md) | The reference system associated with the earliest_chrono_age |
+| [experimental_sop](experimental_sop.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
 | [geological_epoch](geological_epoch.md) | The geological epoch approximating to the period within which the specimen or... |
-| [host_body_preservation_state](host_body_preservation_state.md) | Description of the state of the sampled (ancient) organism/host as originally... |
+| [host_preserv_state](host_preserv_state.md) | Description of the state of the sampled (ancient) organism/host as originally... |
+| [latest_chrono_age](latest_chrono_age.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... |
+| [latest_chrono_sys](latest_chrono_sys.md) | The reference system associated with the latest_chrono_age |
 | [lib_polymerase](lib_polymerase.md) | The polymerase enzyme used for building nucleic acid libraries |
-| [lib_preparation_protocol](lib_preparation_protocol.md) | Citation(s) for the nucleic acid library preparation protocol |
+| [lib_preparation_sop](lib_preparation_sop.md) | Citation(s) for the nucleic acid library preparation protocol |
 | [lib_strandedness](lib_strandedness.md) | The strandedness of the original template nucleic acid molecules used for con... |
 | [lib_type](lib_type.md) | The type of library created, i |
 | [library_name](library_name.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... |
 | [mid_config](mid_config.md) | Index/barcode/primer configuration used during library building for sequencin... |
 | [neg_cont_status](neg_cont_status.md) | Specify whether the sample is a negative control or not |
-| [nuc_acid_extraction_date](nuc_acid_extraction_date.md) | The date when the nucleic acid extraction was started from the sample materia... |
-| [num_capture_amp_cycles](num_capture_amp_cycles.md) | Number of amplification cycles after capture enrichment |
+| [nucl_acid_extr_date](nucl_acid_extr_date.md) | The date when the nucleic acid extraction was started from the sample materia... |
+| [num_capture_cycles](num_capture_cycles.md) | Number of amplification cycles after capture enrichment |
 | [num_reamp_cycles](num_reamp_cycles.md) | Number of amplification cycles after library indexing PCR |
+| [orig_site_lat](orig_site_lat.md) | The latitude coordinate of the original geographical origin of the sample, e |
+| [orig_site_loc](orig_site_loc.md) | The original geographical origin of the sample, when sampled outside its orig... |
+| [orig_site_lon](orig_site_lon.md) | The longitude coordinate of the original geographical origin of the sample, e |
+| [orig_site_name](orig_site_name.md) | Designated name of the archaeological or ecological site, ancient settlement,... |
 | [palaeopath_status](palaeopath_status.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
 | [past_env_broad](past_env_broad.md) | Report information about the general ancient broad environmental system that ... |
 | [past_env_local](past_env_local.md) | Report information about the smaller-scale environmental system of the local ... |
@@ -50,32 +63,25 @@ Name: mixs
 | [permit_date](permit_date.md) | Date on which a permit was granted |
 | [permit_id](permit_id.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
 | [permit_scope](permit_scope.md) | Description of the original scope and permissions of the research on the gene... |
-| [preservational_treatment](preservational_treatment.md) | Description of any treatment applied to samples for the purpose of  maximisin... |
 | [prev_pubs](prev_pubs.md) | Any publications that report data from the same body/skeleton/individual |
-| [recovery_date](recovery_date.md) | Date of excavation or retrieval from burial or depositional context, if known |
-| [samp_age_range_inference_description](samp_age_range_inference_description.md) | Additional general information about the inference method used to infer the s... |
-| [samp_age_range_inference_methods](samp_age_range_inference_methods.md) | The method used to infer the sample age |
-| [samp_age_range_oldest_limit](samp_age_range_oldest_limit.md) | The oldest possible age of the sample in years, with the specific year unit d... |
-| [samp_age_range_oldest_unit](samp_age_range_oldest_unit.md) | The unit of the oldest age in sample age range |
-| [samp_age_range_youngest_limit](samp_age_range_youngest_limit.md) | The youngest possible age of the sample in years, with the specific year unit... |
-| [samp_age_range_youngest_unit](samp_age_range_youngest_unit.md) | The unit of the youngest age in the sample age range |
 | [samp_alt_lab_ids](samp_alt_lab_ids.md) | An alternative sample or material IDs related to the sample not already cover... |
-| [samp_decontam_pretreat](samp_decontam_pretreat.md) | Method(s) employed for surface decontamination of samples of external  modern... |
-| [site_name](site_name.md) | Designated name of the archaeological or ecological site, ancient settlement,... |
-| [source_mat_curat_insti](source_mat_curat_insti.md) | Name of the institutions, archives, or repositories that typically store or a... |
-| [storage_conditions](storage_conditions.md) | General conditions in which the material (before sampling for nucleic acid an... |
+| [samp_decont_pretreat](samp_decont_pretreat.md) | Protocols employed for sample surface decontamination of external  modern nuc... |
+| [samp_preserv_treatm](samp_preserv_treatm.md) | Description of any treatment applied directly to samples for the specific pur... |
+| [storage_conditions](storage_conditions.md) | General surrounding environmental conditions where the material was stored in... |
+| [stratigraph_context](stratigraph_context.md) | Associated stratigraphic context(s) that the sample was retrieved from, usual... |
 
 
 ## Enumerations
 
 | Enumeration | Description |
 | --- | --- |
-| [BioCulturalLabel](BioCulturalLabel.md) |  |
-| [DamageTreatmentEnum](DamageTreatmentEnum.md) |  |
-| [LibStrand](LibStrand.md) |  |
-| [LibTypeEnum](LibTypeEnum.md) |  |
-| [SampAgeInferMethod](SampAgeInferMethod.md) |  |
-| [SampAgeUnit](SampAgeUnit.md) |  |
+| [BioCulturalLabelEnum](BioCulturalLabelEnum.md) | Options defining community expectations about the appropriate use of the sequ... |
+| [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | Options for methods to determine the age at time of death of an organism or t... |
+| [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | Options for specifying the chonometric age reference or timescale of a date |
+| [DamageTreatmentEnum](DamageTreatmentEnum.md) | Options for types of molecular damage removal during library construction of ... |
+| [GeolEpochEnum](GeolEpochEnum.md) | Chronometric epochs defined by the International Chronostratigraphic Chart (v... |
+| [LibStrandEnum](LibStrandEnum.md) | Options for the strandedness of the input 'template' DNA molecules used for D... |
+| [LibTypeEnum](LibTypeEnum.md) | Options for types of DNA that have been targeted for DNA library construction |
 
 
 ## Types
@@ -107,9 +113,9 @@ Name: mixs
 
 | Subset | Description |
 | --- | --- |
-| [CombinationClasses](CombinationClasses.md) |  |
-| [Environment](Environment.md) |  |
-| [Ethics](Ethics.md) |  |
-| [Investigation](Investigation.md) |  |
-| [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md) |  |
-| [Sequencing](Sequencing.md) |  |
+| [CombinationClasses](CombinationClasses.md) | MIxS combination classes that group related slots for specific sample types o... |
+| [Environment](Environment.md) | MIxS terms related to the environmental context of the sample or specimen |
+| [Ethics](Ethics.md) | MIxS terms related to ethical considerations, permissions, and approvals asso... |
+| [Investigation](Investigation.md) | MIxS terms related to the overall investigation, study, or project associated... |
+| [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md) | MIxS terms related to the source of nucleic acids for sequencing, such as ext... |
+| [Sequencing](Sequencing.md) | MIxS terms related to the sequencing stage of nucleic acid sequencing data ge... |

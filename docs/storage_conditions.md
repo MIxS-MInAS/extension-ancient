@@ -1,11 +1,11 @@
 # Term: storage conditions (storage_conditions) 
 
 
-_General conditions in which the material (before sampling for nucleic acid analysis) was stored in long-term collection storage, that may influenced nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc.._
+_General surrounding environmental conditions where the material was stored in long-term collection storage prior sampling for nucleic acid analysis  that may influence nucleic acid recovery or library construction. For example, specify temperature, humidity, presence of microbial overgrowth etc.._
 
 
 
-URI: [MIXS:999999925](https://w3id.org/mixs/999999925)
+URI: [MIXS:999999918](https://w3id.org/mixs/999999918)
 
 
 
@@ -41,8 +41,9 @@ URI: [MIXS:999999925](https://w3id.org/mixs/999999925)
 | Value |
 | --- |
 | climate-controlled |
-| Stored in the museum from recovery_date to collection_date |
-| Stored at -20oC until nuc_acid_extraction_date |
+| Mould growth in storage box observed |
+| Stored at -20oC until 2025-05-15 |
+| Stored in the museum from 1924 to 2021 |
 
 
 
@@ -53,25 +54,28 @@ URI: [MIXS:999999925](https://w3id.org/mixs/999999925)
 <details>
 ```yaml
 name: storage_conditions
-description: General conditions in which the material (before sampling for nucleic
-  acid analysis) was stored in long-term collection storage, that may influenced nucleic
-  acid recovery or library construction. For example, specify temperature, humidity,
-  presence of microbial overgrowth etc..
+description: General surrounding environmental conditions where the material was stored
+  in long-term collection storage prior sampling for nucleic acid analysis  that may
+  influence nucleic acid recovery or library construction. For example, specify temperature,
+  humidity, presence of microbial overgrowth etc..
 title: storage conditions
 examples:
 - value: climate-controlled
-- value: Stored in the museum from recovery_date to collection_date
-- value: Stored at -20oC until nuc_acid_extraction_date
+- value: Mould growth in storage box observed
+- value: Stored at -20oC until 2025-05-15
+- value: Stored in the museum from 1924 to 2021
 in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
 string_serialization: '{text}'
-slot_uri: MIXS:999999925
+slot_uri: MIXS:999999918
 alias: storage_conditions
 domain_of:
 - Ancient
 range: string
+required: false
+recommended: false
 
 ```
 </details>

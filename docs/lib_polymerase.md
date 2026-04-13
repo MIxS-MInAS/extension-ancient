@@ -5,7 +5,7 @@ _The polymerase enzyme used for building nucleic acid libraries._
 
 
 
-URI: [MIXS:999999909](https://w3id.org/mixs/999999909)
+URI: [MIXS:999999937](https://w3id.org/mixs/999999937)
 
 
 
@@ -76,7 +76,7 @@ keywords:
 - library
 - preparation
 string_serialization: '{text}'
-slot_uri: MIXS:999999909
+slot_uri: MIXS:999999937
 alias: lib_polymerase
 domain_of:
 - Ancient

@@ -1,6 +1,16 @@
 # Subset: CombinationClasses 
 
+
+_MIxS combination classes that group related slots for specific sample types or contexts._
+
+
+
 URI: [CombinationClasses](CombinationClasses.md)
+
+
+
+
+
 
 
 
@@ -10,11 +20,16 @@ URI: [CombinationClasses](CombinationClasses.md)
 
 
 
-
 ### Schema Source
 
 
 * from schema: https://w3id.org/mixs
+
+
+
+
+
+
 
 
 

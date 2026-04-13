@@ -5,7 +5,7 @@ _The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon 
 
 
 
-URI: [MIXS:999999910](https://w3id.org/mixs/999999910)
+URI: [MIXS:999999939](https://w3id.org/mixs/999999939)
 
 
 
@@ -72,7 +72,7 @@ rank: 1000
 keywords:
 - library
 - preparation
-slot_uri: MIXS:999999910
+slot_uri: MIXS:999999939
 alias: lib_type
 domain_of:
 - Ancient

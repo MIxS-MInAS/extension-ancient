@@ -34,11 +34,13 @@ URI: [MIXS:Extension](https://w3id.org/mixs/Extension)
     * [Ancient](Ancient.md)
 
 
-
 ## Slots
 
 | Name | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- |
+
+
+
 
 
 
@@ -54,8 +56,9 @@ URI: [MIXS:Extension](https://w3id.org/mixs/Extension)
 * EnvironmentalPackage
 
 
-## Identifier and Mapping Information
 
+
+## Identifier and Mapping Information
 
 
 

@@ -1,11 +1,20 @@
 # Subset: Investigation 
 
+
+_MIxS terms related to the overall investigation, study, or project associated with the sample or specimen._
+
+
+
 URI: [Investigation](Investigation.md)
 
 
 
-## Identifier and Mapping Information
 
+
+
+
+
+## Identifier and Mapping Information
 
 
 
@@ -37,7 +46,24 @@ URI: [Investigation](Investigation.md)
 
 
 
+        
 
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+        
 
 
 
@@ -64,19 +90,8 @@ URI: [Investigation](Investigation.md)
 
 
 
-
-
         
 
-        
-
-
-        
-
-
-        
-
-        
 
 
 
@@ -98,13 +113,13 @@ URI: [Investigation](Investigation.md)
 
 | Slot | Description |
 | --- | --- |
+| [chrono_age_protocol](chrono_age_protocol.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [chrono_age_remarks](chrono_age_remarks.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
+| [earliest_chrono_sys](earliest_chrono_sys.md) | The reference system associated with the earliest_chrono_age |
+| [latest_chrono_sys](latest_chrono_sys.md) | The reference system associated with the latest_chrono_age |
 | [permit_authority](permit_authority.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
 | [permit_date](permit_date.md) | Date on which a permit was granted |
 | [permit_id](permit_id.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
-| [samp_age_range_inference_description](samp_age_range_inference_description.md) | Additional general information about the inference method used to infer the s... |
-| [samp_age_range_inference_methods](samp_age_range_inference_methods.md) | The method used to infer the sample age |
-| [samp_age_range_oldest_unit](samp_age_range_oldest_unit.md) | The unit of the oldest age in sample age range |
-| [samp_age_range_youngest_unit](samp_age_range_youngest_unit.md) | The unit of the youngest age in the sample age range |
 | [samp_alt_lab_ids](samp_alt_lab_ids.md) | An alternative sample or material IDs related to the sample not already cover... |
 
 
