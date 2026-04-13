@@ -46,15 +46,16 @@ The repo is laid out as follows:
 
 1. Update the `CITATION.cff` file with the new version number and authors, and update the `version` field to match the new version number
    - The `title` should be descriptive of the extension, e.g. "Minimum Information about any Ancient Sequence: Ancient Extension Schema (MInAS)"
-   - The `version` should be updated to match the new version number, e.g. "1.8.0"
-2. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
+   - The `version` should be updated to match the new version number, e.g. "0.8.1"
+2. Update the version number in the `src/mixs/schema/ancient.yml` file (line 8) to match the new version number. 
+3. Make a [GitHub release](https://github.com/MIxS-MInAS/extension-ancient/releases) with the following format:
    - Tag: vX.X.X
    - Title: vX.X.X
    - Generate release notes
        - New style: use 'Generate release notes' and clean up PR titles
        - Old style: base on a cleaned up `git log --oneline` that has the git hash and the informative commit message
    - Set as latest
-3. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
+4. Go to the MInAS repo and make an updated mega-yaml plus release following instructions there
 
 ## Technical notes
 
