@@ -7,26 +7,27 @@ _Options defining community expectations about the appropriate use of the sequen
 
 
 
-URI: [MIXS:BioCulturalLabelEnum](https://w3id.org/mixs/BioCulturalLabelEnum)
+URI: [BioCulturalLabelEnum](BioCulturalLabelEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| Biocultural Provenance Label (BC P): | None | Biocultural Provenance Label (BC P) - This Label is being used to affirm an i... |
-| Biocultural Multiple Communities Label (BC MC) | None | Biocultural Multiple Communities Label (BC MC) - This Label is being used to ... |
-| Biocultural Clan Label (BC CL) | None | Biocultural Clan Label (BC CL) - This Label is being used to indicate that th... |
-| Biocultural Consent Verified Label (BC CV) | None | Biocultural Consent Verified Label (BC CV) - This Label is being used to veri... |
-| Biocultural Consent Non-Verified Label (BC CNV) | None | Biocultural Consent Non-Verified Label (BC CNV) - This Label is being used be... |
-| Biocultural Research Use Label (BC R) | None | Biocultural Research Use Label (BC R) - This Label is being used by an associ... |
-| Biocultural Open to Collaboration Label (BC CB) | None | Biocultural Open to Collaboration Label (BC CB) - This Label is being used to... |
-| Biocultural Open to Commercialisation Label (BC OC) | None | Biocultural Open to Commercialisation Label (BC OC) - This Label is being use... |
-| Biocultural Outreach Label (BC O) | None | Biocultural Outreach Label (BC O) The Label is letting any users know that th... |
-| Biocultural Non-Commercial Label (BC NC) | None | Biocultural Non-Commercial Label (BC NC) - This Label is being used to indica... |
+
+| Value | Description |
+| --- | --- |
+| Biocultural Provenance Label (BC P): | Biocultural Provenance Label (BC P) - This Label is being used to affirm an i... |
+| Biocultural Multiple Communities Label (BC MC) | Biocultural Multiple Communities Label (BC MC) - This Label is being used to ... |
+| Biocultural Clan Label (BC CL) | Biocultural Clan Label (BC CL) - This Label is being used to indicate that th... |
+| Biocultural Consent Verified Label (BC CV) | Biocultural Consent Verified Label (BC CV) - This Label is being used to veri... |
+| Biocultural Consent Non-Verified Label (BC CNV) | Biocultural Consent Non-Verified Label (BC CNV) - This Label is being used be... |
+| Biocultural Research Use Label (BC R) | Biocultural Research Use Label (BC R) - This Label is being used by an associ... |
+| Biocultural Open to Collaboration Label (BC CB) | Biocultural Open to Collaboration Label (BC CB) - This Label is being used to... |
+| Biocultural Open to Commercialisation Label (BC OC) | Biocultural Open to Commercialisation Label (BC OC) - This Label is being use... |
+| Biocultural Outreach Label (BC O) | Biocultural Outreach Label (BC O) The Label is letting any users know that th... |
+| Biocultural Non-Commercial Label (BC NC) | Biocultural Non-Commercial Label (BC NC) - This Label is being used to indica... |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -35,22 +36,6 @@ URI: [MIXS:BioCulturalLabelEnum](https://w3id.org/mixs/BioCulturalLabelEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 

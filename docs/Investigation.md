@@ -1,4 +1,4 @@
-# Subset: Investigation 
+# Subset: Investigation
 
 
 _MIxS terms related to the overall investigation, study, or project associated with the sample or specimen._
@@ -14,22 +14,6 @@ URI: [Investigation](Investigation.md)
 
 
 
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
-
-
-
-
-
-
 
 
 
@@ -91,6 +75,7 @@ URI: [Investigation](Investigation.md)
 
 
         
+
 
 
 
@@ -121,5 +106,6 @@ URI: [Investigation](Investigation.md)
 | [permit_date](permit_date.md) | Date on which a permit was granted |
 | [permit_id](permit_id.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
 | [samp_alt_lab_ids](samp_alt_lab_ids.md) | An alternative sample or material IDs related to the sample not already cover... |
+
 
 

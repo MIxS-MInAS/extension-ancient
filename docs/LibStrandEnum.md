@@ -7,18 +7,19 @@ _Options for the strandedness of the input 'template' DNA molecules used for DNA
 
 
 
-URI: [MIXS:LibStrandEnum](https://w3id.org/mixs/LibStrandEnum)
+URI: [LibStrandEnum](LibStrandEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| single | None | Library constructed from single-stranded DNA molecules |
-| double | None | Library constructed from double-stranded DNA molecules |
+
+| Value | Description |
+| --- | --- |
+| single | Library constructed from single-stranded DNA molecules |
+| double | Library constructed from double-stranded DNA molecules |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -27,22 +28,6 @@ URI: [MIXS:LibStrandEnum](https://w3id.org/mixs/LibStrandEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 

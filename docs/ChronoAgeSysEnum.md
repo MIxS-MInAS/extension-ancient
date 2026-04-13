@@ -7,24 +7,25 @@ _Options for specifying the chonometric age reference or timescale of a date._
 
 
 
-URI: [MIXS:ChronoAgeSysEnum](https://w3id.org/mixs/ChronoAgeSysEnum)
+URI: [ChronoAgeSysEnum](ChronoAgeSysEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| BCE | None | Before Common Era (before year 0 in the Christian calendar), equivalent to BC... |
-| CE | None | Common Era (after year 0 in the Christian calendar), equivalent to AD (anno D... |
-| BP | None | Before Present (~1950), known as 'Standard Year' |
-| cal BP | None | Calibrated Before Present (~1950), known as 'Standard Year' |
-| cal BCE | None | Calibrated Before Common Era (year 0 in the Christian calendar), equivalent t... |
-| cal CE | None | Calibrated Common Era (~1950), equivalent to AD (anno Domini, after Christ) |
-| ka | None | kiloannum; thousands of years ago |
-| Ma | None | megaannum; millions of years ago |
+
+| Value | Description |
+| --- | --- |
+| BCE | Before Common Era (before year 0 in the Christian calendar), equivalent to BC... |
+| CE | Common Era (after year 0 in the Christian calendar), equivalent to AD (anno D... |
+| BP | Before Present (~1950), known as 'Standard Year' |
+| cal BP | Calibrated Before Present (~1950), known as 'Standard Year' |
+| cal BCE | Calibrated Before Common Era (year 0 in the Christian calendar), equivalent t... |
+| cal CE | Calibrated Common Era (~1950), equivalent to AD (anno Domini, after Christ) |
+| ka | kiloannum; thousands of years ago |
+| Ma | megaannum; millions of years ago |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -34,22 +35,6 @@ URI: [MIXS:ChronoAgeSysEnum](https://w3id.org/mixs/ChronoAgeSysEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 

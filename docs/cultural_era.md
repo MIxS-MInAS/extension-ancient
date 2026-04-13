@@ -12,17 +12,19 @@ URI: [MIXS:999999920](https://w3id.org/mixs/999999920)
 <!-- no inheritance hierarchy -->
 
 
+<!--
 
 
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include [Combinations](combinations.md) (of checklists and extensions) that use cultural_era.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use cultural_era.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
 | [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
 
+-->
 
 
 

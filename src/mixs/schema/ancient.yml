@@ -1,11 +1,15 @@
-name: mixs
+name: mixs-minas
 description: >-
-  This file contains a YAML-formatted specification of the Minimum Information about any (x) Sequence (MIxS) standard, generated using LinkML (https://linkml.io/linkml/). This file is released by the Genomic Standards Consortium (GSC; https://www.gensc.org/) for use by anyone handling data or information about biological sequences. This file is also used as an authoritative 'source of truth' to generate downstream GSC artifacts, available here: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/project
+  Specifications of the Ancient DNA extension of the [Minimum Information about any Ancient Sequence](https://www.mixs-minas.org/) (MInAS) standard project, generated using LinkML (https://linkml.io/linkml/). 
+
+  This file is released by the MInAS project for use by anyone handling ancient DNA data or information about biological sequences.
+
+  This file is also used as an authoritative 'source of truth' to generate downstream artifacts of the extension, available here: https://github.com/MIxS-MInAS/extension-ancient/blob/main/src/mixs/schema/ancient.yml.
 comments:
   - "slot titles that are associated with more than one slot name/SCN: host sex"
-source: https://github.com/GenomicsStandardsConsortium/mixs/raw/issue-610-temp-mixs-xlsx-home/mixs/excel/mixs_v6.xlsx
+source: https://github.com/MIxS-MInAS/extension-ancient/src/mixs/schema/ancient.yaml
 id: https://w3id.org/mixs
-version: v6.2.0
+version: v0.8.1
 imports:
   - linkml:types
 prefixes:

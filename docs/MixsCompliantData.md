@@ -1,5 +1,3 @@
-
-
 # Class: MIxS compliant data (MixsCompliantData) 
 
 
@@ -9,89 +7,17 @@ _A collection of data that complies with some combination of a MIxS checklist an
 
 
 
-URI: [MIXS:MixsCompliantData](https://w3id.org/mixs/MixsCompliantData)
 
 
+## Terms 
 
-
-
-```mermaid
- classDiagram
-    class MixsCompliantData
-    click MixsCompliantData href "../MixsCompliantData/"
-      MixsCompliantData : ancient_data
-        
-          
-    
-        
-        
-        MixsCompliantData --> "*" Ancient : ancient_data
-        click Ancient href "../Ancient/"
-    
-
-        
-      
-```
-
-
-
-
-<!-- no inheritance hierarchy -->
-
-## Class Properties
-
-| Property | Value |
-| --- | --- |
-| Tree Root | Yes |
-
-
-## Slots
-
-| Name | Cardinality and Range | Description | Inheritance |
+| MIXS ID | Name | Cardinality and Range | Description |
 | ---  | --- | --- | --- |
-| [ancient_data](ancient_data.md) | * <br/> [Ancient](Ancient.md) | Data that comply with Extension Ancient | direct |
+| [MIXS:ancient_data](https://w3id.org/mixs/ancient_data) | [ancient_data](ancient_data.md) | * <br/> [Ancient](Ancient.md) | Data that comply with Extension Ancient |
 
 
 
 
-
-## Usages
-
-| used by | used in | type | used |
-| ---  | --- | --- | --- |
-| [MixsCompliantData](MixsCompliantData.md) | [ancient_data](ancient_data.md) | domain | [MixsCompliantData](MixsCompliantData.md) |
-
-
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
-
-
-
-
-## Mappings
-
-| Mapping Type | Mapped Value |
-| ---  | ---  |
-| self | MIXS:MixsCompliantData |
-| native | MIXS:MixsCompliantData |
 
 
 

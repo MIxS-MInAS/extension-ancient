@@ -12,17 +12,19 @@ URI: [MIXS:999999935](https://w3id.org/mixs/999999935)
 <!-- no inheritance hierarchy -->
 
 
+<!--
 
 
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include [Combinations](combinations.md) (of checklists and extensions) that use mid_config.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use mid_config.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
 | [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
 
+-->
 
 
 

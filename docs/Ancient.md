@@ -1,6 +1,4 @@
-
-
-# Class: ancient (Ancient) 
+# Extension: ancient (Ancient) 
 
 
 _A collection of terms appropriate when collecting samples and sequencing samples  of data containing ancient nucleic acids, i.e., degraded molecules not from living organisms._
@@ -9,307 +7,68 @@ _A collection of terms appropriate when collecting samples and sequencing sample
 
 
 
-URI: [MIXS:9999903](https://w3id.org/mixs/9999903)
 
 
+## Terms 
 
-
-
-```mermaid
- classDiagram
-    class Ancient
-    click Ancient href "../Ancient/"
-      Extension <|-- Ancient
-        click Extension href "../Extension/"
-      
-      Ancient : batch_ids
-        
-      Ancient : biocultural_label
-        
-          
-    
-        
-        
-        Ancient --> "* _recommended_" BioCulturalLabelEnum : biocultural_label
-        click BioCulturalLabelEnum href "../BioCulturalLabelEnum/"
-    
-
-        
-      Ancient : capture_probe_desc
-        
-      Ancient : capture_probe_taxid
-        
-      Ancient : chrono_age_protocol
-        
-          
-    
-        
-        
-        Ancient --> "* _recommended_" ChronoAgeProtocolEnum : chrono_age_protocol
-        click ChronoAgeProtocolEnum href "../ChronoAgeProtocolEnum/"
-    
-
-        
-      Ancient : chrono_age_remarks
-        
-      Ancient : column_sample_depth
-        
-      Ancient : context_retrieval_date
-        
-      Ancient : cultural_era
-        
-      Ancient : damage_treatment
-        
-          
-    
-        
-        
-        Ancient --> "1 _recommended_" DamageTreatmentEnum : damage_treatment
-        click DamageTreatmentEnum href "../DamageTreatmentEnum/"
-    
-
-        
-      Ancient : data_filt_applied
-        
-      Ancient : desc_read_state
-        
-      Ancient : earliest_chrono_age
-        
-      Ancient : earliest_chrono_sys
-        
-          
-    
-        
-        
-        Ancient --> "1 _recommended_" ChronoAgeSysEnum : earliest_chrono_sys
-        click ChronoAgeSysEnum href "../ChronoAgeSysEnum/"
-    
-
-        
-      Ancient : experimental_sop
-        
-      Ancient : geological_epoch
-        
-          
-    
-        
-        
-        Ancient --> "0..1" GeolEpochEnum : geological_epoch
-        click GeolEpochEnum href "../GeolEpochEnum/"
-    
-
-        
-      Ancient : host_preserv_state
-        
-      Ancient : latest_chrono_age
-        
-      Ancient : latest_chrono_sys
-        
-          
-    
-        
-        
-        Ancient --> "1 _recommended_" ChronoAgeSysEnum : latest_chrono_sys
-        click ChronoAgeSysEnum href "../ChronoAgeSysEnum/"
-    
-
-        
-      Ancient : lib_polymerase
-        
-      Ancient : lib_preparation_sop
-        
-      Ancient : lib_strandedness
-        
-          
-    
-        
-        
-        Ancient --> "1..* _recommended_" LibStrandEnum : lib_strandedness
-        click LibStrandEnum href "../LibStrandEnum/"
-    
-
-        
-      Ancient : lib_type
-        
-          
-    
-        
-        
-        Ancient --> "0..1 _recommended_" LibTypeEnum : lib_type
-        click LibTypeEnum href "../LibTypeEnum/"
-    
-
-        
-      Ancient : library_name
-        
-      Ancient : mid_config
-        
-      Ancient : neg_cont_status
-        
-      Ancient : nucl_acid_extr_date
-        
-      Ancient : num_capture_cycles
-        
-      Ancient : num_reamp_cycles
-        
-      Ancient : orig_site_lat
-        
-      Ancient : orig_site_loc
-        
-      Ancient : orig_site_lon
-        
-      Ancient : orig_site_name
-        
-      Ancient : palaeopath_status
-        
-      Ancient : past_env_broad
-        
-      Ancient : past_env_local
-        
-      Ancient : permit_authority
-        
-      Ancient : permit_date
-        
-      Ancient : permit_id
-        
-      Ancient : permit_scope
-        
-      Ancient : prev_pubs
-        
-      Ancient : samp_alt_lab_ids
-        
-      Ancient : samp_decont_pretreat
-        
-      Ancient : samp_preserv_treatm
-        
-      Ancient : storage_conditions
-        
-      Ancient : stratigraph_context
-        
-      
-```
-
-
-
-
-
-## Inheritance
-* [Extension](Extension.md)
-    * **Ancient**
-
-
-## Class Properties
-
-| Property | Value |
-| --- | --- |
-| Class URI | [MIXS:9999903](https://w3id.org/mixs/9999903) |
-
-
-## Slots
-
-| Name | Cardinality and Range | Description | Inheritance |
+| MIXS ID | Name | Cardinality and Range | Description |
 | ---  | --- | --- | --- |
-| [orig_site_name](orig_site_name.md) | * _recommended_ <br/> [String](String.md) | Designated name of the archaeological or ecological site, ancient settlement,... | direct |
-| [orig_site_loc](orig_site_loc.md) | 0..1 <br/> [String](String.md) | The original geographical origin of the sample, when sampled outside its orig... | direct |
-| [orig_site_lat](orig_site_lat.md) | 0..1 <br/> [String](String.md) | The latitude coordinate of the original geographical origin of the sample, e | direct |
-| [orig_site_lon](orig_site_lon.md) | 0..1 <br/> [String](String.md) | The longitude coordinate of the original geographical origin of the sample, e | direct |
-| [past_env_broad](past_env_broad.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the general ancient broad environmental system that ... | direct |
-| [past_env_local](past_env_local.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the smaller-scale environmental system of the local ... | direct |
-| [stratigraph_context](stratigraph_context.md) | * <br/> [String](String.md) | Associated stratigraphic context(s) that the sample was retrieved from, usual... | direct |
-| [column_sample_depth](column_sample_depth.md) | 0..1 <br/> [String](String.md) | Distance relative to the top or beginning of the sediment core or stratigraph... | direct |
-| [context_retrieval_date](context_retrieval_date.md) | 0..1 _recommended_ <br/> [Datetime](Datetime.md) | Date of excavation or retrieval from burial or depositional context, if known | direct |
-| [permit_id](permit_id.md) | * _recommended_ <br/> [String](String.md) | A permit ID, code, or any form of identify provided by any authority (ethical... | direct |
-| [permit_authority](permit_authority.md) | * _recommended_ <br/> [String](String.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... | direct |
-| [permit_date](permit_date.md) | * _recommended_ <br/> [Datetime](Datetime.md) | Date on which a permit was granted | direct |
-| [permit_scope](permit_scope.md) | * _recommended_ <br/> [String](String.md) | Description of the original scope and permissions of the research on the gene... | direct |
-| [biocultural_label](biocultural_label.md) | * _recommended_ <br/> [BioCulturalLabelEnum](BioCulturalLabelEnum.md) | Relevant biocultural labels defined by the local contexts project (https://lo... | direct |
-| [samp_alt_lab_ids](samp_alt_lab_ids.md) | * <br/> [String](String.md) | An alternative sample or material IDs related to the sample not already cover... | direct |
-| [prev_pubs](prev_pubs.md) | * <br/> [String](String.md) | Any publications that report data from the same body/skeleton/individual | direct |
-| [host_preserv_state](host_preserv_state.md) | 0..1 <br/> [String](String.md) | Description of the state of the sampled (ancient) organism/host as originally... | direct |
-| [storage_conditions](storage_conditions.md) | 0..1 <br/> [String](String.md) | General surrounding environmental conditions where the material was stored in... | direct |
-| [samp_preserv_treatm](samp_preserv_treatm.md) | * <br/> [String](String.md) | Description of any treatment applied directly to samples for the specific pur... | direct |
-| [cultural_era](cultural_era.md) | 0..1 <br/> [String](String.md) | The cultural era approximating to the period in which the archaeological rema... | direct |
-| [geological_epoch](geological_epoch.md) | 0..1 <br/> [GeolEpochEnum](GeolEpochEnum.md) | The geological epoch approximating to the period within which the specimen or... | direct |
-| [earliest_chrono_age](earliest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... | direct |
-| [earliest_chrono_sys](earliest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the earliest_chrono_age | direct |
-| [latest_chrono_age](latest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... | direct |
-| [latest_chrono_sys](latest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the latest_chrono_age | direct |
-| [chrono_age_protocol](chrono_age_protocol.md) | * _recommended_ <br/> [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | A description of or reference to the methods used to determine the earliest_c... | direct |
-| [chrono_age_remarks](chrono_age_remarks.md) | 0..1 _recommended_ <br/> [String](String.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age | direct |
-| [palaeopath_status](palaeopath_status.md) | 0..1 <br/> [String](String.md) | Describe briefly any relevant palaeopathological or health-related observatio... | direct |
-| [batch_ids](batch_ids.md) | * <br/> [String](String.md) | Identifiers for any form of batch or 'group' that the samples is associated w... | direct |
-| [neg_cont_status](neg_cont_status.md) | 1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether the sample is a negative control or not | direct |
-| [samp_decont_pretreat](samp_decont_pretreat.md) | * <br/> [String](String.md) | Protocols employed for sample surface decontamination of external  modern nuc... | direct |
-| [damage_treatment](damage_treatment.md) | 1 _recommended_ <br/> [DamageTreatmentEnum](DamageTreatmentEnum.md) | Indication of whether characteristic ancient DNA damage has been altered or r... | direct |
-| [nucl_acid_extr_date](nucl_acid_extr_date.md) | 0..1 <br/> [Datetime](Datetime.md) | The date when the nucleic acid extraction was started from the sample materia... | direct |
-| [experimental_sop](experimental_sop.md) | * <br/> [String](String.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... | direct |
-| [mid_config](mid_config.md) | * _recommended_ <br/> [String](String.md) | Index/barcode/primer configuration used during library building for sequencin... | direct |
-| [library_name](library_name.md) | * _recommended_ <br/> [String](String.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... | direct |
-| [lib_polymerase](lib_polymerase.md) | 0..1 _recommended_ <br/> [String](String.md) | The polymerase enzyme used for building nucleic acid libraries | direct |
-| [lib_strandedness](lib_strandedness.md) | 1..* _recommended_ <br/> [LibStrandEnum](LibStrandEnum.md) | The strandedness of the original template nucleic acid molecules used for con... | direct |
-| [lib_type](lib_type.md) | 0..1 _recommended_ <br/> [LibTypeEnum](LibTypeEnum.md) | The type of library created, i | direct |
-| [lib_preparation_sop](lib_preparation_sop.md) | * <br/> [String](String.md) | Citation(s) for the nucleic acid library preparation protocol | direct |
-| [num_reamp_cycles](num_reamp_cycles.md) | 0..1 <br/> [Integer](Integer.md) | Number of amplification cycles after library indexing PCR | direct |
-| [num_capture_cycles](num_capture_cycles.md) | * <br/> [Integer](Integer.md) | Number of amplification cycles after capture enrichment | direct |
-| [capture_probe_taxid](capture_probe_taxid.md) | * <br/> [Integer](Integer.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... | direct |
-| [capture_probe_desc](capture_probe_desc.md) | * <br/> [String](String.md) | Description of target enrichment probe designs used (e | direct |
-| [desc_read_state](desc_read_state.md) | 0..1 _recommended_ <br/> [String](String.md) | Description of the state of the reads in the sequencing data file | direct |
-| [data_filt_applied](data_filt_applied.md) | 0..1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether associated data was filtered prior to upload, such as host re... | direct |
+| [MIXS:999999901](https://w3id.org/mixs/999999901) | [orig_site_name](orig_site_name.md) | * _recommended_ <br/> [String](String.md) | Designated name of the archaeological or ecological site, ancient settlement,... |
+| [MIXS:999999902](https://w3id.org/mixs/999999902) | [orig_site_loc](orig_site_loc.md) | 0..1 <br/> [String](String.md) | The original geographical origin of the sample, when sampled outside its orig... |
+| [MIXS:999999903](https://w3id.org/mixs/999999903) | [orig_site_lat](orig_site_lat.md) | 0..1 <br/> [String](String.md) | The latitude coordinate of the original geographical origin of the sample, e |
+| [MIXS:999999904](https://w3id.org/mixs/999999904) | [orig_site_lon](orig_site_lon.md) | 0..1 <br/> [String](String.md) | The longitude coordinate of the original geographical origin of the sample, e |
+| [MIXS:999999905](https://w3id.org/mixs/999999905) | [past_env_broad](past_env_broad.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the general ancient broad environmental system that ... |
+| [MIXS:999999906](https://w3id.org/mixs/999999906) | [past_env_local](past_env_local.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the smaller-scale environmental system of the local ... |
+| [MIXS:999999907](https://w3id.org/mixs/999999907) | [stratigraph_context](stratigraph_context.md) | * <br/> [String](String.md) | Associated stratigraphic context(s) that the sample was retrieved from, usual... |
+| [MIXS:999999908](https://w3id.org/mixs/999999908) | [column_sample_depth](column_sample_depth.md) | 0..1 <br/> [String](String.md) | Distance relative to the top or beginning of the sediment core or stratigraph... |
+| [MIXS:999999909](https://w3id.org/mixs/999999909) | [context_retrieval_date](context_retrieval_date.md) | 0..1 _recommended_ <br/> [Datetime](Datetime.md) | Date of excavation or retrieval from burial or depositional context, if known |
+| [MIXS:999999910](https://w3id.org/mixs/999999910) | [permit_id](permit_id.md) | * _recommended_ <br/> [String](String.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
+| [MIXS:999999911](https://w3id.org/mixs/999999911) | [permit_authority](permit_authority.md) | * _recommended_ <br/> [String](String.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
+| [MIXS:999999912](https://w3id.org/mixs/999999912) | [permit_date](permit_date.md) | * _recommended_ <br/> [Datetime](Datetime.md) | Date on which a permit was granted |
+| [MIXS:999999913](https://w3id.org/mixs/999999913) | [permit_scope](permit_scope.md) | * _recommended_ <br/> [String](String.md) | Description of the original scope and permissions of the research on the gene... |
+| [MIXS:999999914](https://w3id.org/mixs/999999914) | [biocultural_label](biocultural_label.md) | * _recommended_ <br/> [BioCulturalLabelEnum](BioCulturalLabelEnum.md) | Relevant biocultural labels defined by the local contexts project (https://lo... |
+| [MIXS:999999915](https://w3id.org/mixs/999999915) | [samp_alt_lab_ids](samp_alt_lab_ids.md) | * <br/> [String](String.md) | An alternative sample or material IDs related to the sample not already cover... |
+| [MIXS:999999916](https://w3id.org/mixs/999999916) | [prev_pubs](prev_pubs.md) | * <br/> [String](String.md) | Any publications that report data from the same body/skeleton/individual |
+| [MIXS:999999917](https://w3id.org/mixs/999999917) | [host_preserv_state](host_preserv_state.md) | 0..1 <br/> [String](String.md) | Description of the state of the sampled (ancient) organism/host as originally... |
+| [MIXS:999999918](https://w3id.org/mixs/999999918) | [storage_conditions](storage_conditions.md) | 0..1 <br/> [String](String.md) | General surrounding environmental conditions where the material was stored in... |
+| [MIXS:999999919](https://w3id.org/mixs/999999919) | [samp_preserv_treatm](samp_preserv_treatm.md) | * <br/> [String](String.md) | Description of any treatment applied directly to samples for the specific pur... |
+| [MIXS:999999920](https://w3id.org/mixs/999999920) | [cultural_era](cultural_era.md) | 0..1 <br/> [String](String.md) | The cultural era approximating to the period in which the archaeological rema... |
+| [MIXS:999999921](https://w3id.org/mixs/999999921) | [geological_epoch](geological_epoch.md) | 0..1 <br/> [GeolEpochEnum](GeolEpochEnum.md) | The geological epoch approximating to the period within which the specimen or... |
+| [MIXS:999999922](https://w3id.org/mixs/999999922) | [earliest_chrono_age](earliest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... |
+| [MIXS:999999923](https://w3id.org/mixs/999999923) | [earliest_chrono_sys](earliest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the earliest_chrono_age |
+| [MIXS:999999924](https://w3id.org/mixs/999999924) | [latest_chrono_age](latest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... |
+| [MIXS:999999925](https://w3id.org/mixs/999999925) | [latest_chrono_sys](latest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the latest_chrono_age |
+| [MIXS:999999926](https://w3id.org/mixs/999999926) | [chrono_age_protocol](chrono_age_protocol.md) | * _recommended_ <br/> [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [MIXS:999999927](https://w3id.org/mixs/999999927) | [chrono_age_remarks](chrono_age_remarks.md) | 0..1 _recommended_ <br/> [String](String.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
+| [MIXS:999999928](https://w3id.org/mixs/999999928) | [palaeopath_status](palaeopath_status.md) | 0..1 <br/> [String](String.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
+| [MIXS:999999929](https://w3id.org/mixs/999999929) | [batch_ids](batch_ids.md) | * <br/> [String](String.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
+| [MIXS:999999930](https://w3id.org/mixs/999999930) | [neg_cont_status](neg_cont_status.md) | 1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether the sample is a negative control or not |
+| [MIXS:999999931](https://w3id.org/mixs/999999931) | [samp_decont_pretreat](samp_decont_pretreat.md) | * <br/> [String](String.md) | Protocols employed for sample surface decontamination of external  modern nuc... |
+| [MIXS:999999932](https://w3id.org/mixs/999999932) | [damage_treatment](damage_treatment.md) | 1 _recommended_ <br/> [DamageTreatmentEnum](DamageTreatmentEnum.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
+| [MIXS:999999933](https://w3id.org/mixs/999999933) | [nucl_acid_extr_date](nucl_acid_extr_date.md) | 0..1 <br/> [Datetime](Datetime.md) | The date when the nucleic acid extraction was started from the sample materia... |
+| [MIXS:999999934](https://w3id.org/mixs/999999934) | [experimental_sop](experimental_sop.md) | * <br/> [String](String.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
+| [MIXS:999999935](https://w3id.org/mixs/999999935) | [mid_config](mid_config.md) | * _recommended_ <br/> [String](String.md) | Index/barcode/primer configuration used during library building for sequencin... |
+| [MIXS:999999936](https://w3id.org/mixs/999999936) | [library_name](library_name.md) | * _recommended_ <br/> [String](String.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... |
+| [MIXS:999999937](https://w3id.org/mixs/999999937) | [lib_polymerase](lib_polymerase.md) | 0..1 _recommended_ <br/> [String](String.md) | The polymerase enzyme used for building nucleic acid libraries |
+| [MIXS:999999938](https://w3id.org/mixs/999999938) | [lib_strandedness](lib_strandedness.md) | 1..* _recommended_ <br/> [LibStrandEnum](LibStrandEnum.md) | The strandedness of the original template nucleic acid molecules used for con... |
+| [MIXS:999999939](https://w3id.org/mixs/999999939) | [lib_type](lib_type.md) | 0..1 _recommended_ <br/> [LibTypeEnum](LibTypeEnum.md) | The type of library created, i |
+| [MIXS:999999940](https://w3id.org/mixs/999999940) | [lib_preparation_sop](lib_preparation_sop.md) | * <br/> [String](String.md) | Citation(s) for the nucleic acid library preparation protocol |
+| [MIXS:999999941](https://w3id.org/mixs/999999941) | [num_reamp_cycles](num_reamp_cycles.md) | 0..1 <br/> [Integer](Integer.md) | Number of amplification cycles after library indexing PCR |
+| [MIXS:999999942](https://w3id.org/mixs/999999942) | [num_capture_cycles](num_capture_cycles.md) | * <br/> [Integer](Integer.md) | Number of amplification cycles after capture enrichment |
+| [MIXS:999999943](https://w3id.org/mixs/999999943) | [capture_probe_taxid](capture_probe_taxid.md) | * <br/> [Integer](Integer.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
+| [MIXS:999999944](https://w3id.org/mixs/999999944) | [capture_probe_desc](capture_probe_desc.md) | * <br/> [String](String.md) | Description of target enrichment probe designs used (e |
+| [MIXS:999999945](https://w3id.org/mixs/999999945) | [desc_read_state](desc_read_state.md) | 0..1 _recommended_ <br/> [String](String.md) | Description of the state of the reads in the sequencing data file |
+| [MIXS:999999946](https://w3id.org/mixs/999999946) | [data_filt_applied](data_filt_applied.md) | 0..1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether associated data was filtered prior to upload, such as host re... |
 
 
 
 
 
-## Usages
-
-| used by | used in | type | used |
-| ---  | --- | --- | --- |
-| [MixsCompliantData](MixsCompliantData.md) | [ancient_data](ancient_data.md) | range | [Ancient](Ancient.md) |
-
-
-
-
-
-
-
-
-
-
-## Comments
-
-* This extension that is intended to be used in very specific cases but almost always in conjunction with other MIxS checklists and extensions. It does not therefore (currently) include additional common terms from checklists.
-
-
-
-## Identifier and Mapping Information
 
 
 
 ### Annotations
-
-| property | value |
-| --- | --- |
-| use_cases | ancient dna samples |
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
-
-
-
-
-## Mappings
-
-| Mapping Type | Mapped Value |
-| ---  | ---  |
-| self | MIXS:9999903 |
-| native | MIXS:Ancient |
-
-
+* use_cases: ancient dna samples
 
 
 

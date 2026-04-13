@@ -1,4 +1,4 @@
-# Subset: NucleicAcidSequenceSource 
+# Subset: NucleicAcidSequenceSource
 
 
 _MIxS terms related to the source of nucleic acids for sequencing, such as extraction or library preparation._
@@ -14,22 +14,6 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 
 
 
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
-
-
-
-
-
-
 
 
 
@@ -102,6 +86,7 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
         
 
         
+
 
 
 
@@ -137,5 +122,6 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 | [samp_decont_pretreat](samp_decont_pretreat.md) | Protocols employed for sample surface decontamination of external  modern nuc... |
 | [samp_preserv_treatm](samp_preserv_treatm.md) | Description of any treatment applied directly to samples for the specific pur... |
 | [storage_conditions](storage_conditions.md) | General surrounding environmental conditions where the material was stored in... |
+
 
 

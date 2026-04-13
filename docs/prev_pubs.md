@@ -12,17 +12,19 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 <!-- no inheritance hierarchy -->
 
 
+<!--
 
 
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include [Combinations](combinations.md) (of checklists and extensions) that use prev_pubs.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use prev_pubs.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
 | [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
 
+-->
 
 
 

@@ -1,4 +1,4 @@
-# Subset: Sequencing 
+# Subset: Sequencing
 
 
 _MIxS terms related to the sequencing stage of nucleic acid sequencing data generation._
@@ -14,22 +14,6 @@ URI: [Sequencing](Sequencing.md)
 
 
 
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
-
-
-
-
-
-
 
 
 
@@ -82,6 +66,7 @@ URI: [Sequencing](Sequencing.md)
         
 
         
+
 
 
 
@@ -129,5 +114,6 @@ URI: [Sequencing](Sequencing.md)
 | [mid_config](mid_config.md) | Index/barcode/primer configuration used during library building for sequencin... |
 | [num_capture_cycles](num_capture_cycles.md) | Number of amplification cycles after capture enrichment |
 | [num_reamp_cycles](num_reamp_cycles.md) | Number of amplification cycles after library indexing PCR |
+
 
 

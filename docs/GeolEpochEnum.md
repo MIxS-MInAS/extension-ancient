@@ -7,54 +7,55 @@ _Chronometric epochs defined by the International Chronostratigraphic Chart (v20
 
 
 
-URI: [MIXS:GeolEpochEnum](https://w3id.org/mixs/GeolEpochEnum)
+URI: [GeolEpochEnum](GeolEpochEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| Holocene | None | A time period from 0 |
-| Pleistocene | None | A time period from 2 |
-| Pliocene | None | A time period from 5 |
-| Miocene | None | A time period from 23 |
-| Oligocene | None | A time period from 33 |
-| Eocene | None | A time period from 56 |
-| Paleocene | None | A time period from 66 |
-| Late Cretaceous | None | A time period from 100 |
-| Early Cretaceous | None | A time period from 143 |
-| Late Jurassic | None | A time period from 161 |
-| Middle Jurassic | None | A time period from 174 |
-| Early Jurassic | None | A time period from 201 |
-| Late Triassic | None | A time period from 237 to 201 |
-| Middle Triassic | None | A time period from 246 |
-| Early Triassic | None | A time period from 251 |
-| Lopingian | None | A time period from 259 |
-| Guadalupian | None | A time period from 274 |
-| Cisuralian | None | A time period from 298 |
-| Late Pennsylvanian | None | A time period from 307 |
-| Middle Pennsylvanian | None | A time period from 315 |
-| Early Pennsylvanian | None | A time period from 323 |
-| Late Mississippian | None | A time period from 330 |
-| Middle Mississippian | None | A time period from 346 |
-| Early Mississippian | None | A time period from 358 |
-| Late Devonian | None | A time period from 382 |
-| Middle Devonian | None | A time period from 393 |
-| Early Devonian | None | A time period from 419 |
-| Pridoli | None | A time period from 422 |
-| Ludlow | None | A time period from 426 |
-| Wenlock | None | A time period from 432 |
-| Llandovery | None | A time period from 443 |
-| Late Ordovician | None | A time period from 458 |
-| Middle Ordovician | None | A time period from 471 |
-| Early Ordovician | None | A time period from 486 |
-| Furongian | None | A time period from 497 |
-| Miaolingian | None | A time period from 506 |
-| Cambrian Epoch 2 | None | A time period from 521 |
-| Terreneuvian | None | A time period from 538 |
+
+| Value | Description |
+| --- | --- |
+| Holocene | A time period from 0 |
+| Pleistocene | A time period from 2 |
+| Pliocene | A time period from 5 |
+| Miocene | A time period from 23 |
+| Oligocene | A time period from 33 |
+| Eocene | A time period from 56 |
+| Paleocene | A time period from 66 |
+| Late Cretaceous | A time period from 100 |
+| Early Cretaceous | A time period from 143 |
+| Late Jurassic | A time period from 161 |
+| Middle Jurassic | A time period from 174 |
+| Early Jurassic | A time period from 201 |
+| Late Triassic | A time period from 237 to 201 |
+| Middle Triassic | A time period from 246 |
+| Early Triassic | A time period from 251 |
+| Lopingian | A time period from 259 |
+| Guadalupian | A time period from 274 |
+| Cisuralian | A time period from 298 |
+| Late Pennsylvanian | A time period from 307 |
+| Middle Pennsylvanian | A time period from 315 |
+| Early Pennsylvanian | A time period from 323 |
+| Late Mississippian | A time period from 330 |
+| Middle Mississippian | A time period from 346 |
+| Early Mississippian | A time period from 358 |
+| Late Devonian | A time period from 382 |
+| Middle Devonian | A time period from 393 |
+| Early Devonian | A time period from 419 |
+| Pridoli | A time period from 422 |
+| Ludlow | A time period from 426 |
+| Wenlock | A time period from 432 |
+| Llandovery | A time period from 443 |
+| Late Ordovician | A time period from 458 |
+| Middle Ordovician | A time period from 471 |
+| Early Ordovician | A time period from 486 |
+| Furongian | A time period from 497 |
+| Miaolingian | A time period from 506 |
+| Cambrian Epoch 2 | A time period from 521 |
+| Terreneuvian | A time period from 538 |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -63,22 +64,6 @@ URI: [MIXS:GeolEpochEnum](https://w3id.org/mixs/GeolEpochEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 

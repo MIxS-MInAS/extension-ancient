@@ -7,26 +7,27 @@ _Options for methods to determine the age at time of death of an organism or the
 
 
 
-URI: [MIXS:ChronoAgeProtocolEnum](https://w3id.org/mixs/ChronoAgeProtocolEnum)
+URI: [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| radiocarbon dating | None |  |
-| optically stimulated infrared luminescence | None |  |
-| amino acid racemisation | None |  |
-| electron spin resonance | None |  |
-| uranium thorium | None |  |
-| age-depth modelling | None | Age-depth models are constructed based on limited numbers of dated depths (ty... |
-| contextual dating | None | A non-absolute date inferred from the specific context of an archaeological o... |
-| associated absolute dating | None | Dates inferred from the absolute dates of associated materials within the sam... |
-| historical records | None |  |
-| other | None |  |
+
+| Value | Description |
+| --- | --- |
+| radiocarbon dating |  |
+| optically stimulated infrared luminescence |  |
+| amino acid racemisation |  |
+| electron spin resonance |  |
+| uranium thorium |  |
+| age-depth modelling | Age-depth models are constructed based on limited numbers of dated depths (ty... |
+| contextual dating | A non-absolute date inferred from the specific context of an archaeological o... |
+| associated absolute dating | Dates inferred from the absolute dates of associated materials within the sam... |
+| historical records |  |
+| other |  |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -35,22 +36,6 @@ URI: [MIXS:ChronoAgeProtocolEnum](https://w3id.org/mixs/ChronoAgeProtocolEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 

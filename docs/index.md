@@ -1,12 +1,38 @@
-# mixs
+# MInAS ancient DNA MIxS extension 
 
-This file contains a YAML-formatted specification of the Minimum Information about any (x) Sequence (MIxS) standard, generated using LinkML (https://linkml.io/linkml/). This file is released by the Genomic Standards Consortium (GSC; https://www.gensc.org/) for use by anyone handling data or information about biological sequences. This file is also used as an authoritative 'source of truth' to generate downstream GSC artifacts, available here: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/project
+
+Specifications of the Ancient DNA extension of the [Minimum Information about any Ancient Sequence](https://www.mixs-minas.org/) (MInAS) standard project, generated using LinkML (https://linkml.io/linkml/). 
+This file is released by the MInAS project for use by anyone handling ancient DNA data or information about biological sequences.
+This file is also used as an authoritative 'source of truth' to generate downstream artifacts of the extension, available here: https://github.com/MIxS-MInAS/extension-ancient/blob/main/src/mixs/schema/ancient.yml.
+
+**This [reference](https://diataxis.fr/reference/) documentation site is an automated rendering of the specifications of the mixs-minas schema, generated using LinkML (https://linkml.io/linkml/)**
+
+This page only includes MInAS metadata terms from the 'ancient' extension as well as the controlled vocabulary (enumerations) and categories (subsets) - it does not include the full standard.
+
+## How to use
+
+??? note "How to use"
+
+    Use the tables below or the search bar to find a metadata term (slot) of interest and open the dedicated page.
+
+    In each metadata term (slot) page you will find:
+
+    - Title
+    - Description
+    - Formatting properties
+    - Examples
+    - Additional annotations
+    - Raw source YAML the page was rendered from
+
+## Information
 
 URI: https://w3id.org/mixs
 
-Name: mixs
+Name: mixs-minas
 
 
+
+<!--
 
 ## Classes
 
@@ -17,6 +43,8 @@ Name: mixs
 | [MixsCompliantData](MixsCompliantData.md) | A collection of data that complies with some combination of a MIxS checklist ... |
 
 
+
+-->
 
 ## Slots
 
@@ -84,6 +112,8 @@ Name: mixs
 | [LibTypeEnum](LibTypeEnum.md) | Options for types of DNA that have been targeted for DNA library construction |
 
 
+<!--
+
 ## Types
 
 | Type | Description |
@@ -108,6 +138,8 @@ Name: mixs
 | [Uri](Uri.md) | a complete URI |
 | [Uriorcurie](Uriorcurie.md) | a URI or a CURIE |
 
+
+-->
 
 ## Subsets
 

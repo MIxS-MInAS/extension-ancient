@@ -1,5 +1,3 @@
-
-
 # Class: Extension 
 
 
@@ -9,44 +7,12 @@ _A collection of recommended metadata terms (slots) developed by community exper
 
 
 
-URI: [MIXS:Extension](https://w3id.org/mixs/Extension)
 
 
+## Terms 
 
-
-
-```mermaid
- classDiagram
-    class Extension
-    click Extension href "../Extension/"
-      Extension <|-- Ancient
-        click Ancient href "../Ancient/"
-      
-      
-```
-
-
-
-
-
-## Inheritance
-* **Extension**
-    * [Ancient](Ancient.md)
-
-
-## Slots
-
-| Name | Cardinality and Range | Description | Inheritance |
+| MIXS ID | Name | Cardinality and Range | Description |
 | ---  | --- | --- | --- |
-
-
-
-
-
-
-
-
-
 
 
 
@@ -56,28 +22,6 @@ URI: [MIXS:Extension](https://w3id.org/mixs/Extension)
 * EnvironmentalPackage
 
 
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
-
-
-
-
-## Mappings
-
-| Mapping Type | Mapped Value |
-| ---  | ---  |
-| self | MIXS:Extension |
-| native | MIXS:Extension |
 
 
 

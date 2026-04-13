@@ -12,17 +12,19 @@ URI: [MIXS:999999908](https://w3id.org/mixs/999999908)
 <!-- no inheritance hierarchy -->
 
 
+<!--
 
 
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include [Combinations](combinations.md) (of checklists and extensions) that use column_sample_depth.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use column_sample_depth.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
 | [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
 
+-->
 
 
 

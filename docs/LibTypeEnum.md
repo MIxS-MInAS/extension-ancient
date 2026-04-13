@@ -7,19 +7,20 @@ _Options for types of DNA that have been targeted for DNA library construction._
 
 
 
-URI: [MIXS:LibTypeEnum](https://w3id.org/mixs/LibTypeEnum)
+URI: [LibTypeEnum](LibTypeEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| amplicon | None | A library that has been enriched for a single specific region of a genome (e |
-| enriched | None | A library that has been enriched for DNA from typically large portions to the... |
-| shotgun | None | An unselected library that has undergone no type of targeted amplification/en... |
+
+| Value | Description |
+| --- | --- |
+| amplicon | A library that has been enriched for a single specific region of a genome (e |
+| enriched | A library that has been enriched for DNA from typically large portions to the... |
+| shotgun | An unselected library that has undergone no type of targeted amplification/en... |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -28,22 +29,6 @@ URI: [MIXS:LibTypeEnum](https://w3id.org/mixs/LibTypeEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 

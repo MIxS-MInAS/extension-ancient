@@ -12,17 +12,19 @@ URI: [MIXS:ancient_data](https://w3id.org/mixs/ancient_data)
 <!-- no inheritance hierarchy -->
 
 
+<!--
 
 
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include [Combinations](combinations.md) (of checklists and extensions) that use ancient_data.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use ancient_data.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
 | [MixsCompliantData](MixsCompliantData.md) | A collection of data that complies with some combination of a MIxS checklist ... | - |
 
+-->
 
 
 

@@ -12,17 +12,19 @@ URI: [MIXS:999999915](https://w3id.org/mixs/999999915)
 <!-- no inheritance hierarchy -->
 
 
+<!--
 
 
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include [Combinations](combinations.md) (of checklists and extensions) that use samp_alt_lab_ids.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use samp_alt_lab_ids.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
 | [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
 
+-->
 
 
 

@@ -7,21 +7,22 @@ _Options for types of molecular damage removal during library construction of an
 
 
 
-URI: [MIXS:DamageTreatmentEnum](https://w3id.org/mixs/DamageTreatmentEnum)
+URI: [DamageTreatmentEnum](DamageTreatmentEnum.md)
 
 ## Permissible Values
-| Value | Meaning | Description |
-| --- | --- | --- |
-| no-removal | None | Molecular damage-derived misincorporations have not been removed using labora... |
-| partial-removal | None | Molecular damage-derived misincorporations have been partially removed using ... |
-| complete-removal | None | Molecular damage-derived misincorporations have been entirely removed using l... |
-| damage-selection | None | Library preparation-derived technique that retain only molecules containing d... |
-| other | None | Other type of damage treatment that are further described in other method des... |
+
+| Value | Description |
+| --- | --- |
+| no-removal | Molecular damage-derived misincorporations have not been removed using labora... |
+| partial-removal | Molecular damage-derived misincorporations have been partially removed using ... |
+| complete-removal | Molecular damage-derived misincorporations have been entirely removed using l... |
+| damage-selection | Library preparation-derived technique that retain only molecules containing d... |
+| other | Other type of damage treatment that are further described in other method des... |
 
 
 
 
-## Slots
+## Terms
 
 | Name | Description |
 | ---  | --- |
@@ -30,22 +31,6 @@ URI: [MIXS:DamageTreatmentEnum](https://w3id.org/mixs/DamageTreatmentEnum)
 
 
 
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://w3id.org/mixs
 
 
 
