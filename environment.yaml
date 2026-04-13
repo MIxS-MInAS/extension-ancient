@@ -1,0 +1,12 @@
+name: mixs-minas-extension-ancient
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip=25.2
+  - conda-forge::linkml=1.10
+  - conda-forge::mkdocs=1.6
+  - conda-forge::mkdocs-get-deps=0.2
+  - conda-forge::mkdocs-material=9.7
+  - conda-forge::mkdocs-material-extensions=1.3
+  - conda-forge::mkdocs-mermaid2-plugin=1.2
