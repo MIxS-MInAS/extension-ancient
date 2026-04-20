@@ -1026,9 +1026,9 @@ slots:
       - sequencing
     slot_uri: MIXS:999999941 #Not assigned
     range: integer
-  num_capture_cycles:
+  capture_pcr_cyc_tot:
     description: >-
-      Number of amplification cycles after capture enrichment
+      Amplification cycles after capture enrichment total. PCR conditions can be specified in pcr_cond
     title: number of reamplification cycles after capture
     examples:
       - value: "12"
@@ -1188,7 +1188,7 @@ classes:
       - lib_type
       - lib_preparation_sop
       - num_reamp_cycles
-      - num_capture_cycles
+      - capture_pcr_cyc_tot
       - capture_probe_taxid
       - capture_probe_desc
       - desc_read_state
@@ -1317,7 +1317,7 @@ classes:
       num_reamp_cycles:
         slot_group: Sequencing
         rank: 41
-      num_capture_cycles:
+      capture_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 42
       capture_probe_taxid:
