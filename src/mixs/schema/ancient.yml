@@ -1082,7 +1082,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  desc_read_state:
+  data_preprocessing:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
@@ -1191,7 +1191,7 @@ classes:
       - num_capture_cycles
       - capture_probe_taxid
       - capture_probe_desc
-      - desc_read_state
+      - data_preprocessing
       - data_filt_applied
     slot_usage:
       orig_site_name:
@@ -1326,7 +1326,7 @@ classes:
       capture_probe_desc:
         slot_group: Sequencing
         rank: 44
-      desc_read_state:
+      data_preprocessing:
         slot_group: Data analysis
         rank: 45
       data_filt_applied:
