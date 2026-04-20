@@ -807,7 +807,6 @@ slots:
       - value: "Extraction batch: 1"
       - value: "20260501-A2 (extraction);20202607-B2 (library)"
       - value: "ExtrMG;LibMG;SeqMG"
-      - value: "Core: North-East Greenland 73G"
     in_subset:
       - nucleic acid sequence source
     keywords:
