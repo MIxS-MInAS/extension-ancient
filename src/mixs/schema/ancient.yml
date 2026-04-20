@@ -902,7 +902,7 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  mid_config:
+  lib_mid_desc:
     annotations:
       Expected_value: Description of the indexing configuration of the library
     description: >-
@@ -1181,7 +1181,7 @@ classes:
       - damage_treatment
       - nucl_acid_extr_date
       - experimental_sop
-      - mid_config
+      - lib_mid_desc
       - library_name
       - lib_polymerase
       - lib_strandedness
@@ -1296,7 +1296,7 @@ classes:
       experimental_sop:
         slot_group: Nucleic acid source
         rank: 34
-      mid_config:
+      lib_mid_desc:
         slot_group: Sequencing
         rank: 35
       library_name:
