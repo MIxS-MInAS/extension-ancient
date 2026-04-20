@@ -492,6 +492,9 @@ slots:
     keywords:
       - ethics
     slot_uri: MIXS:999999913 #Not assigned
+    close_mappings:
+      - dwc:accessRights
+      - dwc:license
     multivalued: true
     range: string
     string_serialization: "{text}"
