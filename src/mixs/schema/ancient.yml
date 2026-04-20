@@ -776,7 +776,7 @@ slots:
     annotations:
       Expected_value: description of health related observation on ancient remains
     description: >-
-      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.
+      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual/subject under study.
     title: palaeopathology status
     examples:
       - value: "Osteoporosis."
