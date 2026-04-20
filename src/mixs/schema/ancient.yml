@@ -1104,11 +1104,12 @@ slots:
     range: string
     required: false
     recommended: true
-  data_filt_applied:
+  data_reads_removed:
     annotations:
-      Expected_value: Whether associated data was filtered
+      Expected_value: Whether any sequencing reads were removed from the data files after sequencing
     description: >-
-      Specify whether associated data was filtered prior to upload, such as host reads removal.
+      Specify whether associated data was filtered in some form prior to upload, such as host reads removal.
+      Detailed description of the the data filtering that was carried out should be described in term 'description of read state'.
     title: Data filtering applied
     examples:
       - value: "no"
