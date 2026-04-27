@@ -676,7 +676,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999945">MIXS:999999945</a></td>
-<td><a href="../desc_read_state/">desc_read_state</a></td>
+<td><a href="../data_preprocessing/">data_preprocessing</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Description of the state of the reads in the sequencing data file</td>
 </tr>
@@ -758,7 +758,7 @@ slots:
 - num_capture_cycles
 - capture_probe_taxid
 - capture_probe_desc
-- desc_read_state
+- data_preprocessing
 - data_filt_applied
 slot_usage:
   orig_site_name:
@@ -937,8 +937,8 @@ slot_usage:
     name: capture_probe_desc
     rank: 44
     slot_group: Sequencing
-  desc_read_state:
-    name: desc_read_state
+  data_preprocessing:
+    name: data_preprocessing
     rank: 45
     slot_group: Data analysis
   data_filt_applied:
@@ -1146,8 +1146,8 @@ slot_usage:
     name: capture_probe_desc
     rank: 44
     slot_group: Sequencing
-  desc_read_state:
-    name: desc_read_state
+  data_preprocessing:
+    name: data_preprocessing
     rank: 45
     slot_group: Data analysis
   data_filt_applied:
@@ -2481,8 +2481,8 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  desc_read_state:
-    name: desc_read_state
+  data_preprocessing:
+    name: data_preprocessing
     annotations:
       Expected_value:
         tag: Expected_value
@@ -2508,7 +2508,7 @@ attributes:
     - data analysis
     - data
     slot_uri: MIXS:999999945
-    alias: desc_read_state
+    alias: data_preprocessing
     owner: Ancient
     domain_of:
     - Ancient
