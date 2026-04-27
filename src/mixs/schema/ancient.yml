@@ -19,7 +19,7 @@ prefixes:
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
   chrono: http://rs.tdwg.org/chrono/terms/
-  dwc: https://dwc.tdwg.org/terms/
+  dc: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -464,7 +464,7 @@ slots:
       - location
     slot_uri: MIXS:999999911 #Not assigned
     close_mappings:
-      - dwc:rightsHolder
+      - dc:rightsHolder
     multivalued: true
     range: string
     required: false
