@@ -1104,7 +1104,7 @@ slots:
     range: string
     required: false
     recommended: true
-  data_reads_removed:
+  reads_removed_desc:
     annotations:
       Expected_value: Whether any sequencing reads were removed from the data files after sequencing
     description: >-
