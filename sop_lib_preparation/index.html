@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/NucleicAcidSequenceSource/">
+        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/sop_lib_preparation/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Subset: NucleicAcidSequenceSource - MIxS-MInAS Ancient DNA Extension</title>
+        <title>Term: library preparation protocols (sop_lib_preparation) - MIxS-MInAS Ancient DNA Extension</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#subset-nucleicacidsequencesource" class="md-skip">
+        <a href="#term-library-preparation-protocols-sop_lib_preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Subset: NucleicAcidSequenceSource
+              Term: library preparation protocols (sop_lib_preparation)
             
           </span>
         </div>
@@ -311,10 +311,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#slots-in-subset" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slots in subset
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
       
     </span>
   </a>
@@ -341,84 +363,80 @@
   
 
 
-<h1 id="subset-nucleicacidsequencesource">Subset: NucleicAcidSequenceSource</h1>
-<p><em>MIxS terms related to the source of nucleic acids for sequencing, such as extraction or library preparation.</em></p>
-<p>URI: <a href="./">NucleicAcidSequenceSource</a></p>
-<h2 id="slots-in-subset">Slots in subset</h2>
+<h1 id="term-library-preparation-protocols-sop_lib_preparation">Term: library preparation protocols (sop_lib_preparation)</h1>
+<p><em>Citation(s) for the nucleic acid library preparation protocol.</em></p>
+<p>URI: <a href="https://w3id.org/mixs/999999940">MIXS:999999940</a></p>
+<!-- no inheritance hierarchy -->
+
+<!--
+
+
+
+## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
+
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use sop_lib_preparation.
+
+| Name | Description | Checklist/Extension |
+| --- | --- | --- |
+| [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
+
+-->
+
+<h2 id="properties">Properties</h2>
+<ul>
+<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Cardinality: *</p>
+</li>
+<li>
+<p>Structured pattern: <code>^{PMID}|{DOI}|{URL}$</code></p>
+</li>
+<li>
+<p>Regex pattern: <code>^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$</code></p>
+</li>
+</ul>
+<h2 id="examples">Examples</h2>
 <table>
 <thead>
 <tr>
-<th>Slot</th>
-<th>Description</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../batch_ids/">batch_ids</a></td>
-<td>Identifiers for any form of batch or 'group' that the samples is associated w...</td>
-</tr>
-<tr>
-<td><a href="../context_retrieval_date/">context_retrieval_date</a></td>
-<td>Date of excavation or retrieval from burial or depositional context, if known</td>
-</tr>
-<tr>
-<td><a href="../cultural_era/">cultural_era</a></td>
-<td>The cultural era approximating to the period in which the archaeological rema...</td>
-</tr>
-<tr>
-<td><a href="../earliest_chrono_age/">earliest_chrono_age</a></td>
-<td>The maximum/earliest/oldest possible age of a specimen as determined by a dat...</td>
-</tr>
-<tr>
-<td><a href="../experimental_sop/">experimental_sop</a></td>
-<td>Provide a DOI or URL to refer to the paper where the field report, nucleic ac...</td>
-</tr>
-<tr>
-<td><a href="../geological_epoch/">geological_epoch</a></td>
-<td>The geological epoch approximating to the period within which the specimen or...</td>
-</tr>
-<tr>
-<td><a href="../host_preserv_state/">host_preserv_state</a></td>
-<td>Description of the state of the sampled (ancient) organism/host as originally...</td>
-</tr>
-<tr>
-<td><a href="../latest_chrono_age/">latest_chrono_age</a></td>
-<td>The minimum/latest/youngest possible age of a specimen as determined by a dat...</td>
-</tr>
-<tr>
-<td><a href="../neg_cont_status/">neg_cont_status</a></td>
-<td>Specify whether the sample is a negative control or not</td>
-</tr>
-<tr>
-<td><a href="../nucl_acid_extr_date/">nucl_acid_extr_date</a></td>
-<td>The date when the nucleic acid extraction was started from the sample materia...</td>
-</tr>
-<tr>
-<td><a href="../palaeopath_status/">palaeopath_status</a></td>
-<td>Describe briefly any relevant palaeopathological or health-related observatio...</td>
-</tr>
-<tr>
-<td><a href="../prev_pubs/">prev_pubs</a></td>
-<td>Any publications that report data from the same body/skeleton/individual</td>
-</tr>
-<tr>
-<td><a href="../samp_decont_pretreat/">samp_decont_pretreat</a></td>
-<td>Protocols employed for sample surface decontamination of external  modern nuc...</td>
-</tr>
-<tr>
-<td><a href="../samp_preserv_treatm/">samp_preserv_treatm</a></td>
-<td>Description of any treatment applied directly to samples for the specific pur...</td>
-</tr>
-<tr>
-<td><a href="../sop_lib_preparation/">sop_lib_preparation</a></td>
-<td>Citation(s) for the nucleic acid library preparation protocol</td>
-</tr>
-<tr>
-<td><a href="../storage_conditions/">storage_conditions</a></td>
-<td>General surrounding environmental conditions where the material was stored in...</td>
+<td>doi:10.1093/nar/gkr771</td>
 </tr>
 </tbody>
 </table>
+<h2 id="linkml-source">LinkML Source</h2>
+<details>
+
+<pre><code class="language-yaml">name: sop_lib_preparation
+description: Citation(s) for the nucleic acid library preparation protocol.
+title: library preparation protocols
+examples:
+- value: doi:10.1093/nar/gkr771
+in_subset:
+- nucleic acid sequence source
+from_schema: https://w3id.org/mixs
+rank: 1000
+slot_uri: MIXS:999999940
+alias: sop_lib_preparation
+domain_of:
+- Ancient
+range: string
+required: false
+recommended: false
+multivalued: true
+pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
+structured_pattern:
+  syntax: ^{PMID}|{DOI}|{URL}$
+  interpolated: true
+  partial_match: true
+
+</code></pre>
+
+</details>
 
 
 

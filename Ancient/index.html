@@ -646,7 +646,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999940">MIXS:999999940</a></td>
-<td><a href="../lib_preparation_sop/">lib_preparation_sop</a></td>
+<td><a href="../sop_lib_preparation/">sop_lib_preparation</a></td>
 <td>* <br/> <a href="../String/">String</a></td>
 <td>Citation(s) for the nucleic acid library preparation protocol</td>
 </tr>
@@ -753,7 +753,7 @@ slots:
 - lib_polymerase
 - lib_strandedness
 - lib_type
-- lib_preparation_sop
+- sop_lib_preparation
 - num_reamp_cycles
 - num_capture_cycles
 - capture_probe_taxid
@@ -913,8 +913,8 @@ slot_usage:
     name: lib_strandedness
     rank: 38
     slot_group: Sequencing
-  lib_preparation_sop:
-    name: lib_preparation_sop
+  sop_lib_preparation:
+    name: sop_lib_preparation
     rank: 39
     slot_group: Sequencing
   lib_type:
@@ -1122,8 +1122,8 @@ slot_usage:
     name: lib_strandedness
     rank: 38
     slot_group: Sequencing
-  lib_preparation_sop:
-    name: lib_preparation_sop
+  sop_lib_preparation:
+    name: sop_lib_preparation
     rank: 39
     slot_group: Sequencing
   lib_type:
@@ -2341,8 +2341,8 @@ attributes:
     range: LibTypeEnum
     required: false
     recommended: true
-  lib_preparation_sop:
-    name: lib_preparation_sop
+  sop_lib_preparation:
+    name: sop_lib_preparation
     description: Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
     examples:
@@ -2352,7 +2352,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     rank: 39
     slot_uri: MIXS:999999940
-    alias: lib_preparation_sop
+    alias: sop_lib_preparation
     owner: Ancient
     domain_of:
     - Ancient
