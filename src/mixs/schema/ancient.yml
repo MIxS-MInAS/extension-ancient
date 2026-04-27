@@ -217,7 +217,7 @@ enums:
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
-    title: Ancient data
+    title: ancient data
     domain: MixsCompliantData
     slot_uri: MIXS:ancient_data
     multivalued: true
@@ -232,7 +232,7 @@ slots:
       Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature.
       Typically names that would not be found on official maps. If the site name is unclear please use the name of the closest location or region as best as possible.
       Can also include different transliterations or languages used in the literature.
-    title: Name of site or location where sample originated
+    title: name of site or location where sample originated
     examples:
       - value: "Valley of the Kings"
       - value: "Krakow Spadzista B"
@@ -665,7 +665,7 @@ slots:
       widest range of age possibilities.
       The specific age unit should be specified by the term earliest_chrono_sys.
       More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
-    title: Earliest Chronometric Age
+    title: earliest chronometric age
     examples:
       - value: "120000"
       - value: "1900"
@@ -681,7 +681,7 @@ slots:
   earliest_chrono_sys:
     description: >-
       The reference system associated with the earliest_chrono_age.
-    title: Earliest Chronometric Age Reference System
+    title: earliest chronometric age reference system
     examples:
       - value: "cal BP"
       - value: "CE"
@@ -705,7 +705,7 @@ slots:
       widest range of age possibilities.
       The specific age unit should be specified by the term latest_chrono_sys.
       More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
-    title: Latest Chronometric Age
+    title: latest chronometric age
     examples:
       - value: "100000"
       - value: "1700"
@@ -721,7 +721,7 @@ slots:
   latest_chrono_sys:
     description: >-
       The reference system associated with the latest_chrono_age.
-    title: Latest Chronometric Age Reference System
+    title: latest chronometric age reference system
     examples:
       - value: "cal BP"
       - value: "CE"
@@ -739,7 +739,7 @@ slots:
   chrono_age_protocol:
     description: >-
       A description of or reference to the methods used to determine the earliest_chrono_age and latest_chrono_age.
-    title: Chronometric Age Protocol
+    title: chronometric age protocol
     examples:
       - value: "radiocarbon dating"
       - value: "optically stimulated infrared luminescence"
@@ -759,7 +759,7 @@ slots:
       Notes or comments about the  earliest_chrono_age and latest_chrono_age.
       For more detail use Chronometric Age Protocol to point to original publication describing method.
       Useful to specify confidence and/or accuracy of reported date.
-    title: Chronometric Age Remarks
+    title: chronometric age remarks
     examples:
       - value: "radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval"
       - value: "based on proxy dating from other bone samples of stratigraphic layer"
@@ -859,7 +859,7 @@ slots:
     description: >-
       Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory.
       If damage has been removed, but whether it was fully or partially removed is unknown (e.g. with UDG treatment) - specify 'other', and describe known information in `experimental_sop` and related free text descriptive terms.
-    title: Damage treatment type
+    title: damage treatment type
     examples:
       - value: none
       - value: partial-removal
@@ -1111,7 +1111,7 @@ slots:
       Expected_value: Whether associated data was filtered
     description: >-
       Specify whether associated data was filtered prior to upload, such as host reads removal.
-    title: Data filtering applied
+    title: data filtering applied
     examples:
       - value: "no"
       - value: "yes"
