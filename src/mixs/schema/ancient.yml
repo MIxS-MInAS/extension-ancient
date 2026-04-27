@@ -811,7 +811,7 @@ slots:
     recommended: false
   samp_category:
     description: >-
-      The type/category of a sample. 'Sample" includes biological and technical replicates.
+      The type/category of a sample. "Sample" includes biological and technical replicates.
     title: sample category
     examples:
       - value: "sample"
