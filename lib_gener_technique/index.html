@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/LibTypeEnum/">
+        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/lib_gener_technique/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Enum: LibTypeEnum - MIxS-MInAS Ancient DNA Extension</title>
+        <title>Term: library generation technique (lib_gener_technique) - MIxS-MInAS Ancient DNA Extension</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-libtypeenum" class="md-skip">
+        <a href="#term-library-generation-technique-lib_gener_technique" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: LibTypeEnum
+              Term: library generation technique (lib_gener_technique)
             
           </span>
         </div>
@@ -311,10 +311,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissible Values
+        Properties
       
     </span>
   </a>
@@ -322,10 +322,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#terms" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Terms
+        Examples
       
     </span>
   </a>
@@ -363,69 +363,80 @@
   
 
 
-<h1 id="enum-libtypeenum">Enum: LibTypeEnum</h1>
-<p><em>Options for types of DNA that have been targeted for DNA library construction.</em></p>
-<p>URI: <a href="./">LibTypeEnum</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
+<h1 id="term-library-generation-technique-lib_gener_technique">Term: library generation technique (lib_gener_technique)</h1>
+<p><em>The technique used to generate the library, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene). An enriched library is a library that has had a particular genome or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.</em></p>
+<p>URI: <a href="https://w3id.org/mixs/999999939">MIXS:999999939</a></p>
+<!-- no inheritance hierarchy -->
+
+<!--
+
+
+
+## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
+
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use lib_gener_technique.
+
+| Name | Description | Checklist/Extension |
+| --- | --- | --- |
+| [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
+
+-->
+
+<h2 id="properties">Properties</h2>
+<ul>
+<li>Range: <a href="../LibTypeEnum/">LibTypeEnum</a></li>
+<li>Cardinality: 0..1 <em>recommended</em></li>
+</ul>
+<h2 id="examples">Examples</h2>
 <table>
 <thead>
 <tr>
 <th>Value</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>shotgun</td>
+</tr>
+<tr>
 <td>amplicon</td>
-<td>A library that has been enriched for a single specific region of a genome (e</td>
 </tr>
 <tr>
 <td>enriched</td>
-<td>A library that has been enriched for DNA from typically large portions to the...</td>
-</tr>
-<tr>
-<td>shotgun</td>
-<td>An unselected library that has undergone no type of targeted amplification/en...</td>
-</tr>
-</tbody>
-</table>
-<h2 id="terms">Terms</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../lib_gener_technique/">lib_gener_technique</a></td>
-<td>The technique used to generate the library, i</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: LibTypeEnum
-description: Options for types of DNA that have been targeted for DNA library construction.
+<pre><code class="language-yaml">name: lib_gener_technique
+description: The technique used to generate the library, i.e., amplicon, enriched,
+  or shotgun. An amplicon library is a library that has been amplified to target a
+  single specific region of a genome (e.g. a specific gene). An enriched library is
+  a library that has had a particular genome or multiple genomic regions/positions
+  'captured' or enriched typically via baits/probes. A shotgun library has undergone
+  no type of targeted amplification/enrichment for a particular genomic region or
+  genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic
+  library.
+title: library generation technique
+examples:
+- value: shotgun
+- value: amplicon
+- value: enriched
+in_subset:
+- sequencing
 from_schema: https://w3id.org/mixs
 rank: 1000
-permissible_values:
-  amplicon:
-    text: amplicon
-    description: A library that has been enriched for a single specific region of
-      a genome (e.g. a specific gene) through targeted amplification.
-  enriched:
-    text: enriched
-    description: A library that has been enriched for DNA from typically large portions
-      to the entirety of a genome, through array or in-solution 'capture' with genome
-      array baits/probes.
-  shotgun:
-    text: shotgun
-    description: An unselected library that has undergone no type of targeted amplification/enrichment
-      for a particular genomic region or genome, i.e., random sequencing of any nucleic
-      acid molecule contained in a genomic library.
+keywords:
+- library
+- preparation
+slot_uri: MIXS:999999939
+alias: lib_gener_technique
+domain_of:
+- Ancient
+range: LibTypeEnum
+required: false
+recommended: true
 
 </code></pre>
 
