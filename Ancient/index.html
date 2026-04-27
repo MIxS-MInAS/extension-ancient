@@ -658,9 +658,9 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999942">MIXS:999999942</a></td>
-<td><a href="../num_capture_cycles/">num_capture_cycles</a></td>
+<td><a href="../capture_pcr_cyc_tot/">capture_pcr_cyc_tot</a></td>
 <td>* <br/> <a href="../Integer/">Integer</a></td>
-<td>Number of amplification cycles after capture enrichment</td>
+<td>Amplification cycles after capture enrichment total</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999943">MIXS:999999943</a></td>
@@ -755,7 +755,7 @@ slots:
 - lib_gener_technique
 - sop_lib_preparation
 - reamp_pcr_cyc_tot
-- num_capture_cycles
+- capture_pcr_cyc_tot
 - capture_probe_taxid
 - capture_probe_desc
 - data_preprocessing
@@ -925,8 +925,8 @@ slot_usage:
     name: reamp_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
-  num_capture_cycles:
-    name: num_capture_cycles
+  capture_pcr_cyc_tot:
+    name: capture_pcr_cyc_tot
     rank: 42
     slot_group: Sequencing
   capture_probe_taxid:
@@ -1134,8 +1134,8 @@ slot_usage:
     name: reamp_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
-  num_capture_cycles:
-    name: num_capture_cycles
+  capture_pcr_cyc_tot:
+    name: capture_pcr_cyc_tot
     rank: 42
     slot_group: Sequencing
   capture_probe_taxid:
@@ -2390,9 +2390,10 @@ attributes:
     - Ancient
     slot_group: Sequencing
     range: integer
-  num_capture_cycles:
-    name: num_capture_cycles
-    description: Number of amplification cycles after capture enrichment
+  capture_pcr_cyc_tot:
+    name: capture_pcr_cyc_tot
+    description: Amplification cycles after capture enrichment total. Provide additional
+      information about PCR conditions in pcr_cond
     title: number of reamplification cycles after capture
     examples:
     - value: '12'
@@ -2401,7 +2402,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     rank: 42
     slot_uri: MIXS:999999942
-    alias: num_capture_cycles
+    alias: capture_pcr_cyc_tot
     owner: Ancient
     domain_of:
     - Ancient
