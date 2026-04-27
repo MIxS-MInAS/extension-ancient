@@ -616,7 +616,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999935">MIXS:999999935</a></td>
-<td><a href="../mid_config/">mid_config</a></td>
+<td><a href="../lib_mid_desc/">lib_mid_desc</a></td>
 <td>* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Index/barcode/primer configuration used during library building for sequencin...</td>
 </tr>
@@ -748,7 +748,7 @@ slots:
 - damage_treatment
 - nucl_acid_extr_date
 - experimental_sop
-- mid_config
+- lib_mid_desc
 - library_name
 - lib_polymerase
 - lib_strandedness
@@ -897,8 +897,8 @@ slot_usage:
     name: experimental_sop
     rank: 34
     slot_group: Nucleic acid source
-  mid_config:
-    name: mid_config
+  lib_mid_desc:
+    name: lib_mid_desc
     rank: 35
     slot_group: Sequencing
   library_name:
@@ -1106,8 +1106,8 @@ slot_usage:
     name: experimental_sop
     rank: 34
     slot_group: Nucleic acid source
-  mid_config:
-    name: mid_config
+  lib_mid_desc:
+    name: lib_mid_desc
     rank: 35
     slot_group: Sequencing
   library_name:
@@ -2192,8 +2192,8 @@ attributes:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  mid_config:
-    name: mid_config
+  lib_mid_desc:
+    name: lib_mid_desc
     annotations:
       Expected_value:
         tag: Expected_value
@@ -2202,7 +2202,7 @@ attributes:
       sequencing. This includes information such as the number, type and location
       of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were
       ligated directly onto the template molecules.
-    title: multiplex identifiers or indexing configuration of libraries
+    title: description of library multiplex identifiers or indexing configuration
     examples:
     - value: dual index with single internal barcode.
     - value: UDI index sequences.
@@ -2215,7 +2215,7 @@ attributes:
     - preparation
     string_serialization: '{text}'
     slot_uri: MIXS:999999935
-    alias: mid_config
+    alias: lib_mid_desc
     owner: Ancient
     domain_of:
     - Ancient

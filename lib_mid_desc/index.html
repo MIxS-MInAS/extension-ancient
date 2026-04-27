@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/Sequencing/">
+        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/lib_mid_desc/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Subset: Sequencing - MIxS-MInAS Ancient DNA Extension</title>
+        <title>Term: description of library multiplex identifiers or indexing configuration (lib_mid_desc) - MIxS-MInAS Ancient DNA Extension</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#subset-sequencing" class="md-skip">
+        <a href="#term-description-of-library-multiplex-identifiers-or-indexing-configuration-lib_mid_desc" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Subset: Sequencing
+              Term: description of library multiplex identifiers or indexing configuration (lib_mid_desc)
             
           </span>
         </div>
@@ -311,10 +311,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#slots-in-subset" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slots in subset
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
       
     </span>
   </a>
@@ -341,68 +380,86 @@
   
 
 
-<h1 id="subset-sequencing">Subset: Sequencing</h1>
-<p><em>MIxS terms related to the sequencing stage of nucleic acid sequencing data generation.</em></p>
-<p>URI: <a href="./">Sequencing</a></p>
-<h2 id="slots-in-subset">Slots in subset</h2>
+<h1 id="term-description-of-library-multiplex-identifiers-or-indexing-configuration-lib_mid_desc">Term: description of library multiplex identifiers or indexing configuration (lib_mid_desc)</h1>
+<p><em>Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.</em></p>
+<p>URI: <a href="https://w3id.org/mixs/999999935">MIXS:999999935</a></p>
+<!-- no inheritance hierarchy -->
+
+<!--
+
+
+
+## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
+
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use lib_mid_desc.
+
+| Name | Description | Checklist/Extension |
+| --- | --- | --- |
+| [Ancient](Ancient.md) | A collection of terms appropriate when collecting samples and sequencing samp... | Extension |
+
+-->
+
+<h2 id="properties">Properties</h2>
+<ul>
+<li>Range: <a href="../String/">String</a></li>
+<li>Cardinality: * <em>recommended</em></li>
+</ul>
+<h2 id="examples">Examples</h2>
 <table>
 <thead>
 <tr>
-<th>Slot</th>
-<th>Description</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../capture_probe_desc/">capture_probe_desc</a></td>
-<td>Description of target enrichment probe designs used (e</td>
+<td>dual index with single internal barcode.</td>
 </tr>
 <tr>
-<td><a href="../capture_probe_taxid/">capture_probe_taxid</a></td>
-<td>NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ...</td>
-</tr>
-<tr>
-<td><a href="../damage_treatment/">damage_treatment</a></td>
-<td>Indication of whether characteristic ancient DNA damage has been altered or r...</td>
-</tr>
-<tr>
-<td><a href="../data_filt_applied/">data_filt_applied</a></td>
-<td>Specify whether associated data was filtered prior to upload, such as host re...</td>
-</tr>
-<tr>
-<td><a href="../desc_read_state/">desc_read_state</a></td>
-<td>Description of the state of the reads in the sequencing data file</td>
-</tr>
-<tr>
-<td><a href="../lib_mid_desc/">lib_mid_desc</a></td>
-<td>Index/barcode/primer configuration used during library building for sequencin...</td>
-</tr>
-<tr>
-<td><a href="../lib_polymerase/">lib_polymerase</a></td>
-<td>The polymerase enzyme used for building nucleic acid libraries</td>
-</tr>
-<tr>
-<td><a href="../lib_strandedness/">lib_strandedness</a></td>
-<td>The strandedness of the original template nucleic acid molecules used for con...</td>
-</tr>
-<tr>
-<td><a href="../lib_type/">lib_type</a></td>
-<td>The type of library created, i</td>
-</tr>
-<tr>
-<td><a href="../library_name/">library_name</a></td>
-<td>Any ID or name used for referring to a nucleic acid sequencing library associ...</td>
-</tr>
-<tr>
-<td><a href="../num_capture_cycles/">num_capture_cycles</a></td>
-<td>Number of amplification cycles after capture enrichment</td>
-</tr>
-<tr>
-<td><a href="../reamp_pcr_cyc_tot/">reamp_pcr_cyc_tot</a></td>
-<td>Number of amplification cycles after library indexing PCR</td>
+<td>UDI index sequences.</td>
 </tr>
 </tbody>
 </table>
+<h3 id="annotations">Annotations</h3>
+<ul>
+<li>Expected_value: Description of the indexing configuration of the library</li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
+<details>
+
+<pre><code class="language-yaml">name: lib_mid_desc
+annotations:
+  Expected_value:
+    tag: Expected_value
+    value: Description of the indexing configuration of the library
+description: Index/barcode/primer configuration used during library building for sequencing.
+  This includes information such as the number, type and location of indexes, the
+  index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto
+  the template molecules.
+title: description of library multiplex identifiers or indexing configuration
+examples:
+- value: dual index with single internal barcode.
+- value: UDI index sequences.
+in_subset:
+- sequencing
+from_schema: https://w3id.org/mixs
+rank: 1000
+keywords:
+- library
+- preparation
+string_serialization: '{text}'
+slot_uri: MIXS:999999935
+alias: lib_mid_desc
+domain_of:
+- Ancient
+range: string
+required: false
+recommended: true
+multivalued: true
+
+</code></pre>
+
+</details>
 
 
 
