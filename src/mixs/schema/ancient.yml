@@ -19,7 +19,7 @@ prefixes:
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
   chrono: http://rs.tdwg.org/chrono/terms/
-  dc: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#
+  dc: http://purl.org/dc/elements/1.1/
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -387,33 +387,6 @@ slots:
     range: string
     required: false
     recommended: false
-  column_sample_depth:
-    annotations:
-      Expected_value: depth of the sample in the column of a stratigraphy or sediment core
-    description: >-
-      Distance relative to the top or beginning of the sediment core or stratigraphic sequence (defined by the term 'depth') from which the sample was taken.
-      This is not necessarily the same as the depth from floor level or Mean Sea Level (MSL) (which should be defined using the term: depth), as a core could start part way below the surface.
-      Can also be a range if the depth of the sample is not precisely measured.
-    title: sample depth in column
-    examples:
-      - value: "34 cm"
-      - value: "23 - 56 cm"
-      - value: "100 in"
-    in_subset:
-      - environment
-    keywords:
-      - environment
-      - core
-      - sediment
-    slot_uri: MIXS:999999908 #Not assigned
-    multivalued: false
-    range: string
-    required: false
-    recommended: false
-    structured_pattern:
-      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
-      interpolated: true
-      partial_match: true
   context_retrieval_date:
     annotations:
       Preferred_unit: year
@@ -495,6 +468,9 @@ slots:
     keywords:
       - ethics
     slot_uri: MIXS:999999913 #Not assigned
+    close_mappings:
+      - dc:accessRights
+      - dc:license
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -904,12 +880,12 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  mid_config:
+  lib_mid_desc:
     annotations:
       Expected_value: Description of the indexing configuration of the library
     description: >-
       Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.
-    title: multiplex identifiers or indexing configuration of libraries
+    title: description of library multiplex identifiers or indexing configuration
     examples:
       - value: "dual index with single internal barcode."
       - value: "UDI index sequences."
@@ -983,10 +959,10 @@ slots:
     range: LibStrandEnum #enum value
     required: true
     recommended: true
-  lib_type:
+  lib_gener_technique:
     description: >-
-      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
-    title: library type
+      The technique used to generate the library, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene). An enriched library is a library that has had a particular genome or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
+    title: library generation technique
     examples:
       - value: shotgun
       - value: amplicon
@@ -1028,9 +1004,9 @@ slots:
       - sequencing
     slot_uri: MIXS:999999941 #Not assigned
     range: integer
-  num_capture_cycles:
+  capture_pcr_cyc_tot:
     description: >-
-      Number of amplification cycles after capture enrichment
+      Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
     title: number of reamplification cycles after capture
     examples:
       - value: "12"
@@ -1084,14 +1060,14 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  desc_read_state:
+  data_preproc_desc:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
-      Description of the state of the reads in the sequencing data file.
+      Description of preprocessing performed on the reads in the sequencing data file.
       Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
       This should include details such as adapter-, barcode-, and/or quality- trimming, or any filtering such as for read length or of off-target reads.
-    title: description of read state
+    title: preprocessing of sequencing reads description
     examples:
       - value: "Adapter trimmed, quality filtered, and host reads removed through mapping for ethical reasons."
       - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln (v0.7.19)."
@@ -1106,12 +1082,13 @@ slots:
     range: string
     required: false
     recommended: true
-  data_filt_applied:
+  reads_removed_desc:
     annotations:
-      Expected_value: Whether associated data was filtered
+      Expected_value: Whether any sequencing reads were removed from the data files after sequencing
     description: >-
-      Specify whether associated data was filtered prior to upload, such as host reads removal.
-    title: data filtering applied
+      Specify whether associated data was filtered in some form prior to upload, such as host reads removal.
+      Detailed description of the the data filtering that was carried out should be described in term 'preprocessing of sequencing reads description'.
+    title: description of reads removal
     examples:
       - value: "no"
       - value: "yes"
@@ -1156,7 +1133,6 @@ classes:
       - past_env_broad
       - past_env_local
       - stratigraph_context
-      - column_sample_depth
       - context_retrieval_date
       - permit_id
       - permit_authority
@@ -1183,18 +1159,18 @@ classes:
       - damage_treatment
       - nucl_acid_extr_date
       - experimental_sop
-      - mid_config
+      - lib_mid_desc
       - library_name
       - lib_polymerase
       - lib_strandedness
-      - lib_type
+      - lib_gener_technique
       - sop_lib_preparation
       - reamp_pcr_cyc_tot
-      - num_capture_cycles
+      - capture_pcr_cyc_tot
       - capture_probe_taxid
       - capture_probe_desc
-      - desc_read_state
-      - data_filt_applied
+      - data_preproc_desc
+      - reads_removed_desc
     slot_usage:
       orig_site_name:
         slot_group: Environment
@@ -1220,120 +1196,117 @@ classes:
       stratigraph_context:
         slot_group: Environment
         rank: 8
-      column_sample_depth:
-        slot_group: Environment
-        rank: 9
       permit_id:
         slot_group: Sample body
-        rank: 10
+        rank: 9
       permit_authority:
         slot_group: Sample body
-        rank: 11
+        rank: 10
       permit_date:
         slot_group: Sample body
-        rank: 12
+        rank: 11
       permit_scope:
         slot_group: Sample body
-        rank: 13
+        rank: 12
       biocultural_label:
         slot_group: Sample body
-        rank: 14
+        rank: 13
       samp_alt_lab_ids:
         slot_group: Sample body
-        rank: 15
+        rank: 14
       prev_pubs:
         slot_group: Sample body
-        rank: 16
+        rank: 15
       host_preserv_state:
         slot_group: Sample body
-        rank: 17
+        rank: 16
       storage_conditions:
         slot_group: Sample body
-        rank: 18
+        rank: 17
       samp_preserv_treatm:
         slot_group: Sample body
-        rank: 19
+        rank: 18
       cultural_era:
         slot_group: Sample body
-        rank: 20
+        rank: 19
       geological_epoch:
         slot_group: Sample body
-        rank: 21
+        rank: 20
       earliest_chrono_age:
         slot_group: Sample body
-        rank: 22
+        rank: 21
       earliest_chrono_sys:
         slot_group: Sample body
-        rank: 23
+        rank: 22
       latest_chrono_age:
         slot_group: Sample body
-        rank: 24
+        rank: 23
       latest_chrono_sys:
         slot_group: Sample body
-        rank: 25
+        rank: 24
       chrono_age_protocol:
         slot_group: Sample body
-        rank: 26
+        rank: 25
       chrono_age_remarks:
         slot_group: Sample body
-        rank: 27
+        rank: 26
       palaeopath_status:
         slot_group: Sample body
-        rank: 28
+        rank: 27
       batch_ids:
         slot_group: Nucleic acid source
-        rank: 29
+        rank: 28
       neg_cont_status:
         slot_group: Nucleic acid source
-        rank: 30
+        rank: 29
       samp_decont_pretreat:
         slot_group: Nucleic acid source
-        rank: 31
+        rank: 30
       damage_treatment:
         slot_group: Nucleic acid source
-        rank: 32
+        rank: 31
       nucl_acid_extr_date:
         slot_group: Nucleic acid source
-        rank: 33
+        rank: 32
       experimental_sop:
         slot_group: Nucleic acid source
-        rank: 34
-      mid_config:
+        rank: 33
+      lib_mid_desc:
         slot_group: Sequencing
-        rank: 35
+        rank: 34
       library_name:
         slot_group: Sequencing
-        rank: 36
+        rank: 35
       lib_polymerase:
         slot_group: Sequencing
-        rank: 37
+        rank: 36
       lib_strandedness:
         slot_group: Sequencing
-        rank: 38
+        rank: 37
       sop_lib_preparation:
         slot_group: Sequencing
-        rank: 39
-      lib_type:
+        rank: 38
+      lib_gener_technique:
         slot_group: Sequencing
-        rank: 40
+        rank: 39
       reamp_pcr_cyc_tot:
         slot_group: Sequencing
-        rank: 41
-      num_capture_cycles:
+        rank: 40
+      capture_pcr_cyc_tot:
         slot_group: Sequencing
-        rank: 42
+        rank: 41
       capture_probe_taxid:
         slot_group: Sequencing
-        rank: 43
+        rank: 42
       capture_probe_desc:
         slot_group: Sequencing
+        rank: 43
+      data_preproc_desc:
+        slot_group: Data analysis
         rank: 44
-      desc_read_state:
+      reads_removed_desc:
         slot_group: Data analysis
         rank: 45
-      data_filt_applied:
-        slot_group: Data analysis
-        rank: 46
     class_uri: MIXS:9999903
     annotations:
       use_cases: ancient dna samples
