@@ -214,6 +214,20 @@ enums:
         description: A time period from 521.0 to 506.5 million years ago.
       Terreneuvian:
         description: A time period from 538.8 to 521.0 million years ago
+  SampCategoryEnum:
+    description: >-
+      Controlled vocabulary defining the category of a sample based on its experiental role.
+    permissible_values:
+      "sample":
+        description: Biological or environmental sample, including biological and technical replicates.
+      "negative control":
+        description: Negative control used to detect contamination, such as field negatives, extraction negatives, or PCR negatives (No-template control; NTC).
+      "positive control":
+        description: Positive control used to verify successful amplification or detection, such as extraction positives or PCR positives.
+      "PCR standard":
+        description: Standard consisting of known quantities of target nucleic acid used to generate calibration curves and enable quantification of target molecules.
+      "Other":
+        description: Other types of samples not represented in the controlled vocabulary.
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
@@ -795,19 +809,20 @@ slots:
     range: string
     required: false
     recommended: false
-  neg_cont_status:
+  samp_category:
     description: >-
-      Specify whether the sample is a negative control or not.
-    title: negative control status
+      The type/category of a sample. "Sample" includes biological and technical replicates.
+    title: sample category
     examples:
-      - value: "true"
-      - value: "false"
+      - value: "sample"
+      - value: "negative control"
+      - value: "positive control"
     keywords:
       - control
     in_subset:
       - nucleic acid sequence source
     slot_uri: MIXS:999999930 #Not assigned
-    range: boolean
+    range: SampCategoryEnum
     required: true
     recommended: true
   samp_decont_pretreat:
@@ -1154,7 +1169,7 @@ classes:
       - chrono_age_remarks
       - palaeopath_status
       - batch_ids
-      - neg_cont_status
+      - samp_category
       - samp_decont_pretreat
       - damage_treatment
       - nucl_acid_extr_date
@@ -1256,7 +1271,7 @@ classes:
       batch_ids:
         slot_group: Nucleic acid source
         rank: 28
-      neg_cont_status:
+      samp_category:
         slot_group: Nucleic acid source
         rank: 29
       samp_decont_pretreat:
