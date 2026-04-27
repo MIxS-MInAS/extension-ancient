@@ -1033,7 +1033,7 @@ slots:
     range: integer
   capture_pcr_cyc_tot:
     description: >-
-      Amplification cycles after capture enrichment total. PCR conditions can be specified in pcr_cond
+      Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
     title: number of reamplification cycles after capture
     examples:
       - value: "12"
