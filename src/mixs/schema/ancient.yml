@@ -1109,12 +1109,13 @@ slots:
     range: string
     required: false
     recommended: true
-  data_filt_applied:
+  reads_removed_desc:
     annotations:
-      Expected_value: Whether associated data was filtered
+      Expected_value: Whether any sequencing reads were removed from the data files after sequencing
     description: >-
-      Specify whether associated data was filtered prior to upload, such as host reads removal.
-    title: Data filtering applied
+      Specify whether associated data was filtered in some form prior to upload, such as host reads removal.
+      Detailed description of the the data filtering that was carried out should be described in term 'preprocessing of sequencing reads description'.
+    title: description of reads removal 
     examples:
       - value: "no"
       - value: "yes"
@@ -1197,7 +1198,7 @@ classes:
       - capture_probe_taxid
       - capture_probe_desc
       - data_preprocessing
-      - data_filt_applied
+      - reads_removed_desc
     slot_usage:
       orig_site_name:
         slot_group: Environment
@@ -1334,7 +1335,7 @@ classes:
       data_preprocessing:
         slot_group: Data analysis
         rank: 45
-      data_filt_applied:
+      reads_removed_desc:
         slot_group: Data analysis
         rank: 46
     class_uri: MIXS:9999903
