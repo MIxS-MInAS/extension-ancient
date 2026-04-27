@@ -1087,14 +1087,14 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  data_preprocessing:
+  data_preproc_desc:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
       Description of the state of the reads in the sequencing data file.
       Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
       This should include details such as adapter-, barcode-, and/or quality- trimming, or any filtering such as for read length or of off-target reads.
-    title: description of read state
+    title: preprocessing of sequencing reads description
     examples:
       - value: "Adapter trimmed, quality filtered, and host reads removed through mapping for ethical reasons."
       - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln (v0.7.19)."
@@ -1115,7 +1115,7 @@ slots:
     description: >-
       Specify whether associated data was filtered in some form prior to upload, such as host reads removal.
       Detailed description of the the data filtering that was carried out should be described in term 'preprocessing of sequencing reads description'.
-    title: description of reads removal 
+    title: description of reads removal
     examples:
       - value: "no"
       - value: "yes"
@@ -1197,7 +1197,7 @@ classes:
       - capture_pcr_cyc_tot
       - capture_probe_taxid
       - capture_probe_desc
-      - data_preprocessing
+      - data_preproc_desc
       - reads_removed_desc
     slot_usage:
       orig_site_name:
@@ -1332,7 +1332,7 @@ classes:
       capture_probe_desc:
         slot_group: Sequencing
         rank: 44
-      data_preprocessing:
+      data_preproc_desc:
         slot_group: Data analysis
         rank: 45
       reads_removed_desc:
