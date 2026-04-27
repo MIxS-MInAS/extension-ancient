@@ -1091,7 +1091,7 @@ slots:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
-      Description of the state of the reads in the sequencing data file.
+      Description of preprocessing performed on the reads in the sequencing data file.
       Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
       This should include details such as adapter-, barcode-, and/or quality- trimming, or any filtering such as for read length or of off-target reads.
     title: preprocessing of sequencing reads description
