@@ -226,6 +226,8 @@ enums:
         description: Positive control used to verify successful amplification or detection, such as extraction positives or PCR positives.
       "PCR standard":
         description: Standard consisting of known quantities of target nucleic acid used to generate calibration curves and enable quantification of target molecules.
+      "Other":
+        description: Other types of samples not represented in the controlled vocabulary.
 slots:
   ancient_data:
     description: Data that comply with Extension Ancient
