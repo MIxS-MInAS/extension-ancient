@@ -1193,7 +1193,7 @@ classes:
       - capture_probe_taxid
       - capture_probe_desc
       - desc_read_state
-      - data_filt_applied
+      - reads_removed_desc
     slot_usage:
       orig_site_name:
         slot_group: Environment
@@ -1330,7 +1330,7 @@ classes:
       desc_read_state:
         slot_group: Data analysis
         rank: 45
-      data_filt_applied:
+      reads_removed_desc:
         slot_group: Data analysis
         rank: 46
     class_uri: MIXS:9999903
