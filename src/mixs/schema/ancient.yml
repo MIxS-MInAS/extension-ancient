@@ -553,7 +553,7 @@ slots:
   host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host at time/immediately after death.
-    title: preservation state of sampled organism/host at/immediately after death
+    title: preservation state of sampled host at death
     description: >-
       Description of the state of the sampled (ancient) organism/host as originally 
       preserved in the burial environment at the time of or immediately following death.
