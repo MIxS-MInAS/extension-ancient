@@ -983,7 +983,7 @@ slots:
     recommended: true
   lib_gener_technique:
     description: >-
-      The technique used to generate the library, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
+      The technique used to generate the library, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene). An enriched library is a library that has had a particular genome or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
     title: library generation technique
     examples:
       - value: shotgun
