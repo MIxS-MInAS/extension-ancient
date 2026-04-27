@@ -453,12 +453,6 @@
 <td>Associated stratigraphic context(s) that the sample was retrieved from, usual...</td>
 </tr>
 <tr>
-<td><a href="https://w3id.org/mixs/999999908">MIXS:999999908</a></td>
-<td><a href="../column_sample_depth/">column_sample_depth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Distance relative to the top or beginning of the sediment core or stratigraph...</td>
-</tr>
-<tr>
 <td><a href="https://w3id.org/mixs/999999909">MIXS:999999909</a></td>
 <td><a href="../context_retrieval_date/">context_retrieval_date</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Datetime/">Datetime</a></td>
@@ -721,7 +715,6 @@ slots:
 - past_env_broad
 - past_env_local
 - stratigraph_context
-- column_sample_depth
 - context_retrieval_date
 - permit_id
 - permit_authority
@@ -793,157 +786,153 @@ slot_usage:
     name: stratigraph_context
     rank: 8
     slot_group: Environment
-  column_sample_depth:
-    name: column_sample_depth
-    rank: 9
-    slot_group: Environment
   permit_id:
     name: permit_id
-    rank: 10
+    rank: 9
     slot_group: Sample body
   permit_authority:
     name: permit_authority
-    rank: 11
+    rank: 10
     slot_group: Sample body
   permit_date:
     name: permit_date
-    rank: 12
+    rank: 11
     slot_group: Sample body
   permit_scope:
     name: permit_scope
-    rank: 13
+    rank: 12
     slot_group: Sample body
   biocultural_label:
     name: biocultural_label
-    rank: 14
+    rank: 13
     slot_group: Sample body
   samp_alt_lab_ids:
     name: samp_alt_lab_ids
-    rank: 15
+    rank: 14
     slot_group: Sample body
   prev_pubs:
     name: prev_pubs
-    rank: 16
+    rank: 15
     slot_group: Sample body
   host_preserv_state:
     name: host_preserv_state
-    rank: 17
+    rank: 16
     slot_group: Sample body
   storage_conditions:
     name: storage_conditions
-    rank: 18
+    rank: 17
     slot_group: Sample body
   samp_preserv_treatm:
     name: samp_preserv_treatm
-    rank: 19
+    rank: 18
     slot_group: Sample body
   cultural_era:
     name: cultural_era
-    rank: 20
+    rank: 19
     slot_group: Sample body
   geological_epoch:
     name: geological_epoch
-    rank: 21
+    rank: 20
     slot_group: Sample body
   earliest_chrono_age:
     name: earliest_chrono_age
-    rank: 22
+    rank: 21
     slot_group: Sample body
   earliest_chrono_sys:
     name: earliest_chrono_sys
-    rank: 23
+    rank: 22
     slot_group: Sample body
   latest_chrono_age:
     name: latest_chrono_age
-    rank: 24
+    rank: 23
     slot_group: Sample body
   latest_chrono_sys:
     name: latest_chrono_sys
-    rank: 25
+    rank: 24
     slot_group: Sample body
   chrono_age_protocol:
     name: chrono_age_protocol
-    rank: 26
+    rank: 25
     slot_group: Sample body
   chrono_age_remarks:
     name: chrono_age_remarks
-    rank: 27
+    rank: 26
     slot_group: Sample body
   palaeopath_status:
     name: palaeopath_status
-    rank: 28
+    rank: 27
     slot_group: Sample body
   batch_ids:
     name: batch_ids
-    rank: 29
+    rank: 28
     slot_group: Nucleic acid source
   neg_cont_status:
     name: neg_cont_status
-    rank: 30
+    rank: 29
     slot_group: Nucleic acid source
   samp_decont_pretreat:
     name: samp_decont_pretreat
-    rank: 31
+    rank: 30
     slot_group: Nucleic acid source
   damage_treatment:
     name: damage_treatment
-    rank: 32
+    rank: 31
     slot_group: Nucleic acid source
   nucl_acid_extr_date:
     name: nucl_acid_extr_date
-    rank: 33
+    rank: 32
     slot_group: Nucleic acid source
   experimental_sop:
     name: experimental_sop
-    rank: 34
+    rank: 33
     slot_group: Nucleic acid source
   lib_mid_desc:
     name: lib_mid_desc
-    rank: 35
+    rank: 34
     slot_group: Sequencing
   library_name:
     name: library_name
-    rank: 36
+    rank: 35
     slot_group: Sequencing
   lib_polymerase:
     name: lib_polymerase
-    rank: 37
+    rank: 36
     slot_group: Sequencing
   lib_strandedness:
     name: lib_strandedness
-    rank: 38
+    rank: 37
     slot_group: Sequencing
   sop_lib_preparation:
     name: sop_lib_preparation
-    rank: 39
+    rank: 38
     slot_group: Sequencing
   lib_gener_technique:
     name: lib_gener_technique
-    rank: 40
+    rank: 39
     slot_group: Sequencing
   reamp_pcr_cyc_tot:
     name: reamp_pcr_cyc_tot
-    rank: 41
+    rank: 40
     slot_group: Sequencing
   capture_pcr_cyc_tot:
     name: capture_pcr_cyc_tot
-    rank: 42
+    rank: 41
     slot_group: Sequencing
   capture_probe_taxid:
     name: capture_probe_taxid
-    rank: 43
+    rank: 42
     slot_group: Sequencing
   capture_probe_desc:
     name: capture_probe_desc
-    rank: 44
+    rank: 43
     slot_group: Sequencing
   data_preproc_desc:
     name: data_preproc_desc
-    rank: 45
+    rank: 44
     slot_group: Data analysis
   reads_removed_desc:
     name: reads_removed_desc
-    rank: 46
+    rank: 45
     slot_group: Data analysis
 class_uri: MIXS:9999903
 
@@ -1002,157 +991,153 @@ slot_usage:
     name: stratigraph_context
     rank: 8
     slot_group: Environment
-  column_sample_depth:
-    name: column_sample_depth
-    rank: 9
-    slot_group: Environment
   permit_id:
     name: permit_id
-    rank: 10
+    rank: 9
     slot_group: Sample body
   permit_authority:
     name: permit_authority
-    rank: 11
+    rank: 10
     slot_group: Sample body
   permit_date:
     name: permit_date
-    rank: 12
+    rank: 11
     slot_group: Sample body
   permit_scope:
     name: permit_scope
-    rank: 13
+    rank: 12
     slot_group: Sample body
   biocultural_label:
     name: biocultural_label
-    rank: 14
+    rank: 13
     slot_group: Sample body
   samp_alt_lab_ids:
     name: samp_alt_lab_ids
-    rank: 15
+    rank: 14
     slot_group: Sample body
   prev_pubs:
     name: prev_pubs
-    rank: 16
+    rank: 15
     slot_group: Sample body
   host_preserv_state:
     name: host_preserv_state
-    rank: 17
+    rank: 16
     slot_group: Sample body
   storage_conditions:
     name: storage_conditions
-    rank: 18
+    rank: 17
     slot_group: Sample body
   samp_preserv_treatm:
     name: samp_preserv_treatm
-    rank: 19
+    rank: 18
     slot_group: Sample body
   cultural_era:
     name: cultural_era
-    rank: 20
+    rank: 19
     slot_group: Sample body
   geological_epoch:
     name: geological_epoch
-    rank: 21
+    rank: 20
     slot_group: Sample body
   earliest_chrono_age:
     name: earliest_chrono_age
-    rank: 22
+    rank: 21
     slot_group: Sample body
   earliest_chrono_sys:
     name: earliest_chrono_sys
-    rank: 23
+    rank: 22
     slot_group: Sample body
   latest_chrono_age:
     name: latest_chrono_age
-    rank: 24
+    rank: 23
     slot_group: Sample body
   latest_chrono_sys:
     name: latest_chrono_sys
-    rank: 25
+    rank: 24
     slot_group: Sample body
   chrono_age_protocol:
     name: chrono_age_protocol
-    rank: 26
+    rank: 25
     slot_group: Sample body
   chrono_age_remarks:
     name: chrono_age_remarks
-    rank: 27
+    rank: 26
     slot_group: Sample body
   palaeopath_status:
     name: palaeopath_status
-    rank: 28
+    rank: 27
     slot_group: Sample body
   batch_ids:
     name: batch_ids
-    rank: 29
+    rank: 28
     slot_group: Nucleic acid source
   neg_cont_status:
     name: neg_cont_status
-    rank: 30
+    rank: 29
     slot_group: Nucleic acid source
   samp_decont_pretreat:
     name: samp_decont_pretreat
-    rank: 31
+    rank: 30
     slot_group: Nucleic acid source
   damage_treatment:
     name: damage_treatment
-    rank: 32
+    rank: 31
     slot_group: Nucleic acid source
   nucl_acid_extr_date:
     name: nucl_acid_extr_date
-    rank: 33
+    rank: 32
     slot_group: Nucleic acid source
   experimental_sop:
     name: experimental_sop
-    rank: 34
+    rank: 33
     slot_group: Nucleic acid source
   lib_mid_desc:
     name: lib_mid_desc
-    rank: 35
+    rank: 34
     slot_group: Sequencing
   library_name:
     name: library_name
-    rank: 36
+    rank: 35
     slot_group: Sequencing
   lib_polymerase:
     name: lib_polymerase
-    rank: 37
+    rank: 36
     slot_group: Sequencing
   lib_strandedness:
     name: lib_strandedness
-    rank: 38
+    rank: 37
     slot_group: Sequencing
   sop_lib_preparation:
     name: sop_lib_preparation
-    rank: 39
+    rank: 38
     slot_group: Sequencing
   lib_gener_technique:
     name: lib_gener_technique
-    rank: 40
+    rank: 39
     slot_group: Sequencing
   reamp_pcr_cyc_tot:
     name: reamp_pcr_cyc_tot
-    rank: 41
+    rank: 40
     slot_group: Sequencing
   capture_pcr_cyc_tot:
     name: capture_pcr_cyc_tot
-    rank: 42
+    rank: 41
     slot_group: Sequencing
   capture_probe_taxid:
     name: capture_probe_taxid
-    rank: 43
+    rank: 42
     slot_group: Sequencing
   capture_probe_desc:
     name: capture_probe_desc
-    rank: 44
+    rank: 43
     slot_group: Sequencing
   data_preproc_desc:
     name: data_preproc_desc
-    rank: 45
+    rank: 44
     slot_group: Data analysis
   reads_removed_desc:
     name: reads_removed_desc
-    rank: 46
+    rank: 45
     slot_group: Data analysis
 attributes:
   orig_site_name:
@@ -1412,45 +1397,6 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  column_sample_depth:
-    name: column_sample_depth
-    annotations:
-      Expected_value:
-        tag: Expected_value
-        value: depth of the sample in the column of a stratigraphy or sediment core
-    description: 'Distance relative to the top or beginning of the sediment core or
-      stratigraphic sequence (defined by the term ''depth'') from which the sample
-      was taken. This is not necessarily the same as the depth from floor level or
-      Mean Sea Level (MSL) (which should be defined using the term: depth), as a core
-      could start part way below the surface. Can also be a range if the depth of
-      the sample is not precisely measured.'
-    title: sample depth in column
-    examples:
-    - value: 34 cm
-    - value: 23 - 56 cm
-    - value: 100 in
-    in_subset:
-    - environment
-    from_schema: https://w3id.org/mixs
-    rank: 9
-    keywords:
-    - environment
-    - core
-    - sediment
-    slot_uri: MIXS:999999908
-    alias: column_sample_depth
-    owner: Ancient
-    domain_of:
-    - Ancient
-    slot_group: Environment
-    range: string
-    required: false
-    recommended: false
-    multivalued: false
-    structured_pattern:
-      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
-      interpolated: true
-      partial_match: true
   context_retrieval_date:
     name: context_retrieval_date
     annotations:
@@ -1491,7 +1437,7 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 10
+    rank: 9
     keywords:
     - ethics
     slot_uri: MIXS:999999910
@@ -1524,7 +1470,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     close_mappings:
     - dc:rightsHolder
-    rank: 11
+    rank: 10
     keywords:
     - ethics
     - location
@@ -1549,7 +1495,7 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 12
+    rank: 11
     slot_uri: MIXS:999999912
     alias: permit_date
     owner: Ancient
@@ -1581,7 +1527,7 @@ attributes:
     close_mappings:
     - dc:accessRights
     - dc:license
-    rank: 13
+    rank: 12
     keywords:
     - ethics
     string_serialization: '{text}'
@@ -1613,7 +1559,7 @@ attributes:
     in_subset:
     - ethics
     from_schema: https://w3id.org/mixs
-    rank: 14
+    rank: 13
     keywords:
     - ethics
     slot_uri: MIXS:999999914
@@ -1641,7 +1587,7 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 15
+    rank: 14
     string_serialization: '{text}'
     slot_uri: MIXS:999999915
     alias: samp_alt_lab_ids
@@ -1663,7 +1609,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 16
+    rank: 15
     slot_uri: MIXS:999999916
     alias: prev_pubs
     owner: Ancient
@@ -1698,7 +1644,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 17
+    rank: 16
     keywords:
     - ancient
     string_serialization: '{text}'
@@ -1727,7 +1673,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 18
+    rank: 17
     string_serialization: '{text}'
     slot_uri: MIXS:999999918
     alias: storage_conditions
@@ -1752,7 +1698,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 19
+    rank: 18
     keywords:
     - ancient
     string_serialization: '{text}'
@@ -1783,7 +1729,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 20
+    rank: 19
     keywords:
     - ancient
     - age
@@ -1816,7 +1762,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 21
+    rank: 20
     keywords:
     - ancient
     - age
@@ -1851,7 +1797,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:earliestChronometricAge
-    rank: 22
+    rank: 21
     slot_uri: MIXS:999999922
     alias: earliest_chrono_age
     owner: Ancient
@@ -1876,7 +1822,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:earliestChronometricAgeReferenceSystem
-    rank: 23
+    rank: 22
     slot_uri: MIXS:999999923
     alias: earliest_chrono_sys
     owner: Ancient
@@ -1908,7 +1854,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:latestChronometricAge
-    rank: 24
+    rank: 23
     slot_uri: MIXS:999999924
     alias: latest_chrono_age
     owner: Ancient
@@ -1933,7 +1879,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:latestChronometricAgeReferenceSystem
-    rank: 25
+    rank: 24
     slot_uri: MIXS:999999925
     alias: latest_chrono_sys
     owner: Ancient
@@ -1959,7 +1905,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:chronometricAgeProtocol
-    rank: 26
+    rank: 25
     slot_uri: MIXS:999999926
     alias: chrono_age_protocol
     owner: Ancient
@@ -1989,7 +1935,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     close_mappings:
     - chrono:chronometricAgeRemarks
-    rank: 27
+    rank: 26
     slot_uri: MIXS:999999927
     alias: chrono_age_remarks
     owner: Ancient
@@ -2016,7 +1962,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 28
+    rank: 27
     keywords:
     - palaeopathology
     - host health
@@ -2054,7 +2000,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 29
+    rank: 28
     keywords:
     - identifiers
     slot_uri: MIXS:999999929
@@ -2077,7 +2023,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 30
+    rank: 29
     keywords:
     - control
     slot_uri: MIXS:999999930
@@ -2101,7 +2047,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 31
+    rank: 30
     slot_uri: MIXS:999999931
     alias: samp_decont_pretreat
     owner: Ancient
@@ -2133,7 +2079,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 32
+    rank: 31
     keywords:
     - ancient
     slot_uri: MIXS:999999932
@@ -2158,7 +2104,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 33
+    rank: 32
     slot_uri: MIXS:999999933
     alias: nucl_acid_extr_date
     owner: Ancient
@@ -2179,7 +2125,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 34
+    rank: 33
     slot_uri: MIXS:999999934
     alias: experimental_sop
     owner: Ancient
@@ -2212,7 +2158,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 35
+    rank: 34
     keywords:
     - library
     - preparation
@@ -2243,7 +2189,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 36
+    rank: 35
     keywords:
     - sequencing
     slot_uri: MIXS:999999936
@@ -2272,7 +2218,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 37
+    rank: 36
     keywords:
     - polymerase
     - library
@@ -2302,7 +2248,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 38
+    rank: 37
     keywords:
     - library
     - preparation
@@ -2334,7 +2280,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 40
+    rank: 39
     keywords:
     - library
     - preparation
@@ -2356,7 +2302,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 39
+    rank: 38
     slot_uri: MIXS:999999940
     alias: sop_lib_preparation
     owner: Ancient
@@ -2382,7 +2328,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 41
+    rank: 40
     slot_uri: MIXS:999999941
     alias: reamp_pcr_cyc_tot
     owner: Ancient
@@ -2400,7 +2346,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 42
+    rank: 41
     slot_uri: MIXS:999999942
     alias: capture_pcr_cyc_tot
     owner: Ancient
@@ -2431,7 +2377,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 43
+    rank: 42
     keywords:
     - sequencing
     - library
@@ -2467,7 +2413,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 44
+    rank: 43
     keywords:
     - library
     - enrichment
@@ -2504,7 +2450,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 45
+    rank: 44
     keywords:
     - data analysis
     - data
@@ -2536,7 +2482,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 46
+    rank: 45
     keywords:
     - data analysis
     slot_uri: MIXS:999999946
