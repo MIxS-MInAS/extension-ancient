@@ -534,7 +534,7 @@ slots:
     recommended: false
   prev_pubs:
     description: >-
-      Any previous publications that report data from the same sample or ultimate source of the sample
+      Any previous publications that report non-nucleic acid data from the same sample or ultimate source of the sample
     title: previous publications
     examples:
       - value: doi:10.1016/j.jas.2015.02.0181
