@@ -19,6 +19,7 @@ prefixes:
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
   chrono: http://rs.tdwg.org/chrono/terms/
+  dc: http://purl.org/dc/elements/1.1/
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -462,6 +463,8 @@ slots:
       - ethics
       - location
     slot_uri: MIXS:999999911 #Not assigned
+    close_mappings:
+      - dc:rightsHolder
     multivalued: true
     range: string
     required: false
@@ -492,6 +495,9 @@ slots:
     keywords:
       - ethics
     slot_uri: MIXS:999999913 #Not assigned
+    close_mappings:
+      - dc:accessRights
+      - dc:license
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -534,7 +540,7 @@ slots:
     recommended: false
   prev_pubs:
     description: >-
-      Any publications that report data from the same body/skeleton/individual
+      Any previous publications that report non-nucleic acid data from the same sample or ultimate source of the sample
     title: previous publications
     examples:
       - value: doi:10.1016/j.jas.2015.02.0181
@@ -553,7 +559,7 @@ slots:
   host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host at time/immediately after death.
-    title: preservation state of sampled organism/host at/immediately after death
+    title: preservation state of sampled host at death
     description: >-
       Description of the state of the sampled (ancient) organism/host as originally 
       preserved in the burial environment at the time of or immediately following death.
@@ -776,7 +782,7 @@ slots:
     annotations:
       Expected_value: description of health related observation on ancient remains
     description: >-
-      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.
+      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual or subject under study.
     title: palaeopathology status
     examples:
       - value: "Osteoporosis."
@@ -807,7 +813,6 @@ slots:
       - value: "Extraction batch: 1"
       - value: "20260501-A2 (extraction);20202607-B2 (library)"
       - value: "ExtrMG;LibMG;SeqMG"
-      - value: "Core: North-East Greenland 73G"
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -902,12 +907,12 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  mid_config:
+  lib_mid_desc:
     annotations:
       Expected_value: Description of the indexing configuration of the library
     description: >-
       Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.
-    title: multiplex identifiers or indexing configuration of libraries
+    title: description of library multiplex identifiers or indexing configuration
     examples:
       - value: "dual index with single internal barcode."
       - value: "UDI index sequences."
@@ -945,7 +950,7 @@ slots:
     annotations:
       Expected_value: name of polymerase used during library construction
     description: >-
-      The polymerase enzyme used for building nucleic acid libraries.
+      The polymerase enzyme used for building nucleic acid libraries. Include formal identifier e.g. SKU or the manufacturers name at minimum.
     title: library polymerase
     examples:
       - value: "Agilent PfuTurbo Cx HotStart"
@@ -981,10 +986,10 @@ slots:
     range: LibStrandEnum #enum value
     required: true
     recommended: true
-  lib_type:
+  lib_gener_technique:
     description: >-
-      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
-    title: library type
+      The technique used to generate the library, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene). An enriched library is a library that has had a particular genome or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
+    title: library generation technique
     examples:
       - value: shotgun
       - value: amplicon
@@ -998,7 +1003,7 @@ slots:
     range: LibTypeEnum
     required: false
     recommended: true
-  lib_preparation_sop:
+  sop_lib_preparation:
     description: >-
       Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
@@ -1016,7 +1021,7 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  num_reamp_cycles:
+  reamp_pcr_cyc_tot:
     description: >-
       Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.
     title: number of reamplification cycles
@@ -1026,9 +1031,9 @@ slots:
       - sequencing
     slot_uri: MIXS:999999941 #Not assigned
     range: integer
-  num_capture_cycles:
+  capture_pcr_cyc_tot:
     description: >-
-      Number of amplification cycles after capture enrichment
+      Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
     title: number of reamplification cycles after capture
     examples:
       - value: "12"
@@ -1082,7 +1087,7 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  desc_read_state:
+  data_preprocessing:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
@@ -1182,17 +1187,17 @@ classes:
       - damage_treatment
       - nucl_acid_extr_date
       - experimental_sop
-      - mid_config
+      - lib_mid_desc
       - library_name
       - lib_polymerase
       - lib_strandedness
-      - lib_type
-      - lib_preparation_sop
-      - num_reamp_cycles
-      - num_capture_cycles
+      - lib_gener_technique
+      - sop_lib_preparation
+      - reamp_pcr_cyc_tot
+      - capture_pcr_cyc_tot
       - capture_probe_taxid
       - capture_probe_desc
-      - desc_read_state
+      - data_preprocessing
       - reads_removed_desc
     slot_usage:
       orig_site_name:
@@ -1297,7 +1302,7 @@ classes:
       experimental_sop:
         slot_group: Nucleic acid source
         rank: 34
-      mid_config:
+      lib_mid_desc:
         slot_group: Sequencing
         rank: 35
       library_name:
@@ -1309,16 +1314,16 @@ classes:
       lib_strandedness:
         slot_group: Sequencing
         rank: 38
-      lib_preparation_sop:
+      sop_lib_preparation:
         slot_group: Sequencing
         rank: 39
-      lib_type:
+      lib_gener_technique:
         slot_group: Sequencing
         rank: 40
-      num_reamp_cycles:
+      reamp_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
-      num_capture_cycles:
+      capture_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 42
       capture_probe_taxid:
@@ -1327,7 +1332,7 @@ classes:
       capture_probe_desc:
         slot_group: Sequencing
         rank: 44
-      desc_read_state:
+      data_preprocessing:
         slot_group: Data analysis
         rank: 45
       reads_removed_desc:
