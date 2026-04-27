@@ -19,6 +19,7 @@ prefixes:
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
   chrono: http://rs.tdwg.org/chrono/terms/
+  dc: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -462,6 +463,8 @@ slots:
       - ethics
       - location
     slot_uri: MIXS:999999911 #Not assigned
+    close_mappings:
+      - dc:rightsHolder
     multivalued: true
     range: string
     required: false
@@ -534,7 +537,7 @@ slots:
     recommended: false
   prev_pubs:
     description: >-
-      Any publications that report data from the same body/skeleton/individual
+      Any previous publications that report non-nucleic acid data from the same sample or ultimate source of the sample
     title: previous publications
     examples:
       - value: doi:10.1016/j.jas.2015.02.0181
@@ -553,7 +556,7 @@ slots:
   host_preserv_state:
     annotations:
       Expected_value: Description of the preservation of the sampled (ancient) organism/host at time/immediately after death.
-    title: preservation state of sampled organism/host at/immediately after death
+    title: preservation state of sampled host at death
     description: >-
       Description of the state of the sampled (ancient) organism/host as originally 
       preserved in the burial environment at the time of or immediately following death.
@@ -776,7 +779,7 @@ slots:
     annotations:
       Expected_value: description of health related observation on ancient remains
     description: >-
-      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study.
+      Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual or subject under study.
     title: palaeopathology status
     examples:
       - value: "Osteoporosis."
@@ -807,7 +810,6 @@ slots:
       - value: "Extraction batch: 1"
       - value: "20260501-A2 (extraction);20202607-B2 (library)"
       - value: "ExtrMG;LibMG;SeqMG"
-      - value: "Core: North-East Greenland 73G"
     in_subset:
       - nucleic acid sequence source
     keywords:
@@ -945,7 +947,7 @@ slots:
     annotations:
       Expected_value: name of polymerase used during library construction
     description: >-
-      The polymerase enzyme used for building nucleic acid libraries.
+      The polymerase enzyme used for building nucleic acid libraries. Include formal identifier e.g. SKU or the manufacturers name at minimum.
     title: library polymerase
     examples:
       - value: "Agilent PfuTurbo Cx HotStart"
@@ -998,7 +1000,7 @@ slots:
     range: LibTypeEnum
     required: false
     recommended: true
-  lib_preparation_sop:
+  sop_lib_preparation:
     description: >-
       Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
@@ -1016,7 +1018,7 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  num_reamp_cycles:
+  reamp_pcr_cyc_tot:
     description: >-
       Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.
     title: number of reamplification cycles
@@ -1186,8 +1188,8 @@ classes:
       - lib_polymerase
       - lib_strandedness
       - lib_gener_technique
-      - lib_preparation_sop
-      - num_reamp_cycles
+      - sop_lib_preparation
+      - reamp_pcr_cyc_tot
       - num_capture_cycles
       - capture_probe_taxid
       - capture_probe_desc
@@ -1308,13 +1310,13 @@ classes:
       lib_strandedness:
         slot_group: Sequencing
         rank: 38
-      lib_preparation_sop:
+      sop_lib_preparation:
         slot_group: Sequencing
         rank: 39
       lib_gener_technique:
         slot_group: Sequencing
         rank: 40
-      num_reamp_cycles:
+      reamp_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
       num_capture_cycles:
