@@ -19,7 +19,7 @@ prefixes:
   shex: http://www.w3.org/ns/shex#
   schema: http://schema.org/
   chrono: http://rs.tdwg.org/chrono/terms/
-  dc: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#
+  dc: http://purl.org/dc/elements/1.1/
 default_prefix: MIXS
 default_range: string
 subsets:
@@ -468,6 +468,9 @@ slots:
     keywords:
       - ethics
     slot_uri: MIXS:999999913 #Not assigned
+    close_mappings:
+      - dc:accessRights
+      - dc:license
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -877,12 +880,12 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  mid_config:
+  lib_mid_desc:
     annotations:
       Expected_value: Description of the indexing configuration of the library
     description: >-
       Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.
-    title: multiplex identifiers or indexing configuration of libraries
+    title: description of library multiplex identifiers or indexing configuration
     examples:
       - value: "dual index with single internal barcode."
       - value: "UDI index sequences."
@@ -956,10 +959,10 @@ slots:
     range: LibStrandEnum #enum value
     required: true
     recommended: true
-  lib_type:
+  lib_gener_technique:
     description: >-
-      The type of library created, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene).  An enriched library is a library has had a particular genome, or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
-    title: library type
+      The technique used to generate the library, i.e., amplicon, enriched, or shotgun. An amplicon library is a library that has been amplified to target a single specific region of a genome (e.g. a specific gene). An enriched library is a library that has had a particular genome or multiple genomic regions/positions 'captured' or enriched typically via baits/probes. A shotgun library has undergone no type of targeted amplification/enrichment for a particular genomic region or genome, i.e., random sequencing of any nucleic acid molecule contained in a genomic library.
+    title: library generation technique
     examples:
       - value: shotgun
       - value: amplicon
@@ -1001,9 +1004,9 @@ slots:
       - sequencing
     slot_uri: MIXS:999999941 #Not assigned
     range: integer
-  num_capture_cycles:
+  capture_pcr_cyc_tot:
     description: >-
-      Number of amplification cycles after capture enrichment
+      Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
     title: number of reamplification cycles after capture
     examples:
       - value: "12"
@@ -1057,14 +1060,14 @@ slots:
     string_serialization: "{text}"
     required: false
     recommended: false
-  desc_read_state:
+  data_preproc_desc:
     annotations:
       Expected_value: description of any modifications to data away from original raw files
     description: >-
-      Description of the state of the reads in the sequencing data file.
+      Description of preprocessing performed on the reads in the sequencing data file.
       Describe any in silico processing or modification of the sequencing reads away from the original state as received from the sequencer.
       This should include details such as adapter-, barcode-, and/or quality- trimming, or any filtering such as for read length or of off-target reads.
-    title: description of read state
+    title: preprocessing of sequencing reads description
     examples:
       - value: "Adapter trimmed, quality filtered, and host reads removed through mapping for ethical reasons."
       - value: "Adapters removed by Trimmomatic (v0.39), and off-target reads removed after mapping to the HG19 Human reference with bwa aln (v0.7.19)."
@@ -1079,12 +1082,13 @@ slots:
     range: string
     required: false
     recommended: true
-  data_filt_applied:
+  reads_removed_desc:
     annotations:
-      Expected_value: Whether associated data was filtered
+      Expected_value: Whether any sequencing reads were removed from the data files after sequencing
     description: >-
-      Specify whether associated data was filtered prior to upload, such as host reads removal.
-    title: Data filtering applied
+      Specify whether associated data was filtered in some form prior to upload, such as host reads removal.
+      Detailed description of the the data filtering that was carried out should be described in term 'preprocessing of sequencing reads description'.
+    title: description of reads removal
     examples:
       - value: "no"
       - value: "yes"
@@ -1155,18 +1159,18 @@ classes:
       - damage_treatment
       - nucl_acid_extr_date
       - experimental_sop
-      - mid_config
+      - lib_mid_desc
       - library_name
       - lib_polymerase
       - lib_strandedness
-      - lib_type
+      - lib_gener_technique
       - sop_lib_preparation
       - reamp_pcr_cyc_tot
-      - num_capture_cycles
+      - capture_pcr_cyc_tot
       - capture_probe_taxid
       - capture_probe_desc
-      - desc_read_state
-      - data_filt_applied
+      - data_preproc_desc
+      - reads_removed_desc
     slot_usage:
       orig_site_name:
         slot_group: Environment
@@ -1267,7 +1271,7 @@ classes:
       experimental_sop:
         slot_group: Nucleic acid source
         rank: 33
-      mid_config:
+      lib_mid_desc:
         slot_group: Sequencing
         rank: 34
       library_name:
@@ -1282,13 +1286,13 @@ classes:
       sop_lib_preparation:
         slot_group: Sequencing
         rank: 38
-      lib_type:
+      lib_gener_technique:
         slot_group: Sequencing
         rank: 39
       reamp_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 40
-      num_capture_cycles:
+      capture_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
       capture_probe_taxid:
@@ -1297,10 +1301,10 @@ classes:
       capture_probe_desc:
         slot_group: Sequencing
         rank: 43
-      desc_read_state:
+      data_preproc_desc:
         slot_group: Data analysis
         rank: 44
-      data_filt_applied:
+      reads_removed_desc:
         slot_group: Data analysis
         rank: 45
     class_uri: MIXS:9999903
