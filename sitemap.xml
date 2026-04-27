@@ -2,338 +2,338 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mixs-minas.org/extension-ancient/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Ancient/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/BioCulturalLabelEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Boolean/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/ChronoAgeProtocolEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/ChronoAgeSysEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/CombinationClasses/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Curie/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/DamageTreatmentEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Date/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/DateOrDatetime/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Datetime/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Decimal/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Double/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Environment/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Ethics/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Extension/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Float/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/GeolEpochEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Integer/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Investigation/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Jsonpath/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Jsonpointer/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/LibStrandEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/LibTypeEnum/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/MixsCompliantData/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Ncname/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Nodeidentifier/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/NucleicAcidSequenceSource/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Objectidentifier/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Sequencing/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Sparqlpath/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/String/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Time/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Uri/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/Uriorcurie/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/ancient_data/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/batch_ids/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/biocultural_label/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/capture_probe_desc/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/capture_probe_taxid/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/chrono_age_protocol/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/chrono_age_remarks/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/column_sample_depth/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/context_retrieval_date/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/cultural_era/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/damage_treatment/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/data_filt_applied/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/desc_read_state/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/earliest_chrono_age/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/earliest_chrono_sys/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/experimental_sop/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/geological_epoch/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/host_preserv_state/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/latest_chrono_age/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/latest_chrono_sys/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/lib_polymerase/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/lib_preparation_sop/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/lib_strandedness/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/lib_type/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/library_name/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/mid_config/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/mixs-minas/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/neg_cont_status/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/nucl_acid_extr_date/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/num_capture_cycles/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/num_reamp_cycles/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/orig_site_lat/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/orig_site_loc/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/orig_site_lon/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/orig_site_name/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/palaeopath_status/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/past_env_broad/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/past_env_local/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/permit_authority/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/permit_date/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/permit_id/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/permit_scope/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/prev_pubs/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/samp_alt_lab_ids/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/samp_decont_pretreat/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/samp_preserv_treatm/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/storage_conditions/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://mixs-minas.org/extension-ancient/stratigraph_context/</loc>
-         <lastmod>2026-04-13</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
 </urlset>
