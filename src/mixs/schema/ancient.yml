@@ -1016,7 +1016,7 @@ slots:
       partial_match: true
     required: false
     recommended: false
-  num_reamp_cycles:
+  reamp_pcr_cyc_tot:
     description: >-
       Number of amplification cycles after library indexing PCR. If capture data, this refers to amplifications prior to the capture experiments.
     title: number of reamplification cycles
@@ -1187,7 +1187,7 @@ classes:
       - lib_strandedness
       - lib_type
       - sop_lib_preparation
-      - num_reamp_cycles
+      - reamp_pcr_cyc_tot
       - num_capture_cycles
       - capture_probe_taxid
       - capture_probe_desc
@@ -1314,7 +1314,7 @@ classes:
       lib_type:
         slot_group: Sequencing
         rank: 40
-      num_reamp_cycles:
+      reamp_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
       num_capture_cycles:
