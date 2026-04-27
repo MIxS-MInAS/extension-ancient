@@ -907,7 +907,7 @@ slots:
       Expected_value: Description of the indexing configuration of the library
     description: >-
       Index/barcode/primer configuration used during library building for sequencing. This includes information such as the number, type and location of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were ligated directly onto the template molecules.
-    title: multiplex identifiers or indexing configuration of libraries
+    title: description of library multiplex identifiers or indexing configuration
     examples:
       - value: "dual index with single internal barcode."
       - value: "UDI index sequences."
