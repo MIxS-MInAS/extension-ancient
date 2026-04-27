@@ -580,9 +580,9 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999930">MIXS:999999930</a></td>
-<td><a href="../neg_cont_status/">neg_cont_status</a></td>
-<td>1 <em>recommended</em> <br/> <a href="../Boolean/">Boolean</a></td>
-<td>Specify whether the sample is a negative control or not</td>
+<td><a href="../samp_category/">samp_category</a></td>
+<td>1 <em>recommended</em> <br/> <a href="../SampCategoryEnum/">SampCategoryEnum</a></td>
+<td>The type/category of a sample</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999931">MIXS:999999931</a></td>
@@ -736,7 +736,7 @@ slots:
 - chrono_age_remarks
 - palaeopath_status
 - batch_ids
-- neg_cont_status
+- samp_category
 - samp_decont_pretreat
 - damage_treatment
 - nucl_acid_extr_date
@@ -866,8 +866,8 @@ slot_usage:
     name: batch_ids
     rank: 28
     slot_group: Nucleic acid source
-  neg_cont_status:
-    name: neg_cont_status
+  samp_category:
+    name: samp_category
     rank: 29
     slot_group: Nucleic acid source
   samp_decont_pretreat:
@@ -1071,8 +1071,8 @@ slot_usage:
     name: batch_ids
     rank: 28
     slot_group: Nucleic acid source
-  neg_cont_status:
-    name: neg_cont_status
+  samp_category:
+    name: samp_category
     rank: 29
     slot_group: Nucleic acid source
   samp_decont_pretreat:
@@ -2013,13 +2013,15 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  neg_cont_status:
-    name: neg_cont_status
-    description: Specify whether the sample is a negative control or not.
-    title: negative control status
+  samp_category:
+    name: samp_category
+    description: The type/category of a sample. &quot;Sample&quot; includes biological and technical
+      replicates.
+    title: sample category
     examples:
-    - value: 'true'
-    - value: 'false'
+    - value: sample
+    - value: negative control
+    - value: positive control
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
@@ -2027,12 +2029,12 @@ attributes:
     keywords:
     - control
     slot_uri: MIXS:999999930
-    alias: neg_cont_status
+    alias: samp_category
     owner: Ancient
     domain_of:
     - Ancient
     slot_group: Nucleic acid source
-    range: boolean
+    range: SampCategoryEnum
     required: true
     recommended: true
   samp_decont_pretreat:

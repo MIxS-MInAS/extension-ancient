@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/NucleicAcidSequenceSource/">
+        <link rel="canonical" href="https://mixs-minas.org/extension-ancient/SampCategoryEnum/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Subset: NucleicAcidSequenceSource - MIxS-MInAS Ancient DNA Extension</title>
+        <title>Enum: SampCategoryEnum - MIxS-MInAS Ancient DNA Extension</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#subset-nucleicacidsequencesource" class="md-skip">
+        <a href="#enum-sampcategoryenum" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Subset: NucleicAcidSequenceSource
+              Enum: SampCategoryEnum
             
           </span>
         </div>
@@ -311,10 +311,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#slots-in-subset" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slots in subset
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
       
     </span>
   </a>
@@ -341,84 +363,87 @@
   
 
 
-<h1 id="subset-nucleicacidsequencesource">Subset: NucleicAcidSequenceSource</h1>
-<p><em>MIxS terms related to the source of nucleic acids for sequencing, such as extraction or library preparation.</em></p>
-<p>URI: <a href="./">NucleicAcidSequenceSource</a></p>
-<h2 id="slots-in-subset">Slots in subset</h2>
+<h1 id="enum-sampcategoryenum">Enum: SampCategoryEnum</h1>
+<p><em>Controlled vocabulary defining the category of a sample based on its experiental role.</em></p>
+<p>URI: <a href="./">SampCategoryEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
 <tr>
-<th>Slot</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../batch_ids/">batch_ids</a></td>
-<td>Identifiers for any form of batch or 'group' that the samples is associated w...</td>
+<td>sample</td>
+<td>Biological or environmental sample, including biological and technical replic...</td>
 </tr>
 <tr>
-<td><a href="../context_retrieval_date/">context_retrieval_date</a></td>
-<td>Date of excavation or retrieval from burial or depositional context, if known</td>
+<td>negative control</td>
+<td>Negative control used to detect contamination, such as field negatives, extra...</td>
 </tr>
 <tr>
-<td><a href="../cultural_era/">cultural_era</a></td>
-<td>The cultural era approximating to the period in which the archaeological rema...</td>
+<td>positive control</td>
+<td>Positive control used to verify successful amplification or detection, such a...</td>
 </tr>
 <tr>
-<td><a href="../earliest_chrono_age/">earliest_chrono_age</a></td>
-<td>The maximum/earliest/oldest possible age of a specimen as determined by a dat...</td>
+<td>PCR standard</td>
+<td>Standard consisting of known quantities of target nucleic acid used to genera...</td>
 </tr>
 <tr>
-<td><a href="../experimental_sop/">experimental_sop</a></td>
-<td>Provide a DOI or URL to refer to the paper where the field report, nucleic ac...</td>
+<td>Other</td>
+<td>Other types of samples not represented in the controlled vocabulary</td>
 </tr>
+</tbody>
+</table>
+<h2 id="terms">Terms</h2>
+<table>
+<thead>
 <tr>
-<td><a href="../geological_epoch/">geological_epoch</a></td>
-<td>The geological epoch approximating to the period within which the specimen or...</td>
+<th>Name</th>
+<th>Description</th>
 </tr>
-<tr>
-<td><a href="../host_preserv_state/">host_preserv_state</a></td>
-<td>Description of the state of the sampled (ancient) organism/host as originally...</td>
-</tr>
-<tr>
-<td><a href="../latest_chrono_age/">latest_chrono_age</a></td>
-<td>The minimum/latest/youngest possible age of a specimen as determined by a dat...</td>
-</tr>
-<tr>
-<td><a href="../nucl_acid_extr_date/">nucl_acid_extr_date</a></td>
-<td>The date when the nucleic acid extraction was started from the sample materia...</td>
-</tr>
-<tr>
-<td><a href="../palaeopath_status/">palaeopath_status</a></td>
-<td>Describe briefly any relevant palaeopathological or health-related observatio...</td>
-</tr>
-<tr>
-<td><a href="../prev_pubs/">prev_pubs</a></td>
-<td>Any previous publications that report non-nucleic acid data from the same sam...</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td><a href="../samp_category/">samp_category</a></td>
 <td>The type/category of a sample</td>
 </tr>
-<tr>
-<td><a href="../samp_decont_pretreat/">samp_decont_pretreat</a></td>
-<td>Protocols employed for sample surface decontamination of external  modern nuc...</td>
-</tr>
-<tr>
-<td><a href="../samp_preserv_treatm/">samp_preserv_treatm</a></td>
-<td>Description of any treatment applied directly to samples for the specific pur...</td>
-</tr>
-<tr>
-<td><a href="../sop_lib_preparation/">sop_lib_preparation</a></td>
-<td>Citation(s) for the nucleic acid library preparation protocol</td>
-</tr>
-<tr>
-<td><a href="../storage_conditions/">storage_conditions</a></td>
-<td>General surrounding environmental conditions where the material was stored in...</td>
-</tr>
 </tbody>
 </table>
+<h2 id="linkml-source">LinkML Source</h2>
+<details>
+
+<pre><code class="language-yaml">name: SampCategoryEnum
+description: Controlled vocabulary defining the category of a sample based on its
+  experiental role.
+from_schema: https://w3id.org/mixs
+rank: 1000
+permissible_values:
+  sample:
+    text: sample
+    description: Biological or environmental sample, including biological and technical
+      replicates.
+  negative control:
+    text: negative control
+    description: Negative control used to detect contamination, such as field negatives,
+      extraction negatives, or PCR negatives (No-template control; NTC).
+  positive control:
+    text: positive control
+    description: Positive control used to verify successful amplification or detection,
+      such as extraction positives or PCR positives.
+  PCR standard:
+    text: PCR standard
+    description: Standard consisting of known quantities of target nucleic acid used
+      to generate calibration curves and enable quantification of target molecules.
+  Other:
+    text: Other
+    description: Other types of samples not represented in the controlled vocabulary.
+
+</code></pre>
+
+</details>
 
 
 
