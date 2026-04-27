@@ -1110,7 +1110,7 @@ slots:
     description: >-
       Specify whether associated data was filtered in some form prior to upload, such as host reads removal.
       Detailed description of the the data filtering that was carried out should be described in term 'description of read state'.
-    title: Data filtering applied
+    title: description of reads removal 
     examples:
       - value: "no"
       - value: "yes"
