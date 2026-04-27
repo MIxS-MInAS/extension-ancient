@@ -998,7 +998,7 @@ slots:
     range: LibTypeEnum
     required: false
     recommended: true
-  lib_preparation_sop:
+  sop_lib_preparation:
     description: >-
       Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
@@ -1186,7 +1186,7 @@ classes:
       - lib_polymerase
       - lib_strandedness
       - lib_type
-      - lib_preparation_sop
+      - sop_lib_preparation
       - num_reamp_cycles
       - num_capture_cycles
       - capture_probe_taxid
@@ -1308,7 +1308,7 @@ classes:
       lib_strandedness:
         slot_group: Sequencing
         rank: 38
-      lib_preparation_sop:
+      sop_lib_preparation:
         slot_group: Sequencing
         rank: 39
       lib_type:
