@@ -1032,7 +1032,7 @@ slots:
     multivalued: true
     required: false
     recommended: false
-  capture_probe_taxid:
+  capt_probe_src_taxid:
     annotations:
       Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
     description: >-
@@ -1182,7 +1182,7 @@ classes:
       - sop_lib_preparation
       - reamp_pcr_cyc_tot
       - capture_pcr_cyc_tot
-      - capture_probe_taxid
+      - capt_probe_src_taxid
       - capture_probe_desc
       - data_preproc_desc
       - reads_removed_desc
@@ -1310,7 +1310,7 @@ classes:
       capture_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
-      capture_probe_taxid:
+      capt_probe_src_taxid:
         slot_group: Sequencing
         rank: 42
       capture_probe_desc:
