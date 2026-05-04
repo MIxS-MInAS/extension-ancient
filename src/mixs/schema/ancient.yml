@@ -1019,7 +1019,7 @@ slots:
       - sequencing
     slot_uri: MIXS:999999941 #Not assigned
     range: integer
-  capture_pcr_cyc_tot:
+  capt_pcr_cyc_tot:
     description: >-
       Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
     title: number of reamplification cycles after capture
@@ -1055,7 +1055,7 @@ slots:
     string_serialization:
     required: false
     recommended: false
-  capture_probe_desc:
+  capt_probe_desc:
     annotations:
       Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
@@ -1181,9 +1181,9 @@ classes:
       - lib_gener_technique
       - sop_lib_preparation
       - reamp_pcr_cyc_tot
-      - capture_pcr_cyc_tot
+      - capt_pcr_cyc_tot
       - capture_probe_taxid
-      - capture_probe_desc
+      - capt_probe_desc
       - data_preproc_desc
       - reads_removed_desc
     slot_usage:
@@ -1307,13 +1307,13 @@ classes:
       reamp_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 40
-      capture_pcr_cyc_tot:
+      capt_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
       capture_probe_taxid:
         slot_group: Sequencing
         rank: 42
-      capture_probe_desc:
+      capt_probe_desc:
         slot_group: Sequencing
         rank: 43
       data_preproc_desc:
