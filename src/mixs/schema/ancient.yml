@@ -1158,7 +1158,7 @@ classes:
       - samp_alt_lab_ids
       - prev_pubs
       - host_preserv_state
-      - storage_conditions
+      - store_cond
       - samp_preserv_treatm
       - cultural_era
       - geological_epoch
@@ -1236,7 +1236,7 @@ classes:
       host_preserv_state:
         slot_group: Sample body
         rank: 16
-      storage_conditions:
+      store_cond:
         slot_group: Sample body
         rank: 17
       samp_preserv_treatm:
