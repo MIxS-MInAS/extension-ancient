@@ -1022,7 +1022,7 @@ slots:
   capt_pcr_cyc_tot:
     description: >-
       Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
-    title: number of reamplification cycles after capture
+    title: post capture PCR reamplication cycles total
     examples:
       - value: "12"
     in_subset:
@@ -1060,7 +1060,7 @@ slots:
       Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
       Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
-    title: enrichment probe design description
+    title: capture probe design description
     examples:
       - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science"
       - value: "Commercial RNA baits kit ABC001-EC from company TE-Science, purchased 2020"
