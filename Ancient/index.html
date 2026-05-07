@@ -658,7 +658,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999943">MIXS:999999943</a></td>
-<td><a href="../capture_probe_taxid/">capture_probe_taxid</a></td>
+<td><a href="../capt_probe_src_taxid/">capt_probe_src_taxid</a></td>
 <td>* <br/> <a href="../Integer/">Integer</a></td>
 <td>NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ...</td>
 </tr>
@@ -749,7 +749,7 @@ slots:
 - sop_lib_preparation
 - reamp_pcr_cyc_tot
 - capture_pcr_cyc_tot
-- capture_probe_taxid
+- capt_probe_src_taxid
 - capture_probe_desc
 - data_preproc_desc
 - reads_removed_desc
@@ -918,8 +918,8 @@ slot_usage:
     name: capture_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
-  capture_probe_taxid:
-    name: capture_probe_taxid
+  capt_probe_src_taxid:
+    name: capt_probe_src_taxid
     rank: 42
     slot_group: Sequencing
   capture_probe_desc:
@@ -1123,8 +1123,8 @@ slot_usage:
     name: capture_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
-  capture_probe_taxid:
-    name: capture_probe_taxid
+  capt_probe_src_taxid:
+    name: capt_probe_src_taxid
     rank: 42
     slot_group: Sequencing
   capture_probe_desc:
@@ -2359,8 +2359,8 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  capture_probe_taxid:
-    name: capture_probe_taxid
+  capt_probe_src_taxid:
+    name: capt_probe_src_taxid
     annotations:
       Expected_value:
         tag: Expected_value
@@ -2371,7 +2371,7 @@ attributes:
       species level taxonomic ID entry for each organism that had sequences included
       in the design. If whole genera were targeted, you can instead use a single genus
       level taxonomic ID or that of any relevant higher taxonomic unit.
-    title: genomic capture probe taxonomic IDs
+    title: Genomic capture probe source taxonomy IDs
     examples:
     - value: '9606'
     - value: '632'
@@ -2386,7 +2386,7 @@ attributes:
     - enrichment
     - capture
     slot_uri: MIXS:999999943
-    alias: capture_probe_taxid
+    alias: capt_probe_src_taxid
     owner: Ancient
     domain_of:
     - Ancient
