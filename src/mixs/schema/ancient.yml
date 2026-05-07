@@ -1022,7 +1022,7 @@ slots:
       Expected_value: Taxonomic IDs corresponding to organism(s) included in target enrichment (a.k.a. capture) probe design
     description: >-
       NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or whole genome-level capture panel. There should be an (ideally) species level taxonomic ID entry for each organism that had sequences included in the design. If whole genera were targeted, you can instead use a single genus level taxonomic ID or that of any relevant higher taxonomic unit.
-    title: genomic capture probe taxonomic IDs
+    title: Genomic capture probe source taxonomy IDs
     examples:
       - value: "9606"
       - value: "632"
