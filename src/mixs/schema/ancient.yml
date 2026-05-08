@@ -1019,10 +1019,10 @@ slots:
       - sequencing
     slot_uri: MIXS:999999941 #Not assigned
     range: integer
-  capture_pcr_cyc_tot:
+  capt_pcr_cyc_tot:
     description: >-
       Amplification cycles after capture enrichment total. Provide additional information about PCR conditions in pcr_cond
-    title: number of reamplification cycles after capture
+    title: post capture PCR reamplication cycles total
     examples:
       - value: "12"
     in_subset:
@@ -1055,12 +1055,12 @@ slots:
     string_serialization:
     required: false
     recommended: false
-  capture_probe_desc:
+  capt_probe_desc:
     annotations:
       Expected_value: Description of probe set used for target enrichment/library selection (a.k.a. capture)
     description: >-
       Description of target enrichment probe designs used (e.g., species included, sequences, type, company). This can include custom kits (please provide a general description and DOI if available) or commercially available kit (provide ID and company).
-    title: enrichment probe design description
+    title: capture probe design description
     examples:
       - value: "Custom probe design (70 bp biotinylated RNA probes) covering 500 full E. Coli genomes; company TE-Science"
       - value: "Commercial RNA baits kit ABC001-EC from company TE-Science, purchased 2020"
@@ -1181,9 +1181,9 @@ classes:
       - lib_gener_technique
       - sop_lib_preparation
       - reamp_pcr_cyc_tot
-      - capture_pcr_cyc_tot
+      - capt_pcr_cyc_tot
       - capt_probe_src_taxid
-      - capture_probe_desc
+      - capt_probe_desc
       - data_preproc_desc
       - reads_removed_desc
     slot_usage:
@@ -1307,13 +1307,13 @@ classes:
       reamp_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 40
-      capture_pcr_cyc_tot:
+      capt_pcr_cyc_tot:
         slot_group: Sequencing
         rank: 41
       capt_probe_src_taxid:
         slot_group: Sequencing
         rank: 42
-      capture_probe_desc:
+      capt_probe_desc:
         slot_group: Sequencing
         rank: 43
       data_preproc_desc:
