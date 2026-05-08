@@ -604,7 +604,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999934">MIXS:999999934</a></td>
-<td><a href="../experimental_sop/">experimental_sop</a></td>
+<td><a href="../sop_experimental/">sop_experimental</a></td>
 <td>* <br/> <a href="../String/">String</a></td>
 <td>Provide a DOI or URL to refer to the paper where the field report, nucleic ac...</td>
 </tr>
@@ -740,7 +740,7 @@ slots:
 - samp_decont_pretreat
 - damage_treatment
 - nucl_acid_extr_date
-- experimental_sop
+- sop_experimental
 - lib_mid_desc
 - library_name
 - lib_polymerase
@@ -882,8 +882,8 @@ slot_usage:
     name: nucl_acid_extr_date
     rank: 32
     slot_group: Nucleic acid source
-  experimental_sop:
-    name: experimental_sop
+  sop_experimental:
+    name: sop_experimental
     rank: 33
     slot_group: Nucleic acid source
   lib_mid_desc:
@@ -1087,8 +1087,8 @@ slot_usage:
     name: nucl_acid_extr_date
     rank: 32
     slot_group: Nucleic acid source
-  experimental_sop:
-    name: experimental_sop
+  sop_experimental:
+    name: sop_experimental
     rank: 33
     slot_group: Nucleic acid source
   lib_mid_desc:
@@ -2072,7 +2072,7 @@ attributes:
     description: Indication of whether characteristic ancient DNA damage has been
       altered or removed from a DNA extract in a laboratory. If damage has been removed,
       but whether it was fully or partially removed is unknown (e.g. with UDG treatment)
-      - specify 'other', and describe known information in `experimental_sop` and
+      - specify 'other', and describe known information in `sop_experimental` and
       related free text descriptive terms.
     title: damage treatment type
     examples:
@@ -2116,12 +2116,12 @@ attributes:
     range: datetime
     required: false
     recommended: false
-  experimental_sop:
-    name: experimental_sop
+  sop_experimental:
+    name: sop_experimental
     description: Provide a DOI or URL to refer to the paper where the field report,
       nucleic acid extraction,  library construction, and other procedures are explained
       in more detail, e.g. the paper reporting the data.
-    title: experimental procedures
+    title: experimental standard operating procedure
     examples:
     - value: doi:10.1093/nar/gkr771
     in_subset:
@@ -2129,7 +2129,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     rank: 33
     slot_uri: MIXS:999999934
-    alias: experimental_sop
+    alias: sop_experimental
     owner: Ancient
     domain_of:
     - Ancient
