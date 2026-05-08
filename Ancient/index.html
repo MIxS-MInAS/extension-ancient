@@ -652,7 +652,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999942">MIXS:999999942</a></td>
-<td><a href="../capture_pcr_cyc_tot/">capture_pcr_cyc_tot</a></td>
+<td><a href="../capt_pcr_cyc_tot/">capt_pcr_cyc_tot</a></td>
 <td>* <br/> <a href="../Integer/">Integer</a></td>
 <td>Amplification cycles after capture enrichment total</td>
 </tr>
@@ -664,7 +664,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/999999944">MIXS:999999944</a></td>
-<td><a href="../capture_probe_desc/">capture_probe_desc</a></td>
+<td><a href="../capt_probe_desc/">capt_probe_desc</a></td>
 <td>* <br/> <a href="../String/">String</a></td>
 <td>Description of target enrichment probe designs used (e</td>
 </tr>
@@ -748,9 +748,9 @@ slots:
 - lib_gener_technique
 - sop_lib_preparation
 - reamp_pcr_cyc_tot
-- capture_pcr_cyc_tot
+- capt_pcr_cyc_tot
 - capt_probe_src_taxid
-- capture_probe_desc
+- capt_probe_desc
 - data_preproc_desc
 - reads_removed_desc
 slot_usage:
@@ -914,16 +914,16 @@ slot_usage:
     name: reamp_pcr_cyc_tot
     rank: 40
     slot_group: Sequencing
-  capture_pcr_cyc_tot:
-    name: capture_pcr_cyc_tot
+  capt_pcr_cyc_tot:
+    name: capt_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
   capt_probe_src_taxid:
     name: capt_probe_src_taxid
     rank: 42
     slot_group: Sequencing
-  capture_probe_desc:
-    name: capture_probe_desc
+  capt_probe_desc:
+    name: capt_probe_desc
     rank: 43
     slot_group: Sequencing
   data_preproc_desc:
@@ -1119,16 +1119,16 @@ slot_usage:
     name: reamp_pcr_cyc_tot
     rank: 40
     slot_group: Sequencing
-  capture_pcr_cyc_tot:
-    name: capture_pcr_cyc_tot
+  capt_pcr_cyc_tot:
+    name: capt_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
   capt_probe_src_taxid:
     name: capt_probe_src_taxid
     rank: 42
     slot_group: Sequencing
-  capture_probe_desc:
-    name: capture_probe_desc
+  capt_probe_desc:
+    name: capt_probe_desc
     rank: 43
     slot_group: Sequencing
   data_preproc_desc:
@@ -2338,11 +2338,11 @@ attributes:
     - Ancient
     slot_group: Sequencing
     range: integer
-  capture_pcr_cyc_tot:
-    name: capture_pcr_cyc_tot
+  capt_pcr_cyc_tot:
+    name: capt_pcr_cyc_tot
     description: Amplification cycles after capture enrichment total. Provide additional
       information about PCR conditions in pcr_cond
-    title: number of reamplification cycles after capture
+    title: post capture PCR reamplication cycles total
     examples:
     - value: '12'
     in_subset:
@@ -2350,7 +2350,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     rank: 41
     slot_uri: MIXS:999999942
-    alias: capture_pcr_cyc_tot
+    alias: capt_pcr_cyc_tot
     owner: Ancient
     domain_of:
     - Ancient
@@ -2395,8 +2395,8 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  capture_probe_desc:
-    name: capture_probe_desc
+  capt_probe_desc:
+    name: capt_probe_desc
     annotations:
       Expected_value:
         tag: Expected_value
@@ -2406,7 +2406,7 @@ attributes:
       included, sequences, type, company). This can include custom kits (please provide
       a general description and DOI if available) or commercially available kit (provide
       ID and company).
-    title: enrichment probe design description
+    title: capture probe design description
     examples:
     - value: Custom probe design (70 bp biotinylated RNA probes) covering 500 full
         E. Coli genomes; company TE-Science
@@ -2421,7 +2421,7 @@ attributes:
     - enrichment
     string_serialization: '{text}'
     slot_uri: MIXS:999999944
-    alias: capture_probe_desc
+    alias: capt_probe_desc
     owner: Ancient
     domain_of:
     - Ancient
