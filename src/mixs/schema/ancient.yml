@@ -1121,7 +1121,7 @@ slots:
       Expected_value:
         tag: Expected_value
         value: reference to SOP
-    description: Standard operating procedures used in to generate genomes,
+    description: Standard operating procedures used to generate genomes,
       metagenomes or environmental sequences
     title: relevant standard operating procedures
     examples:
