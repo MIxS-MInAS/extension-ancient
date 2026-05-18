@@ -33,6 +33,7 @@ URI: [Environment](Environment.md)
 
 
 
+        
 
 
 
@@ -98,6 +99,7 @@ URI: [Environment](Environment.md)
 
 | Slot | Description |
 | --- | --- |
+| [context_retrieval_date](context_retrieval_date.md) | Date of excavation or retrieval from burial or depositional context, if known |
 | [orig_site_lat](orig_site_lat.md) | The latitude coordinate of the original geographical origin of the sample, e |
 | [orig_site_loc](orig_site_loc.md) | The original geographical origin of the sample, when sampled outside its orig... |
 | [orig_site_lon](orig_site_lon.md) | The longitude coordinate of the original geographical origin of the sample, e |

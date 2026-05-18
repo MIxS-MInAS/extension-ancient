@@ -62,7 +62,7 @@ title: library preparation protocols
 examples:
 - value: doi:10.1093/nar/gkr771
 in_subset:
-- nucleic acid sequence source
+- sequencing
 from_schema: https://w3id.org/mixs
 rank: 1000
 slot_uri: MIXS:999999940

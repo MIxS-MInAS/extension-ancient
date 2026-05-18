@@ -802,7 +802,7 @@ attributes:
     - value: 1972-11
     - value: '2001-09-25'
     in_subset:
-    - nucleic acid sequence source
+    - environment
     from_schema: https://w3id.org/mixs
     rank: 7
     slot_uri: MIXS:999999909
@@ -823,7 +823,7 @@ attributes:
     examples:
     - value: DE-123-JK
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 9
     keywords:
@@ -854,7 +854,7 @@ attributes:
     - value: University of Copenhagen
     - value: Federal Foreign Office (Germany)
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     close_mappings:
     - dc:rightsHolder
@@ -881,7 +881,7 @@ attributes:
     examples:
     - value: '2023-12-01'
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 11
     slot_uri: MIXS:999999912
@@ -910,7 +910,7 @@ attributes:
     - value: Defined scope only includes the study of bacterial sequences and any
         human sequence is not covered under the agreement.
     in_subset:
-    - ethics
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     close_mappings:
     - dc:accessRights
@@ -945,7 +945,7 @@ attributes:
     - value: BC MC
     - value: BC MC;BC CV
     in_subset:
-    - ethics
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 13
     keywords:
@@ -974,7 +974,7 @@ attributes:
     - value: Grave 6
     - value: 'Museum ID: NHM_AR_123, Drilling ID: DRL_001, Extraction ID: ABC_24'
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 14
     string_serialization: '{text}'
@@ -1059,6 +1059,8 @@ attributes:
     - value: Mould growth in storage box observed
     - value: Stored at -20oC until 2025-05-15
     - value: Stored in the museum from 1924 to 2021
+    in_subset:
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 17
     keywords:
@@ -1207,7 +1209,7 @@ attributes:
     - value: Ma
     - value: ka
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:earliestChronometricAgeReferenceSystem
@@ -1264,7 +1266,7 @@ attributes:
     - value: Ma
     - value: ka
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:latestChronometricAgeReferenceSystem
@@ -1290,7 +1292,7 @@ attributes:
     - value: contextual dating
     - value: historical records
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:chronometricAgeProtocol
@@ -1320,7 +1322,7 @@ attributes:
     - value: age taken from previous publication Doe et al. 2019
     - value: 'radiocarbon age ID: OxA-12345'
     in_subset:
-    - investigation
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     close_mappings:
     - chrono:chronometricAgeRemarks
@@ -1468,7 +1470,7 @@ attributes:
     - value: none
     - value: partial-removal
     in_subset:
-    - sequencing
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 31
     keywords:
@@ -1691,7 +1693,7 @@ attributes:
     examples:
     - value: doi:10.1093/nar/gkr771
     in_subset:
-    - nucleic acid sequence source
+    - sequencing
     from_schema: https://w3id.org/mixs
     rank: 38
     slot_uri: MIXS:999999940
@@ -1735,7 +1737,7 @@ attributes:
     examples:
     - value: '12'
     in_subset:
-    - sequencing
+    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 41
     slot_uri: MIXS:999999942

@@ -72,7 +72,7 @@ examples:
 - value: BC MC
 - value: BC MC;BC CV
 in_subset:
-- ethics
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:

@@ -68,6 +68,8 @@ examples:
 - value: Mould growth in storage box observed
 - value: Stored at -20oC until 2025-05-15
 - value: Stored in the museum from 1924 to 2021
+in_subset:
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:

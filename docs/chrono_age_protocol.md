@@ -65,7 +65,7 @@ examples:
 - value: contextual dating
 - value: historical records
 in_subset:
-- investigation
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 broad_mappings:
 - chrono:chronometricAgeProtocol

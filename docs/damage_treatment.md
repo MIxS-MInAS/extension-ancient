@@ -72,7 +72,7 @@ examples:
 - value: none
 - value: partial-removal
 in_subset:
-- sequencing
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:

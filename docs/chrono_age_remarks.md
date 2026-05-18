@@ -69,7 +69,7 @@ examples:
 - value: age taken from previous publication Doe et al. 2019
 - value: 'radiocarbon age ID: OxA-12345'
 in_subset:
-- investigation
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 close_mappings:
 - chrono:chronometricAgeRemarks

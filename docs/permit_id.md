@@ -60,7 +60,7 @@ title: permit or approval ID
 examples:
 - value: DE-123-JK
 in_subset:
-- investigation
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:

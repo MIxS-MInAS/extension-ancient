@@ -60,7 +60,7 @@ title: date of permit approval
 examples:
 - value: '2023-12-01'
 in_subset:
-- investigation
+- nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
 slot_uri: MIXS:999999912
