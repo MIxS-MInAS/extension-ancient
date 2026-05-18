@@ -1031,7 +1031,7 @@ slots:
     examples:
       - value: "12"
     in_subset:
-      - nucleic acid sequence source
+      - sequencing
     slot_uri: MIXS:999999942 #Not assigned
     range: integer
     multivalued: true
