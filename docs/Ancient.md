@@ -1737,7 +1737,7 @@ attributes:
     examples:
     - value: '12'
     in_subset:
-    - nucleic acid sequence source
+    - sequencing
     from_schema: https://w3id.org/mixs
     rank: 41
     slot_uri: MIXS:999999942

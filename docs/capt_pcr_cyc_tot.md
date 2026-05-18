@@ -59,7 +59,7 @@ title: post capture PCR reamplication cycles total
 examples:
 - value: '12'
 in_subset:
-- nucleic acid sequence source
+- sequencing
 from_schema: https://w3id.org/mixs
 rank: 1000
 slot_uri: MIXS:999999942
