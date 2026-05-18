@@ -415,7 +415,7 @@ slots:
       - value: "1972-11"
       - value: "2001-09-25"
     in_subset:
-      - nucleic acid sequence source
+      - environment
     slot_uri: MIXS:999999909 #Not assigned
     range: datetime
     required: false
@@ -427,7 +427,7 @@ slots:
     examples:
       - value: "DE-123-JK"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     keywords:
       - ethics
     slot_uri: MIXS:999999910 #Not assigned
@@ -445,7 +445,7 @@ slots:
       - value: "University of Copenhagen"
       - value: "Federal Foreign Office (Germany)"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     keywords:
       - ethics
       - location
@@ -463,7 +463,7 @@ slots:
     examples:
       - value: "2023-12-01"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     slot_uri: MIXS:999999912 #Not assigned
     multivalued: true
     range: datetime
@@ -478,7 +478,7 @@ slots:
     examples:
       - value: "Defined scope only includes the study of bacterial sequences and any human sequence is not covered under the agreement."
     in_subset:
-      - ethics
+      - nucleic acid sequence source
     keywords:
       - ethics
     slot_uri: MIXS:999999913 #Not assigned
@@ -501,7 +501,7 @@ slots:
       - value: "BC MC"
       - value: "BC MC;BC CV"
     in_subset:
-      - ethics
+      - nucleic acid sequence source
     keywords:
       - ethics
     slot_uri: MIXS:999999914 #Not assigned
@@ -520,7 +520,7 @@ slots:
       - value: "Grave 6"
       - value: "Museum ID: NHM_AR_123, Drilling ID: DRL_001, Extraction ID: ABC_24"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     slot_uri: MIXS:999999915 #Not assigned
     multivalued: true
     range: string
@@ -579,6 +579,8 @@ slots:
       - value: "Stored at -20oC until 2025-05-15"
       - value: "Stored in the museum from 1924 to 2021"
     from_schema: https://w3id.org/mixs
+    in_subset:
+      - nucleic acid sequence source
     keywords:
       - condition
       - storage
@@ -681,7 +683,7 @@ slots:
       - value: "Ma"
       - value: "ka"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     slot_uri: MIXS:999999923 #Not assigned
     broad_mappings:
       - chrono:earliestChronometricAgeReferenceSystem
@@ -721,7 +723,7 @@ slots:
       - value: "Ma"
       - value: "ka"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     slot_uri: MIXS:999999925 #Not assigned
     broad_mappings:
       - chrono:latestChronometricAgeReferenceSystem
@@ -739,7 +741,7 @@ slots:
       - value: "contextual dating"
       - value: "historical records"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     slot_uri: MIXS:999999926 #Not assigned
     broad_mappings:
       - chrono:chronometricAgeProtocol
@@ -760,7 +762,7 @@ slots:
       - value: "age taken from previous publication Doe et al. 2019"
       - value: "radiocarbon age ID: OxA-12345"
     in_subset:
-      - investigation
+      - nucleic acid sequence source
     slot_uri: MIXS:999999927 #Not assigned
     close_mappings:
       - chrono:chronometricAgeRemarks
@@ -858,7 +860,7 @@ slots:
       - value: none
       - value: partial-removal
     in_subset:
-      - sequencing
+      - nucleic acid sequence source
     keywords:
       - ancient
     slot_uri: MIXS:999999932 #Not assigned
@@ -1001,7 +1003,7 @@ slots:
     examples:
       - value: doi:10.1093/nar/gkr771
     in_subset:
-      - nucleic acid sequence source
+      - sequencing
     slot_uri: MIXS:999999940 #Not assigned
     multivalued: true
     range: string
@@ -1029,7 +1031,7 @@ slots:
     examples:
       - value: "12"
     in_subset:
-      - sequencing
+      - nucleic acid sequence source
     slot_uri: MIXS:999999942 #Not assigned
     range: integer
     multivalued: true
