@@ -781,7 +781,7 @@ slots:
       - value: "Parasites found in pelvic area."
       - value: "Caries on right upper molar."
     in_subset:
-      - nucleic acid sequence source
+      - environment
     keywords:
       - palaeopathology
       - host health
