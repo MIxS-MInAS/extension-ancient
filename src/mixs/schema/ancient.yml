@@ -860,7 +860,7 @@ slots:
       - value: none
       - value: partial-removal
     in_subset:
-      - nucleic acid sequence source
+      - sequencing
     keywords:
       - ancient
     slot_uri: MIXS:999999932 #Not assigned
@@ -1318,14 +1318,14 @@ classes:
       samp_decont_pretreat:
         slot_group: Nucleic acid source
         rank: 30
-      damage_treatment:
-        slot_group: Nucleic acid source
-        rank: 31
       nucl_acid_extr_date:
         slot_group: Nucleic acid source
-        rank: 32
+        rank: 31
       sop_experimental:
         slot_group: Nucleic acid source
+        rank: 32
+      damage_treatment:
+        slot_group: Sequencing
         rank: 33
       lib_mid_desc:
         slot_group: Sequencing
