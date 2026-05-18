@@ -40,7 +40,6 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 
         
 
-        
 
 
         
@@ -120,7 +119,6 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 | [chrono_age_protocol](chrono_age_protocol.md) | A description of or reference to the methods used to determine the earliest_c... |
 | [chrono_age_remarks](chrono_age_remarks.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
 | [cultural_era](cultural_era.md) | The cultural era approximating to the period in which the archaeological rema... |
-| [damage_treatment](damage_treatment.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
 | [earliest_chrono_age](earliest_chrono_age.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... |
 | [earliest_chrono_sys](earliest_chrono_sys.md) | The reference system associated with the earliest_chrono_age |
 | [geological_epoch](geological_epoch.md) | The geological epoch approximating to the period within which the specimen or... |

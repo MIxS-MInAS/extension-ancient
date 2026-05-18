@@ -262,18 +262,18 @@ slot_usage:
     name: samp_decont_pretreat
     rank: 30
     slot_group: Nucleic acid source
-  damage_treatment:
-    name: damage_treatment
-    rank: 31
-    slot_group: Nucleic acid source
   nucl_acid_extr_date:
     name: nucl_acid_extr_date
-    rank: 32
+    rank: 31
     slot_group: Nucleic acid source
   sop_experimental:
     name: sop_experimental
-    rank: 33
+    rank: 32
     slot_group: Nucleic acid source
+  damage_treatment:
+    name: damage_treatment
+    rank: 33
+    slot_group: Sequencing
   lib_mid_desc:
     name: lib_mid_desc
     rank: 34
@@ -467,18 +467,18 @@ slot_usage:
     name: samp_decont_pretreat
     rank: 30
     slot_group: Nucleic acid source
-  damage_treatment:
-    name: damage_treatment
-    rank: 31
-    slot_group: Nucleic acid source
   nucl_acid_extr_date:
     name: nucl_acid_extr_date
-    rank: 32
+    rank: 31
     slot_group: Nucleic acid source
   sop_experimental:
     name: sop_experimental
-    rank: 33
+    rank: 32
     slot_group: Nucleic acid source
+  damage_treatment:
+    name: damage_treatment
+    rank: 33
+    slot_group: Sequencing
   lib_mid_desc:
     name: lib_mid_desc
     rank: 34
@@ -1470,9 +1470,9 @@ attributes:
     - value: none
     - value: partial-removal
     in_subset:
-    - nucleic acid sequence source
+    - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 31
+    rank: 33
     keywords:
     - ancient
     slot_uri: MIXS:999999932
@@ -1480,7 +1480,7 @@ attributes:
     owner: Ancient
     domain_of:
     - Ancient
-    slot_group: Nucleic acid source
+    slot_group: Sequencing
     range: DamageTreatmentEnum
     required: true
     recommended: true
@@ -1497,7 +1497,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 32
+    rank: 31
     slot_uri: MIXS:999999933
     alias: nucl_acid_extr_date
     owner: Ancient
@@ -1518,7 +1518,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 33
+    rank: 32
     slot_uri: MIXS:999999934
     alias: sop_experimental
     owner: Ancient

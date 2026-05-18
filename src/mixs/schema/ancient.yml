@@ -9,7 +9,7 @@ comments:
   - "slot titles that are associated with more than one slot name/SCN: host sex"
 source: https://github.com/MIxS-MInAS/extension-ancient/src/mixs/schema/ancient.yaml
 id: https://w3id.org/mixs
-version: 0.9.3
+version: 0.9.4
 imports:
   - linkml:types
 prefixes:
