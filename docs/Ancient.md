@@ -1351,7 +1351,7 @@ attributes:
     - value: Parasites found in pelvic area.
     - value: Caries on right upper molar.
     in_subset:
-    - nucleic acid sequence source
+    - environment
     from_schema: https://w3id.org/mixs
     rank: 27
     keywords:

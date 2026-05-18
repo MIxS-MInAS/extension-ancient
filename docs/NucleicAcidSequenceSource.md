@@ -66,7 +66,6 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 
 
 
-        
 
 
 
@@ -129,7 +128,6 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 | [latest_chrono_age](latest_chrono_age.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... |
 | [latest_chrono_sys](latest_chrono_sys.md) | The reference system associated with the latest_chrono_age |
 | [nucl_acid_extr_date](nucl_acid_extr_date.md) | The date when the nucleic acid extraction was started from the sample materia... |
-| [palaeopath_status](palaeopath_status.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
 | [permit_authority](permit_authority.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
 | [permit_date](permit_date.md) | Date on which a permit was granted |
 | [permit_id](permit_id.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
