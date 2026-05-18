@@ -1,4 +1,4 @@
-# Term: Ancient data (ancient_data) 
+# Term: ancient data (ancient_data) 
 
 
 _Data that comply with Extension Ancient_
@@ -47,7 +47,7 @@ URI: [MIXS:ancient_data](https://w3id.org/mixs/ancient_data)
 ```yaml
 name: ancient_data
 description: Data that comply with Extension Ancient
-title: Ancient data
+title: ancient data
 from_schema: https://w3id.org/mixs
 rank: 1000
 domain: MixsCompliantData

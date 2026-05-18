@@ -20,17 +20,16 @@ _A collection of terms appropriate when collecting samples and sequencing sample
 | [MIXS:999999905](https://w3id.org/mixs/999999905) | [past_env_broad](past_env_broad.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the general ancient broad environmental system that ... |
 | [MIXS:999999906](https://w3id.org/mixs/999999906) | [past_env_local](past_env_local.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the smaller-scale environmental system of the local ... |
 | [MIXS:999999907](https://w3id.org/mixs/999999907) | [stratigraph_context](stratigraph_context.md) | * <br/> [String](String.md) | Associated stratigraphic context(s) that the sample was retrieved from, usual... |
-| [MIXS:999999908](https://w3id.org/mixs/999999908) | [column_sample_depth](column_sample_depth.md) | 0..1 <br/> [String](String.md) | Distance relative to the top or beginning of the sediment core or stratigraph... |
 | [MIXS:999999909](https://w3id.org/mixs/999999909) | [context_retrieval_date](context_retrieval_date.md) | 0..1 _recommended_ <br/> [Datetime](Datetime.md) | Date of excavation or retrieval from burial or depositional context, if known |
 | [MIXS:999999910](https://w3id.org/mixs/999999910) | [permit_id](permit_id.md) | * _recommended_ <br/> [String](String.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
 | [MIXS:999999911](https://w3id.org/mixs/999999911) | [permit_authority](permit_authority.md) | * _recommended_ <br/> [String](String.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
 | [MIXS:999999912](https://w3id.org/mixs/999999912) | [permit_date](permit_date.md) | * _recommended_ <br/> [Datetime](Datetime.md) | Date on which a permit was granted |
 | [MIXS:999999913](https://w3id.org/mixs/999999913) | [permit_scope](permit_scope.md) | * _recommended_ <br/> [String](String.md) | Description of the original scope and permissions of the research on the gene... |
 | [MIXS:999999914](https://w3id.org/mixs/999999914) | [biocultural_label](biocultural_label.md) | * _recommended_ <br/> [BioCulturalLabelEnum](BioCulturalLabelEnum.md) | Relevant biocultural labels defined by the local contexts project (https://lo... |
-| [MIXS:999999915](https://w3id.org/mixs/999999915) | [samp_alt_lab_ids](samp_alt_lab_ids.md) | * <br/> [String](String.md) | An alternative sample or material IDs related to the sample not already cover... |
-| [MIXS:999999916](https://w3id.org/mixs/999999916) | [prev_pubs](prev_pubs.md) | * <br/> [String](String.md) | Any publications that report data from the same body/skeleton/individual |
+| [MIXS:999999915](https://w3id.org/mixs/999999915) | [samp_alt_lab_ids](samp_alt_lab_ids.md) | * <br/> [String](String.md) | An alternative sample or material ID related to the sample not already covere... |
+| [MIXS:999999916](https://w3id.org/mixs/999999916) | [prev_pubs](prev_pubs.md) | * <br/> [String](String.md) | Any previous publications that report non-nucleic acid data from the same sam... |
 | [MIXS:999999917](https://w3id.org/mixs/999999917) | [host_preserv_state](host_preserv_state.md) | 0..1 <br/> [String](String.md) | Description of the state of the sampled (ancient) organism/host as originally... |
-| [MIXS:999999918](https://w3id.org/mixs/999999918) | [storage_conditions](storage_conditions.md) | 0..1 <br/> [String](String.md) | General surrounding environmental conditions where the material was stored in... |
+| [MIXS:0000327](https://w3id.org/mixs/0000327) | [store_cond](store_cond.md) | 0..1 <br/> [String](String.md) | Explain how and for how long the sample was stored before DNA extraction (for... |
 | [MIXS:999999919](https://w3id.org/mixs/999999919) | [samp_preserv_treatm](samp_preserv_treatm.md) | * <br/> [String](String.md) | Description of any treatment applied directly to samples for the specific pur... |
 | [MIXS:999999920](https://w3id.org/mixs/999999920) | [cultural_era](cultural_era.md) | 0..1 <br/> [String](String.md) | The cultural era approximating to the period in which the archaeological rema... |
 | [MIXS:999999921](https://w3id.org/mixs/999999921) | [geological_epoch](geological_epoch.md) | 0..1 <br/> [GeolEpochEnum](GeolEpochEnum.md) | The geological epoch approximating to the period within which the specimen or... |
@@ -42,23 +41,23 @@ _A collection of terms appropriate when collecting samples and sequencing sample
 | [MIXS:999999927](https://w3id.org/mixs/999999927) | [chrono_age_remarks](chrono_age_remarks.md) | 0..1 _recommended_ <br/> [String](String.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
 | [MIXS:999999928](https://w3id.org/mixs/999999928) | [palaeopath_status](palaeopath_status.md) | 0..1 <br/> [String](String.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
 | [MIXS:999999929](https://w3id.org/mixs/999999929) | [batch_ids](batch_ids.md) | * <br/> [String](String.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
-| [MIXS:999999930](https://w3id.org/mixs/999999930) | [neg_cont_status](neg_cont_status.md) | 1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether the sample is a negative control or not |
+| [MIXS:999999930](https://w3id.org/mixs/999999930) | [samp_category](samp_category.md) | 1 _recommended_ <br/> [SampCategoryEnum](SampCategoryEnum.md) | The type/category of a sample |
 | [MIXS:999999931](https://w3id.org/mixs/999999931) | [samp_decont_pretreat](samp_decont_pretreat.md) | * <br/> [String](String.md) | Protocols employed for sample surface decontamination of external  modern nuc... |
 | [MIXS:999999932](https://w3id.org/mixs/999999932) | [damage_treatment](damage_treatment.md) | 1 _recommended_ <br/> [DamageTreatmentEnum](DamageTreatmentEnum.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
 | [MIXS:999999933](https://w3id.org/mixs/999999933) | [nucl_acid_extr_date](nucl_acid_extr_date.md) | 0..1 <br/> [Datetime](Datetime.md) | The date when the nucleic acid extraction was started from the sample materia... |
-| [MIXS:999999934](https://w3id.org/mixs/999999934) | [experimental_sop](experimental_sop.md) | * <br/> [String](String.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
-| [MIXS:999999935](https://w3id.org/mixs/999999935) | [mid_config](mid_config.md) | * _recommended_ <br/> [String](String.md) | Index/barcode/primer configuration used during library building for sequencin... |
+| [MIXS:999999934](https://w3id.org/mixs/999999934) | [sop_experimental](sop_experimental.md) | * <br/> [String](String.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
+| [MIXS:999999935](https://w3id.org/mixs/999999935) | [lib_mid_desc](lib_mid_desc.md) | * _recommended_ <br/> [String](String.md) | Index/barcode/primer configuration used during library building for sequencin... |
 | [MIXS:999999936](https://w3id.org/mixs/999999936) | [library_name](library_name.md) | * _recommended_ <br/> [String](String.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... |
 | [MIXS:999999937](https://w3id.org/mixs/999999937) | [lib_polymerase](lib_polymerase.md) | 0..1 _recommended_ <br/> [String](String.md) | The polymerase enzyme used for building nucleic acid libraries |
 | [MIXS:999999938](https://w3id.org/mixs/999999938) | [lib_strandedness](lib_strandedness.md) | 1..* _recommended_ <br/> [LibStrandEnum](LibStrandEnum.md) | The strandedness of the original template nucleic acid molecules used for con... |
-| [MIXS:999999939](https://w3id.org/mixs/999999939) | [lib_type](lib_type.md) | 0..1 _recommended_ <br/> [LibTypeEnum](LibTypeEnum.md) | The type of library created, i |
-| [MIXS:999999940](https://w3id.org/mixs/999999940) | [lib_preparation_sop](lib_preparation_sop.md) | * <br/> [String](String.md) | Citation(s) for the nucleic acid library preparation protocol |
-| [MIXS:999999941](https://w3id.org/mixs/999999941) | [num_reamp_cycles](num_reamp_cycles.md) | 0..1 <br/> [Integer](Integer.md) | Number of amplification cycles after library indexing PCR |
-| [MIXS:999999942](https://w3id.org/mixs/999999942) | [num_capture_cycles](num_capture_cycles.md) | * <br/> [Integer](Integer.md) | Number of amplification cycles after capture enrichment |
-| [MIXS:999999943](https://w3id.org/mixs/999999943) | [capture_probe_taxid](capture_probe_taxid.md) | * <br/> [Integer](Integer.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
-| [MIXS:999999944](https://w3id.org/mixs/999999944) | [capture_probe_desc](capture_probe_desc.md) | * <br/> [String](String.md) | Description of target enrichment probe designs used (e |
-| [MIXS:999999945](https://w3id.org/mixs/999999945) | [desc_read_state](desc_read_state.md) | 0..1 _recommended_ <br/> [String](String.md) | Description of the state of the reads in the sequencing data file |
-| [MIXS:999999946](https://w3id.org/mixs/999999946) | [data_filt_applied](data_filt_applied.md) | 0..1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether associated data was filtered prior to upload, such as host re... |
+| [MIXS:999999939](https://w3id.org/mixs/999999939) | [lib_gener_technique](lib_gener_technique.md) | 0..1 _recommended_ <br/> [LibTypeEnum](LibTypeEnum.md) | The technique used to generate the library, i |
+| [MIXS:999999940](https://w3id.org/mixs/999999940) | [sop_lib_preparation](sop_lib_preparation.md) | * <br/> [String](String.md) | Citation(s) for the nucleic acid library preparation protocol |
+| [MIXS:999999941](https://w3id.org/mixs/999999941) | [reamp_pcr_cyc_tot](reamp_pcr_cyc_tot.md) | 0..1 <br/> [Integer](Integer.md) | Number of amplification cycles after library indexing PCR |
+| [MIXS:999999942](https://w3id.org/mixs/999999942) | [capt_pcr_cyc_tot](capt_pcr_cyc_tot.md) | * <br/> [Integer](Integer.md) | Amplification cycles after capture enrichment total |
+| [MIXS:999999943](https://w3id.org/mixs/999999943) | [capt_probe_src_taxid](capt_probe_src_taxid.md) | * <br/> [Integer](Integer.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
+| [MIXS:999999944](https://w3id.org/mixs/999999944) | [capt_probe_desc](capt_probe_desc.md) | * <br/> [String](String.md) | Description of target enrichment probe designs used (e |
+| [MIXS:999999945](https://w3id.org/mixs/999999945) | [data_preproc_desc](data_preproc_desc.md) | 0..1 _recommended_ <br/> [String](String.md) | Description of preprocessing performed on the reads in the sequencing data fi... |
+| [MIXS:999999946](https://w3id.org/mixs/999999946) | [reads_removed_desc](reads_removed_desc.md) | 0..1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether associated data was filtered in some form prior to upload, su... |
 
 
 
@@ -104,7 +103,6 @@ slots:
 - past_env_broad
 - past_env_local
 - stratigraph_context
-- column_sample_depth
 - context_retrieval_date
 - permit_id
 - permit_authority
@@ -114,7 +112,7 @@ slots:
 - samp_alt_lab_ids
 - prev_pubs
 - host_preserv_state
-- storage_conditions
+- store_cond
 - samp_preserv_treatm
 - cultural_era
 - geological_epoch
@@ -126,23 +124,23 @@ slots:
 - chrono_age_remarks
 - palaeopath_status
 - batch_ids
-- neg_cont_status
+- samp_category
 - samp_decont_pretreat
 - damage_treatment
 - nucl_acid_extr_date
-- experimental_sop
-- mid_config
+- sop_experimental
+- lib_mid_desc
 - library_name
 - lib_polymerase
 - lib_strandedness
-- lib_type
-- lib_preparation_sop
-- num_reamp_cycles
-- num_capture_cycles
-- capture_probe_taxid
-- capture_probe_desc
-- desc_read_state
-- data_filt_applied
+- lib_gener_technique
+- sop_lib_preparation
+- reamp_pcr_cyc_tot
+- capt_pcr_cyc_tot
+- capt_probe_src_taxid
+- capt_probe_desc
+- data_preproc_desc
+- reads_removed_desc
 slot_usage:
   orig_site_name:
     name: orig_site_name
@@ -176,157 +174,153 @@ slot_usage:
     name: stratigraph_context
     rank: 8
     slot_group: Environment
-  column_sample_depth:
-    name: column_sample_depth
-    rank: 9
-    slot_group: Environment
   permit_id:
     name: permit_id
-    rank: 10
+    rank: 9
     slot_group: Sample body
   permit_authority:
     name: permit_authority
-    rank: 11
+    rank: 10
     slot_group: Sample body
   permit_date:
     name: permit_date
-    rank: 12
+    rank: 11
     slot_group: Sample body
   permit_scope:
     name: permit_scope
-    rank: 13
+    rank: 12
     slot_group: Sample body
   biocultural_label:
     name: biocultural_label
-    rank: 14
+    rank: 13
     slot_group: Sample body
   samp_alt_lab_ids:
     name: samp_alt_lab_ids
-    rank: 15
+    rank: 14
     slot_group: Sample body
   prev_pubs:
     name: prev_pubs
-    rank: 16
+    rank: 15
     slot_group: Sample body
   host_preserv_state:
     name: host_preserv_state
-    rank: 17
+    rank: 16
     slot_group: Sample body
-  storage_conditions:
-    name: storage_conditions
-    rank: 18
+  store_cond:
+    name: store_cond
+    rank: 17
     slot_group: Sample body
   samp_preserv_treatm:
     name: samp_preserv_treatm
-    rank: 19
+    rank: 18
     slot_group: Sample body
   cultural_era:
     name: cultural_era
-    rank: 20
+    rank: 19
     slot_group: Sample body
   geological_epoch:
     name: geological_epoch
-    rank: 21
+    rank: 20
     slot_group: Sample body
   earliest_chrono_age:
     name: earliest_chrono_age
-    rank: 22
+    rank: 21
     slot_group: Sample body
   earliest_chrono_sys:
     name: earliest_chrono_sys
-    rank: 23
+    rank: 22
     slot_group: Sample body
   latest_chrono_age:
     name: latest_chrono_age
-    rank: 24
+    rank: 23
     slot_group: Sample body
   latest_chrono_sys:
     name: latest_chrono_sys
-    rank: 25
+    rank: 24
     slot_group: Sample body
   chrono_age_protocol:
     name: chrono_age_protocol
-    rank: 26
+    rank: 25
     slot_group: Sample body
   chrono_age_remarks:
     name: chrono_age_remarks
-    rank: 27
+    rank: 26
     slot_group: Sample body
   palaeopath_status:
     name: palaeopath_status
-    rank: 28
+    rank: 27
     slot_group: Sample body
   batch_ids:
     name: batch_ids
-    rank: 29
+    rank: 28
     slot_group: Nucleic acid source
-  neg_cont_status:
-    name: neg_cont_status
-    rank: 30
+  samp_category:
+    name: samp_category
+    rank: 29
     slot_group: Nucleic acid source
   samp_decont_pretreat:
     name: samp_decont_pretreat
-    rank: 31
+    rank: 30
     slot_group: Nucleic acid source
   damage_treatment:
     name: damage_treatment
-    rank: 32
+    rank: 31
     slot_group: Nucleic acid source
   nucl_acid_extr_date:
     name: nucl_acid_extr_date
+    rank: 32
+    slot_group: Nucleic acid source
+  sop_experimental:
+    name: sop_experimental
     rank: 33
     slot_group: Nucleic acid source
-  experimental_sop:
-    name: experimental_sop
+  lib_mid_desc:
+    name: lib_mid_desc
     rank: 34
-    slot_group: Nucleic acid source
-  mid_config:
-    name: mid_config
-    rank: 35
     slot_group: Sequencing
   library_name:
     name: library_name
-    rank: 36
+    rank: 35
     slot_group: Sequencing
   lib_polymerase:
     name: lib_polymerase
-    rank: 37
+    rank: 36
     slot_group: Sequencing
   lib_strandedness:
     name: lib_strandedness
+    rank: 37
+    slot_group: Sequencing
+  sop_lib_preparation:
+    name: sop_lib_preparation
     rank: 38
     slot_group: Sequencing
-  lib_preparation_sop:
-    name: lib_preparation_sop
+  lib_gener_technique:
+    name: lib_gener_technique
     rank: 39
     slot_group: Sequencing
-  lib_type:
-    name: lib_type
+  reamp_pcr_cyc_tot:
+    name: reamp_pcr_cyc_tot
     rank: 40
     slot_group: Sequencing
-  num_reamp_cycles:
-    name: num_reamp_cycles
+  capt_pcr_cyc_tot:
+    name: capt_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
-  num_capture_cycles:
-    name: num_capture_cycles
+  capt_probe_src_taxid:
+    name: capt_probe_src_taxid
     rank: 42
     slot_group: Sequencing
-  capture_probe_taxid:
-    name: capture_probe_taxid
+  capt_probe_desc:
+    name: capt_probe_desc
     rank: 43
     slot_group: Sequencing
-  capture_probe_desc:
-    name: capture_probe_desc
+  data_preproc_desc:
+    name: data_preproc_desc
     rank: 44
-    slot_group: Sequencing
-  desc_read_state:
-    name: desc_read_state
-    rank: 45
     slot_group: Data analysis
-  data_filt_applied:
-    name: data_filt_applied
-    rank: 46
+  reads_removed_desc:
+    name: reads_removed_desc
+    rank: 45
     slot_group: Data analysis
 class_uri: MIXS:9999903
 
@@ -385,157 +379,153 @@ slot_usage:
     name: stratigraph_context
     rank: 8
     slot_group: Environment
-  column_sample_depth:
-    name: column_sample_depth
-    rank: 9
-    slot_group: Environment
   permit_id:
     name: permit_id
-    rank: 10
+    rank: 9
     slot_group: Sample body
   permit_authority:
     name: permit_authority
-    rank: 11
+    rank: 10
     slot_group: Sample body
   permit_date:
     name: permit_date
-    rank: 12
+    rank: 11
     slot_group: Sample body
   permit_scope:
     name: permit_scope
-    rank: 13
+    rank: 12
     slot_group: Sample body
   biocultural_label:
     name: biocultural_label
-    rank: 14
+    rank: 13
     slot_group: Sample body
   samp_alt_lab_ids:
     name: samp_alt_lab_ids
-    rank: 15
+    rank: 14
     slot_group: Sample body
   prev_pubs:
     name: prev_pubs
-    rank: 16
+    rank: 15
     slot_group: Sample body
   host_preserv_state:
     name: host_preserv_state
-    rank: 17
+    rank: 16
     slot_group: Sample body
-  storage_conditions:
-    name: storage_conditions
-    rank: 18
+  store_cond:
+    name: store_cond
+    rank: 17
     slot_group: Sample body
   samp_preserv_treatm:
     name: samp_preserv_treatm
-    rank: 19
+    rank: 18
     slot_group: Sample body
   cultural_era:
     name: cultural_era
-    rank: 20
+    rank: 19
     slot_group: Sample body
   geological_epoch:
     name: geological_epoch
-    rank: 21
+    rank: 20
     slot_group: Sample body
   earliest_chrono_age:
     name: earliest_chrono_age
-    rank: 22
+    rank: 21
     slot_group: Sample body
   earliest_chrono_sys:
     name: earliest_chrono_sys
-    rank: 23
+    rank: 22
     slot_group: Sample body
   latest_chrono_age:
     name: latest_chrono_age
-    rank: 24
+    rank: 23
     slot_group: Sample body
   latest_chrono_sys:
     name: latest_chrono_sys
-    rank: 25
+    rank: 24
     slot_group: Sample body
   chrono_age_protocol:
     name: chrono_age_protocol
-    rank: 26
+    rank: 25
     slot_group: Sample body
   chrono_age_remarks:
     name: chrono_age_remarks
-    rank: 27
+    rank: 26
     slot_group: Sample body
   palaeopath_status:
     name: palaeopath_status
-    rank: 28
+    rank: 27
     slot_group: Sample body
   batch_ids:
     name: batch_ids
-    rank: 29
+    rank: 28
     slot_group: Nucleic acid source
-  neg_cont_status:
-    name: neg_cont_status
-    rank: 30
+  samp_category:
+    name: samp_category
+    rank: 29
     slot_group: Nucleic acid source
   samp_decont_pretreat:
     name: samp_decont_pretreat
-    rank: 31
+    rank: 30
     slot_group: Nucleic acid source
   damage_treatment:
     name: damage_treatment
-    rank: 32
+    rank: 31
     slot_group: Nucleic acid source
   nucl_acid_extr_date:
     name: nucl_acid_extr_date
+    rank: 32
+    slot_group: Nucleic acid source
+  sop_experimental:
+    name: sop_experimental
     rank: 33
     slot_group: Nucleic acid source
-  experimental_sop:
-    name: experimental_sop
+  lib_mid_desc:
+    name: lib_mid_desc
     rank: 34
-    slot_group: Nucleic acid source
-  mid_config:
-    name: mid_config
-    rank: 35
     slot_group: Sequencing
   library_name:
     name: library_name
-    rank: 36
+    rank: 35
     slot_group: Sequencing
   lib_polymerase:
     name: lib_polymerase
-    rank: 37
+    rank: 36
     slot_group: Sequencing
   lib_strandedness:
     name: lib_strandedness
+    rank: 37
+    slot_group: Sequencing
+  sop_lib_preparation:
+    name: sop_lib_preparation
     rank: 38
     slot_group: Sequencing
-  lib_preparation_sop:
-    name: lib_preparation_sop
+  lib_gener_technique:
+    name: lib_gener_technique
     rank: 39
     slot_group: Sequencing
-  lib_type:
-    name: lib_type
+  reamp_pcr_cyc_tot:
+    name: reamp_pcr_cyc_tot
     rank: 40
     slot_group: Sequencing
-  num_reamp_cycles:
-    name: num_reamp_cycles
+  capt_pcr_cyc_tot:
+    name: capt_pcr_cyc_tot
     rank: 41
     slot_group: Sequencing
-  num_capture_cycles:
-    name: num_capture_cycles
+  capt_probe_src_taxid:
+    name: capt_probe_src_taxid
     rank: 42
     slot_group: Sequencing
-  capture_probe_taxid:
-    name: capture_probe_taxid
+  capt_probe_desc:
+    name: capt_probe_desc
     rank: 43
     slot_group: Sequencing
-  capture_probe_desc:
-    name: capture_probe_desc
+  data_preproc_desc:
+    name: data_preproc_desc
     rank: 44
-    slot_group: Sequencing
-  desc_read_state:
-    name: desc_read_state
-    rank: 45
     slot_group: Data analysis
-  data_filt_applied:
-    name: data_filt_applied
-    rank: 46
+  reads_removed_desc:
+    name: reads_removed_desc
+    rank: 45
     slot_group: Data analysis
 attributes:
   orig_site_name:
@@ -551,7 +541,7 @@ attributes:
       Typically names that would not be found on official maps. If the site name is
       unclear please use the name of the closest location or region as best as possible.
       Can also include different transliterations or languages used in the literature.
-    title: Name of site or location where sample originated
+    title: name of site or location where sample originated
     examples:
     - value: Valley of the Kings
     - value: Krakow Spadzista B
@@ -795,45 +785,6 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  column_sample_depth:
-    name: column_sample_depth
-    annotations:
-      Expected_value:
-        tag: Expected_value
-        value: depth of the sample in the column of a stratigraphy or sediment core
-    description: 'Distance relative to the top or beginning of the sediment core or
-      stratigraphic sequence (defined by the term ''depth'') from which the sample
-      was taken. This is not necessarily the same as the depth from floor level or
-      Mean Sea Level (MSL) (which should be defined using the term: depth), as a core
-      could start part way below the surface. Can also be a range if the depth of
-      the sample is not precisely measured.'
-    title: sample depth in column
-    examples:
-    - value: 34 cm
-    - value: 23 - 56 cm
-    - value: 100 in
-    in_subset:
-    - environment
-    from_schema: https://w3id.org/mixs
-    rank: 9
-    keywords:
-    - environment
-    - core
-    - sediment
-    slot_uri: MIXS:999999908
-    alias: column_sample_depth
-    owner: Ancient
-    domain_of:
-    - Ancient
-    slot_group: Environment
-    range: string
-    required: false
-    recommended: false
-    multivalued: false
-    structured_pattern:
-      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
-      interpolated: true
-      partial_match: true
   context_retrieval_date:
     name: context_retrieval_date
     annotations:
@@ -874,7 +825,7 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 10
+    rank: 9
     keywords:
     - ethics
     slot_uri: MIXS:999999910
@@ -905,7 +856,9 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 11
+    close_mappings:
+    - dc:rightsHolder
+    rank: 10
     keywords:
     - ethics
     - location
@@ -930,7 +883,7 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 12
+    rank: 11
     slot_uri: MIXS:999999912
     alias: permit_date
     owner: Ancient
@@ -959,7 +912,10 @@ attributes:
     in_subset:
     - ethics
     from_schema: https://w3id.org/mixs
-    rank: 13
+    close_mappings:
+    - dc:accessRights
+    - dc:license
+    rank: 12
     keywords:
     - ethics
     string_serialization: '{text}'
@@ -991,7 +947,7 @@ attributes:
     in_subset:
     - ethics
     from_schema: https://w3id.org/mixs
-    rank: 14
+    rank: 13
     keywords:
     - ethics
     slot_uri: MIXS:999999914
@@ -1006,11 +962,12 @@ attributes:
     multivalued: true
   samp_alt_lab_ids:
     name: samp_alt_lab_ids
-    description: An alternative sample or material IDs related to the sample not already
+    description: 'An alternative sample or material ID related to the sample not already
       covered by terms samp_name and source_mat_id, including from associated other
-      non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample
-      ID from sampling such a bone drilling). Can be specified multiple times for
-      different ID contexts.
+      non-genetic analyses of the same sample, that can be used synonymously with
+      the main ID. For example: external database IDs, internal lab sample ID from
+      sampling such as bone drilling, or IDs from other scientific analyses. Can be
+      specified multiple times for different ID contexts.'
     title: alternative sample IDs
     examples:
     - value: ABC_24
@@ -1019,7 +976,7 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs
-    rank: 15
+    rank: 14
     string_serialization: '{text}'
     slot_uri: MIXS:999999915
     alias: samp_alt_lab_ids
@@ -1033,14 +990,15 @@ attributes:
     multivalued: true
   prev_pubs:
     name: prev_pubs
-    description: Any publications that report data from the same body/skeleton/individual
+    description: Any previous publications that report non-nucleic acid data from
+      the same sample or ultimate source of the sample
     title: previous publications
     examples:
     - value: doi:10.1016/j.jas.2015.02.0181
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 16
+    rank: 15
     slot_uri: MIXS:999999916
     alias: prev_pubs
     owner: Ancient
@@ -1067,7 +1025,7 @@ attributes:
       originally  preserved in the burial environment at the time of or immediately
       following death. This can be both natural or artificial, such as mummification
       or burning for funerary purposes.
-    title: preservation state of sampled organism/host at/immediately after death
+    title: preservation state of sampled host at death
     examples:
     - value: complete artificial mummification.
     - value: natural partial mummification.
@@ -1075,7 +1033,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 17
+    rank: 16
     keywords:
     - ancient
     string_serialization: '{text}'
@@ -1089,32 +1047,32 @@ attributes:
     required: false
     recommended: false
     multivalued: false
-  storage_conditions:
-    name: storage_conditions
-    description: General surrounding environmental conditions where the material was
-      stored in long-term collection storage prior sampling for nucleic acid analysis  that
-      may influence nucleic acid recovery or library construction. For example, specify
-      temperature, humidity, presence of microbial overgrowth etc..
+  store_cond:
+    name: store_cond
+    description: Explain how and for how long the sample was stored before DNA extraction
+      (for example, fresh/frozen/other). Include factors that may influence nucleic
+      acid recovery or library construction. For example, specify temperature, humidity,
+      presence of microbial overgrowth etc..
     title: storage conditions
     examples:
     - value: climate-controlled
     - value: Mould growth in storage box observed
     - value: Stored at -20oC until 2025-05-15
     - value: Stored in the museum from 1924 to 2021
-    in_subset:
-    - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 18
-    string_serialization: '{text}'
-    slot_uri: MIXS:999999918
-    alias: storage_conditions
+    rank: 17
+    keywords:
+    - condition
+    - storage
+    slot_uri: MIXS:0000327
+    alias: store_cond
     owner: Ancient
     domain_of:
     - Ancient
     slot_group: Sample body
     range: string
-    required: false
-    recommended: false
+    structured_pattern:
+      syntax: ^{storage_condition_type};{duration}$
   samp_preserv_treatm:
     name: samp_preserv_treatm
     description: Description of any treatment applied directly to samples for the
@@ -1129,7 +1087,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 19
+    rank: 18
     keywords:
     - ancient
     string_serialization: '{text}'
@@ -1160,7 +1118,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 20
+    rank: 19
     keywords:
     - ancient
     - age
@@ -1193,7 +1151,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 21
+    rank: 20
     keywords:
     - ancient
     - age
@@ -1219,7 +1177,7 @@ attributes:
       age unit should be specified by the term earliest_chrono_sys. More information
       on specific dates (e.g. radiocarbon lab codes) can be specified in the term
       chrono_age_remarks.
-    title: Earliest Chronometric Age
+    title: earliest chronometric age
     examples:
     - value: '120000'
     - value: '1900'
@@ -1228,7 +1186,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:earliestChronometricAge
-    rank: 22
+    rank: 21
     slot_uri: MIXS:999999922
     alias: earliest_chrono_age
     owner: Ancient
@@ -1242,7 +1200,7 @@ attributes:
   earliest_chrono_sys:
     name: earliest_chrono_sys
     description: The reference system associated with the earliest_chrono_age.
-    title: Earliest Chronometric Age Reference System
+    title: earliest chronometric age reference system
     examples:
     - value: cal BP
     - value: CE
@@ -1253,7 +1211,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:earliestChronometricAgeReferenceSystem
-    rank: 23
+    rank: 22
     slot_uri: MIXS:999999923
     alias: earliest_chrono_sys
     owner: Ancient
@@ -1276,7 +1234,7 @@ attributes:
       age unit should be specified by the term latest_chrono_sys. More information
       on specific dates (e.g. radiocarbon lab codes) can be specified in the term
       chrono_age_remarks.
-    title: Latest Chronometric Age
+    title: latest chronometric age
     examples:
     - value: '100000'
     - value: '1700'
@@ -1285,7 +1243,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:latestChronometricAge
-    rank: 24
+    rank: 23
     slot_uri: MIXS:999999924
     alias: latest_chrono_age
     owner: Ancient
@@ -1299,7 +1257,7 @@ attributes:
   latest_chrono_sys:
     name: latest_chrono_sys
     description: The reference system associated with the latest_chrono_age.
-    title: Latest Chronometric Age Reference System
+    title: latest chronometric age reference system
     examples:
     - value: cal BP
     - value: CE
@@ -1310,7 +1268,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:latestChronometricAgeReferenceSystem
-    rank: 25
+    rank: 24
     slot_uri: MIXS:999999925
     alias: latest_chrono_sys
     owner: Ancient
@@ -1325,7 +1283,7 @@ attributes:
     name: chrono_age_protocol
     description: A description of or reference to the methods used to determine the
       earliest_chrono_age and latest_chrono_age.
-    title: Chronometric Age Protocol
+    title: chronometric age protocol
     examples:
     - value: radiocarbon dating
     - value: optically stimulated infrared luminescence
@@ -1336,7 +1294,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     broad_mappings:
     - chrono:chronometricAgeProtocol
-    rank: 26
+    rank: 25
     slot_uri: MIXS:999999926
     alias: chrono_age_protocol
     owner: Ancient
@@ -1353,7 +1311,7 @@ attributes:
       For more detail use Chronometric Age Protocol to point to original publication
       describing method. Useful to specify confidence and/or accuracy of reported
       date.
-    title: Chronometric Age Remarks
+    title: chronometric age remarks
     examples:
     - value: radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval
     - value: based on proxy dating from other bone samples of stratigraphic layer
@@ -1366,7 +1324,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     close_mappings:
     - chrono:chronometricAgeRemarks
-    rank: 27
+    rank: 26
     slot_uri: MIXS:999999927
     alias: chrono_age_remarks
     owner: Ancient
@@ -1384,7 +1342,7 @@ attributes:
         tag: Expected_value
         value: description of health related observation on ancient remains
     description: Describe briefly any relevant palaeopathological or health-related
-      observations of the remains of the individual under study.
+      observations of the remains of the individual or subject under study.
     title: palaeopathology status
     examples:
     - value: Osteoporosis.
@@ -1393,7 +1351,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 28
+    rank: 27
     keywords:
     - palaeopathology
     - host health
@@ -1428,11 +1386,10 @@ attributes:
     - value: 'Extraction batch: 1'
     - value: 20260501-A2 (extraction);20202607-B2 (library)
     - value: ExtrMG;LibMG;SeqMG
-    - value: 'Core: North-East Greenland 73G'
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 29
+    rank: 28
     keywords:
     - identifiers
     slot_uri: MIXS:999999929
@@ -1445,26 +1402,28 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  neg_cont_status:
-    name: neg_cont_status
-    description: Specify whether the sample is a negative control or not.
-    title: negative control status
+  samp_category:
+    name: samp_category
+    description: The type/category of a sample. "Sample" includes biological and technical
+      replicates.
+    title: sample category
     examples:
-    - value: 'true'
-    - value: 'false'
+    - value: sample
+    - value: negative control
+    - value: positive control
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 30
+    rank: 29
     keywords:
     - control
     slot_uri: MIXS:999999930
-    alias: neg_cont_status
+    alias: samp_category
     owner: Ancient
     domain_of:
     - Ancient
     slot_group: Nucleic acid source
-    range: boolean
+    range: SampCategoryEnum
     required: true
     recommended: true
   samp_decont_pretreat:
@@ -1479,7 +1438,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 31
+    rank: 30
     slot_uri: MIXS:999999931
     alias: samp_decont_pretreat
     owner: Ancient
@@ -1502,16 +1461,16 @@ attributes:
     description: Indication of whether characteristic ancient DNA damage has been
       altered or removed from a DNA extract in a laboratory. If damage has been removed,
       but whether it was fully or partially removed is unknown (e.g. with UDG treatment)
-      - specify 'other', and describe known information in `experimental_sop` and
+      - specify 'other', and describe known information in `sop_experimental` and
       related free text descriptive terms.
-    title: Damage treatment type
+    title: damage treatment type
     examples:
     - value: none
     - value: partial-removal
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 32
+    rank: 31
     keywords:
     - ancient
     slot_uri: MIXS:999999932
@@ -1536,7 +1495,7 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 33
+    rank: 32
     slot_uri: MIXS:999999933
     alias: nucl_acid_extr_date
     owner: Ancient
@@ -1546,20 +1505,20 @@ attributes:
     range: datetime
     required: false
     recommended: false
-  experimental_sop:
-    name: experimental_sop
+  sop_experimental:
+    name: sop_experimental
     description: Provide a DOI or URL to refer to the paper where the field report,
       nucleic acid extraction,  library construction, and other procedures are explained
       in more detail, e.g. the paper reporting the data.
-    title: experimental procedures
+    title: experimental standard operating procedure
     examples:
     - value: doi:10.1093/nar/gkr771
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 34
+    rank: 33
     slot_uri: MIXS:999999934
-    alias: experimental_sop
+    alias: sop_experimental
     owner: Ancient
     domain_of:
     - Ancient
@@ -1573,8 +1532,8 @@ attributes:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  mid_config:
-    name: mid_config
+  lib_mid_desc:
+    name: lib_mid_desc
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1583,20 +1542,20 @@ attributes:
       sequencing. This includes information such as the number, type and location
       of indexes, the index/primer kit/list, or if 'inline' barcodes or UMIs were
       ligated directly onto the template molecules.
-    title: multiplex identifiers or indexing configuration of libraries
+    title: description of library multiplex identifiers or indexing configuration
     examples:
     - value: dual index with single internal barcode.
     - value: UDI index sequences.
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 35
+    rank: 34
     keywords:
     - library
     - preparation
     string_serialization: '{text}'
     slot_uri: MIXS:999999935
-    alias: mid_config
+    alias: lib_mid_desc
     owner: Ancient
     domain_of:
     - Ancient
@@ -1621,7 +1580,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 36
+    rank: 35
     keywords:
     - sequencing
     slot_uri: MIXS:999999936
@@ -1640,7 +1599,8 @@ attributes:
       Expected_value:
         tag: Expected_value
         value: name of polymerase used during library construction
-    description: The polymerase enzyme used for building nucleic acid libraries.
+    description: The polymerase enzyme used for building nucleic acid libraries. Include
+      formal identifier e.g. SKU or the manufacturers name at minimum.
     title: library polymerase
     examples:
     - value: Agilent PfuTurbo Cx HotStart
@@ -1649,7 +1609,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 37
+    rank: 36
     keywords:
     - polymerase
     - library
@@ -1679,7 +1639,7 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 38
+    rank: 37
     keywords:
     - library
     - preparation
@@ -1693,17 +1653,17 @@ attributes:
     required: true
     recommended: true
     multivalued: true
-  lib_type:
-    name: lib_type
-    description: The type of library created, i.e., amplicon, enriched, or shotgun.
-      An amplicon library is a library that has been amplified to target a single
-      specific region of a genome (e.g. a specific gene).  An enriched library is
-      a library has had a particular genome, or multiple genomic regions/positions
+  lib_gener_technique:
+    name: lib_gener_technique
+    description: The technique used to generate the library, i.e., amplicon, enriched,
+      or shotgun. An amplicon library is a library that has been amplified to target
+      a single specific region of a genome (e.g. a specific gene). An enriched library
+      is a library that has had a particular genome or multiple genomic regions/positions
       'captured' or enriched typically via baits/probes. A shotgun library has undergone
       no type of targeted amplification/enrichment for a particular genomic region
       or genome, i.e., random sequencing of any nucleic acid molecule contained in
       a genomic library.
-    title: library type
+    title: library generation technique
     examples:
     - value: shotgun
     - value: amplicon
@@ -1711,12 +1671,12 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 40
+    rank: 39
     keywords:
     - library
     - preparation
     slot_uri: MIXS:999999939
-    alias: lib_type
+    alias: lib_gener_technique
     owner: Ancient
     domain_of:
     - Ancient
@@ -1724,8 +1684,8 @@ attributes:
     range: LibTypeEnum
     required: false
     recommended: true
-  lib_preparation_sop:
-    name: lib_preparation_sop
+  sop_lib_preparation:
+    name: sop_lib_preparation
     description: Citation(s) for the nucleic acid library preparation protocol.
     title: library preparation protocols
     examples:
@@ -1733,9 +1693,9 @@ attributes:
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
-    rank: 39
+    rank: 38
     slot_uri: MIXS:999999940
-    alias: lib_preparation_sop
+    alias: sop_lib_preparation
     owner: Ancient
     domain_of:
     - Ancient
@@ -1749,8 +1709,8 @@ attributes:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
       partial_match: true
-  num_reamp_cycles:
-    name: num_reamp_cycles
+  reamp_pcr_cyc_tot:
+    name: reamp_pcr_cyc_tot
     description: Number of amplification cycles after library indexing PCR. If capture
       data, this refers to amplifications prior to the capture experiments.
     title: number of reamplification cycles
@@ -1759,26 +1719,27 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 41
+    rank: 40
     slot_uri: MIXS:999999941
-    alias: num_reamp_cycles
+    alias: reamp_pcr_cyc_tot
     owner: Ancient
     domain_of:
     - Ancient
     slot_group: Sequencing
     range: integer
-  num_capture_cycles:
-    name: num_capture_cycles
-    description: Number of amplification cycles after capture enrichment
-    title: number of reamplification cycles after capture
+  capt_pcr_cyc_tot:
+    name: capt_pcr_cyc_tot
+    description: Amplification cycles after capture enrichment total. Provide additional
+      information about PCR conditions in pcr_cond
+    title: post capture PCR reamplication cycles total
     examples:
     - value: '12'
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 42
+    rank: 41
     slot_uri: MIXS:999999942
-    alias: num_capture_cycles
+    alias: capt_pcr_cyc_tot
     owner: Ancient
     domain_of:
     - Ancient
@@ -1787,8 +1748,8 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  capture_probe_taxid:
-    name: capture_probe_taxid
+  capt_probe_src_taxid:
+    name: capt_probe_src_taxid
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1799,7 +1760,7 @@ attributes:
       species level taxonomic ID entry for each organism that had sequences included
       in the design. If whole genera were targeted, you can instead use a single genus
       level taxonomic ID or that of any relevant higher taxonomic unit.
-    title: genomic capture probe taxonomic IDs
+    title: Genomic capture probe source taxonomy IDs
     examples:
     - value: '9606'
     - value: '632'
@@ -1807,14 +1768,14 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 43
+    rank: 42
     keywords:
     - sequencing
     - library
     - enrichment
     - capture
     slot_uri: MIXS:999999943
-    alias: capture_probe_taxid
+    alias: capt_probe_src_taxid
     owner: Ancient
     domain_of:
     - Ancient
@@ -1823,8 +1784,8 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  capture_probe_desc:
-    name: capture_probe_desc
+  capt_probe_desc:
+    name: capt_probe_desc
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1834,7 +1795,7 @@ attributes:
       included, sequences, type, company). This can include custom kits (please provide
       a general description and DOI if available) or commercially available kit (provide
       ID and company).
-    title: enrichment probe design description
+    title: capture probe design description
     examples:
     - value: Custom probe design (70 bp biotinylated RNA probes) covering 500 full
         E. Coli genomes; company TE-Science
@@ -1843,13 +1804,13 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 44
+    rank: 43
     keywords:
     - library
     - enrichment
     string_serialization: '{text}'
     slot_uri: MIXS:999999944
-    alias: capture_probe_desc
+    alias: capt_probe_desc
     owner: Ancient
     domain_of:
     - Ancient
@@ -1858,18 +1819,18 @@ attributes:
     required: false
     recommended: false
     multivalued: true
-  desc_read_state:
-    name: desc_read_state
+  data_preproc_desc:
+    name: data_preproc_desc
     annotations:
       Expected_value:
         tag: Expected_value
         value: description of any modifications to data away from original raw files
-    description: Description of the state of the reads in the sequencing data file.
-      Describe any in silico processing or modification of the sequencing reads away
-      from the original state as received from the sequencer. This should include
-      details such as adapter-, barcode-, and/or quality- trimming, or any filtering
-      such as for read length or of off-target reads.
-    title: description of read state
+    description: Description of preprocessing performed on the reads in the sequencing
+      data file. Describe any in silico processing or modification of the sequencing
+      reads away from the original state as received from the sequencer. This should
+      include details such as adapter-, barcode-, and/or quality- trimming, or any
+      filtering such as for read length or of off-target reads.
+    title: description of sequencing reads preprocessing
     examples:
     - value: Adapter trimmed, quality filtered, and host reads removed through mapping
         for ethical reasons.
@@ -1880,12 +1841,12 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 45
+    rank: 44
     keywords:
     - data analysis
     - data
     slot_uri: MIXS:999999945
-    alias: desc_read_state
+    alias: data_preproc_desc
     owner: Ancient
     domain_of:
     - Ancient
@@ -1894,26 +1855,29 @@ attributes:
     required: false
     recommended: true
     multivalued: false
-  data_filt_applied:
-    name: data_filt_applied
+  reads_removed_desc:
+    name: reads_removed_desc
     annotations:
       Expected_value:
         tag: Expected_value
-        value: Whether associated data was filtered
-    description: Specify whether associated data was filtered prior to upload, such
-      as host reads removal.
-    title: Data filtering applied
+        value: Whether any sequencing reads were removed from the data files after
+          sequencing
+    description: Specify whether associated data was filtered in some form prior to
+      upload, such as host reads removal. Detailed description of the the data filtering
+      that was carried out should be described in term 'preprocessing of sequencing
+      reads description'.
+    title: description of reads removal
     examples:
     - value: 'no'
     - value: 'yes'
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs
-    rank: 46
+    rank: 45
     keywords:
     - data analysis
     slot_uri: MIXS:999999946
-    alias: data_filt_applied
+    alias: reads_removed_desc
     owner: Ancient
     domain_of:
     - Ancient

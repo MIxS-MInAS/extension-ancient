@@ -1,4 +1,4 @@
-# Term: Latest Chronometric Age Reference System (latest_chrono_sys) 
+# Term: latest chronometric age reference system (latest_chrono_sys) 
 
 
 _The reference system associated with the latest_chrono_age._
@@ -57,7 +57,7 @@ URI: [MIXS:999999925](https://w3id.org/mixs/999999925)
 ```yaml
 name: latest_chrono_sys
 description: The reference system associated with the latest_chrono_age.
-title: Latest Chronometric Age Reference System
+title: latest chronometric age reference system
 examples:
 - value: cal BP
 - value: CE

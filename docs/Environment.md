@@ -32,13 +32,6 @@ URI: [Environment](Environment.md)
 
 
 
-        
-
-
-
-
-
-
 
 
 
@@ -78,7 +71,14 @@ URI: [Environment](Environment.md)
 
 
 
+
+
+
+
+
+
         
+
 
 
 
@@ -98,7 +98,6 @@ URI: [Environment](Environment.md)
 
 | Slot | Description |
 | --- | --- |
-| [column_sample_depth](column_sample_depth.md) | Distance relative to the top or beginning of the sediment core or stratigraph... |
 | [orig_site_lat](orig_site_lat.md) | The latitude coordinate of the original geographical origin of the sample, e |
 | [orig_site_loc](orig_site_loc.md) | The original geographical origin of the sample, when sampled outside its orig... |
 | [orig_site_lon](orig_site_lon.md) | The longitude coordinate of the original geographical origin of the sample, e |

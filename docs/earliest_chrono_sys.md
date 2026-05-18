@@ -1,4 +1,4 @@
-# Term: Earliest Chronometric Age Reference System (earliest_chrono_sys) 
+# Term: earliest chronometric age reference system (earliest_chrono_sys) 
 
 
 _The reference system associated with the earliest_chrono_age._
@@ -57,7 +57,7 @@ URI: [MIXS:999999923](https://w3id.org/mixs/999999923)
 ```yaml
 name: earliest_chrono_sys
 description: The reference system associated with the earliest_chrono_age.
-title: Earliest Chronometric Age Reference System
+title: earliest chronometric age reference system
 examples:
 - value: cal BP
 - value: CE

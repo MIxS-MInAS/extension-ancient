@@ -1,7 +1,7 @@
-# Term: Damage treatment type (damage_treatment) 
+# Term: damage treatment type (damage_treatment) 
 
 
-_Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory. If damage has been removed, but whether it was fully or partially removed is unknown (e.g. with UDG treatment) - specify 'other', and describe known information in `experimental_sop` and related free text descriptive terms._
+_Indication of whether characteristic ancient DNA damage has been altered or removed from a DNA extract in a laboratory. If damage has been removed, but whether it was fully or partially removed is unknown (e.g. with UDG treatment) - specify 'other', and describe known information in `sop_experimental` and related free text descriptive terms._
 
 
 
@@ -65,9 +65,9 @@ annotations:
 description: Indication of whether characteristic ancient DNA damage has been altered
   or removed from a DNA extract in a laboratory. If damage has been removed, but whether
   it was fully or partially removed is unknown (e.g. with UDG treatment) - specify
-  'other', and describe known information in `experimental_sop` and related free text
+  'other', and describe known information in `sop_experimental` and related free text
   descriptive terms.
-title: Damage treatment type
+title: damage treatment type
 examples:
 - value: none
 - value: partial-removal

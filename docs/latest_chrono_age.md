@@ -1,4 +1,4 @@
-# Term: Latest Chronometric Age (latest_chrono_age) 
+# Term: latest chronometric age (latest_chrono_age) 
 
 
 _The minimum/latest/youngest possible age of a specimen as determined by a dating method. If multiple dating measurements available, use the most latest/youngest date to provide widest range of age possibilities. The specific age unit should be specified by the term latest_chrono_sys. More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks._
@@ -67,7 +67,7 @@ description: The minimum/latest/youngest possible age of a specimen as determine
   date to provide widest range of age possibilities. The specific age unit should
   be specified by the term latest_chrono_sys. More information on specific dates (e.g.
   radiocarbon lab codes) can be specified in the term chrono_age_remarks.
-title: Latest Chronometric Age
+title: latest chronometric age
 examples:
 - value: '100000'
 - value: '1700'

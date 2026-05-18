@@ -1,4 +1,4 @@
-# Term: Name of site or location where sample originated (orig_site_name) 
+# Term: name of site or location where sample originated (orig_site_name) 
 
 
 _Designated name of the archaeological or ecological site, ancient settlement, or location etc. where the sample was originally collected. Can be a non-geographical name, such as a field-specific name or code, the official name of an excavation, or a colloquial name that is used in academic literature. Typically names that would not be found on official maps. If the site name is unclear please use the name of the closest location or region as best as possible. Can also include different transliterations or languages used in the literature._
@@ -73,7 +73,7 @@ description: Designated name of the archaeological or ecological site, ancient s
   not be found on official maps. If the site name is unclear please use the name of
   the closest location or region as best as possible. Can also include different transliterations
   or languages used in the literature.
-title: Name of site or location where sample originated
+title: name of site or location where sample originated
 examples:
 - value: Valley of the Kings
 - value: Krakow Spadzista B

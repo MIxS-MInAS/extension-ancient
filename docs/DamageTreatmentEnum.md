@@ -17,7 +17,7 @@ URI: [DamageTreatmentEnum](DamageTreatmentEnum.md)
 | partial-removal | Molecular damage-derived misincorporations have been partially removed using ... |
 | complete-removal | Molecular damage-derived misincorporations have been entirely removed using l... |
 | damage-selection | Library preparation-derived technique that retain only molecules containing d... |
-| other | Other type of damage treatment that are further described in other method des... |
+| other | Other types of damage treatment that are further described in other method de... |
 
 
 
@@ -68,9 +68,9 @@ permissible_values:
       containing damage, and have discarded those without damage.
   other:
     text: other
-    description: Other type of damage treatment that are further described in other
+    description: Other types of damage treatment that are further described in other
       method description terms. If damage has been removed, but whether full or partial
-      is unknown - use this option and describe known information in `experimental_sop`
+      is unknown - use this option and describe known information in `sop_experimental`
       and related free text descriptive terms.
 
 ```

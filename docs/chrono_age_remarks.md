@@ -1,4 +1,4 @@
-# Term: Chronometric Age Remarks (chrono_age_remarks) 
+# Term: chronometric age remarks (chrono_age_remarks) 
 
 
 _Notes or comments about the  earliest_chrono_age and latest_chrono_age. For more detail use Chronometric Age Protocol to point to original publication describing method. Useful to specify confidence and/or accuracy of reported date._
@@ -60,7 +60,7 @@ name: chrono_age_remarks
 description: Notes or comments about the  earliest_chrono_age and latest_chrono_age.
   For more detail use Chronometric Age Protocol to point to original publication describing
   method. Useful to specify confidence and/or accuracy of reported date.
-title: Chronometric Age Remarks
+title: chronometric age remarks
 examples:
 - value: radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval
 - value: based on proxy dating from other bone samples of stratigraphic layer

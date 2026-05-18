@@ -1,4 +1,4 @@
-# Term: Earliest Chronometric Age (earliest_chrono_age) 
+# Term: earliest chronometric age (earliest_chrono_age) 
 
 
 _The maximum/earliest/oldest possible age of a specimen as determined by a dating method. If multiple dating measurements available, use the most earliest/oldest date to provide widest range of age possibilities. The specific age unit should be specified by the term earliest_chrono_sys. More information on specific dates (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks._
@@ -67,7 +67,7 @@ description: The maximum/earliest/oldest possible age of a specimen as determine
   date to provide widest range of age possibilities. The specific age unit should
   be specified by the term earliest_chrono_sys. More information on specific dates
   (e.g. radiocarbon lab codes) can be specified in the term chrono_age_remarks.
-title: Earliest Chronometric Age
+title: earliest chronometric age
 examples:
 - value: '120000'
 - value: '1900'

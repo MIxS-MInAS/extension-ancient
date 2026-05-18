@@ -1,7 +1,7 @@
 # Term: alternative sample IDs (samp_alt_lab_ids) 
 
 
-_An alternative sample or material IDs related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling such a bone drilling). Can be specified multiple times for different ID contexts._
+_An alternative sample or material ID related to the sample not already covered by terms samp_name and source_mat_id, including from associated other non-genetic analyses of the same sample, that can be used synonymously with the main ID. For example: external database IDs, internal lab sample ID from sampling such as bone drilling, or IDs from other scientific analyses. Can be specified multiple times for different ID contexts._
 
 
 
@@ -55,10 +55,12 @@ URI: [MIXS:999999915](https://w3id.org/mixs/999999915)
 <details>
 ```yaml
 name: samp_alt_lab_ids
-description: An alternative sample or material IDs related to the sample not already
+description: 'An alternative sample or material ID related to the sample not already
   covered by terms samp_name and source_mat_id, including from associated other non-genetic
-  analyses of the same sample (e.g. museum IDs, internal lab sample ID from sampling
-  such a bone drilling). Can be specified multiple times for different ID contexts.
+  analyses of the same sample, that can be used synonymously with the main ID. For
+  example: external database IDs, internal lab sample ID from sampling such as bone
+  drilling, or IDs from other scientific analyses. Can be specified multiple times
+  for different ID contexts.'
 title: alternative sample IDs
 examples:
 - value: ABC_24

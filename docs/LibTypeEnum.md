@@ -24,7 +24,7 @@ URI: [LibTypeEnum](LibTypeEnum.md)
 
 | Name | Description |
 | ---  | --- |
-| [lib_type](lib_type.md) | The type of library created, i |
+| [lib_gener_technique](lib_gener_technique.md) | The technique used to generate the library, i |
 
 
 

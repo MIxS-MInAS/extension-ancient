@@ -1,11 +1,11 @@
-# Term: previous publications (prev_pubs) 
+# Term: experimental standard operating procedure (sop_experimental) 
 
 
-_Any previous publications that report non-nucleic acid data from the same sample or ultimate source of the sample_
+_Provide a DOI or URL to refer to the paper where the field report, nucleic acid extraction,  library construction, and other procedures are explained in more detail, e.g. the paper reporting the data._
 
 
 
-URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
+URI: [MIXS:999999934](https://w3id.org/mixs/999999934)
 
 
 
@@ -18,7 +18,7 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use prev_pubs.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use sop_experimental.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 | Value |
 | --- |
-| doi:10.1016/j.jas.2015.02.0181 |
+| doi:10.1093/nar/gkr771 |
 
 
 
@@ -56,18 +56,19 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 <details>
 ```yaml
-name: prev_pubs
-description: Any previous publications that report non-nucleic acid data from the
-  same sample or ultimate source of the sample
-title: previous publications
+name: sop_experimental
+description: Provide a DOI or URL to refer to the paper where the field report, nucleic
+  acid extraction,  library construction, and other procedures are explained in more
+  detail, e.g. the paper reporting the data.
+title: experimental standard operating procedure
 examples:
-- value: doi:10.1016/j.jas.2015.02.0181
+- value: doi:10.1093/nar/gkr771
 in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999916
-alias: prev_pubs
+slot_uri: MIXS:999999934
+alias: sop_experimental
 domain_of:
 - Ancient
 range: string

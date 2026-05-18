@@ -30,18 +30,11 @@ URI: [Investigation](Investigation.md)
 
 
 
-        
 
         
 
-
-
-
-
-
-
-
         
+
 
 
 
@@ -52,6 +45,7 @@ URI: [Investigation](Investigation.md)
 
 
 
+        
 
 
 
@@ -74,7 +68,14 @@ URI: [Investigation](Investigation.md)
 
 
 
+
+
         
+
+
+
+
+
 
 
 
@@ -105,7 +106,7 @@ URI: [Investigation](Investigation.md)
 | [permit_authority](permit_authority.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
 | [permit_date](permit_date.md) | Date on which a permit was granted |
 | [permit_id](permit_id.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
-| [samp_alt_lab_ids](samp_alt_lab_ids.md) | An alternative sample or material IDs related to the sample not already cover... |
+| [samp_alt_lab_ids](samp_alt_lab_ids.md) | An alternative sample or material ID related to the sample not already covere... |
 
 
 

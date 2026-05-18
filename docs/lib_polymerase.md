@@ -1,7 +1,7 @@
 # Term: library polymerase (lib_polymerase) 
 
 
-_The polymerase enzyme used for building nucleic acid libraries._
+_The polymerase enzyme used for building nucleic acid libraries. Include formal identifier e.g. SKU or the manufacturers name at minimum._
 
 
 
@@ -63,7 +63,8 @@ annotations:
   Expected_value:
     tag: Expected_value
     value: name of polymerase used during library construction
-description: The polymerase enzyme used for building nucleic acid libraries.
+description: The polymerase enzyme used for building nucleic acid libraries. Include
+  formal identifier e.g. SKU or the manufacturers name at minimum.
 title: library polymerase
 examples:
 - value: Agilent PfuTurbo Cx HotStart

@@ -1,4 +1,4 @@
-# Term: preservation state of sampled organism/host at/immediately after death (host_preserv_state) 
+# Term: preservation state of sampled host at death (host_preserv_state) 
 
 
 _Description of the state of the sampled (ancient) organism/host as originally  preserved in the burial environment at the time of or immediately following death. This can be both natural or artificial, such as mummification or burning for funerary purposes._
@@ -67,7 +67,7 @@ annotations:
 description: Description of the state of the sampled (ancient) organism/host as originally  preserved
   in the burial environment at the time of or immediately following death. This can
   be both natural or artificial, such as mummification or burning for funerary purposes.
-title: preservation state of sampled organism/host at/immediately after death
+title: preservation state of sampled host at death
 examples:
 - value: complete artificial mummification.
 - value: natural partial mummification.

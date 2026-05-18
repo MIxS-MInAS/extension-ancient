@@ -46,7 +46,6 @@ URI: [MIXS:999999929](https://w3id.org/mixs/999999929)
 | Extraction batch: 1 |
 | 20260501-A2 (extraction);20202607-B2 (library) |
 | ExtrMG;LibMG;SeqMG |
-| Core: North-East Greenland 73G |
 
 
 
@@ -78,7 +77,6 @@ examples:
 - value: 'Extraction batch: 1'
 - value: 20260501-A2 (extraction);20202607-B2 (library)
 - value: ExtrMG;LibMG;SeqMG
-- value: 'Core: North-East Greenland 73G'
 in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs

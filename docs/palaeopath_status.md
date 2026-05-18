@@ -1,7 +1,7 @@
 # Term: palaeopathology status (palaeopath_status) 
 
 
-_Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual under study._
+_Describe briefly any relevant palaeopathological or health-related observations of the remains of the individual or subject under study._
 
 
 
@@ -64,7 +64,7 @@ annotations:
     tag: Expected_value
     value: description of health related observation on ancient remains
 description: Describe briefly any relevant palaeopathological or health-related observations
-  of the remains of the individual under study.
+  of the remains of the individual or subject under study.
 title: palaeopathology status
 examples:
 - value: Osteoporosis.

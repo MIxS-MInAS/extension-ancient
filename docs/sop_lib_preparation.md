@@ -1,11 +1,11 @@
-# Term: previous publications (prev_pubs) 
+# Term: library preparation protocols (sop_lib_preparation) 
 
 
-_Any previous publications that report non-nucleic acid data from the same sample or ultimate source of the sample_
+_Citation(s) for the nucleic acid library preparation protocol._
 
 
 
-URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
+URI: [MIXS:999999940](https://w3id.org/mixs/999999940)
 
 
 
@@ -18,7 +18,7 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 ## Applicable [Checklists](index.md#checklists) and [Extensions](index.md#extensions)
 
-<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use prev_pubs.
+<b>NOTE:</b> does not include Combinations (of checklists and extensions) that use sop_lib_preparation.
 
 | Name | Description | Checklist/Extension |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 | Value |
 | --- |
-| doi:10.1016/j.jas.2015.02.0181 |
+| doi:10.1093/nar/gkr771 |
 
 
 
@@ -56,18 +56,17 @@ URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
 
 <details>
 ```yaml
-name: prev_pubs
-description: Any previous publications that report non-nucleic acid data from the
-  same sample or ultimate source of the sample
-title: previous publications
+name: sop_lib_preparation
+description: Citation(s) for the nucleic acid library preparation protocol.
+title: library preparation protocols
 examples:
-- value: doi:10.1016/j.jas.2015.02.0181
+- value: doi:10.1093/nar/gkr771
 in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999916
-alias: prev_pubs
+slot_uri: MIXS:999999940
+alias: sop_lib_preparation
 domain_of:
 - Ancient
 range: string
