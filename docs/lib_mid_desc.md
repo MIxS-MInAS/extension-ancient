@@ -5,7 +5,7 @@ _Index/barcode/primer configuration used during library building for sequencing.
 
 
 
-URI: [MIXS:999999935](https://w3id.org/mixs/999999935)
+URI: [MIXS:0001388](https://w3id.org/mixs/0001388)
 
 
 
@@ -78,8 +78,7 @@ keywords:
 - library
 - preparation
 string_serialization: '{text}'
-slot_uri: MIXS:999999935
-alias: lib_mid_desc
+slot_uri: MIXS:0001388
 domain_of:
 - Ancient
 range: string

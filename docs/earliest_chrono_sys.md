@@ -5,7 +5,7 @@ _The reference system associated with the earliest_chrono_age._
 
 
 
-URI: [MIXS:999999923](https://w3id.org/mixs/999999923)
+URI: [MIXS:0001376](https://w3id.org/mixs/0001376)
 
 
 
@@ -69,8 +69,7 @@ from_schema: https://w3id.org/mixs
 broad_mappings:
 - chrono:earliestChronometricAgeReferenceSystem
 rank: 1000
-slot_uri: MIXS:999999923
-alias: earliest_chrono_sys
+slot_uri: MIXS:0001376
 domain_of:
 - Ancient
 range: ChronoAgeSysEnum

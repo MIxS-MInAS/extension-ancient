@@ -5,7 +5,7 @@ _Description of target enrichment probe designs used (e.g., species included, se
 
 
 
-URI: [MIXS:999999944](https://w3id.org/mixs/999999944)
+URI: [MIXS:0001397](https://w3id.org/mixs/0001397)
 
 
 
@@ -80,8 +80,7 @@ keywords:
 - library
 - enrichment
 string_serialization: '{text}'
-slot_uri: MIXS:999999944
-alias: capt_probe_desc
+slot_uri: MIXS:0001397
 domain_of:
 - Ancient
 range: string

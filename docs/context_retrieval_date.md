@@ -5,7 +5,7 @@ _Date of excavation or retrieval from burial or depositional context, if known. 
 
 
 
-URI: [MIXS:999999909](https://w3id.org/mixs/999999909)
+URI: [MIXS:0001363](https://w3id.org/mixs/0001363)
 
 
 
@@ -77,8 +77,7 @@ in_subset:
 - environment
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999909
-alias: context_retrieval_date
+slot_uri: MIXS:0001363
 domain_of:
 - Ancient
 range: datetime

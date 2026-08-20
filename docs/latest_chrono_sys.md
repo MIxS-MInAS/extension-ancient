@@ -5,7 +5,7 @@ _The reference system associated with the latest_chrono_age._
 
 
 
-URI: [MIXS:999999925](https://w3id.org/mixs/999999925)
+URI: [MIXS:0001378](https://w3id.org/mixs/0001378)
 
 
 
@@ -69,8 +69,7 @@ from_schema: https://w3id.org/mixs
 broad_mappings:
 - chrono:latestChronometricAgeReferenceSystem
 rank: 1000
-slot_uri: MIXS:999999925
-alias: latest_chrono_sys
+slot_uri: MIXS:0001378
 domain_of:
 - Ancient
 range: ChronoAgeSysEnum

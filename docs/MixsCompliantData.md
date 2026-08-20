@@ -62,7 +62,6 @@ attributes:
     rank: 1000
     domain: MixsCompliantData
     slot_uri: MIXS:ancient_data
-    alias: ancient_data
     owner: MixsCompliantData
     domain_of:
     - MixsCompliantData

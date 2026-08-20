@@ -5,7 +5,7 @@ _Citation(s) for the nucleic acid library preparation protocol._
 
 
 
-URI: [MIXS:999999940](https://w3id.org/mixs/999999940)
+URI: [MIXS:0001393](https://w3id.org/mixs/0001393)
 
 
 
@@ -65,8 +65,7 @@ in_subset:
 - sequencing
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999940
-alias: sop_lib_preparation
+slot_uri: MIXS:0001393
 domain_of:
 - Ancient
 range: string

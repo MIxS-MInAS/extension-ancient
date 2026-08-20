@@ -5,7 +5,7 @@ _The strandedness of the original template nucleic acid molecules used for const
 
 
 
-URI: [MIXS:999999938](https://w3id.org/mixs/999999938)
+URI: [MIXS:0001391](https://w3id.org/mixs/0001391)
 
 
 
@@ -75,8 +75,7 @@ rank: 1000
 keywords:
 - library
 - preparation
-slot_uri: MIXS:999999938
-alias: lib_strandedness
+slot_uri: MIXS:0001391
 domain_of:
 - Ancient
 range: LibStrandEnum

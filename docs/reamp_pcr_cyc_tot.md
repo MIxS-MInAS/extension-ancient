@@ -5,7 +5,7 @@ _Number of amplification cycles after library indexing PCR. If capture data, thi
 
 
 
-URI: [MIXS:999999941](https://w3id.org/mixs/999999941)
+URI: [MIXS:0001394](https://w3id.org/mixs/0001394)
 
 
 
@@ -62,8 +62,7 @@ in_subset:
 - sequencing
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999941
-alias: reamp_pcr_cyc_tot
+slot_uri: MIXS:0001394
 domain_of:
 - Ancient
 range: integer

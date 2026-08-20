@@ -5,7 +5,7 @@ _NCBI taxon ID(s) of all organisms included in the baits of a whole organelle or
 
 
 
-URI: [MIXS:999999943](https://w3id.org/mixs/999999943)
+URI: [MIXS:0001396](https://w3id.org/mixs/0001396)
 
 
 
@@ -83,8 +83,7 @@ keywords:
 - library
 - enrichment
 - capture
-slot_uri: MIXS:999999943
-alias: capt_probe_src_taxid
+slot_uri: MIXS:0001396
 domain_of:
 - Ancient
 range: integer

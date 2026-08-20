@@ -5,7 +5,7 @@ _The date when the nucleic acid extraction was started from the sample material.
 
 
 
-URI: [MIXS:999999933](https://w3id.org/mixs/999999933)
+URI: [MIXS:0001386](https://w3id.org/mixs/0001386)
 
 
 
@@ -64,8 +64,7 @@ in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999933
-alias: nucl_acid_extr_date
+slot_uri: MIXS:0001386
 domain_of:
 - Ancient
 range: datetime

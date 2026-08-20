@@ -278,7 +278,7 @@
                         "null"
                     ]
                 },
-                "reads_removed_desc": {
+                "reads_removed": {
                     "description": "Specify whether associated data was filtered in some form prior to upload, such as host reads removal. Detailed description of the the data filtering that was carried out should be described in term 'preprocessing of sequencing reads description'.",
                     "type": [
                         "boolean",
@@ -546,7 +546,7 @@
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
     "description": "A collection of data that complies with some combination of a MIxS checklist and environmental extension",
-    "metamodel_version": "1.7.0",
+    "metamodel_version": "1.11.0",
     "properties": {
         "ancient_data": {
             "description": "Data that comply with Extension Ancient",

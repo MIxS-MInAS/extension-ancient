@@ -5,7 +5,7 @@ _Amplification cycles after capture enrichment total. Provide additional informa
 
 
 
-URI: [MIXS:999999942](https://w3id.org/mixs/999999942)
+URI: [MIXS:0001395](https://w3id.org/mixs/0001395)
 
 
 
@@ -62,8 +62,7 @@ in_subset:
 - sequencing
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999942
-alias: capt_pcr_cyc_tot
+slot_uri: MIXS:0001395
 domain_of:
 - Ancient
 range: integer

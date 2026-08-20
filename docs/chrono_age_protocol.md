@@ -5,7 +5,7 @@ _A description of or reference to the methods used to determine the earliest_chr
 
 
 
-URI: [MIXS:999999926](https://w3id.org/mixs/999999926)
+URI: [MIXS:0001379](https://w3id.org/mixs/0001379)
 
 
 
@@ -70,8 +70,7 @@ from_schema: https://w3id.org/mixs
 broad_mappings:
 - chrono:chronometricAgeProtocol
 rank: 1000
-slot_uri: MIXS:999999926
-alias: chrono_age_protocol
+slot_uri: MIXS:0001379
 domain_of:
 - Ancient
 range: ChronoAgeProtocolEnum

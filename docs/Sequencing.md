@@ -115,7 +115,7 @@ URI: [Sequencing](Sequencing.md)
 | [lib_polymerase](lib_polymerase.md) | The polymerase enzyme used for building nucleic acid libraries |
 | [lib_strandedness](lib_strandedness.md) | The strandedness of the original template nucleic acid molecules used for con... |
 | [library_name](library_name.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... |
-| [reads_removed_desc](reads_removed_desc.md) | Specify whether associated data was filtered in some form prior to upload, su... |
+| [reads_removed](reads_removed.md) | Specify whether associated data was filtered in some form prior to upload, su... |
 | [reamp_pcr_cyc_tot](reamp_pcr_cyc_tot.md) | Number of amplification cycles after library indexing PCR |
 | [sop](sop.md) | Standard operating procedures used to generate genomes, metagenomes or enviro... |
 | [sop_lib_preparation](sop_lib_preparation.md) | Citation(s) for the nucleic acid library preparation protocol |

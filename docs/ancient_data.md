@@ -52,7 +52,6 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 domain: MixsCompliantData
 slot_uri: MIXS:ancient_data
-alias: ancient_data
 domain_of:
 - MixsCompliantData
 range: Ancient

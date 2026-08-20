@@ -5,7 +5,7 @@ _Any previous publications that report non-nucleic acid data from the same sampl
 
 
 
-URI: [MIXS:999999916](https://w3id.org/mixs/999999916)
+URI: [MIXS:0001370](https://w3id.org/mixs/0001370)
 
 
 
@@ -66,8 +66,7 @@ in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999916
-alias: prev_pubs
+slot_uri: MIXS:0001370
 domain_of:
 - Ancient
 range: string

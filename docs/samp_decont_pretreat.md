@@ -5,7 +5,7 @@ _Protocols employed for sample surface decontamination of external  modern nucle
 
 
 
-URI: [MIXS:999999931](https://w3id.org/mixs/999999931)
+URI: [MIXS:0001384](https://w3id.org/mixs/0001384)
 
 
 
@@ -68,8 +68,7 @@ in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999931
-alias: samp_decont_pretreat
+slot_uri: MIXS:0001384
 domain_of:
 - Ancient
 range: string

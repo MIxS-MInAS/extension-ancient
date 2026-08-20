@@ -5,7 +5,7 @@ _Name of the authorit(ies) or institution(s) that granted sampling and analysis 
 
 
 
-URI: [MIXS:999999911](https://w3id.org/mixs/999999911)
+URI: [MIXS:0001365](https://w3id.org/mixs/0001365)
 
 
 
@@ -79,8 +79,7 @@ rank: 1000
 keywords:
 - ethics
 - location
-slot_uri: MIXS:999999911
-alias: permit_authority
+slot_uri: MIXS:0001365
 domain_of:
 - Ancient
 range: string

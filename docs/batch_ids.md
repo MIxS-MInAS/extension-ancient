@@ -5,7 +5,7 @@ _Identifiers for any form of batch or 'group' that the samples is associated wit
 
 
 
-URI: [MIXS:999999929](https://w3id.org/mixs/999999929)
+URI: [MIXS:0001382](https://w3id.org/mixs/0001382)
 
 
 
@@ -83,8 +83,7 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - identifiers
-slot_uri: MIXS:999999929
-alias: batch_ids
+slot_uri: MIXS:0001382
 domain_of:
 - Ancient
 range: string

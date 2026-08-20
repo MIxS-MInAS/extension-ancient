@@ -5,7 +5,7 @@ _Notes or comments about the  earliest_chrono_age and latest_chrono_age. For mor
 
 
 
-URI: [MIXS:999999927](https://w3id.org/mixs/999999927)
+URI: [MIXS:0001380](https://w3id.org/mixs/0001380)
 
 
 
@@ -74,8 +74,7 @@ from_schema: https://w3id.org/mixs
 close_mappings:
 - chrono:chronometricAgeRemarks
 rank: 1000
-slot_uri: MIXS:999999927
-alias: chrono_age_remarks
+slot_uri: MIXS:0001380
 domain_of:
 - Ancient
 range: string

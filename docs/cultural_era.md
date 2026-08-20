@@ -5,7 +5,7 @@ _The cultural era approximating to the period in which the archaeological remain
 
 
 
-URI: [MIXS:999999920](https://w3id.org/mixs/999999920)
+URI: [MIXS:0001373](https://w3id.org/mixs/0001373)
 
 
 
@@ -79,8 +79,7 @@ keywords:
 - ancient
 - age
 string_serialization: '{termLabel} [{termID}]|{text}'
-slot_uri: MIXS:999999920
-alias: cultural_era
+slot_uri: MIXS:0001373
 domain_of:
 - Ancient
 range: string

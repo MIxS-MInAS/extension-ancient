@@ -5,7 +5,7 @@ _Description of any treatment applied directly to samples for the specific purpo
 
 
 
-URI: [MIXS:999999919](https://w3id.org/mixs/999999919)
+URI: [MIXS:0001372](https://w3id.org/mixs/0001372)
 
 
 
@@ -71,8 +71,7 @@ rank: 1000
 keywords:
 - ancient
 string_serialization: '{text}'
-slot_uri: MIXS:999999919
-alias: samp_preserv_treatm
+slot_uri: MIXS:0001372
 domain_of:
 - Ancient
 range: string

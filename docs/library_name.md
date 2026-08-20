@@ -5,7 +5,7 @@ _Any ID or name used for referring to a nucleic acid sequencing library associat
 
 
 
-URI: [MIXS:999999936](https://w3id.org/mixs/999999936)
+URI: [MIXS:0001389](https://w3id.org/mixs/0001389)
 
 
 
@@ -76,8 +76,7 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - sequencing
-slot_uri: MIXS:999999936
-alias: library_name
+slot_uri: MIXS:0001389
 domain_of:
 - Ancient
 range: string

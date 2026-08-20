@@ -5,7 +5,7 @@ _Designated name of the archaeological or ecological site, ancient settlement, o
 
 
 
-URI: [MIXS:999999901](https://w3id.org/mixs/999999901)
+URI: [MIXS:0001356](https://w3id.org/mixs/0001356)
 
 
 
@@ -88,8 +88,7 @@ rank: 1000
 keywords:
 - environment
 - sample
-slot_uri: MIXS:999999901
-alias: orig_site_name
+slot_uri: MIXS:0001356
 domain_of:
 - Ancient
 range: string

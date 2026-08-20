@@ -5,7 +5,7 @@ _Description of preprocessing performed on the reads in the sequencing data file
 
 
 
-URI: [MIXS:999999945](https://w3id.org/mixs/999999945)
+URI: [MIXS:0001398](https://w3id.org/mixs/0001398)
 
 
 
@@ -83,8 +83,7 @@ rank: 1000
 keywords:
 - data analysis
 - data
-slot_uri: MIXS:999999945
-alias: data_preproc_desc
+slot_uri: MIXS:0001398
 domain_of:
 - Ancient
 range: string

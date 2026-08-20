@@ -5,7 +5,7 @@ _The maximum/earliest/oldest possible age of a specimen as determined by a datin
 
 
 
-URI: [MIXS:999999922](https://w3id.org/mixs/999999922)
+URI: [MIXS:0001375](https://w3id.org/mixs/0001375)
 
 
 
@@ -77,8 +77,7 @@ from_schema: https://w3id.org/mixs
 broad_mappings:
 - chrono:earliestChronometricAge
 rank: 1000
-slot_uri: MIXS:999999922
-alias: earliest_chrono_age
+slot_uri: MIXS:0001375
 domain_of:
 - Ancient
 range: integer
