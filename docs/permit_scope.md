@@ -5,7 +5,7 @@ _Description of the original scope and permissions of the research on the geneti
 
 
 
-URI: [MIXS:999999913](https://w3id.org/mixs/999999913)
+URI: [MIXS:0001367](https://w3id.org/mixs/0001367)
 
 
 
@@ -80,8 +80,7 @@ rank: 1000
 keywords:
 - ethics
 string_serialization: '{text}'
-slot_uri: MIXS:999999913
-alias: permit_scope
+slot_uri: MIXS:0001367
 domain_of:
 - Ancient
 range: string

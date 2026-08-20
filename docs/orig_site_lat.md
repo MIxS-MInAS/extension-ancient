@@ -5,7 +5,7 @@ _The latitude coordinate of the original geographical origin of the sample, e.g.
 
 
 
-URI: [MIXS:999999903](https://w3id.org/mixs/999999903)
+URI: [MIXS:0001358](https://w3id.org/mixs/0001358)
 
 
 
@@ -74,8 +74,7 @@ in_subset:
 - environment
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999903
-alias: orig_site_lat
+slot_uri: MIXS:0001358
 domain_of:
 - Ancient
 range: string

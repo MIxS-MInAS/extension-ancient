@@ -5,7 +5,7 @@ _The type/category of a sample. "Sample" includes biological and technical repli
 
 
 
-URI: [MIXS:999999930](https://w3id.org/mixs/999999930)
+URI: [MIXS:0001383](https://w3id.org/mixs/0001383)
 
 
 
@@ -68,8 +68,7 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - control
-slot_uri: MIXS:999999930
-alias: samp_category
+slot_uri: MIXS:0001383
 domain_of:
 - Ancient
 range: SampCategoryEnum

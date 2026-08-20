@@ -5,7 +5,7 @@ _Description of the state of the sampled (ancient) organism/host as originally  
 
 
 
-URI: [MIXS:999999917](https://w3id.org/mixs/999999917)
+URI: [MIXS:0001371](https://w3id.org/mixs/0001371)
 
 
 
@@ -79,8 +79,7 @@ rank: 1000
 keywords:
 - ancient
 string_serialization: '{text}'
-slot_uri: MIXS:999999917
-alias: host_preserv_state
+slot_uri: MIXS:0001371
 domain_of:
 - Ancient
 range: string

@@ -5,7 +5,7 @@ _Date on which a permit was granted. The date can be right truncated i.e. all of
 
 
 
-URI: [MIXS:999999912](https://w3id.org/mixs/999999912)
+URI: [MIXS:0001366](https://w3id.org/mixs/0001366)
 
 
 
@@ -63,8 +63,7 @@ in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999912
-alias: permit_date
+slot_uri: MIXS:0001366
 domain_of:
 - Ancient
 range: datetime

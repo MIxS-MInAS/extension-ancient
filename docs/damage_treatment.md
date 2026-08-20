@@ -5,7 +5,7 @@ _Indication of whether characteristic ancient DNA damage has been altered or rem
 
 
 
-URI: [MIXS:999999932](https://w3id.org/mixs/999999932)
+URI: [MIXS:0001385](https://w3id.org/mixs/0001385)
 
 
 
@@ -77,8 +77,7 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - ancient
-slot_uri: MIXS:999999932
-alias: damage_treatment
+slot_uri: MIXS:0001385
 domain_of:
 - Ancient
 range: DamageTreatmentEnum

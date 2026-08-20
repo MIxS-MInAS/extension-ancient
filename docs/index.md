@@ -86,7 +86,7 @@ Name: mixs-minas
 | [permit_id](permit_id.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
 | [permit_scope](permit_scope.md) | Description of the original scope and permissions of the research on the gene... |
 | [prev_pubs](prev_pubs.md) | Any previous publications that report non-nucleic acid data from the same sam... |
-| [reads_removed_desc](reads_removed_desc.md) | Specify whether associated data was filtered in some form prior to upload, su... |
+| [reads_removed](reads_removed.md) | Specify whether associated data was filtered in some form prior to upload, su... |
 | [reamp_pcr_cyc_tot](reamp_pcr_cyc_tot.md) | Number of amplification cycles after library indexing PCR |
 | [samp_alt_lab_ids](samp_alt_lab_ids.md) | An alternative sample or material ID related to the sample not already covere... |
 | [samp_category](samp_category.md) | The type/category of a sample |

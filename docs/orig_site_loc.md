@@ -5,7 +5,7 @@ _The original geographical origin of the sample, when sampled outside its origin
 
 
 
-URI: [MIXS:999999902](https://w3id.org/mixs/999999902)
+URI: [MIXS:0001357](https://w3id.org/mixs/0001357)
 
 
 
@@ -82,8 +82,7 @@ rank: 1000
 keywords:
 - location
 - site
-slot_uri: MIXS:999999902
-alias: orig_site_loc
+slot_uri: MIXS:0001357
 domain_of:
 - Ancient
 range: string

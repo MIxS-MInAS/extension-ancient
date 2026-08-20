@@ -5,7 +5,7 @@ _The technique used to generate the library, i.e., amplicon, enriched, or shotgu
 
 
 
-URI: [MIXS:999999939](https://w3id.org/mixs/999999939)
+URI: [MIXS:0001392](https://w3id.org/mixs/0001392)
 
 
 
@@ -75,8 +75,7 @@ rank: 1000
 keywords:
 - library
 - preparation
-slot_uri: MIXS:999999939
-alias: lib_gener_technique
+slot_uri: MIXS:0001392
 domain_of:
 - Ancient
 range: LibTypeEnum

@@ -5,7 +5,7 @@ _Provide a DOI or URL to refer to the paper where the field report, nucleic acid
 
 
 
-URI: [MIXS:999999934](https://w3id.org/mixs/999999934)
+URI: [MIXS:0001387](https://w3id.org/mixs/0001387)
 
 
 
@@ -67,8 +67,7 @@ in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
 rank: 1000
-slot_uri: MIXS:999999934
-alias: sop_experimental
+slot_uri: MIXS:0001387
 domain_of:
 - Ancient
 range: string

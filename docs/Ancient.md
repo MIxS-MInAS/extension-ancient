@@ -13,51 +13,51 @@ _A collection of terms appropriate when collecting samples and sequencing sample
 
 | MIXS ID | Name | Cardinality and Range | Description |
 | ---  | --- | --- | --- |
-| [MIXS:999999901](https://w3id.org/mixs/999999901) | [orig_site_name](orig_site_name.md) | * _recommended_ <br/> [String](String.md) | Designated name of the archaeological or ecological site, ancient settlement,... |
-| [MIXS:999999902](https://w3id.org/mixs/999999902) | [orig_site_loc](orig_site_loc.md) | 0..1 <br/> [String](String.md) | The original geographical origin of the sample, when sampled outside its orig... |
-| [MIXS:999999903](https://w3id.org/mixs/999999903) | [orig_site_lat](orig_site_lat.md) | 0..1 <br/> [String](String.md) | The latitude coordinate of the original geographical origin of the sample, e |
-| [MIXS:999999904](https://w3id.org/mixs/999999904) | [orig_site_lon](orig_site_lon.md) | 0..1 <br/> [String](String.md) | The longitude coordinate of the original geographical origin of the sample, e |
-| [MIXS:999999905](https://w3id.org/mixs/999999905) | [past_env_broad](past_env_broad.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the general ancient broad environmental system that ... |
-| [MIXS:999999906](https://w3id.org/mixs/999999906) | [past_env_local](past_env_local.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the smaller-scale environmental system of the local ... |
-| [MIXS:999999907](https://w3id.org/mixs/999999907) | [stratigraph_context](stratigraph_context.md) | * <br/> [String](String.md) | Associated stratigraphic context(s) that the sample was retrieved from, usual... |
-| [MIXS:999999909](https://w3id.org/mixs/999999909) | [context_retrieval_date](context_retrieval_date.md) | 0..1 _recommended_ <br/> [Datetime](Datetime.md) | Date of excavation or retrieval from burial or depositional context, if known |
-| [MIXS:999999910](https://w3id.org/mixs/999999910) | [permit_id](permit_id.md) | * _recommended_ <br/> [String](String.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
-| [MIXS:999999911](https://w3id.org/mixs/999999911) | [permit_authority](permit_authority.md) | * _recommended_ <br/> [String](String.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
-| [MIXS:999999912](https://w3id.org/mixs/999999912) | [permit_date](permit_date.md) | * _recommended_ <br/> [Datetime](Datetime.md) | Date on which a permit was granted |
-| [MIXS:999999913](https://w3id.org/mixs/999999913) | [permit_scope](permit_scope.md) | * _recommended_ <br/> [String](String.md) | Description of the original scope and permissions of the research on the gene... |
-| [MIXS:999999914](https://w3id.org/mixs/999999914) | [biocultural_label](biocultural_label.md) | * _recommended_ <br/> [BioCulturalLabelEnum](BioCulturalLabelEnum.md) | Relevant biocultural labels defined by the local contexts project (https://lo... |
-| [MIXS:999999915](https://w3id.org/mixs/999999915) | [samp_alt_lab_ids](samp_alt_lab_ids.md) | * <br/> [String](String.md) | An alternative sample or material ID related to the sample not already covere... |
-| [MIXS:999999916](https://w3id.org/mixs/999999916) | [prev_pubs](prev_pubs.md) | * <br/> [String](String.md) | Any previous publications that report non-nucleic acid data from the same sam... |
-| [MIXS:999999917](https://w3id.org/mixs/999999917) | [host_preserv_state](host_preserv_state.md) | 0..1 <br/> [String](String.md) | Description of the state of the sampled (ancient) organism/host as originally... |
+| [MIXS:0001356](https://w3id.org/mixs/0001356) | [orig_site_name](orig_site_name.md) | * _recommended_ <br/> [String](String.md) | Designated name of the archaeological or ecological site, ancient settlement,... |
+| [MIXS:0001357](https://w3id.org/mixs/0001357) | [orig_site_loc](orig_site_loc.md) | 0..1 <br/> [String](String.md) | The original geographical origin of the sample, when sampled outside its orig... |
+| [MIXS:0001358](https://w3id.org/mixs/0001358) | [orig_site_lat](orig_site_lat.md) | 0..1 <br/> [String](String.md) | The latitude coordinate of the original geographical origin of the sample, e |
+| [MIXS:0001359](https://w3id.org/mixs/0001359) | [orig_site_lon](orig_site_lon.md) | 0..1 <br/> [String](String.md) | The longitude coordinate of the original geographical origin of the sample, e |
+| [MIXS:0001360](https://w3id.org/mixs/0001360) | [past_env_broad](past_env_broad.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the general ancient broad environmental system that ... |
+| [MIXS:0001361](https://w3id.org/mixs/0001361) | [past_env_local](past_env_local.md) | 0..1 _recommended_ <br/> [String](String.md) | Report information about the smaller-scale environmental system of the local ... |
+| [MIXS:0001362](https://w3id.org/mixs/0001362) | [stratigraph_context](stratigraph_context.md) | * <br/> [String](String.md) | Associated stratigraphic context(s) that the sample was retrieved from, usual... |
+| [MIXS:0001363](https://w3id.org/mixs/0001363) | [context_retrieval_date](context_retrieval_date.md) | 0..1 _recommended_ <br/> [Datetime](Datetime.md) | Date of excavation or retrieval from burial or depositional context, if known |
+| [MIXS:0001364](https://w3id.org/mixs/0001364) | [permit_id](permit_id.md) | * _recommended_ <br/> [String](String.md) | A permit ID, code, or any form of identify provided by any authority (ethical... |
+| [MIXS:0001365](https://w3id.org/mixs/0001365) | [permit_authority](permit_authority.md) | * _recommended_ <br/> [String](String.md) | Name of the authorit(ies) or institution(s) that granted sampling and analysi... |
+| [MIXS:0001366](https://w3id.org/mixs/0001366) | [permit_date](permit_date.md) | * _recommended_ <br/> [Datetime](Datetime.md) | Date on which a permit was granted |
+| [MIXS:0001367](https://w3id.org/mixs/0001367) | [permit_scope](permit_scope.md) | * _recommended_ <br/> [String](String.md) | Description of the original scope and permissions of the research on the gene... |
+| [MIXS:0001368](https://w3id.org/mixs/0001368) | [biocultural_label](biocultural_label.md) | * _recommended_ <br/> [BioCulturalLabelEnum](BioCulturalLabelEnum.md) | Relevant biocultural labels defined by the local contexts project (https://lo... |
+| [MIXS:0001369](https://w3id.org/mixs/0001369) | [samp_alt_lab_ids](samp_alt_lab_ids.md) | * <br/> [String](String.md) | An alternative sample or material ID related to the sample not already covere... |
+| [MIXS:0001370](https://w3id.org/mixs/0001370) | [prev_pubs](prev_pubs.md) | * <br/> [String](String.md) | Any previous publications that report non-nucleic acid data from the same sam... |
+| [MIXS:0001371](https://w3id.org/mixs/0001371) | [host_preserv_state](host_preserv_state.md) | 0..1 <br/> [String](String.md) | Description of the state of the sampled (ancient) organism/host as originally... |
 | [MIXS:0000327](https://w3id.org/mixs/0000327) | [store_cond](store_cond.md) | 0..1 <br/> [String](String.md) | Explain how and for how long the sample was stored before DNA extraction (for... |
-| [MIXS:999999919](https://w3id.org/mixs/999999919) | [samp_preserv_treatm](samp_preserv_treatm.md) | * <br/> [String](String.md) | Description of any treatment applied directly to samples for the specific pur... |
-| [MIXS:999999920](https://w3id.org/mixs/999999920) | [cultural_era](cultural_era.md) | 0..1 <br/> [String](String.md) | The cultural era approximating to the period in which the archaeological rema... |
-| [MIXS:999999921](https://w3id.org/mixs/999999921) | [geological_epoch](geological_epoch.md) | 0..1 <br/> [GeolEpochEnum](GeolEpochEnum.md) | The geological epoch approximating to the period within which the specimen or... |
-| [MIXS:999999922](https://w3id.org/mixs/999999922) | [earliest_chrono_age](earliest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... |
-| [MIXS:999999923](https://w3id.org/mixs/999999923) | [earliest_chrono_sys](earliest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the earliest_chrono_age |
-| [MIXS:999999924](https://w3id.org/mixs/999999924) | [latest_chrono_age](latest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... |
-| [MIXS:999999925](https://w3id.org/mixs/999999925) | [latest_chrono_sys](latest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the latest_chrono_age |
-| [MIXS:999999926](https://w3id.org/mixs/999999926) | [chrono_age_protocol](chrono_age_protocol.md) | * _recommended_ <br/> [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | A description of or reference to the methods used to determine the earliest_c... |
-| [MIXS:999999927](https://w3id.org/mixs/999999927) | [chrono_age_remarks](chrono_age_remarks.md) | 0..1 _recommended_ <br/> [String](String.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
-| [MIXS:999999928](https://w3id.org/mixs/999999928) | [palaeopath_status](palaeopath_status.md) | 0..1 <br/> [String](String.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
-| [MIXS:999999929](https://w3id.org/mixs/999999929) | [batch_ids](batch_ids.md) | * <br/> [String](String.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
-| [MIXS:999999930](https://w3id.org/mixs/999999930) | [samp_category](samp_category.md) | 1 _recommended_ <br/> [SampCategoryEnum](SampCategoryEnum.md) | The type/category of a sample |
-| [MIXS:999999931](https://w3id.org/mixs/999999931) | [samp_decont_pretreat](samp_decont_pretreat.md) | * <br/> [String](String.md) | Protocols employed for sample surface decontamination of external  modern nuc... |
-| [MIXS:999999932](https://w3id.org/mixs/999999932) | [damage_treatment](damage_treatment.md) | 1 _recommended_ <br/> [DamageTreatmentEnum](DamageTreatmentEnum.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
-| [MIXS:999999933](https://w3id.org/mixs/999999933) | [nucl_acid_extr_date](nucl_acid_extr_date.md) | 0..1 <br/> [Datetime](Datetime.md) | The date when the nucleic acid extraction was started from the sample materia... |
-| [MIXS:999999934](https://w3id.org/mixs/999999934) | [sop_experimental](sop_experimental.md) | * <br/> [String](String.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
-| [MIXS:999999935](https://w3id.org/mixs/999999935) | [lib_mid_desc](lib_mid_desc.md) | * _recommended_ <br/> [String](String.md) | Index/barcode/primer configuration used during library building for sequencin... |
-| [MIXS:999999936](https://w3id.org/mixs/999999936) | [library_name](library_name.md) | * _recommended_ <br/> [String](String.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... |
-| [MIXS:999999937](https://w3id.org/mixs/999999937) | [lib_polymerase](lib_polymerase.md) | 0..1 _recommended_ <br/> [String](String.md) | The polymerase enzyme used for building nucleic acid libraries |
-| [MIXS:999999938](https://w3id.org/mixs/999999938) | [lib_strandedness](lib_strandedness.md) | 1..* _recommended_ <br/> [LibStrandEnum](LibStrandEnum.md) | The strandedness of the original template nucleic acid molecules used for con... |
-| [MIXS:999999939](https://w3id.org/mixs/999999939) | [lib_gener_technique](lib_gener_technique.md) | 0..1 _recommended_ <br/> [LibTypeEnum](LibTypeEnum.md) | The technique used to generate the library, i |
-| [MIXS:999999940](https://w3id.org/mixs/999999940) | [sop_lib_preparation](sop_lib_preparation.md) | * <br/> [String](String.md) | Citation(s) for the nucleic acid library preparation protocol |
-| [MIXS:999999941](https://w3id.org/mixs/999999941) | [reamp_pcr_cyc_tot](reamp_pcr_cyc_tot.md) | 0..1 <br/> [Integer](Integer.md) | Number of amplification cycles after library indexing PCR |
-| [MIXS:999999942](https://w3id.org/mixs/999999942) | [capt_pcr_cyc_tot](capt_pcr_cyc_tot.md) | * <br/> [Integer](Integer.md) | Amplification cycles after capture enrichment total |
-| [MIXS:999999943](https://w3id.org/mixs/999999943) | [capt_probe_src_taxid](capt_probe_src_taxid.md) | * <br/> [Integer](Integer.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
-| [MIXS:999999944](https://w3id.org/mixs/999999944) | [capt_probe_desc](capt_probe_desc.md) | * <br/> [String](String.md) | Description of target enrichment probe designs used (e |
-| [MIXS:999999945](https://w3id.org/mixs/999999945) | [data_preproc_desc](data_preproc_desc.md) | 0..1 _recommended_ <br/> [String](String.md) | Description of preprocessing performed on the reads in the sequencing data fi... |
-| [MIXS:999999946](https://w3id.org/mixs/999999946) | [reads_removed_desc](reads_removed_desc.md) | 0..1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether associated data was filtered in some form prior to upload, su... |
+| [MIXS:0001372](https://w3id.org/mixs/0001372) | [samp_preserv_treatm](samp_preserv_treatm.md) | * <br/> [String](String.md) | Description of any treatment applied directly to samples for the specific pur... |
+| [MIXS:0001373](https://w3id.org/mixs/0001373) | [cultural_era](cultural_era.md) | 0..1 <br/> [String](String.md) | The cultural era approximating to the period in which the archaeological rema... |
+| [MIXS:0001374](https://w3id.org/mixs/0001374) | [geological_epoch](geological_epoch.md) | 0..1 <br/> [GeolEpochEnum](GeolEpochEnum.md) | The geological epoch approximating to the period within which the specimen or... |
+| [MIXS:0001375](https://w3id.org/mixs/0001375) | [earliest_chrono_age](earliest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... |
+| [MIXS:0001376](https://w3id.org/mixs/0001376) | [earliest_chrono_sys](earliest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the earliest_chrono_age |
+| [MIXS:0001377](https://w3id.org/mixs/0001377) | [latest_chrono_age](latest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... |
+| [MIXS:0001378](https://w3id.org/mixs/0001378) | [latest_chrono_sys](latest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the latest_chrono_age |
+| [MIXS:0001379](https://w3id.org/mixs/0001379) | [chrono_age_protocol](chrono_age_protocol.md) | * _recommended_ <br/> [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [MIXS:0001380](https://w3id.org/mixs/0001380) | [chrono_age_remarks](chrono_age_remarks.md) | 0..1 _recommended_ <br/> [String](String.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
+| [MIXS:0001381](https://w3id.org/mixs/0001381) | [palaeopath_status](palaeopath_status.md) | 0..1 <br/> [String](String.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
+| [MIXS:0001382](https://w3id.org/mixs/0001382) | [batch_ids](batch_ids.md) | * <br/> [String](String.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
+| [MIXS:0001383](https://w3id.org/mixs/0001383) | [samp_category](samp_category.md) | 1 _recommended_ <br/> [SampCategoryEnum](SampCategoryEnum.md) | The type/category of a sample |
+| [MIXS:0001384](https://w3id.org/mixs/0001384) | [samp_decont_pretreat](samp_decont_pretreat.md) | * <br/> [String](String.md) | Protocols employed for sample surface decontamination of external  modern nuc... |
+| [MIXS:0001385](https://w3id.org/mixs/0001385) | [damage_treatment](damage_treatment.md) | 1 _recommended_ <br/> [DamageTreatmentEnum](DamageTreatmentEnum.md) | Indication of whether characteristic ancient DNA damage has been altered or r... |
+| [MIXS:0001386](https://w3id.org/mixs/0001386) | [nucl_acid_extr_date](nucl_acid_extr_date.md) | 0..1 <br/> [Datetime](Datetime.md) | The date when the nucleic acid extraction was started from the sample materia... |
+| [MIXS:0001387](https://w3id.org/mixs/0001387) | [sop_experimental](sop_experimental.md) | * <br/> [String](String.md) | Provide a DOI or URL to refer to the paper where the field report, nucleic ac... |
+| [MIXS:0001388](https://w3id.org/mixs/0001388) | [lib_mid_desc](lib_mid_desc.md) | * _recommended_ <br/> [String](String.md) | Index/barcode/primer configuration used during library building for sequencin... |
+| [MIXS:0001389](https://w3id.org/mixs/0001389) | [library_name](library_name.md) | * _recommended_ <br/> [String](String.md) | Any ID or name used for referring to a nucleic acid sequencing library associ... |
+| [MIXS:0001390](https://w3id.org/mixs/0001390) | [lib_polymerase](lib_polymerase.md) | 0..1 _recommended_ <br/> [String](String.md) | The polymerase enzyme used for building nucleic acid libraries |
+| [MIXS:0001391](https://w3id.org/mixs/0001391) | [lib_strandedness](lib_strandedness.md) | 1..* _recommended_ <br/> [LibStrandEnum](LibStrandEnum.md) | The strandedness of the original template nucleic acid molecules used for con... |
+| [MIXS:0001392](https://w3id.org/mixs/0001392) | [lib_gener_technique](lib_gener_technique.md) | 0..1 _recommended_ <br/> [LibTypeEnum](LibTypeEnum.md) | The technique used to generate the library, i |
+| [MIXS:0001393](https://w3id.org/mixs/0001393) | [sop_lib_preparation](sop_lib_preparation.md) | * <br/> [String](String.md) | Citation(s) for the nucleic acid library preparation protocol |
+| [MIXS:0001394](https://w3id.org/mixs/0001394) | [reamp_pcr_cyc_tot](reamp_pcr_cyc_tot.md) | 0..1 <br/> [Integer](Integer.md) | Number of amplification cycles after library indexing PCR |
+| [MIXS:0001395](https://w3id.org/mixs/0001395) | [capt_pcr_cyc_tot](capt_pcr_cyc_tot.md) | * <br/> [Integer](Integer.md) | Amplification cycles after capture enrichment total |
+| [MIXS:0001396](https://w3id.org/mixs/0001396) | [capt_probe_src_taxid](capt_probe_src_taxid.md) | * <br/> [Integer](Integer.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
+| [MIXS:0001397](https://w3id.org/mixs/0001397) | [capt_probe_desc](capt_probe_desc.md) | * <br/> [String](String.md) | Description of target enrichment probe designs used (e |
+| [MIXS:0001398](https://w3id.org/mixs/0001398) | [data_preproc_desc](data_preproc_desc.md) | 0..1 _recommended_ <br/> [String](String.md) | Description of preprocessing performed on the reads in the sequencing data fi... |
+| [MIXS:0001399](https://w3id.org/mixs/0001399) | [reads_removed](reads_removed.md) | 0..1 _recommended_ <br/> [Boolean](Boolean.md) | Specify whether associated data was filtered in some form prior to upload, su... |
 
 
 
@@ -140,7 +140,7 @@ slots:
 - capt_probe_src_taxid
 - capt_probe_desc
 - data_preproc_desc
-- reads_removed_desc
+- reads_removed
 slot_usage:
   orig_site_name:
     name: orig_site_name
@@ -318,11 +318,11 @@ slot_usage:
     name: data_preproc_desc
     rank: 44
     slot_group: Data analysis
-  reads_removed_desc:
-    name: reads_removed_desc
+  reads_removed:
+    name: reads_removed
     rank: 45
     slot_group: Data analysis
-class_uri: MIXS:9999903
+class_uri: MIXS:0016024
 
 ```
 </details>
@@ -523,8 +523,8 @@ slot_usage:
     name: data_preproc_desc
     rank: 44
     slot_group: Data analysis
-  reads_removed_desc:
-    name: reads_removed_desc
+  reads_removed:
+    name: reads_removed
     rank: 45
     slot_group: Data analysis
 attributes:
@@ -556,8 +556,7 @@ attributes:
     keywords:
     - environment
     - sample
-    slot_uri: MIXS:999999901
-    alias: orig_site_name
+    slot_uri: MIXS:0001356
     owner: Ancient
     domain_of:
     - Ancient
@@ -589,8 +588,7 @@ attributes:
     keywords:
     - location
     - site
-    slot_uri: MIXS:999999902
-    alias: orig_site_loc
+    slot_uri: MIXS:0001357
     owner: Ancient
     domain_of:
     - Ancient
@@ -621,8 +619,7 @@ attributes:
     - environment
     from_schema: https://w3id.org/mixs
     rank: 3
-    slot_uri: MIXS:999999903
-    alias: orig_site_lat
+    slot_uri: MIXS:0001358
     owner: Ancient
     domain_of:
     - Ancient
@@ -655,8 +652,7 @@ attributes:
     - environment
     from_schema: https://w3id.org/mixs
     rank: 4
-    slot_uri: MIXS:999999904
-    alias: orig_site_lon
+    slot_uri: MIXS:0001359
     owner: Ancient
     domain_of:
     - Ancient
@@ -692,8 +688,7 @@ attributes:
     - context
     - environmental
     - ancient
-    slot_uri: MIXS:999999905
-    alias: past_env_broad
+    slot_uri: MIXS:0001360
     owner: Ancient
     domain_of:
     - Ancient
@@ -737,8 +732,7 @@ attributes:
     - environmental
     - ancient
     string_serialization: '{termLabel} [{termID}]'
-    slot_uri: MIXS:999999906
-    alias: past_env_local
+    slot_uri: MIXS:0001361
     owner: Ancient
     domain_of:
     - Ancient
@@ -775,8 +769,7 @@ attributes:
     keywords:
     - identifiers
     - excavation
-    slot_uri: MIXS:999999907
-    alias: stratigraph_context
+    slot_uri: MIXS:0001362
     owner: Ancient
     domain_of:
     - Ancient
@@ -805,8 +798,7 @@ attributes:
     - environment
     from_schema: https://w3id.org/mixs
     rank: 7
-    slot_uri: MIXS:999999909
-    alias: context_retrieval_date
+    slot_uri: MIXS:0001363
     owner: Ancient
     domain_of:
     - Ancient
@@ -828,8 +820,7 @@ attributes:
     rank: 9
     keywords:
     - ethics
-    slot_uri: MIXS:999999910
-    alias: permit_id
+    slot_uri: MIXS:0001364
     owner: Ancient
     domain_of:
     - Ancient
@@ -862,8 +853,7 @@ attributes:
     keywords:
     - ethics
     - location
-    slot_uri: MIXS:999999911
-    alias: permit_authority
+    slot_uri: MIXS:0001365
     owner: Ancient
     domain_of:
     - Ancient
@@ -884,8 +874,7 @@ attributes:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 11
-    slot_uri: MIXS:999999912
-    alias: permit_date
+    slot_uri: MIXS:0001366
     owner: Ancient
     domain_of:
     - Ancient
@@ -919,8 +908,7 @@ attributes:
     keywords:
     - ethics
     string_serialization: '{text}'
-    slot_uri: MIXS:999999913
-    alias: permit_scope
+    slot_uri: MIXS:0001367
     owner: Ancient
     domain_of:
     - Ancient
@@ -950,8 +938,7 @@ attributes:
     rank: 13
     keywords:
     - ethics
-    slot_uri: MIXS:999999914
-    alias: biocultural_label
+    slot_uri: MIXS:0001368
     owner: Ancient
     domain_of:
     - Ancient
@@ -978,8 +965,7 @@ attributes:
     from_schema: https://w3id.org/mixs
     rank: 14
     string_serialization: '{text}'
-    slot_uri: MIXS:999999915
-    alias: samp_alt_lab_ids
+    slot_uri: MIXS:0001369
     owner: Ancient
     domain_of:
     - Ancient
@@ -999,8 +985,7 @@ attributes:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 15
-    slot_uri: MIXS:999999916
-    alias: prev_pubs
+    slot_uri: MIXS:0001370
     owner: Ancient
     domain_of:
     - Ancient
@@ -1037,8 +1022,7 @@ attributes:
     keywords:
     - ancient
     string_serialization: '{text}'
-    slot_uri: MIXS:999999917
-    alias: host_preserv_state
+    slot_uri: MIXS:0001371
     owner: Ancient
     domain_of:
     - Ancient
@@ -1093,8 +1077,7 @@ attributes:
     keywords:
     - ancient
     string_serialization: '{text}'
-    slot_uri: MIXS:999999919
-    alias: samp_preserv_treatm
+    slot_uri: MIXS:0001372
     owner: Ancient
     domain_of:
     - Ancient
@@ -1125,8 +1108,7 @@ attributes:
     - ancient
     - age
     string_serialization: '{termLabel} [{termID}]|{text}'
-    slot_uri: MIXS:999999920
-    alias: cultural_era
+    slot_uri: MIXS:0001373
     owner: Ancient
     domain_of:
     - Ancient
@@ -1157,8 +1139,7 @@ attributes:
     keywords:
     - ancient
     - age
-    slot_uri: MIXS:999999921
-    alias: geological_epoch
+    slot_uri: MIXS:0001374
     owner: Ancient
     domain_of:
     - Ancient
@@ -1189,8 +1170,7 @@ attributes:
     broad_mappings:
     - chrono:earliestChronometricAge
     rank: 21
-    slot_uri: MIXS:999999922
-    alias: earliest_chrono_age
+    slot_uri: MIXS:0001375
     owner: Ancient
     domain_of:
     - Ancient
@@ -1214,8 +1194,7 @@ attributes:
     broad_mappings:
     - chrono:earliestChronometricAgeReferenceSystem
     rank: 22
-    slot_uri: MIXS:999999923
-    alias: earliest_chrono_sys
+    slot_uri: MIXS:0001376
     owner: Ancient
     domain_of:
     - Ancient
@@ -1246,8 +1225,7 @@ attributes:
     broad_mappings:
     - chrono:latestChronometricAge
     rank: 23
-    slot_uri: MIXS:999999924
-    alias: latest_chrono_age
+    slot_uri: MIXS:0001377
     owner: Ancient
     domain_of:
     - Ancient
@@ -1271,8 +1249,7 @@ attributes:
     broad_mappings:
     - chrono:latestChronometricAgeReferenceSystem
     rank: 24
-    slot_uri: MIXS:999999925
-    alias: latest_chrono_sys
+    slot_uri: MIXS:0001378
     owner: Ancient
     domain_of:
     - Ancient
@@ -1297,8 +1274,7 @@ attributes:
     broad_mappings:
     - chrono:chronometricAgeProtocol
     rank: 25
-    slot_uri: MIXS:999999926
-    alias: chrono_age_protocol
+    slot_uri: MIXS:0001379
     owner: Ancient
     domain_of:
     - Ancient
@@ -1327,8 +1303,7 @@ attributes:
     close_mappings:
     - chrono:chronometricAgeRemarks
     rank: 26
-    slot_uri: MIXS:999999927
-    alias: chrono_age_remarks
+    slot_uri: MIXS:0001380
     owner: Ancient
     domain_of:
     - Ancient
@@ -1359,8 +1334,7 @@ attributes:
     - host health
     - ancient
     string_serialization: '{text}'
-    slot_uri: MIXS:999999928
-    alias: palaeopath_status
+    slot_uri: MIXS:0001381
     owner: Ancient
     domain_of:
     - Ancient
@@ -1394,8 +1368,7 @@ attributes:
     rank: 28
     keywords:
     - identifiers
-    slot_uri: MIXS:999999929
-    alias: batch_ids
+    slot_uri: MIXS:0001382
     owner: Ancient
     domain_of:
     - Ancient
@@ -1419,8 +1392,7 @@ attributes:
     rank: 29
     keywords:
     - control
-    slot_uri: MIXS:999999930
-    alias: samp_category
+    slot_uri: MIXS:0001383
     owner: Ancient
     domain_of:
     - Ancient
@@ -1441,8 +1413,7 @@ attributes:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 30
-    slot_uri: MIXS:999999931
-    alias: samp_decont_pretreat
+    slot_uri: MIXS:0001384
     owner: Ancient
     domain_of:
     - Ancient
@@ -1475,8 +1446,7 @@ attributes:
     rank: 33
     keywords:
     - ancient
-    slot_uri: MIXS:999999932
-    alias: damage_treatment
+    slot_uri: MIXS:0001385
     owner: Ancient
     domain_of:
     - Ancient
@@ -1498,8 +1468,7 @@ attributes:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 31
-    slot_uri: MIXS:999999933
-    alias: nucl_acid_extr_date
+    slot_uri: MIXS:0001386
     owner: Ancient
     domain_of:
     - Ancient
@@ -1519,8 +1488,7 @@ attributes:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
     rank: 32
-    slot_uri: MIXS:999999934
-    alias: sop_experimental
+    slot_uri: MIXS:0001387
     owner: Ancient
     domain_of:
     - Ancient
@@ -1556,8 +1524,7 @@ attributes:
     - library
     - preparation
     string_serialization: '{text}'
-    slot_uri: MIXS:999999935
-    alias: lib_mid_desc
+    slot_uri: MIXS:0001388
     owner: Ancient
     domain_of:
     - Ancient
@@ -1585,8 +1552,7 @@ attributes:
     rank: 35
     keywords:
     - sequencing
-    slot_uri: MIXS:999999936
-    alias: library_name
+    slot_uri: MIXS:0001389
     owner: Ancient
     domain_of:
     - Ancient
@@ -1617,8 +1583,7 @@ attributes:
     - library
     - preparation
     string_serialization: '{text}'
-    slot_uri: MIXS:999999937
-    alias: lib_polymerase
+    slot_uri: MIXS:0001390
     owner: Ancient
     domain_of:
     - Ancient
@@ -1645,8 +1610,7 @@ attributes:
     keywords:
     - library
     - preparation
-    slot_uri: MIXS:999999938
-    alias: lib_strandedness
+    slot_uri: MIXS:0001391
     owner: Ancient
     domain_of:
     - Ancient
@@ -1677,8 +1641,7 @@ attributes:
     keywords:
     - library
     - preparation
-    slot_uri: MIXS:999999939
-    alias: lib_gener_technique
+    slot_uri: MIXS:0001392
     owner: Ancient
     domain_of:
     - Ancient
@@ -1696,8 +1659,7 @@ attributes:
     - sequencing
     from_schema: https://w3id.org/mixs
     rank: 38
-    slot_uri: MIXS:999999940
-    alias: sop_lib_preparation
+    slot_uri: MIXS:0001393
     owner: Ancient
     domain_of:
     - Ancient
@@ -1722,8 +1684,7 @@ attributes:
     - sequencing
     from_schema: https://w3id.org/mixs
     rank: 40
-    slot_uri: MIXS:999999941
-    alias: reamp_pcr_cyc_tot
+    slot_uri: MIXS:0001394
     owner: Ancient
     domain_of:
     - Ancient
@@ -1740,8 +1701,7 @@ attributes:
     - sequencing
     from_schema: https://w3id.org/mixs
     rank: 41
-    slot_uri: MIXS:999999942
-    alias: capt_pcr_cyc_tot
+    slot_uri: MIXS:0001395
     owner: Ancient
     domain_of:
     - Ancient
@@ -1776,8 +1736,7 @@ attributes:
     - library
     - enrichment
     - capture
-    slot_uri: MIXS:999999943
-    alias: capt_probe_src_taxid
+    slot_uri: MIXS:0001396
     owner: Ancient
     domain_of:
     - Ancient
@@ -1811,8 +1770,7 @@ attributes:
     - library
     - enrichment
     string_serialization: '{text}'
-    slot_uri: MIXS:999999944
-    alias: capt_probe_desc
+    slot_uri: MIXS:0001397
     owner: Ancient
     domain_of:
     - Ancient
@@ -1847,8 +1805,7 @@ attributes:
     keywords:
     - data analysis
     - data
-    slot_uri: MIXS:999999945
-    alias: data_preproc_desc
+    slot_uri: MIXS:0001398
     owner: Ancient
     domain_of:
     - Ancient
@@ -1857,8 +1814,8 @@ attributes:
     required: false
     recommended: true
     multivalued: false
-  reads_removed_desc:
-    name: reads_removed_desc
+  reads_removed:
+    name: reads_removed
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1878,8 +1835,7 @@ attributes:
     rank: 45
     keywords:
     - data analysis
-    slot_uri: MIXS:999999946
-    alias: reads_removed_desc
+    slot_uri: MIXS:0001399
     owner: Ancient
     domain_of:
     - Ancient
@@ -1888,7 +1844,7 @@ attributes:
     required: false
     recommended: true
     multivalued: false
-class_uri: MIXS:9999903
+class_uri: MIXS:0016024
 
 ```
 </details>

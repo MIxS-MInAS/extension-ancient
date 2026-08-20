@@ -5,7 +5,7 @@ _The geological epoch approximating to the period within which the specimen or s
 
 
 
-URI: [MIXS:999999921](https://w3id.org/mixs/999999921)
+URI: [MIXS:0001374](https://w3id.org/mixs/0001374)
 
 
 
@@ -79,8 +79,7 @@ rank: 1000
 keywords:
 - ancient
 - age
-slot_uri: MIXS:999999921
-alias: geological_epoch
+slot_uri: MIXS:0001374
 domain_of:
 - Ancient
 range: GeolEpochEnum

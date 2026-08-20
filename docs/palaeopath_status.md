@@ -5,7 +5,7 @@ _Describe briefly any relevant palaeopathological or health-related observations
 
 
 
-URI: [MIXS:999999928](https://w3id.org/mixs/999999928)
+URI: [MIXS:0001381](https://w3id.org/mixs/0001381)
 
 
 
@@ -79,8 +79,7 @@ keywords:
 - host health
 - ancient
 string_serialization: '{text}'
-slot_uri: MIXS:999999928
-alias: palaeopath_status
+slot_uri: MIXS:0001381
 domain_of:
 - Ancient
 range: string

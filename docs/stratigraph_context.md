@@ -5,7 +5,7 @@ _Associated stratigraphic context(s) that the sample was retrieved from, usually
 
 
 
-URI: [MIXS:999999907](https://w3id.org/mixs/999999907)
+URI: [MIXS:0001362](https://w3id.org/mixs/0001362)
 
 
 
@@ -92,8 +92,7 @@ rank: 1000
 keywords:
 - identifiers
 - excavation
-slot_uri: MIXS:999999907
-alias: stratigraph_context
+slot_uri: MIXS:0001362
 domain_of:
 - Ancient
 range: string

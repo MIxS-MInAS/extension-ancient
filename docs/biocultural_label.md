@@ -5,7 +5,7 @@ _Relevant biocultural labels defined by the local contexts project (https://loca
 
 
 
-URI: [MIXS:999999914](https://w3id.org/mixs/999999914)
+URI: [MIXS:0001368](https://w3id.org/mixs/0001368)
 
 
 
@@ -77,8 +77,7 @@ from_schema: https://w3id.org/mixs
 rank: 1000
 keywords:
 - ethics
-slot_uri: MIXS:999999914
-alias: biocultural_label
+slot_uri: MIXS:0001368
 domain_of:
 - Ancient
 range: BioCulturalLabelEnum
