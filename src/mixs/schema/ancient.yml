@@ -259,7 +259,7 @@ slots:
     keywords:
       - environment
       - sample
-    slot_uri: MIXS:999999901 #Not assigned
+    slot_uri: MIXS:0001356
     multivalued: true
     range: string
     required: false
@@ -280,7 +280,7 @@ slots:
     keywords:
       - location
       - site
-    slot_uri: MIXS:999999902 #Not assigned
+    slot_uri: MIXS:0001357
     multivalued: false
     range: string
     required: false
@@ -299,7 +299,7 @@ slots:
     examples:
       - value: "50.586825"
       - value: "-0.123"
-    slot_uri: MIXS:999999903 #Not assigned
+    slot_uri: MIXS:0001358
     multivalued: false
     required: false
     recommended: false
@@ -319,7 +319,7 @@ slots:
       - value: "-12.12"
     in_subset:
       - environment
-    slot_uri: MIXS:999999904 #Not assigned
+    slot_uri: MIXS:0001359
     multivalued: false
     required: false
     recommended: false
@@ -343,7 +343,7 @@ slots:
       - context
       - environmental
       - ancient
-    slot_uri: MIXS:999999905 #Not assigned
+    slot_uri: MIXS:0001360
     range: string
     required: false
     recommended: true
@@ -372,7 +372,7 @@ slots:
       - environmental
       - ancient
     string_serialization: "{termLabel} [{termID}]"
-    slot_uri: MIXS:999999906 #Not assigned
+    slot_uri: MIXS:0001361
     required: false
     recommended: true
   stratigraph_context:
@@ -396,7 +396,7 @@ slots:
     keywords:
       - identifiers
       - excavation
-    slot_uri: MIXS:999999907 #Not assigned
+    slot_uri: MIXS:0001362
     multivalued: true
     range: string
     required: false
@@ -416,7 +416,7 @@ slots:
       - value: "2001-09-25"
     in_subset:
       - environment
-    slot_uri: MIXS:999999909 #Not assigned
+    slot_uri: MIXS:0001363
     range: datetime
     required: false
     recommended: true
@@ -430,7 +430,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - ethics
-    slot_uri: MIXS:999999910 #Not assigned
+    slot_uri: MIXS:0001364
     multivalued: true
     range: string
     required: false
@@ -449,7 +449,7 @@ slots:
     keywords:
       - ethics
       - location
-    slot_uri: MIXS:999999911 #Not assigned
+    slot_uri: MIXS:0001365
     close_mappings:
       - dc:rightsHolder
     multivalued: true
@@ -464,7 +464,7 @@ slots:
       - value: "2023-12-01"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999912 #Not assigned
+    slot_uri: MIXS:0001366
     multivalued: true
     range: datetime
     required: false
@@ -481,7 +481,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - ethics
-    slot_uri: MIXS:999999913 #Not assigned
+    slot_uri: MIXS:0001367
     close_mappings:
       - dc:accessRights
       - dc:license
@@ -504,7 +504,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - ethics
-    slot_uri: MIXS:999999914 #Not assigned
+    slot_uri: MIXS:0001368
     multivalued: true
     range: BioCulturalLabelEnum #enum value
     required: false
@@ -521,7 +521,7 @@ slots:
       - value: "Museum ID: NHM_AR_123, Drilling ID: DRL_001, Extraction ID: ABC_24"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999915 #Not assigned
+    slot_uri: MIXS:0001369
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -535,7 +535,7 @@ slots:
       - value: doi:10.1016/j.jas.2015.02.0181
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999916 #Not assigned
+    slot_uri: MIXS:0001370
     multivalued: true
     range: string
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$$
@@ -561,7 +561,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - ancient
-    slot_uri: MIXS:999999917 #Not assigned
+    slot_uri: MIXS:0001371
     multivalued: false
     range: string
     string_serialization: "{text}"
@@ -604,7 +604,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - ancient
-    slot_uri: MIXS:999999919 #Not assigned
+    slot_uri: MIXS:0001372
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -627,7 +627,7 @@ slots:
       - age
     range: string
     string_serialization: "{termLabel} [{termID}]|{text}"
-    slot_uri: MIXS:999999920 #Not assigned
+    slot_uri: MIXS:0001373
     multivalued: false
     required: false
     recommended: false
@@ -647,7 +647,7 @@ slots:
       - ancient
       - age
     range: GeolEpochEnum
-    slot_uri: MIXS:999999921 #Not assigned
+    slot_uri: MIXS:0001374
     multivalued: false
     required: false
     recommended: false
@@ -666,7 +666,7 @@ slots:
       - value: "1900"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999922 #Not assigned
+    slot_uri: MIXS:0001375
     broad_mappings:
       - chrono:earliestChronometricAge
     multivalued: false
@@ -684,7 +684,7 @@ slots:
       - value: "ka"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999923 #Not assigned
+    slot_uri: MIXS:0001376
     broad_mappings:
       - chrono:earliestChronometricAgeReferenceSystem
     multivalued: false
@@ -706,7 +706,7 @@ slots:
       - value: "1700"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999924 #Not assigned
+    slot_uri: MIXS:0001377
     broad_mappings:
       - chrono:latestChronometricAge
     multivalued: false
@@ -724,7 +724,7 @@ slots:
       - value: "ka"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999925 #Not assigned
+    slot_uri: MIXS:0001378
     broad_mappings:
       - chrono:latestChronometricAgeReferenceSystem
     multivalued: false
@@ -742,7 +742,7 @@ slots:
       - value: "historical records"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999926 #Not assigned
+    slot_uri: MIXS:0001379
     broad_mappings:
       - chrono:chronometricAgeProtocol
     multivalued: true
@@ -763,7 +763,7 @@ slots:
       - value: "radiocarbon age ID: OxA-12345"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999927 #Not assigned
+    slot_uri: MIXS:0001380
     close_mappings:
       - chrono:chronometricAgeRemarks
     multivalued: false
@@ -786,7 +786,7 @@ slots:
       - palaeopathology
       - host health
       - ancient
-    slot_uri: MIXS:999999928 #Not assigned
+    slot_uri: MIXS:0001381
     multivalued: false
     range: string
     string_serialization: "{text}"
@@ -809,7 +809,7 @@ slots:
       - nucleic acid sequence source
     keywords:
       - identifiers
-    slot_uri: MIXS:999999929 #Not assigned
+    slot_uri: MIXS:0001382
     multivalued: true
     range: string
     required: false
@@ -826,7 +826,7 @@ slots:
       - control
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999930 #Not assigned
+    slot_uri: MIXS:0001383
     range: SampCategoryEnum
     required: true
     recommended: true
@@ -841,7 +841,7 @@ slots:
       - value: doi:10.1016/j.jas.2015.02.0181
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999931 #Not assigned
+    slot_uri: MIXS:0001384
     multivalued: true
     range: string
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$$
@@ -863,7 +863,7 @@ slots:
       - sequencing
     keywords:
       - ancient
-    slot_uri: MIXS:999999932 #Not assigned
+    slot_uri: MIXS:0001385
     multivalued: false
     range: DamageTreatmentEnum ## or name of defined enum as above
     recommended: true
@@ -877,7 +877,7 @@ slots:
       - value: "2023-12-01"
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999933 #Not assigned
+    slot_uri: MIXS:0001386
     range: datetime ## or name of defined enum as above
     required: false
     recommended: false
@@ -890,7 +890,7 @@ slots:
       - value: doi:10.1093/nar/gkr771
     in_subset:
       - nucleic acid sequence source
-    slot_uri: MIXS:999999934 #Not assigned
+    slot_uri: MIXS:0001387
     multivalued: true
     range: string
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$$
@@ -914,7 +914,7 @@ slots:
     keywords:
       - library
       - preparation
-    slot_uri: MIXS:999999935 #Not assigned
+    slot_uri: MIXS:0001388
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -934,7 +934,7 @@ slots:
       - sequencing
     keywords:
       - sequencing
-    slot_uri: MIXS:999999936 #Not assigned
+    slot_uri: MIXS:0001389
     multivalued: true
     range: string
     required: false
@@ -956,7 +956,7 @@ slots:
       - library
       - preparation
     string_serialization: "{text}"
-    slot_uri: MIXS:999999937 #Not assigned
+    slot_uri: MIXS:0001390
     range: string
     required: false
     recommended: true
@@ -974,7 +974,7 @@ slots:
     keywords:
       - library
       - preparation
-    slot_uri: MIXS:999999938 #Not assigned
+    slot_uri: MIXS:0001391
     multivalued: true
     range: LibStrandEnum #enum value
     required: true
@@ -992,7 +992,7 @@ slots:
     keywords:
       - library
       - preparation
-    slot_uri: MIXS:999999939 #Not assigned
+    slot_uri: MIXS:0001392
     range: LibTypeEnum
     required: false
     recommended: true
@@ -1004,7 +1004,7 @@ slots:
       - value: doi:10.1093/nar/gkr771
     in_subset:
       - sequencing
-    slot_uri: MIXS:999999940 #Not assigned
+    slot_uri: MIXS:0001393
     multivalued: true
     range: string
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$$
@@ -1022,7 +1022,7 @@ slots:
       - value: "12"
     in_subset:
       - sequencing
-    slot_uri: MIXS:999999941 #Not assigned
+    slot_uri: MIXS:0001394
     range: integer
   capt_pcr_cyc_tot:
     description: >-
@@ -1032,7 +1032,7 @@ slots:
       - value: "12"
     in_subset:
       - sequencing
-    slot_uri: MIXS:999999942 #Not assigned
+    slot_uri: MIXS:0001395
     range: integer
     multivalued: true
     required: false
@@ -1054,7 +1054,7 @@ slots:
       - library
       - enrichment
       - capture
-    slot_uri: MIXS:999999943 #Not assigned
+    slot_uri: MIXS:0001396
     multivalued: true
     range: integer
     string_serialization:
@@ -1074,7 +1074,7 @@ slots:
     keywords:
       - library
       - enrichment
-    slot_uri: MIXS:999999944 #Not assigned
+    slot_uri: MIXS:0001397
     multivalued: true
     range: string
     string_serialization: "{text}"
@@ -1097,7 +1097,7 @@ slots:
     keywords:
       - data analysis
       - data
-    slot_uri: MIXS:999999945 #Not assigned
+    slot_uri: MIXS:0001398
     multivalued: false
     range: string
     required: false
@@ -1116,7 +1116,7 @@ slots:
       - sequencing
     keywords:
       - data analysis
-    slot_uri: MIXS:999999946 #Not assigned
+    slot_uri: MIXS:0001399
     multivalued: false
     range: boolean
     required: false
