@@ -31,7 +31,7 @@ URI: [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md)
 
 | Name | Description |
 | ---  | --- |
-| [chrono_age_protocol](chrono_age_protocol.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [chrono_age_protocol](chrono_age_protocol.md) | The methods used to determine the earliest_chrono_age and latest_chrono_age |
 
 
 

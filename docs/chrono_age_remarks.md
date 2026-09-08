@@ -1,7 +1,7 @@
 # Term: chronometric age remarks (chrono_age_remarks) 
 
 
-_Notes or comments about the  earliest_chrono_age and latest_chrono_age. For more detail use Chronometric Age Protocol to point to original publication describing method. Useful to specify confidence and/or accuracy of reported date._
+_Notes or comments about the  earliest_chrono_age and latest_chrono_age. Use to give additional information about how date(s) were obtained, and/or point to original publication(s) describing specific protocol specified in `chrono_age_protocol`. Useful to specify confidence and/or accuracy of reported date._
 
 
 
@@ -47,6 +47,7 @@ URI: [MIXS:0001380](https://w3id.org/mixs/0001380)
 | a coin found in the burial was from the 3rd century was found in the mouth of the skeleton |
 | age taken from previous publication Doe et al. 2019 |
 | radiocarbon age ID: OxA-12345 |
+| https://doi.org/10.1017/RDC.2018.14 |
 
 
 
@@ -58,8 +59,9 @@ URI: [MIXS:0001380](https://w3id.org/mixs/0001380)
 ```yaml
 name: chrono_age_remarks
 description: Notes or comments about the  earliest_chrono_age and latest_chrono_age.
-  For more detail use Chronometric Age Protocol to point to original publication describing
-  method. Useful to specify confidence and/or accuracy of reported date.
+  Use to give additional information about how date(s) were obtained, and/or point
+  to original publication(s) describing specific protocol specified in `chrono_age_protocol`.
+  Useful to specify confidence and/or accuracy of reported date.
 title: chronometric age remarks
 examples:
 - value: radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval
@@ -68,6 +70,7 @@ examples:
     of the skeleton
 - value: age taken from previous publication Doe et al. 2019
 - value: 'radiocarbon age ID: OxA-12345'
+- value: https://doi.org/10.1017/RDC.2018.14
 in_subset:
 - nucleic acid sequence source
 from_schema: https://w3id.org/mixs
