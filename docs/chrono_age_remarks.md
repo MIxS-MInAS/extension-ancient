@@ -1,7 +1,7 @@
 # Term: chronometric age remarks (chrono_age_remarks) 
 
 
-_Notes or comments about the  earliest_chrono_age and latest_chrono_age. Use to give additional information about how date(s) were obtained, and/or point to original publication(s) describing specific protocol specified in `chrono_age_protocol`. Useful to specify confidence and/or accuracy of reported date._
+_Notes or comments about the  earliest_chrono_age and latest_chrono_age. Can be used to give additional information about how date(s) were obtained, and/or point to original publication(s) describing specific protocol specified in `chrono_age_protocol`. For example, it can be useful to specify confidence and/or accuracy of reported date, radiocarbon ID or lab code(s), etc._
 
 
 
@@ -59,9 +59,10 @@ URI: [MIXS:0001380](https://w3id.org/mixs/0001380)
 ```yaml
 name: chrono_age_remarks
 description: Notes or comments about the  earliest_chrono_age and latest_chrono_age.
-  Use to give additional information about how date(s) were obtained, and/or point
-  to original publication(s) describing specific protocol specified in `chrono_age_protocol`.
-  Useful to specify confidence and/or accuracy of reported date.
+  Can be used to give additional information about how date(s) were obtained, and/or
+  point to original publication(s) describing specific protocol specified in `chrono_age_protocol`.
+  For example, it can be useful to specify confidence and/or accuracy of reported
+  date, radiocarbon ID or lab code(s), etc.
 title: chronometric age remarks
 examples:
 - value: radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval
