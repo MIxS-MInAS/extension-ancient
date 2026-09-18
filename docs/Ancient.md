@@ -1285,7 +1285,7 @@ attributes:
   chrono_age_remarks:
     name: chrono_age_remarks
     description: Notes or comments about the  earliest_chrono_age and latest_chrono_age.
-      Use to give additional information about how date(s) were obtained, and/or point
+      Can be used to give additional information about how date(s) were obtained, and/or point
       to original publication(s) describing specific protocol specified in `chrono_age_protocol`.
       Useful to specify confidence and/or accuracy of reported date, radiocarbon ID, etc.
     title: chronometric age remarks
