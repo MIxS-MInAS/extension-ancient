@@ -1287,7 +1287,7 @@ attributes:
     description: Notes or comments about the  earliest_chrono_age and latest_chrono_age.
       Use to give additional information about how date(s) were obtained, and/or point
       to original publication(s) describing specific protocol specified in `chrono_age_protocol`.
-      Useful to specify confidence and/or accuracy of reported date.
+      Useful to specify confidence and/or accuracy of reported date, radiocarbon ID, etc.
     title: chronometric age remarks
     examples:
     - value: radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval
