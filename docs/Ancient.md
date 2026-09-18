@@ -37,7 +37,7 @@ _A collection of terms appropriate when collecting samples and sequencing sample
 | [MIXS:0001376](https://w3id.org/mixs/0001376) | [earliest_chrono_sys](earliest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the earliest_chrono_age |
 | [MIXS:0001377](https://w3id.org/mixs/0001377) | [latest_chrono_age](latest_chrono_age.md) | 1 _recommended_ <br/> [Integer](Integer.md) | The minimum/latest/youngest possible age of a specimen as determined by a dat... |
 | [MIXS:0001378](https://w3id.org/mixs/0001378) | [latest_chrono_sys](latest_chrono_sys.md) | 1 _recommended_ <br/> [ChronoAgeSysEnum](ChronoAgeSysEnum.md) | The reference system associated with the latest_chrono_age |
-| [MIXS:0001379](https://w3id.org/mixs/0001379) | [chrono_age_protocol](chrono_age_protocol.md) | * _recommended_ <br/> [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [MIXS:0001379](https://w3id.org/mixs/0001379) | [chrono_age_protocol](chrono_age_protocol.md) | * _recommended_ <br/> [ChronoAgeProtocolEnum](ChronoAgeProtocolEnum.md) | The methods used to determine the earliest_chrono_age and latest_chrono_age |
 | [MIXS:0001380](https://w3id.org/mixs/0001380) | [chrono_age_remarks](chrono_age_remarks.md) | 0..1 _recommended_ <br/> [String](String.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
 | [MIXS:0001381](https://w3id.org/mixs/0001381) | [palaeopath_status](palaeopath_status.md) | 0..1 <br/> [String](String.md) | Describe briefly any relevant palaeopathological or health-related observatio... |
 | [MIXS:0001382](https://w3id.org/mixs/0001382) | [batch_ids](batch_ids.md) | * <br/> [String](String.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
@@ -1260,8 +1260,7 @@ attributes:
     multivalued: false
   chrono_age_protocol:
     name: chrono_age_protocol
-    description: A description of or reference to the methods used to determine the
-      earliest_chrono_age and latest_chrono_age.
+    description: The methods used to determine the earliest_chrono_age and latest_chrono_age.
     title: chronometric age protocol
     examples:
     - value: radiocarbon dating
@@ -1286,9 +1285,10 @@ attributes:
   chrono_age_remarks:
     name: chrono_age_remarks
     description: Notes or comments about the  earliest_chrono_age and latest_chrono_age.
-      For more detail use Chronometric Age Protocol to point to original publication
-      describing method. Useful to specify confidence and/or accuracy of reported
-      date.
+      Can be used to give additional information about how date(s) were obtained,
+      and/or point to original publication(s) describing specific protocol specified
+      in `chrono_age_protocol`. For example, it can be useful to specify confidence
+      and/or accuracy of reported date, radiocarbon ID or lab code(s), etc.
     title: chronometric age remarks
     examples:
     - value: radiocarbon dating, calibrated with OxCal v4.3 with 95% confidence interval
@@ -1297,6 +1297,7 @@ attributes:
         mouth of the skeleton
     - value: age taken from previous publication Doe et al. 2019
     - value: 'radiocarbon age ID: OxA-12345'
+    - value: https://doi.org/10.1017/RDC.2018.14
     in_subset:
     - nucleic acid sequence source
     from_schema: https://w3id.org/mixs
