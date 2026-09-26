@@ -56,7 +56,7 @@ Name: mixs-minas
 | [capt_pcr_cyc_tot](capt_pcr_cyc_tot.md) | Amplification cycles after capture enrichment total |
 | [capt_probe_desc](capt_probe_desc.md) | Description of target enrichment probe designs used (e |
 | [capt_probe_src_taxid](capt_probe_src_taxid.md) | NCBI taxon ID(s) of all organisms included in the baits of a whole organelle ... |
-| [chrono_age_protocol](chrono_age_protocol.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [chrono_age_protocol](chrono_age_protocol.md) | The methods used to determine the earliest_chrono_age and latest_chrono_age |
 | [chrono_age_remarks](chrono_age_remarks.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
 | [context_retrieval_date](context_retrieval_date.md) | Date of excavation or retrieval from burial or depositional context, if known |
 | [cultural_era](cultural_era.md) | The cultural era approximating to the period in which the archaeological rema... |

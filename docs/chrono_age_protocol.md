@@ -1,7 +1,7 @@
 # Term: chronometric age protocol (chrono_age_protocol) 
 
 
-_A description of or reference to the methods used to determine the earliest_chrono_age and latest_chrono_age._
+_The methods used to determine the earliest_chrono_age and latest_chrono_age._
 
 
 
@@ -56,8 +56,7 @@ URI: [MIXS:0001379](https://w3id.org/mixs/0001379)
 <details>
 ```yaml
 name: chrono_age_protocol
-description: A description of or reference to the methods used to determine the earliest_chrono_age
-  and latest_chrono_age.
+description: The methods used to determine the earliest_chrono_age and latest_chrono_age.
 title: chronometric age protocol
 examples:
 - value: radiocarbon dating

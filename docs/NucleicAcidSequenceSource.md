@@ -116,7 +116,7 @@ URI: [NucleicAcidSequenceSource](NucleicAcidSequenceSource.md)
 | --- | --- |
 | [batch_ids](batch_ids.md) | Identifiers for any form of batch or 'group' that the samples is associated w... |
 | [biocultural_label](biocultural_label.md) | Relevant biocultural labels defined by the local contexts project (https://lo... |
-| [chrono_age_protocol](chrono_age_protocol.md) | A description of or reference to the methods used to determine the earliest_c... |
+| [chrono_age_protocol](chrono_age_protocol.md) | The methods used to determine the earliest_chrono_age and latest_chrono_age |
 | [chrono_age_remarks](chrono_age_remarks.md) | Notes or comments about the  earliest_chrono_age and latest_chrono_age |
 | [cultural_era](cultural_era.md) | The cultural era approximating to the period in which the archaeological rema... |
 | [earliest_chrono_age](earliest_chrono_age.md) | The maximum/earliest/oldest possible age of a specimen as determined by a dat... |
