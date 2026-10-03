@@ -1,7 +1,7 @@
-# Term: description of reads removal (reads_removed) 
+# Term: reads removed (reads_removed) 
 
 
-_Specify whether associated data was filtered in some form prior to upload, such as host reads removal. Detailed description of the the data filtering that was carried out should be described in term 'preprocessing of sequencing reads description'._
+_Specify whether associated data was filtered in some form prior to upload, such as host reads removal. Detailed description of the data filtering that was carried out should be described in term 'description of sequencing reads preprocessing'._
 
 
 
@@ -63,9 +63,9 @@ annotations:
     tag: Expected_value
     value: Whether any sequencing reads were removed from the data files after sequencing
 description: Specify whether associated data was filtered in some form prior to upload,
-  such as host reads removal. Detailed description of the the data filtering that
-  was carried out should be described in term 'preprocessing of sequencing reads description'.
-title: description of reads removal
+  such as host reads removal. Detailed description of the data filtering that was
+  carried out should be described in term 'description of sequencing reads preprocessing'.
+title: reads removed
 examples:
 - value: 'no'
 - value: 'yes'
